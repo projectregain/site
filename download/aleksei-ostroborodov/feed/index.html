@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Aleksei Ostroborodov &#8211; Expert Advisor / Indicator</title>
+	<atom:link href="http://project-regain.io/download/aleksei-ostroborodov/feed" rel="self" type="application/rss+xml" />
+	<link>http://project-regain.io/</link>
+	<description>Download source coder from any indicator / Expert Advisor file.</description>
+	<lastBuildDate>Mon, 05 Aug 2019 01:00:00 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.2.4</generator>
+	<item>
+		<title>True Range Download</title>
+		<link>http://project-regain.io/true-range-download.html</link>
+				<pubDate>Mon, 05 Aug 2019 01:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Experts]]></category>
+		<category><![CDATA[Aleksei Ostroborodov]]></category>
+		<category><![CDATA[Quattordici]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/true-range-download.html</guid>
+				<description><![CDATA[<p>Author : Aleksei Ostroborodov Category : Experts Last Update : 5 September 2019 Rent Price : 80 USD Version : 2.0 TRUE RANGE © EA <a class="mh-excerpt-more" href="http://project-regain.io/true-range-download.html" title="True Range Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/true-range-download.html">True Range Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Aleksei Ostroborodov<br />
+Category : Experts<br />
+Last Update : 5 September 2019<br />
+Rent Price : 80 USD<br />
+Version : 2.0<br />
+</code></p>
+<p><strong>TRUE RANGE © EA</strong> is an automatic scalping system with a double protection of account funds for daily trading. <br />
+     <strong>True Range © EA</strong> uses unique built-in systems:</p>
+<ul>
+<li>
+<p>Daily trading;</p>
+<ul>
+<li>MATR &#8211; Modified ATR;</li>
+<li>Spread control; </li>
+<li>Overlap &#8211; overlapping of unprofitable orders with profitable ones;</li>
+<li>DDStop &#8211; loss control system;</li>
+<li>Progression system &#8211; arithmetic/geometric progression for the grid of orders (if necessary); </li>
+<li>Autolot system &#8211; calculating the start order depending on the account balance.<br />
+MQL5 signal <a href="https://www.mql5.com/en/signals/543025" title="https://www.mql5.com/en/signals/543025">https://www.mql5.com/en/signals/543025</a></li>
+</ul>
+<p>Settings, Myfxbook &amp; Signalstart <a href="https://www.mql5.com/en/blogs/post/726783" title="https://www.mql5.com/en/blogs/post/726783">https://www.mql5.com/en/blogs/post/726783</a></p>
+<p>Recommendations:</p>
+</li>
+<li>
+<p>ECN account 1:500</p>
+<ul>
+<li>Fast VPS</li>
+<li>Timeframes: EURUSD M5</li>
+<li>Min Deposit: $300-500/0.01l</li>
+</ul>
+<p>Input parameters:</p>
+</li>
+<li>
+<p><strong>MagicId</strong> &#8211; unique number of the EA;</p>
+<ul>
+<li><strong>MaxSpread</strong> &#8211; maximum value of the spread for opening/closing orders;</li>
+<li><strong>MaxNumber</strong> &#8211; maximum number of orders for each direction;</li>
+<li><em>*MaxLot *</em>&#8211; max lot for each order;</li>
+<li><strong>MainLot</strong> &#8211; first order volume;</li>
+<li><strong>OpenOnBar</strong> &#8211; opening orders at the opening of a new candle (true) or when a given Grid level is reached (false);</li>
+<li><strong>CloseOnBar</strong> &#8211; closing orders at the opening of a new candle (true) or just when a given Takeprofit level is reached (false);</li>
+<li><strong>Start Hour, End Hour</strong> &#8211; time interval for opening first order;</li>
+<li><strong>Friday End Hour</strong> &#8211; the end time of opening first order on Friday;</li>
+<li><strong>Close Hour</strong> &#8211; closes all orders at selected hour (disabled if Close Hour&lt;=End Hour)</li>
+<li><strong>RSI</strong> <strong>Period</strong>;</li>
+<li><strong>RSI Level</strong> &#8211; RSI upper level;</li>
+<li><strong>A Period</strong> &#8211; ATR period;</li>
+<li><strong>A Count</strong> &#8211; ATR depth;</li>
+<li><em>*A Factor (%) *</em>&#8211; ATR level;</li>
+<li>
+<p><strong>Mode</strong> &#8211; the mode of calculating the lot value of the first order of the series: </p>
+<ul>
+<li><strong>ManualLot</strong> &#8211; the lot value of the first order in each new series corresponds to the value of MainLot;</li>
+<li><strong>AutoLot</strong> &#8211; the lot size of the first order multiply increases, based on the ratio of the size of the account funds and AutoLotSize.</li>
+</ul>
+</li>
+<li>
+<p><strong>AutoLotSize</strong> &#8211; amount of balance funds for each value of MainLot;</p>
+</li>
+<li>
+<p><strong>Progress</strong> &#8211; type of progression: </p>
+<ul>
+<li><strong>Arith</strong> &#8211; arithmetic;</li>
+<li><strong>Geo</strong> &#8211; geometric;</li>
+</ul>
+</li>
+<li>
+<p><em>*ArithFactor *</em>(Mode=Arith) &#8211; progression value;</p>
+</li>
+<li><strong>GeoFactor</strong> (Mode=Geo) &#8211; progression value;</li>
+<li><em>*Grid *</em>(points) &#8211; the distance between orders;</li>
+<li><strong>Virtual Takeprofit</strong> (points) &#8211; Virtual Takeprofit</li>
+<li><strong>Takeprofit</strong> (points) &#8211; takeprofit level;</li>
+<li><em>*Stoploss *</em>(points) &#8211; stoploss level for each order;</li>
+<li><strong>Overlap</strong> &#8211; enable / disable the overlapping of the first losing order with the last profitable with a profit of OverlapPercent percent; </li>
+<li><strong>OverlapNumber</strong> &#8211; order number, starting from which it is possible to overlap orders;</li>
+<li><strong>OverlapPercent</strong> &#8211; profit from the last order when it overlaps the first unprofitable;</li>
+<li><strong>DDStop</strong> &#8211; the mode of closing all orders for the current instrument when the specified drawdown level of DDStopValue is reached:</li>
+</ul>
+</li>
+<li><strong>None</strong> &#8211; the mode is off;
+<ul>
+<li><strong>Currency</strong> &#8211; drawdown in the deposit currency;</li>
+<li><strong>Percent</strong> &#8211; drawdown as a percentage of the balace;</li>
+</ul>
+</li>
+<li>
+<p><strong>DDStopValue</strong> &#8211; currency units (DDStop=Currency), % of account balance (DDStop=Percent)</p>
+<ul>
+<li><strong>NewCycle</strong> &#8211; enable/disable a new series after reaching take profit;</li>
+<li><strong>ShowInfo</strong> &#8211; enable/disable information panel, breakeven and take profit levels (disable to increase the speed of optimization);</li>
+<li><strong>UpColor</strong> &#8211; color of the buy series;</li>
+<li><strong>DnColor</strong> &#8211; color of the sell series;</li>
+</ul>
+<p>All products <a href="https://www.mql5.com/ru/users/quattordici/seller" title="https://www.mql5.com/ru/users/quattordici/seller">https://www.mql5.com/ru/users/quattordici/seller</a></p>
+<p><pre><code> [more...](#description)
+</code></pre>
+</li>
+</ul>
+<h3>Image of True Range</h3>
+<p><img src="https://c.mql5.com/31/330/true-range-screen-4294.jpg" alt="True Range" /></p>
+<p><img src="https://c.mql5.com/31/330/true-range-screen-2332.jpg" alt="True Range" /></p>
+<h3>Download source code of  True Range for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download True Range" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/true-range-download.html">True Range Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>Candelabrum EA Download</title>
+		<link>http://project-regain.io/candelabrum-ea-download.html</link>
+				<pubDate>Thu, 01 Aug 2019 18:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Experts]]></category>
+		<category><![CDATA[Aleksei Ostroborodov]]></category>
+		<category><![CDATA[Quattordici]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/candelabrum-ea-download.html</guid>
+				<description><![CDATA[<p>Author : Aleksei Ostroborodov Category : Experts Last Update : 1 September 2019 Rent Price : 150 USD Version : 2.0 #1 by Daily &#38; <a class="mh-excerpt-more" href="http://project-regain.io/candelabrum-ea-download.html" title="Candelabrum EA Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/candelabrum-ea-download.html">Candelabrum EA Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Aleksei Ostroborodov<br />
+Category : Experts<br />
+Last Update : 1 September 2019<br />
+Rent Price : 150 USD<br />
+Version : 2.0<br />
+</code></p>
+<p><strong>#1 by Daily &amp; Monthly Gain in the ranking at Myfxbook Autotrade</strong></p>
+<p>No grid, no martingale, no scalping, no special requirements. Dangerous &amp; risk free.</p>
+<p>The <strong>CANDELABRUM © EA</strong> determines pivot points based on candlestick patterns and the Bollinger bands indicator and opens orders in the direction of a new trend. Each order has a specified take profit level and is protected by stop loss. To increase the number of profitable deals, a unique Split system can be used, partially closing an order when it reaches specified levels. For complete risk control, the trading system at the opening of each transaction allows the use of a calculated order volume.</p>
+<p>All calculations are carried out as a percentage of the size of the candlestick model using Fibonacci levels.</p>
+<p>When working on the recommended periods (H4), the adviser does not require special trading conditions and works with almost any type of accounts.</p>
+<p>Telegram Channel <a href="https://www.mql5.com/go?link=https://t.me/liveforexpro" title="https://t.me/liveforexpro">https://t.me/liveforexpro</a> <em>* <br />
+*</em></p>
+<p>Description and *.set files <a href="https://www.mql5.com/en/blogs/post/725897" title="https://www.mql5.com/en/blogs/post/725897">https://www.mql5.com/en/blogs/post/725897</a></p>
+<p><strong>Signals</strong></p>
+<ul>
+<li>Candelabrum Quiet <a href="https://www.mql5.com/en/signals/464546" title="https://www.mql5.com/en/signals/464546">https://www.mql5.com/en/signals/464546</a> (manual interventions allowed)
+<ul>
+<li>Smart Fibo <a href="https://www.mql5.com/en/signals/544423" title="https://www.mql5.com/en/signals/544423">https://www.mql5.com/en/signals/544423</a> (100% automated)</li>
+</ul>
+</li>
+</ul>
+<p><strong>Features</strong>   * Dangerous &amp; Risk free. No grid, no martingale, no scalping, no special requirements<br />
+ * Minimum drawdown<br />
+ * Split Mode, Trailing Stop<br />
+ * Suitable for any currency pairs and timeframes<br />
+ * Protection against spread expansion when opening an order<br />
+ * Capital Management System with full risk control</p>
+<p><strong>Input parameters</strong>  * <strong>MagicId</strong> &#8211; unique number of the adviser;<br />
+ * <strong>Comm</strong> &#8211; comment for orders opened by the adviser;<br />
+ * <strong>TF <em>*- timeframe;<br />
+ * *</em>Start Hour, End Hour</strong> &#8211; time interval for opening orders;<br />
+ * <strong>Friday End Hour</strong> &#8211; the end time for opening orders on Friday;<br />
+ * <strong>MaxSpread</strong> &#8211; the maximum allowable value of the spread for opening an order;<br />
+ * <strong>MaxLot</strong> &#8211; maximum lot value of one order;<br />
+ * <strong>MinRange</strong> &#8211; the minimum size of the model;<br />
+ * <strong>LotType</strong> &#8211; order lottery mode:<br />
+     + <strong>LotManual</strong> &#8211; the lot size of each order corresponds to the value of <strong>MainLot</strong> ;<br />
+     + <strong>LotRisk</strong> &#8211; the lot size of each order is calculated based on the risk <strong>factor FactorRisk</strong> ;<br />
+     + <strong>LotAuto</strong> &#8211; the amount of each order is multiply changed, based on the ratio of the size of the account funds and  <strong>FactorAuto</strong> .</p>
+<ul>
+<li><strong>MainLot</strong> &#8211; lot of one order (valid in <strong>LotManual</strong> mode);</li>
+<li><strong>FactorRisk</strong> &#8211; the maximum allowable loss for each order in% of AccountEquity (valid in <strong>LotRisk</strong> mode);</li>
+<li><strong>FactorAuto</strong> &#8211; the amount of AccountEquity account funds per each <strong>MainLot</strong> value (valid in  <strong>LotAuto</strong> mode);</li>
+<li><strong>BPeriod</strong> &#8211; period of the Bollinger bands indicator;</li>
+<li><strong>BDev</strong> &#8211; deviation of the Bollinger bands;</li>
+<li><strong>Model1</strong> &#8211; enable (true) / disable (false) the candle pattern Three Inside;</li>
+<li><strong>Model2</strong> &#8211; enable (true) / disable (false) Engulfing candle pattern;</li>
+<li><strong>Takeprofit</strong> &#8211; take profit;</li>
+<li><strong>Stoploss</strong> &#8211; stop loss;</li>
+<li><strong>Trailing</strong> &#8211; enable (true) and disable (false) the trailing stop mode;</li>
+<li><strong>TrailStart</strong> &#8211; the level of inclusion of the trailing stop mode;</li>
+<li><strong>TrailStop</strong> &#8211; distance from the price to the stop loss in the trailing stop mode;</li>
+<li><strong>Split</strong> &#8211; enable (true) and disable (false) the Split mode &#8211; partially close an order in the amount of <strong>SplitLot</strong> after every  <strong>SplitStep</strong> ;</li>
+<li><strong>SplitStart</strong> &#8211; the inclusion level of the Yplit mode;</li>
+<li><strong>SplitStep</strong> &#8211; Split mode step;</li>
+<li><strong>SplitLot</strong> -% of the remaining order volume, closed at each step;</li>
+<li><strong>SplitLotLastMin</strong> &#8211; minimum order size in Split mode;</li>
+<li><strong>ShowFibo</strong> &#8211; enable (true) / disable (false) the display of Fibonacci levels (it is recommended to disable it to speed up the optimization process);</li>
+<li><strong>FiboUpColorUp</strong> &#8211; color of levels for buy orders;</li>
+<li>
+<p><strong>FiboDnColorDn</strong> &#8211; color of the levels for sell orders.<br />
+Default settings: xauusd h4</p>
+<p>All products <a href="https://www.mql5.com/ru/users/quattordici" title="https://www.mql5.com/en/users/quattordici">https://www.mql5.com/en/users/quattordici</a></p>
+<p><a href="#description">more&#8230;</a>  </p>
+</li>
+</ul>
+<h3>Image of Candelabrum EA</h3>
+<p><img src="https://c.mql5.com/31/366/candelabrum-ea-screen-9848.jpg" alt="Candelabrum EA" /></p>
+<p><img src="https://c.mql5.com/31/366/candelabrum-ea-screen-9115.jpg" alt="Candelabrum EA" /></p>
+<p><img src="https://c.mql5.com/31/277/candelabrum-ea-screen-6141.png" alt="Candelabrum EA" /></p>
+<p><img src="https://c.mql5.com/31/277/candelabrum-ea-screen-1560.png" alt="Candelabrum EA" /></p>
+<p><img src="https://c.mql5.com/31/277/candelabrum-ea-screen-6276.png" alt="Candelabrum EA" /></p>
+<p><img src="https://c.mql5.com/31/277/candelabrum-ea-screen-2697.png" alt="Candelabrum EA" /></p>
+<p><img src="https://c.mql5.com/31/277/candelabrum-ea-screen-6252.png" alt="Candelabrum EA" /></p>
+<p><img src="https://c.mql5.com/31/277/candelabrum-ea-screen-3471.png" alt="Candelabrum EA" /></p>
+<h3>Download source code of  Candelabrum EA for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download Candelabrum EA" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/candelabrum-ea-download.html">Candelabrum EA Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+	</channel>
+</rss>

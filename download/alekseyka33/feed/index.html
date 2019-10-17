@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Alekseyka33 &#8211; Expert Advisor / Indicator</title>
+	<atom:link href="http://project-regain.io/download/alekseyka33/feed" rel="self" type="application/rss+xml" />
+	<link>http://project-regain.io/</link>
+	<description>Download source coder from any indicator / Expert Advisor file.</description>
+	<lastBuildDate>Wed, 28 Aug 2019 20:00:00 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.2.4</generator>
+	<item>
+		<title>Aggressive scalper Download</title>
+		<link>http://project-regain.io/aggressive-scalper-download.html</link>
+				<pubDate>Wed, 28 Aug 2019 20:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Experts]]></category>
+		<category><![CDATA[Aleksey Yagneshko]]></category>
+		<category><![CDATA[Alekseyka33]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/aggressive-scalper-download.html</guid>
+				<description><![CDATA[<p>Author : Aleksey Yagneshko Category : Experts Last Update : 21 February 2017 Rent Price : 100 USD Version : 1.55 The algorithm based on <a class="mh-excerpt-more" href="http://project-regain.io/aggressive-scalper-download.html" title="Aggressive scalper Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/aggressive-scalper-download.html">Aggressive scalper Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Aleksey Yagneshko<br />
+Category : Experts<br />
+Last Update : 21 February 2017<br />
+Rent Price : 100 USD<br />
+Version : 1.55<br />
+</code></p>
+<ul>
+<li>
+<p>The algorithm based on strict adherence to the price movement (trend) and fixing of any slightest movement.</p>
+<ul>
+<li>To enter into the market, it uses the instant price movement of an instrument.</li>
+<li>The EA places Take Profit and Stop Loss to lock in profits and to limit possible losses.</li>
+<li>The Trailing Stop function allows to fix any sign of market movement.</li>
+<li><strong>Aggressive scalper</strong> can work both with a fixed lot and using percent of deposit.</li>
+<li>It uses market orders.</li>
+<li>Does not use such trading elements as Martingale or grid.</li>
+</ul>
+<h3>Requirements</h3>
+<ul>
+<li>Requires a broker with a tight spread.</li>
+<li>The &#8220;Trailing Stop&#8221; function is compulsory.</li>
+<li>Chart period to attach the EA: <strong><em>М5,М15.</em></strong></li>
+<li>Account types: any, <strong>ECN accounts are preferable.</strong></li>
+<li>Better use <strong>VPS</strong>.</li>
+<li>Always works only with its own orders, so it will not prevent simultaneous manual trading.</li>
+</ul>
+<h3>Recommendations</h3>
+<ul>
+<li>It can work on any deposit with any account currency. Account balance requirements are calculated as 50$ for 0, 01lot.</li>
+<li>Connect the Rebate spread return program. The EA trades frequently allowing you to earn some extra profit.</li>
+<li>To work with several symbols, simply launch the EA on the appropriate charts.</li>
+<li>When selecting a currency pair for the EA, look for the amplitude of movements of 700-2000 points (5 digit quotes) per a trading day. Good results with <em>EURUSD, USDCAD, GBPUSD.</em></li>
+<li>Optimize the Expert Advisor parameters after a strong one-directional movement or a flat period, which can be determined visually on the D1 chart.</li>
+</ul>
+<h3>Parameters</h3>
+<ul>
+<li><strong>Use_ma_Filter</strong> = turn on the filter based on Moving Average: true/false;</li>
+<li><em>* MA_Period *</em> = Moving Average period: true/false;</li>
+<li><strong>Use_bar_Filter</strong> = turn on the filter based on the previous bar position: true/false;</li>
+<li><em>*Reverse *</em> = enable signal reverse: true/false;</li>
+<li><em>*Closes *</em> = enable closing positions at a reverse signal: true/false;</li>
+<li><strong>TimePrice</strong> = the time interval to analyze the price movement;</li>
+<li><em>* Jump *</em> = an instant price movement in points;</li>
+<li><em>*TakeProfit *</em> = take profit level in points;</li>
+<li><strong>StopLoss</strong> = stop loss level in points;</li>
+<li><strong>Take_Profit_Money</strong> = take profit level in the deposit currency;</li>
+<li><strong>Stop_Loss_Money</strong> = stop loss level in the deposit currency;</li>
+<li><em>* Enable_Trailing_Stop</em>* = enable the <em>Trailing_Stop</em> function;</li>
+<li><strong>Trailing_Stop_Start_Level</strong> = the level to activate <em>Trailing_Stop</em>; </li>
+<li><strong>Trailing_Stop_Distance</strong> = distance to the price of the protective stop loss of the <em>Trailing_Stop</em> function;</li>
+<li><strong>MoneyManagment</strong> = trading % of deposit: true/false;</li>
+<li><strong>Risk</strong> = used % of deposit;</li>
+<li><strong>Lot</strong> = initial lot;</li>
+<li><strong>MaxLot</strong> = maximum position volume;</li>
+<li><strong>MaxOrders</strong> = maximum number of opened orders;</li>
+<li><strong>Bar_limit</strong> = disable opening multiple positions on the same bar: true/false;</li>
+<li><strong>FrozenDepositPercent</strong> = % of deposit reaching which the EA stops trading;</li>
+<li><strong>Use_Spread_Filter</strong> = use of the spread filter: true/false;</li>
+<li><strong>Max_Spread</strong> = maximum allowable spread value;</li>
+<li><strong>DepoStopTrade</strong> = disable trading at the <em>FrozenDepositPercent</em> level: true/false;</li>
+<li><em>*Play_Sound *</em> = sound alert about opening/closing a position: true/false;</li>
+<li><strong>Magic</strong> = unique number for positions opened by the EA;</li>
+<li><strong>Show_Comments</strong> = display the trading information on the chart: true/false;</li>
+<li><strong>Slippage</strong> = allowed price slippage in points;<br />
+<a href="#description">more&#8230;</a>  </li>
+</ul>
+</li>
+</ul>
+<h3>Image of Aggressive scalper</h3>
+<p><img src="https://c.mql5.com/31/81/aggressive-scalper-screen-5484.jpg" alt="Aggressive scalper" /></p>
+<p><img src="https://c.mql5.com/31/81/aggressive-scalper-screen-7948.jpg" alt="Aggressive scalper" /></p>
+<h3>Download source code of  Aggressive scalper for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download Aggressive scalper" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/aggressive-scalper-download.html">Aggressive scalper Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+	</channel>
+</rss>

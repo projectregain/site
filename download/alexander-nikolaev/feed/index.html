@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Alexander Nikolaev &#8211; Expert Advisor / Indicator</title>
+	<atom:link href="http://project-regain.io/download/alexander-nikolaev/feed" rel="self" type="application/rss+xml" />
+	<link>http://project-regain.io/</link>
+	<description>Download source coder from any indicator / Expert Advisor file.</description>
+	<lastBuildDate>Sun, 01 Sep 2019 21:30:00 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.2.4</generator>
+	<item>
+		<title>Parabolic and divergence Download</title>
+		<link>http://project-regain.io/parabolic-and-divergence-download.html</link>
+				<pubDate>Sun, 01 Sep 2019 21:30:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Experts]]></category>
+		<category><![CDATA[Alex_Prog]]></category>
+		<category><![CDATA[Alexander Nikolaev]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/parabolic-and-divergence-download.html</guid>
+				<description><![CDATA[<p>Author : Alexander Nikolaev Category : Experts Last Update : 11 February 2016 Rent Price : 10 USD Version : 1.1 The Expert Advisor places <a class="mh-excerpt-more" href="http://project-regain.io/parabolic-and-divergence-download.html" title="Parabolic and divergence Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/parabolic-and-divergence-download.html">Parabolic and divergence Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Alexander Nikolaev<br />
+Category : Experts<br />
+Last Update : 11 February 2016<br />
+Rent Price : 10 USD<br />
+Version : 1.1<br />
+</code></p>
+<p>The Expert Advisor places pending orders by the points of the Parabolic Sar. The placement of orders depends on whether there is a divergence or a convergence on the Awesome Oscillator and RSI indicators, and also on the values of other indicators: MA, Stochastic, ATR. It can be configured to open only the BuyStop or only the SellStop orders, if necessary. By default, both buy and sell pending orders are placed. It is possible to set the time, when order placement is allowed. The Stop Loss and Take Profit levels can be adjusted. Once the maximum Stop Loss level is exceeded, the EA moves the Stop Loss by the Parabolic points. The orders can also be automatically moved to breakeven when a certain amount of points is reached.</p>
+<p>### Expert Advisor Input Parameters:</p>
+<ul>
+<li><strong>Lots</strong> &#8211; lot size;
+<ul>
+<li><em><em>Slippage &#8211; *</em>slippage (maximum allowed price deviation in points);</li>
+<li><strong>Magic &#8211;</strong> unique Identifier (it must be different for each instance of the EA in the terminal);</li>
+<li><strong>Take Profit &#8211;</strong> order closing price when the profitability level is reached;</li>
+<li><strong>Maximum Stop Loss &#8211;</strong> order closing price when the loss level is reached (when the Parabolic points relative to the order opening become less than this value, the Stop Loss is decreased by the points);</li>
+<li><strong>Parabolic Step</strong> &#8211; step of the Parabolic indicator;</li>
+<li><strong>stop to breakeven after &#8211;</strong> when the price goes into the profit direction, then after reaching this amount of points, the Stop Loss is automatically moved to breakeven (if it is not necessary to place it to breakeven, set this value greater than or equal to Take Profit);</li>
+<li><strong>hour start</strong> &#8211; hour to start placing orders (For example, it is possible to make the orders start opening only from 9am, if this is set to 9);</li>
+<li><strong>hour stop place orders</strong> &#8211; hour to stop placing pending orders (however, the already opened orders and the pending orders are not closed and continue moving according to the Parabolic indicator);</li>
+<li><strong>Buystop enabled &#8211;</strong> buy pending order placement mode (true &#8211; enabled, false &#8211; disabled);</li>
+<li><strong>Sellstop enabled</strong> &#8211; sell pending order placement mode (true &#8211; enabled, false &#8211; disabled);</li>
+<li><strong>Timeframe RSI divergence (minutes)</strong> &#8211; time frame on which the divergence and convergence will be checked on the RSI indicator (set in minutes: for example, if H1 is needed, set to 60);</li>
+<li><strong>Period RSI for divergence</strong> &#8211; RSI period;</li>
+<li><strong>Count bars for divergence RSI</strong> &#8211; the number of bars in history for checking the divergences and convergences on the RSI indicator;</li>
+<li><strong>Timeframe divergence AO (minutes)</strong> &#8211; time frame for checking the divergences and convergences on the Awesome Oscillator indicator (set in minutes);</li>
+<li><strong>Count bars for divergence AO</strong> &#8211; the number of bars for checking the divergences and convergences on the Awesome Oscillator indicator;</li>
+<li><strong>Period ATR</strong> &#8211; the period of the ATR volatility indicator;</li>
+<li><strong>Max level ATR</strong> &#8211; the maximum level of the ATR indicator, pending orders will not be opened beyond this level;</li>
+<li><strong>Min level ATR</strong> &#8211; the minimum level of the ATR indicator, so that the orders are not placed at low volatility;</li>
+<li><strong>Timeframe MA (minutes)</strong> &#8211; time frame (in minutes) to check the values of the Moving Average indicator values and the price;</li>
+<li><strong>Period Moving Average</strong> &#8211; period of the Moving Average indicator;</li>
+<li><strong>Stochastic timeframe (minutes)</strong> &#8211; time frame (in minutes) of the Stochastic indicator;</li>
+<li><strong>Stochastic Period</strong> &#8211; period of the Stochastic indicator;</li>
+<li><strong>Stochastic Slowing</strong> &#8211; Stochastic slowing;</li>
+<li><strong>Stochastic Shift</strong> &#8211; Stochastic indicator shift (the value of this indicator is checked to be either rising or falling for this number of bars in history);</li>
+<li><em></em>Stochastic levels *</em>&#8211; Stochastic levels. Orders are opened when the Stochastic is in the range from 0 to Stochastic levels, or from 100 to 100-Stochastic levels (if 20 is specified, the upper level will be 80).<br />
+<a href="#description">more&#8230;</a>  </li>
+</ul>
+</li>
+</ul>
+<h3>Image of Parabolic and divergence</h3>
+<p><img src="https://c.mql5.com/31/100/parabolic-and-divergence-screen-8646.jpg" alt="Parabolic and divergence" /></p>
+<p><img src="https://c.mql5.com/31/100/parabolic-and-divergence-screen-6490.jpg" alt="Parabolic and divergence" /></p>
+<p><img src="https://c.mql5.com/31/100/parabolic-and-divergence-screen-2705.jpg" alt="Parabolic and divergence" /></p>
+<p><img src="https://c.mql5.com/31/100/parabolic-and-divergence-screen-1270.png" alt="Parabolic and divergence" /></p>
+<h3>Download source code of  Parabolic and divergence for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download Parabolic and divergence" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/parabolic-and-divergence-download.html">Parabolic and divergence Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>Bollinger And TrendLines Download</title>
+		<link>http://project-regain.io/bollinger-and-trendlines-download.html</link>
+				<pubDate>Thu, 29 Aug 2019 02:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Experts]]></category>
+		<category><![CDATA[Alex_Prog]]></category>
+		<category><![CDATA[Alexander Nikolaev]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/bollinger-and-trendlines-download.html</guid>
+				<description><![CDATA[<p>Author : Alexander Nikolaev Category : Experts Last Update : 16 January 2018 Rent Price : 30 USD Version : 1.2 The Expert Advisor is <a class="mh-excerpt-more" href="http://project-regain.io/bollinger-and-trendlines-download.html" title="Bollinger And TrendLines Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/bollinger-and-trendlines-download.html">Bollinger And TrendLines Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Alexander Nikolaev<br />
+Category : Experts<br />
+Last Update : 16 January 2018<br />
+Rent Price : 30 USD<br />
+Version : 1.2<br />
+</code></p>
+<p>The Expert Advisor is based on Bollinger bands and trend lines. When the price touches the lower line of the Bollinger bands and goes back or rolls back from one or several trend lines, a buy is performed. The same is true for selling. The EA can also use two Bollinger bands indicators, so that a trade is performed between the lines of the two indicators with different deviations. The EA features many other settings. For example, a trade can be moved to a breakeven only when touching the central Bollinger band and passing a certain number of points.</p>
+<p>The EA can be used on any currency pairs and timeframes from M5 to D1. Do not forget to optimize parameters.‌‌</p>
+<p>### Inputs</p>
+<ul>
+<li>
+<p><strong>Lots</strong> &#8211; lot size (if Lots<strong>=</strong>0, then the lot will be calculated based on the percentage of account free margin);</p>
+<ul>
+<li><em>*Percentage of free money *</em>&#8211; the percentage of free margin to open each new trade (applicable when Lots=0);</li>
+<li><strong>MaxSpread</strong> &#8211; maximum allowable spread to open trades (for floating-spread symbols, to avoid opening with a large spread);</li>
+<li><strong>Magic &#8211;</strong> unique identifier (use different magic numbers if multiple Expert Advisors run in your terminal);</li>
+<li><strong>StopLoss</strong> &#8211; Stop Loss order value;</li>
+<li><strong>TakeProfit &#8211;</strong> order closing price at a certain profit target;</li>
+<li><strong>Stop to breakeven after &#8211;</strong> move stop loss to a breakeven after a specified number of points;</li>
+<li><em>*TrailingStopValue *</em>&#8211; trailing stop in points, 0 &#8211; not used;</li>
+<li><strong>EnableAutoClose</strong> &#8211; automatic closure of orders in case of a reverse signal;</li>
+<li><strong>HistorySearch</strong> &#8211; number of bars in history to search for the trend lines and channels (recommended range &#8211; from 30 to 200);</li>
+<li><em>*MinFractalsDistance *</em>&#8211; minimum distance between the nearest fractals for plotting lines (recommended vales are from 1 to 20);</li>
+<li><strong>MaxCountLines</strong> &#8211; maximum number of trend lines (recommended range &#8211; even numbers from 2 to 30);</li>
+<li><em>*Number of lines relating to prices *</em>&#8211; minimum number of lines, that touch the price bar for opening a deal (recommended values are from 1 to 7);</li>
+<li><strong>FastMethod</strong> &#8211; enable/disable the fast (but less reliable) method of plotting lines and channels;</li>
+<li><strong>FindChannels</strong> &#8211; switch between channels and lines (LinesOnly &#8211; common lines, Channels &#8211; draw channels, OppositeLine &#8211; draw opposite lines);</li>
+<li><strong>BollingerPeriod</strong> &#8211; Bollinger bands period;</li>
+<li><strong>BollingerDeviations</strong> &#8211; Bollinger bands deviations;</li>
+<li><strong>Bollinger2Enable</strong> &#8211; enable/disable the second Bollinger bands indicator;</li>
+<li><strong>Bollinger2Period</strong> &#8211; second Bollinger bands indicator period;</li>
+<li><strong>Bollinger2Deviations</strong> &#8211; second Bollinger bands indicator deviations (this parameter value should be less than the first indicator deviations and may even become negative);</li>
+<li><em>*BreakevenAfterTouchCenter *</em>&#8211; enable/disable moving a trade to a breakeven when the price touches the central Bollinger band;</li>
+<li><strong>AdxPeriod</strong> &#8211; ADX indicator period;</li>
+<li><strong>MinAdxLevel</strong> &#8211; ADX indicator minimum level;</li>
+<li><strong>MaxAdxLevel</strong> &#8211; ADX indicator maximum level;</li>
+<li><strong>Trading start hour</strong> &#8211; trading start hour;</li>
+<li><strong>Trading end hour</strong> &#8211; trading end hour;</li>
+<li><strong>ShowLinesAndInfo</strong> &#8211; display lines and data.<br />
+The additional tests and settings for different currency pairs and timeframes can be found in the Comments section.</li>
+</ul>
+<p><p><a href="#description">more&#8230;</a>  </p>
+</li>
+</ul>
+<h3>Image of Bollinger And TrendLines</h3>
+<p><img src="https://c.mql5.com/31/164/bollinger-and-trendlines-screen-2456.jpg" alt="Bollinger And TrendLines" /></p>
+<p><img src="https://c.mql5.com/31/164/bollinger-and-trendlines-screen-2705.jpg" alt="Bollinger And TrendLines" /></p>
+<p><img src="https://c.mql5.com/31/164/bollinger-and-trendlines-screen-5626.jpg" alt="Bollinger And TrendLines" /></p>
+<p><img src="https://c.mql5.com/31/164/bollinger-and-trendlines-screen-8546.jpg" alt="Bollinger And TrendLines" /></p>
+<p><img src="https://c.mql5.com/31/164/bollinger-and-trendlines-screen-8674.png" alt="Bollinger And TrendLines" /></p>
+<p><img src="https://c.mql5.com/31/164/bollinger-and-trendlines-screen-9991.jpg" alt="Bollinger And TrendLines" /></p>
+<p><img src="https://c.mql5.com/31/164/bollinger-and-trendlines-screen-3868.jpg" alt="Bollinger And TrendLines" /></p>
+<h3>Download source code of  Bollinger And TrendLines for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download Bollinger And TrendLines" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/bollinger-and-trendlines-download.html">Bollinger And TrendLines Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>Easy Bollinger Bands Download</title>
+		<link>http://project-regain.io/easy-bollinger-bands-download.html</link>
+				<pubDate>Tue, 20 Aug 2019 23:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Experts]]></category>
+		<category><![CDATA[Alex_Prog]]></category>
+		<category><![CDATA[Alexander Nikolaev]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/easy-bollinger-bands-download.html</guid>
+				<description><![CDATA[<p>Author : Alexander Nikolaev Category : Experts Last Update : 6 February 2019 Rent Price : Version : 1.5 This Expert Advisor trades based on <a class="mh-excerpt-more" href="http://project-regain.io/easy-bollinger-bands-download.html" title="Easy Bollinger Bands Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/easy-bollinger-bands-download.html">Easy Bollinger Bands Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Alexander Nikolaev<br />
+Category : Experts<br />
+Last Update : 6 February 2019<br />
+Rent Price :<br />
+Version : 1.5<br />
+</code></p>
+<p>This Expert Advisor trades based on the Bollinger Bands indicator. It performs trades after a price rebound from the borderlines of the indicator. It is simple to use, contains only a few settings, which are easy to understand. This is the simplified version of the <a href="https://www.mql5.com/en/market/product/21788">Master Bollinger Bands</a> Expert Advisor.</p>
+<p>For better trading results, it is recommended to use the full version of the EA: <strong>https://www.mql5.com/en/market/product/21788</strong></p>
+<p>The free version does not provide the ability to use multiple indicators, to use lot calculation based on free margin and to automatically transfer deals to breakeven. Nevertheless, it can be used for daily trading. It does not use risky trading methods, it can trade most of the currency pairs and timeframes once optimized.</p>
+<p>### Input parameters</p>
+<ul>
+<li><strong>Lots</strong> &#8211; lot size (if Lots<strong>=</strong>0, then the lot will be calculated based on the percentage of account free margin);
+<ul>
+<li><strong>MaxSpread</strong> &#8211; the maximum allowable spread to open trades (for floating-spread symbols, to avoid opening with a large spread);</li>
+<li><strong>Magic &#8211;</strong> unique identifier (use different magic numbers if multiple Expert Advisors run in your terminal);</li>
+<li><strong>StopLoss</strong> &#8211; stop loss in points;</li>
+<li><em>*TakeProfit *</em>&#8211; take profit in points;</li>
+<li><strong>BollingerPeriod</strong> &#8211; Bollinger Bands period;</li>
+<li><strong>BollingerDeviations</strong> &#8211; Bollinger Bands deviations;</li>
+<li><strong>AdxPeriod</strong> &#8211; ADX indicator period;</li>
+<li><strong>MinAdxLevel</strong> &#8211; ADX indicator minimum level;</li>
+<li><strong>MaxAdxLevel</strong> &#8211; ADX indicator maximum level;</li>
+<li><strong>Trading start hour</strong> &#8211; trading start hour;</li>
+<li><strong>Trading end hour</strong> &#8211; trading end hour;</li>
+<li><strong>ShowInfo</strong> &#8211; enable the display of information.<br />
+<a href="#description">more&#8230;</a>  </li>
+</ul>
+</li>
+</ul>
+<h3>Image of Easy Bollinger Bands</h3>
+<p><img src="https://c.mql5.com/31/173/easy-bollinger-bands-screen-7592.jpg" alt="Easy Bollinger Bands" /></p>
+<p><img src="https://c.mql5.com/31/173/easy-bollinger-bands-screen-4464.jpg" alt="Easy Bollinger Bands" /></p>
+<p><img src="https://c.mql5.com/31/173/easy-bollinger-bands-screen-7273.jpg" alt="Easy Bollinger Bands" /></p>
+<p><img src="https://c.mql5.com/31/173/easy-bollinger-bands-screen-6963.jpg" alt="Easy Bollinger Bands" /></p>
+<h3>Download source code of  Easy Bollinger Bands for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download Easy Bollinger Bands" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/easy-bollinger-bands-download.html">Easy Bollinger Bands Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>Free trading every day Download</title>
+		<link>http://project-regain.io/free-trading-every-day-download.html</link>
+				<pubDate>Tue, 20 Aug 2019 18:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Experts]]></category>
+		<category><![CDATA[Alex_Prog]]></category>
+		<category><![CDATA[Alexander Nikolaev]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/free-trading-every-day-download.html</guid>
+				<description><![CDATA[<p>Author : Alexander Nikolaev Category : Experts Last Update : 10 February 2019 Rent Price : Version : 1.2 This is an adviser that often <a class="mh-excerpt-more" href="http://project-regain.io/free-trading-every-day-download.html" title="Free trading every day Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/free-trading-every-day-download.html">Free trading every day Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Alexander Nikolaev<br />
+Category : Experts<br />
+Last Update : 10 February 2019<br />
+Rent Price :<br />
+Version : 1.2<br />
+</code></p>
+<p>This is an adviser that often trades and opens trades almost every day (with normal optimization). In this case, the adviser opens no more than one transaction in each direction. When there are a lot of deals in optimization, more often it will give more profit in real life than advisers who, during optimization, make fewer deals, but show high profitability.</p>
+<p>This Expert Advisor is a free version of <a href="https://www.mql5.com/en/market/product/34713#" title="https://www.mql5.com/en/market/product/34713#">Trading every day</a> and has some limitations:</p>
+<ul>
+<li>
+<p>currency pair only EURUSD</p>
+<ul>
+<li>lot limit to 0.1</li>
+</ul>
+<h3>Input parameters</h3>
+<ul>
+<li><strong>Lots</strong> &#8211; lot size (at 0 the lot volume will be calculated from the percentage of available funds on the account);</li>
+<li><strong>MaxSpread</strong> &#8211; maximum spread for opening a trade (for accounts with a floating spread, so that a trade is opened when the spread is not too large);</li>
+<li><strong>Magic</strong> &#8211; a unique identifier (it is necessary to do it differently, if several advisers are running in one terminal);</li>
+<li><strong>TakeProfit</strong> &#8211; take profit (in points);</li>
+<li><strong>MaxStopLoss</strong> &#8211; maximum possible stop loss (in points);</li>
+<li><strong>PeriodDynamicStop</strong> &#8211; period for calculating a dynamic stop loss (at 0, the stop loss will be equal to the maximum);</li>
+<li><strong>DynamicStopFactor</strong> &#8211; a multiplier for calculating the dynamic stop loss;</li>
+<li><strong>TrailingStopValue</strong> &#8211; trailing stop value in points (at 0, trailing is not used);</li>
+<li><strong>OrderComments</strong> &#8211; a comment to open orders;</li>
+<li><strong>TradeEveryTick</strong> &#8211; trade every new tick (slows down optimization, but in real trading can improve profits);</li>
+<li><strong>PeriodWPR</strong> &#8211; period of the WPR indicator (Williams` Percent Range);</li>
+<li><strong>LevelsWPR</strong> &#8211; WPR indicator levels (values ​​from 1 to 50, automatically converted to lower and upper levels);</li>
+<li><strong>PeriodWPR2</strong> &#8211; period of the second WPR indicator (if 0, the second WPR will not be used);</li>
+<li><strong>EnableMACD</strong> &#8211; use the MACD indicator;</li>
+<li><em>*MACDPeriod1 *</em>&#8211; fast EMA period in MACD;</li>
+<li><em>*MACDPeriod2 *</em>&#8211; slow EMA period;</li>
+<li><strong>MACDSignalPeriod</strong> &#8211; period of the signal line of the MACD indicator (0 &#8211; off);</li>
+<li><strong>PeriodOtherWPR</strong> &#8211; period for the indicator to work from another timeframe (0 &#8211; do not use a signal from another timeframe);</li>
+<li><strong>OtherTimeframe</strong> &#8211; timeframe for the work of another indicator Williams` Percent Range;</li>
+<li><strong>ShiftOtherWPR</strong> &#8211; shift for receiving the indicator signal from another timeframe;</li>
+<li><strong>OrderClosureAfterHours</strong> &#8211; closing trades after several hours (0 &#8211; do not close by time);</li>
+<li><strong>EnableAutoClose</strong> &#8211; automatic closing of the transaction;</li>
+<li><strong>PeriodForClose</strong> &#8211; period of the WPR indicator for closing deals;</li>
+<li><strong>LevelsForClose</strong> &#8211; WPR indicator levels for closing deals;</li>
+<li><em>*AdxPeriod *</em>&#8211; period of the ADX indicator;</li>
+<li><em>*MinAdxLevel *</em>&#8211; the minimum level of the ADX indicator;</li>
+<li><em>*MaxAdxLevel *</em>&#8211; maximum level of the ADX indicator;</li>
+<li><em>*Trading start hour *</em>&#8211; the hour to start trading;</li>
+<li><strong>Trading end hour</strong> &#8211; the hour of the end of trading;</li>
+<li><strong>ShowInfo</strong> &#8211; enable display of information.<br />
+It is recommended to use the version without restrictions on the lot and currency pair:</li>
+</ul>
+<p><a href="https://www.mql5.com/en/market/product/34713#" title="https://www.mql5.com/en/market/product/34713#">https://www.mql5.com/en/market/product/34713#</a></p>
+<p><p><a href="#description">more&#8230;</a>  </p>
+</li>
+</ul>
+<h3>Image of Free trading every day</h3>
+<p><img src="https://c.mql5.com/31/300/free-trading-every-day-screen-2387.png" alt="Free trading every day" /></p>
+<p><img src="https://c.mql5.com/31/300/free-trading-every-day-screen-5254.png" alt="Free trading every day" /></p>
+<p><img src="https://c.mql5.com/31/307/free-trading-every-day-screen-9278.png" alt="Free trading every day" /></p>
+<h3>Download source code of  Free trading every day for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download Free trading every day" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/free-trading-every-day-download.html">Free trading every day Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>Proftrader Free Download</title>
+		<link>http://project-regain.io/proftrader-free-download.html</link>
+				<pubDate>Sat, 17 Aug 2019 14:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Experts]]></category>
+		<category><![CDATA[Alex_Prog]]></category>
+		<category><![CDATA[Alexander Nikolaev]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/proftrader-free-download.html</guid>
+				<description><![CDATA[<p>Author : Alexander Nikolaev Category : Experts Last Update : 14 April 2019 Rent Price : Version : 1.1 This Expert Advisor analyzes the last <a class="mh-excerpt-more" href="http://project-regain.io/proftrader-free-download.html" title="Proftrader Free Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/proftrader-free-download.html">Proftrader Free Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Alexander Nikolaev<br />
+Category : Experts<br />
+Last Update : 14 April 2019<br />
+Rent Price :<br />
+Version : 1.1<br />
+</code></p>
+<p>This Expert Advisor analyzes the last candles and determines whether there will be a reversal or a large correction. Also, the readings of some indicators are analyzed (their parameters can be adjusted). Is a free version of <a href="https://www.mql5.com/en/market/product/34439" title="https://www.mql5.com/en/market/product/34439">Proftrader</a>. Unlike the full version, in the free version of the adviser the initial lot cannot be higher than 0.1, trading pair only EURUSD and also it has fewer configurable parameters.</p>
+<p>###  Input parameters</p>
+<ul>
+<li>
+<p><strong>Lots</strong> &#8211; lot size (at 0, the lot will be calculated from the percentage of available funds in the account);</p>
+<ul>
+<li><strong>IncLotAfterProfit</strong> &#8211; increase the lot after the profitable closing of the previous transaction;</li>
+<li><strong>DecLotAfterLoss</strong> &#8211; reduce the lot after the unprofitable closing of the previous transaction;</li>
+<li><strong>OrderComments</strong> &#8211; comments to the opened deal by this advisor;</li>
+<li><strong>TradeEveryTick</strong> &#8211; trade every tick (slows down testing a lot);</li>
+<li><strong>MaxSpread</strong> &#8211; maximum spread for opening a trade (for accounts with a floating spread, so that a trade is opened when the spread is not too large);</li>
+<li><strong>Magic (unique identifier)</strong> ​​- a unique identifier (it is necessary to make it different, if several advisers are running in one terminal);</li>
+<li><strong>TakeProfit</strong> &#8211; order closing price when profitability level is reached;</li>
+<li><strong>StopLoss</strong> &#8211; order closing price when the loss ratio is reached;</li>
+<li><strong>EnableAutoClose</strong> &#8211; automatic order closure by the opposite signal (true &#8211; on, false &#8211; off);</li>
+<li><strong>TrailingStopValue</strong> &#8211; trailing stop value (0 &#8211; do not use trailing stop);</li>
+<li><strong>BreakevenValue</strong> &#8211; set the stop loss to breakeven after the price passes the specified value (0 &#8211; the parameter is not used);</li>
+<li><strong>PeriodMACD</strong> &#8211; period of MACD indicators;</li>
+<li><strong>MACDPeriod2</strong> &#8211; the second period of the MACD;</li>
+<li><strong>MACDPeriod3</strong> &#8211; period of another MACD indicator;</li>
+<li><strong>MACDSignalPeriod</strong> &#8211; period of the signal line of the MACD indicator;</li>
+<li><strong>MACDSignalPeriod2</strong> &#8211; period of the signal line of another MACD indicator;</li>
+<li><strong>PeriodRSI</strong> &#8211; RSI indicator period;</li>
+<li><strong>LevelsRSI</strong> &#8211; RSI indicator levels;</li>
+<li><strong>Min high-low candle</strong> &#8211; the minimum candle length (from its maximum to the minimum);</li>
+<li><strong>CandlesFactor</strong> &#8211; determination coefficient of a bullish or bearish candle;</li>
+<li><strong>CandlesVolume</strong> &#8211; the number of candles to compare the volume;</li>
+<li><strong>PeriodATR</strong> &#8211; period of the Average True Range indicator;</li>
+<li><strong>MinLevelATR</strong> &#8211; the minimum level of the Average True Range indicator;</li>
+<li><strong>ShowInfo</strong> &#8211; show information (slows down testing when enabled);</li>
+<li><strong>MaxTradeCount</strong> &#8211; the maximum number of trades, after which to stop trading (0 &#8211; not used);</li>
+<li><strong>MaxLossCount</strong> &#8211; the maximum number of losing trades, after which to stop trading (0 &#8211; not used).<br />
+The full version of the advisor is located at:</li>
+</ul>
+<p>https://www.mql5.com/en/market/product/34439</p>
+<p><p><a href="#description">more&#8230;</a>  </p>
+</li>
+</ul>
+<h3>Image of Proftrader Free</h3>
+<p><img src="https://c.mql5.com/31/316/proftrader-free-screen-7797.png" alt="Proftrader Free" /></p>
+<p><img src="https://c.mql5.com/31/316/proftrader-free-screen-2298.png" alt="Proftrader Free" /></p>
+<h3>Download source code of  Proftrader Free for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download Proftrader Free" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/proftrader-free-download.html">Proftrader Free Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>Coldstream Download</title>
+		<link>http://project-regain.io/coldstream-download.html</link>
+				<pubDate>Wed, 14 Aug 2019 19:30:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Experts]]></category>
+		<category><![CDATA[Alex_Prog]]></category>
+		<category><![CDATA[Alexander Nikolaev]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/coldstream-download.html</guid>
+				<description><![CDATA[<p>Author : Alexander Nikolaev Category : Experts Last Update : 4 June 2019 Rent Price : 30 USD Version : 1.3 A ColdStream trading expert <a class="mh-excerpt-more" href="http://project-regain.io/coldstream-download.html" title="Coldstream Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/coldstream-download.html">Coldstream Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Alexander Nikolaev<br />
+Category : Experts<br />
+Last Update : 4 June 2019<br />
+Rent Price : 30 USD<br />
+Version : 1.3<br />
+</code></p>
+<p>A ColdStream trading expert can identify strong trend movements. It uses different indicators, for example Alligator, Gator and many others, besides it determines and can display trend lines by the highs and lows of the price, to trade when these lines break through. It has many customizable parameters so that you can optimize this Expert Advisor for better trading on the necessary currency pair or timeframe. At the same time, you can use almost any currency pairs for trading. It is advisable to do optimization before using and after some time trading.  </p>
+<h3>Input parameters</h3>
+<ul>
+<li><em>*Lots *</em>&#8211; lot size (at 0, the lot will be calculated from the percentage of available funds in the account);</li>
+<li><strong>Percentage of free money</strong> &#8211; percentage of free funds for opening each new transaction (works when Lots = 0);</li>
+<li><em>*MaxSpread *</em>&#8211; the maximum spread for opening a trade (for accounts with a floating spread, so that a trade is opened when the spread is not too large);</li>
+<li><strong>Magic</strong> &#8211; a unique identifier (it is necessary to do it differently, if several advisers are running in one terminal);</li>
+<li><em>*StopLoss *</em>&#8211; stop loss (in points);</li>
+<li><strong>TakeProfit</strong> &#8211; take profit (in points);</li>
+<li><strong>MinProfitForAutoClose</strong> &#8211; the minimum profit for automatic closing of orders in case of a return signal (0 &#8211; do not close deals until you have taken a take profit);</li>
+<li><strong>StopToParabolicStep</strong> &#8211; parabolic step for trailing stop (0 &#8211; do not use parabolic trailing);</li>
+<li><em>*GatorPeriod1 *</em>&#8211; the first period of the Gator indicator (for example, 12);</li>
+<li><em>*GatorPeriod2 *</em>&#8211; the second period of the Gator indicator (for example, 8);</li>
+<li><em>*GatorPeriod3 *</em>&#8211; the third period of the Gator indicator (for example, 5);</li>
+<li><em>*GatorLevels *</em>&#8211; Gator indicator levels (for example, 0.001), 0 &#8211; do not use this parameter;</li>
+<li><em>*GatorTimeframe *</em>&#8211; Gator indicator timeframe;</li>
+<li><strong>CenterLineEnable</strong> &#8211; enable \ disable the influence of the Alligator’s central line on trading;</li>
+<li><em>*StrongAlliatorSignal *</em>&#8211; enable \ disable the parameter for trading only when the Alligator signal is unchecked by Gator;</li>
+<li><strong>HistorySearch</strong> &#8211; the number of bars for searching and building trend lines;</li>
+<li><em>*Distance *</em>&#8211; the minimum distance from one maximum (or minimum) to another when building lines;</li>
+<li><em>*Shift *</em>&#8211; move a few bars back where a trend line breakout is possible;</li>
+<li><strong>ShowLines</strong> &#8211; show or not show trend lines;</li>
+<li><strong>SummarizeSignals</strong> &#8211; summarize the signals of different indicators;</li>
+<li><em>*CountLinesForSignal *</em>&#8211; the number of trend lines for receiving signals;</li>
+<li><strong>MinSignalPower</strong> &#8211; minimum signal strength for trading when summing signals (1-3);</li>
+<li><strong>FilterMAPeriod</strong> &#8211; period of MA indicators for filtering (0-off);</li>
+<li><strong>FilterMACount</strong> &#8211; count of MA indicators for filtering;</li>
+<li><strong>StochasticLevels</strong> &#8211; Stochastic indicator levels (0-50, 0 &#8211; do not use);</li>
+<li><strong>StochasticPeriod</strong> &#8211; period of the Stochastic indicator (for example, 10;</li>
+<li><strong>StochasticSlowing</strong> &#8211; slowing down the Stochastic indicator (for example, 3);</li>
+<li><em>*AdxPeriod *</em>&#8211; period of the ADX indicator;</li>
+<li><em>*MinAdxLevel *</em>&#8211; minimum level of the ADX indicator (for example, 6.5);</li>
+<li><em>*Trading start hour *</em>&#8211; the hour to start trading;</li>
+<li><strong>Trading end hour</strong> &#8211; the hour of the end of trading;</li>
+<li><em>*FastOptimizationParameter *</em>&#8211; The parameter of quick optimization of the adviser. The higher the value, the faster the optimization, but the quality of the trade is worse. The recommended values ​​are 1 or 0 for trading. For primary optimization, you can set the values ​​from 2 to 10.</li>
+<li><em>*ProfitToLossRatio *</em>&#8211; acceptable profit to loss ratio (0 &#8211; not specified, as well as further parameters);</li>
+<li><strong>CntHoursForVerificationOrder</strong> &#8211; the number of bars to check if at least one transaction has been opened;</li>
+<li><em>*MaxAllowableLoss *</em>&#8211; maximum allowable loss in the account currency for a specified number of bars;</li>
+<li><em>*IncLotAfterProfit *</em>&#8211; increase the lot after the profitable closing of the previous transaction;</li>
+<li><strong>DecLotAfterLoss</strong> &#8211; reduce the lot after the unprofitable closing of the previous transaction;</li>
+<li><em>*MaxLossesCount *</em>&#8211; the maximum number of losing trades, after which to stop trading (0 &#8211; not set);</li>
+<li><strong>CommentToOrders</strong> &#8211; Added setting of comments to opening orders;</li>
+<li>
+<p><strong><em>*ShowInformation</strong>  *</em>&#8211; show some information.</p>
+<p><a href="#description">more&#8230;</a>  </p>
+</li>
+</ul>
+<h3>Image of Coldstream</h3>
+<p><img src="https://c.mql5.com/31/337/coldstream-screen-8550.png" alt="Coldstream" /></p>
+<p><img src="https://c.mql5.com/31/335/coldstream-screen-4682.png" alt="Coldstream" /></p>
+<p><img src="https://c.mql5.com/31/335/coldstream-screen-8535.png" alt="Coldstream" /></p>
+<p><img src="https://c.mql5.com/31/335/coldstream-screen-2526.png" alt="Coldstream" /></p>
+<p><img src="https://c.mql5.com/31/335/coldstream-screen-5522.png" alt="Coldstream" /></p>
+<h3>Download source code of  Coldstream for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download Coldstream" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/coldstream-download.html">Coldstream Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+	</channel>
+</rss>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Slicken &#8211; Expert Advisor / Indicator</title>
+	<atom:link href="http://project-regain.io/download/slicken/feed" rel="self" type="application/rss+xml" />
+	<link>http://project-regain.io/</link>
+	<description>Download source coder from any indicator / Expert Advisor file.</description>
+	<lastBuildDate>Fri, 23 Aug 2019 01:00:00 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.2.4</generator>
+	<item>
+		<title>MyFractalTrader Download</title>
+		<link>http://project-regain.io/myfractaltrader-download.html</link>
+				<pubDate>Fri, 23 Aug 2019 01:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Experts]]></category>
+		<category><![CDATA[Daniel Sic]]></category>
+		<category><![CDATA[Slicken]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/myfractaltrader-download.html</guid>
+				<description><![CDATA[<p>Author : Daniel Sic Category : Experts Last Update : 5 July 2016 Rent Price : 499 USD Version : 3.3 MyFractalTrader is a advanced <a class="mh-excerpt-more" href="http://project-regain.io/myfractaltrader-download.html" title="MyFractalTrader Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/myfractaltrader-download.html">MyFractalTrader Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Daniel Sic<br />
+Category : Experts<br />
+Last Update : 5 July 2016<br />
+Rent Price : 499 USD<br />
+Version : 3.3<br />
+</code></p>
+<p>MyFractalTrader is a advanced EA that trades fractals / support and resistance breakouts.</p>
+<p>Its algorithm is to filter and find the most important levels and trade them with pending orders. Orders are always protected with a stoploss and the EA is FIFO compatible.</p>
+<p>It has a lot of smart and advanced functions like adaptive trailing, automatic chart price correction (some brokers have wrong price on chart), virtual stoploss , slow executions filter, adapt orders on slippage, slippage and execution times statistics and more.</p>
+<p><strong>Default settings trades EURUSD H1 and requires ECN broker.</strong> It has been tested on various live broker accounts with positive results. We can help you with broker recommendations.</p>
+<p><strong>Recommendations</strong></p>
+<ol>
+<li><strong>Test the EA with minimal risk before using it with default or high risk</strong>
+<ol>
+<li>ECN broker with low spread, small commission and high quality executions</li>
+<li>VPS close to your broker for better fill prices and faster execution times<br />
+Signals: <a href="https://www.mql5.com/en/market/product/13369">https://www.mql5.com/en/signals/148710</a></li>
+</ol>
+</li>
+</ol>
+<p><strong>General settings</strong></p>
+<ul>
+<li>
+<p>Order comments</p>
+<ul>
+<li>Magicnumber &#8211; -1=autogenerate</li>
+<li>Maximum avg spread allowed &#8211; 0=any</li>
+<li>Chart price offset &#8211; correct the chart price. -1=disable, 0=auto, x=manual<br />
+<strong>Trade settings</strong></li>
+</ul>
+</li>
+<li>
+<p>Trade direction &#8211; choose trade direction</p>
+</li>
+<li>buy
+<ul>
+<li>sell</li>
+<li>both</li>
+</ul>
+</li>
+<li>
+<p>Stealth orders &#8211; hide sl/tp from broker, you can also use this if your broker has min stop limitations</p>
+<ul>
+<li>Adapt order on spread change &#8211; if avg spread change with this many points it will update order settings</li>
+<li>Adapt order on slippage &#8211; adapt order settings to slippage on market entry</li>
+<li>Stoploss &#8211; 0=disable</li>
+<li>Takeprofit &#8211; 0=disable</li>
+<li>Breakeven &#8211; put order to breakeven after this many points. 0=disable</li>
+<li>Breakeven to &#8211; breakeven locks in this many points in profit. 0=disable<br />
+<strong>Trail settings</strong></li>
+</ul>
+</li>
+<li>
+<p>Trailing start &#8211; start trailing after x points</p>
+<ul>
+<li>Trailing distance &#8211; distance of trailing stop (0=disable)</li>
+<li>Trailing step &#8211; trailing jumps this many points</li>
+<li>Trailing motion length &#8211; length in ticks of the motion calculation. 0=disable</li>
+<li>Trailing motion factor &#8211; rubber effect strength factor</li>
+<li>Trailing delay action &#8211; makes a delay when its time to move the stop&#8221;. 0=disable<br />
+<strong>Order settings</strong></li>
+</ul>
+</li>
+<li>
+<p>Bars per side of fractal &#8211; how many bars should determine a valid fractal. Standard fractal contains five bars (middle bar plus two per side)</p>
+<ul>
+<li>Search fractal from bar &#8211; start looking for fractals from this bar in history</li>
+<li>Fractal price offset &#8211; shift fractal prices by points. positive value increases price, negative value decreases price</li>
+<li>Maximum orders per side &#8211; maximum number of buystop and sellstop orders on chart. 0=no limit</li>
+<li>Minimum order to order distance</li>
+<li>Buystop distance &#8211; create order if price is this many points to upper valid fractal</li>
+<li>Sellstop distance &#8211; create order if price is this many points to lower valid fractal</li>
+<li>Buystop expire &#8211; delete buystop after this many minutes</li>
+<li>Sellstop expire &#8211; delete sellstop after this many minutes<br />
+<strong>Filter settings</strong></li>
+</ul>
+</li>
+<li>
+<p>Trend strength filter &#8211; 0=disable, 100=max</p>
+<ul>
+<li>Round number minimum distance &#8211; do not place order if the order price is this many points near a round numbers. 0=disable</li>
+<li>Close if negative slippage &#8211; closes market order if entry from pending to market results in a slippage greater than this many points. 0=disable</li>
+<li>Pause on slow execution for minutes &#8211; if it makes two order operations in 2x greater than the average execution time it pauses EA for this many minutes. 0=disable</li>
+<li>TickRsi period &#8211; Nr of ticks to calculate tick rsi. 0=disable</li>
+<li>TickRsi close level &#8211; if tick rsi falls under this value it closes the order. example 20<br />
+<strong>News filter</strong></li>
+</ul>
+</li>
+<li>
+<p>Broker to GMT offset hours &#8211; you can see the calculated GMT time in the &#8220;expert&#8221; tab after initializing expert</p>
+<ul>
+<li>Filter events &#8211; The news filter is only enabled on high impact news that contains a string match in the event name. &#8220;Unemployment&#8221; will only filter if the event contains this string. If it does it will close all pending orders 10 minutes before event and re-open 20 minutes after. Leave empty to disable news filter  </li>
+</ul>
+<p><p><strong>Money management</strong></p>
+</li>
+<li>
+<p>Lots method &#8211; choose lots calculation method</p>
+</li>
+<li>fixed_lots</p>
+<ul>
+<li>margin_mm</li>
+<li>risk_mm</li>
+</ul>
+</li>
+<li>
+<p>Lots value &#8211; lots size or percentage depending on what Lots_method you have chosen<br />
+<strong>Time settings</strong></p>
+</li>
+<li>
+<p>Time type</p>
+</li>
+<li>local
+<ul>
+<li>broker</li>
+</ul>
+</li>
+<li>Daily start hour
+<ul>
+<li>Daily stop hour</li>
+<li>Monday start hour</li>
+<li>Friday close hour<br />
+<a href="#description">more&#8230;</a>  </li>
+</ul>
+</li>
+</ul>
+<h3>Image of MyFractalTrader</h3>
+<p><img src="https://c.mql5.com/31/107/myfractaltrader-screen-6140.png" alt="MyFractalTrader" /></p>
+<p><img src="https://c.mql5.com/31/107/myfractaltrader-screen-9966.png" alt="MyFractalTrader" /></p>
+<p><img src="https://c.mql5.com/31/107/myfractaltrader-screen-1567.png" alt="MyFractalTrader" /></p>
+<p><img src="https://c.mql5.com/31/107/myfractaltrader-screen-3966.png" alt="MyFractalTrader" /></p>
+<p><img src="https://c.mql5.com/31/117/myfractaltrader-screen-4134.png" alt="MyFractalTrader" /></p>
+<p><img src="https://c.mql5.com/31/120/myfractaltrader-screen-6305.png" alt="MyFractalTrader" /></p>
+<h3>Download source code of  MyFractalTrader for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download MyFractalTrader" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/myfractaltrader-download.html">MyFractalTrader Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+	</channel>
+</rss>

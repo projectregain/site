@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Yurecwach &#8211; Expert Advisor / Indicator</title>
+	<atom:link href="http://project-regain.io/download/yurecwach/feed" rel="self" type="application/rss+xml" />
+	<link>http://project-regain.io/</link>
+	<description>Download source coder from any indicator / Expert Advisor file.</description>
+	<lastBuildDate>Wed, 21 Aug 2019 00:00:00 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.2.4</generator>
+	<item>
+		<title>Renko Bars 3in1 DEMO Download</title>
+		<link>http://project-regain.io/renko-bars-3in1-demo-download.html</link>
+				<pubDate>Wed, 21 Aug 2019 00:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Indicators]]></category>
+		<category><![CDATA[Yurecwach]]></category>
+		<category><![CDATA[Yuriy Shatsckiy]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/renko-bars-3in1-demo-download.html</guid>
+				<description><![CDATA[<p>Author : Yuriy Shatsckiy Category : Indicators Last Update : 1 March 2018 Rent Price : Version : 1.10 The Renko_Bars_3in1_DEMO is designed for plotting <a class="mh-excerpt-more" href="http://project-regain.io/renko-bars-3in1-demo-download.html" title="Renko Bars 3in1 DEMO Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/renko-bars-3in1-demo-download.html">Renko Bars 3in1 DEMO Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Yuriy Shatsckiy<br />
+Category : Indicators<br />
+Last Update : 1 March 2018<br />
+Rent Price :<br />
+Version : 1.10<br />
+</code></p>
+<p>The Renko_Bars_3in1_DEMO is designed for plotting 3 types of Offline Renko charts.</p>
+<ol>
+<li>
+<p>Standard Renko Bar (the reversal bar is twice the size of the bar).</p>
+<ol>
+<li>Renko Range Bar (the size of all bars is the same).</li>
+<li>Renko Bars with the ability to adjust the size of the reversal bar.<br />
+<strong>Note</strong>. Renko_Bars_3in1_DEMO is a demo version of <a href="https://www.mql5.com/en/market/product/27133" title="https://www.mql5.com/en/market/product/27133">Renko_Bars_3in1</a> indicator. It works only on the NZDUSD currency pair. A chart with the M1 period is necessary to build an offline chart. When the indicator is attached to a chart, the offline chart is opened automatically. When closing the terminal, also close the offline chart, because another offline chart will be opened at the next start of the terminal. If this situation occurs, close the offline charts and restart the indicator.</li>
+</ol>
+<p>A chart built using Renko_Bars_3in1 does not redraw the value of Open on the current bar and value of Close on the previous bar, which is important for fully functional operation of indicators and Expert Advisors. The indicator also implements the ability to test indicators and experts in the tester.</p>
+<p>To run your experts on an offline chart, create a copy of your expert, then insert or replace the OnInit() function with the one below. You can also use the refreshchart_and_tiks (<a href="https://www.mql5.com/en/code/19673" title="https://www.mql5.com/en/code/19673">https://www.mql5.com/en/code/19673</a>) script to run experts on offline charts (preferred, does not require the replacement of functions in experts).</p>
+<p>//+&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;+ void OnInit() { double prev_bid; prev_bid=Bid; while(!IsStopped()) { RefreshRates(); if(prev_bid!=Bid) { prev_bid=Bid; OnTick(); } Sleep(200); } } //+&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;+   </p>
+<h3>Indicator Parameters</h3>
+</li>
+<li>
+<p><strong>CandleSize</strong> &#8211; candle body size in pips.</p>
+<p>md5-04186f5d7924d9ae9bd6b439ebc6dd56</p>
+<p><a href="#description">more&#8230;</a>  </p>
+</li>
+</ol>
+<h3>Image of Renko Bars 3in1 DEMO</h3>
+<p><img src="https://c.mql5.com/31/224/renko-bars-3in1-demo-screen-2291.png" alt="Renko Bars 3in1 DEMO" /></p>
+<p><img src="https://c.mql5.com/31/224/renko-bars-3in1-demo-screen-9996.png" alt="Renko Bars 3in1 DEMO" /></p>
+<p><img src="https://c.mql5.com/31/224/renko-bars-3in1-demo-screen-2148.png" alt="Renko Bars 3in1 DEMO" /></p>
+<p><img src="https://c.mql5.com/31/224/renko-bars-3in1-demo-screen-4274.png" alt="Renko Bars 3in1 DEMO" /></p>
+<h3>Download source code of  Renko Bars 3in1 DEMO for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download Renko Bars 3in1 DEMO" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/renko-bars-3in1-demo-download.html">Renko Bars 3in1 DEMO Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>RenkoRangeBars FlatBar Download</title>
+		<link>http://project-regain.io/renkorangebars-flatbar-download.html</link>
+				<pubDate>Tue, 20 Aug 2019 23:30:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Indicators]]></category>
+		<category><![CDATA[Yurecwach]]></category>
+		<category><![CDATA[Yuriy Shatsckiy]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/renkorangebars-flatbar-download.html</guid>
+				<description><![CDATA[<p>Author : Yuriy Shatsckiy Category : Indicators Last Update : 1 March 2018 Rent Price : 30 USD Version : 1.10 The RenkoRangeBars FlatBar indicator <a class="mh-excerpt-more" href="http://project-regain.io/renkorangebars-flatbar-download.html" title="RenkoRangeBars FlatBar Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/renkorangebars-flatbar-download.html">RenkoRangeBars FlatBar Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Yuriy Shatsckiy<br />
+Category : Indicators<br />
+Last Update : 1 March 2018<br />
+Rent Price : 30 USD<br />
+Version : 1.10<br />
+</code></p>
+<p>The RenkoRangeBars FlatBar indicator is the opposite of the <a href="https://www.mql5.com/en/market/product/27133" title="https://www.mql5.com/en/market/product/27133">Renko_Bars_3in1</a> indicator. A reverse bar has less significance than a Renko Bar. A chart built using RenkoRangeBars FlatBar can be used for all types of trading.</p>
+<p><strong>Note</strong>. A chart with the M1 period is necessary to build an offline chart. When the indicator is attached to a chart, the offline chart is opened automatically. When closing the terminal, also close the offline chart, because another offline chart will be opened at the next start of the terminal. If this situation occurs, close the offline charts and restart the indicator.</p>
+<p>A chart built using RenkoRangeBars FlatBar does not redraw the value of Open on the current bar and value of Close on the previous bar, which is important for fully functional operation of indicators and Expert Advisors. The indicator also implements the ability to test indicators and experts in the tester.</p>
+<p>To run your experts on an offline chart, create a copy of your expert, then insert or replace the OnInit() function with the one below. You can also use the <em>*refreshchart_and_tiks *</em>(<a href="https://www.mql5.com/en/code/19673" title="https://www.mql5.com/en/code/19673">https://www.mql5.com/en/code/19673</a>) script to run experts on offline charts (preferred, does not require the replacement of functions in experts).</p>
+<p>//+&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;+ void OnInit() { double prev_bid; prev_bid=Bid; while(!IsStopped()) { RefreshRates(); if(prev_bid!=Bid) { prev_bid=Bid; OnTick(); } Sleep(200); } } //+&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;+   </p>
+<p>### Indicator Parameters</p>
+<ul>
+<li>
+<p><strong>CandleSize</strong> &#8211; candle body size in pips.</p>
+<ul>
+<li><strong>RevReduction</strong> – divider for the reversal bar.</li>
+<li><strong>TimeFrame</strong> &#8211; timeframe to display the offline chart (M2, M3, M4, M6, M7, M8, M9 or M10).</li>
+<li><strong>ShowWicks</strong> &#8211; show the candle wicks (true/false).</li>
+<li><strong>StrangeSymbolName</strong> &#8211; set true, if your broker&#8217;s pair name is different from the standard pair name.</li>
+<li><strong>Test</strong> &#8211; false; set True if the chart is opened for testing.</li>
+<li><strong>DateStart</strong> &#8211; chart calculation start date.<br />
+The indicator setting is identical to <a href="https://www.mql5.com/en/market/product/27133" title="https://www.mql5.com/en/market/product/27133">Renko_Bars_3in1</a>.</li>
+</ul>
+<p><p><a href="#description">more&#8230;</a>  </p>
+</li>
+</ul>
+<h3>Image of RenkoRangeBars FlatBar</h3>
+<p><img src="https://c.mql5.com/31/224/renkorangebars-fletbar-screen-9063.png" alt="RenkoRangeBars FlatBar" /></p>
+<p><img src="https://c.mql5.com/31/224/renkorangebars-fletbar-screen-3514.png" alt="RenkoRangeBars FlatBar" /></p>
+<p><img src="https://c.mql5.com/31/224/renkorangebars-fletbar-screen-8195.png" alt="RenkoRangeBars FlatBar" /></p>
+<h3>Download source code of  RenkoRangeBars FlatBar for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download RenkoRangeBars FlatBar" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/renkorangebars-flatbar-download.html">RenkoRangeBars FlatBar Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+	</channel>
+</rss>

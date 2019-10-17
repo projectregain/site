@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Progid &#8211; Expert Advisor / Indicator</title>
+	<atom:link href="http://project-regain.io/download/progid/feed" rel="self" type="application/rss+xml" />
+	<link>http://project-regain.io/</link>
+	<description>Download source coder from any indicator / Expert Advisor file.</description>
+	<lastBuildDate>Fri, 30 Aug 2019 12:00:00 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.2.4</generator>
+	<item>
+		<title>Deep Moving Average Download</title>
+		<link>http://project-regain.io/deep-moving-average-download.html</link>
+				<pubDate>Fri, 30 Aug 2019 12:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Indicators]]></category>
+		<category><![CDATA[Marat Sultanov]]></category>
+		<category><![CDATA[Progid]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/deep-moving-average-download.html</guid>
+				<description><![CDATA[<p>Author : Marat Sultanov Category : Indicators Last Update : 14 August 2017 Rent Price : 50 USD Version : 5.54 Every indicator has its <a class="mh-excerpt-more" href="http://project-regain.io/deep-moving-average-download.html" title="Deep Moving Average Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/deep-moving-average-download.html">Deep Moving Average Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Marat Sultanov<br />
+Category : Indicators<br />
+Last Update : 14 August 2017<br />
+Rent Price : 50 USD<br />
+Version : 5.54<br />
+</code></p>
+<p>Every indicator has its advantages and disadvantages. Trending ones show good signals during a trend, but lag during a flat. Flat ones thrive in the flat, but die off as soon as a trend comes. All this would not be a problem, if it was easy to predict when a flat changes to a trend and when a trend changes to a flat, but in practice it is an extremely serious task.</p>
+<p>What if you develop such an algorithm, which could eliminate an indicator&#8217;s flaws and enhance its strengths? What if such an algorithm could improve the operation of a trend indicator during a flat, but at the same time increase the efficiency during a trend, and fix the signals of a flat indicator during a trend and perfect them during a flat?</p>
+<p>«Deep» is that very algorithm, which enhances the advantages of an indicator and minimizes its disadvantages. In short, this algorithm makes an indicator better. In an attempt to merge neural networks with a standard indicator, to my surprise, I received quite interesting results.</p>
+<p>### On the concept of «Deep».</p>
+<p>The specified task, due to its non-reproducibility and complex regularity, are best soled by non-linear algorithms. Neural networks are a very versatile and powerful tool, which allows to achieve a lot, if the task is set correctly and the solution is formed reasonable. The algorithm is based on this very tool.</p>
+<p>In fact, the algorithm measures the optimal periods of a moving average on all area, depending on the state of the trend and the flat. On a flat area the algorithm adapts the period of the moving average towards the flat, on a trend area &#8211; towards the trend. By increasing the depth of the &#8220;Deep&#8221;, you can increase the flexibility of the adaptive properties of the algorithm.</p>
+<p>The architecture of the network and the heuristic search algorithm were designed specifically for this task. Multilayered structure and the amount of neurons in a layer are regulated dynamically, the user only needs to specify the maximum number of neurons in a layer, the maximum size of a layer and the maximum number of layers.</p>
+<p>### Settings</p>
+<ul>
+<li>
+<p><em>*Device *</em>&#8211; device to calculate the indicator. Available options: CPU or GPU.</p>
+<ul>
+<li><em>*Graphic objects prefix name *</em>&#8211; name prefix of the graphic objects (for example, the panel name).</li>
+<li><em>*TimeFrame *</em>&#8211; timeframe.<br />
+Moving average</li>
+</ul>
+</li>
+<li>
+<p><strong>Period</strong> &#8211; period of the moving average.<br />
+The &#8220;Deep&#8221; algorithm</p>
+</li>
+<li>
+<p><em>*Deep *</em>&#8211; needed to regulate the depth of the period of the moving average.</p>
+<ul>
+<li><strong>Deep Smoothing</strong> &#8211; smoothing of the result.</li>
+<li><strong>Deep Sensitivity</strong> &#8211; algorithm sensitivity.</li>
+<li><em>*Spread in points *</em>&#8211; spread size for fine-tuning the heuristics.<br />
+Neural Network</li>
+</ul>
+</li>
+<li>
+<p><strong>Max: Number of Sensors</strong> &#8211; the maximum number of sensory neurons.</p>
+<ul>
+<li><strong>Max: Layer Size</strong> &#8211; the maximum number of neurons in a layer.</li>
+<li><strong>Max: Number of Layers</strong> &#8211; the maximum number of layers.</li>
+<li><strong>Max: ratio of signal deformation</strong> &#8211; the coefficient is used for deformation of signals.</li>
+<li><strong>Max: Signal range</strong> &#8211; signal changing range.</li>
+<li><strong>Signal digits</strong> &#8211; accuracy of the signals.<br />
+Calculations</li>
+</ul>
+</li>
+<li>
+<p><em>*Power *</em>&#8211; the power of the calculations, set in percentage from 1 to 100.</p>
+<ul>
+<li><strong>Number of Bars</strong> &#8211; the number of bars for calculations.<br />
+Signal</li>
+</ul>
+</li>
+<li>
+<p><strong>Signal mode</strong> &#8211; signals mode.</p>
+<ul>
+<li><strong>Q Method</strong> &#8211; adaptivity calculation method. These algorithms are used to improve the adaptive characteristics of signals.<br />
+Visual</li>
+</ul>
+</li>
+<li>
+<p><strong>Show Mode</strong> &#8211; indications display mode.</p>
+<ul>
+<li><strong>Up Arrows Code</strong> &#8211; up arrows code.</li>
+<li><strong>Dn Arrows Code</strong> &#8211; down arrows code.</li>
+<li><strong>Arrows Vertical Shift (in <em>*points</strong>)</em>* &#8211; vertical offset of arrows.<br />
+Notifications</li>
+</ul>
+</li>
+<li>
+<p><strong>Alerts?</strong> &#8211; display a dialog box.</p>
+<ul>
+<li><strong>Play Sound?</strong> &#8211; play an audio file.</li>
+<li><strong>File Name To Sound Play</strong> &#8211; name of the audio file.</li>
+<li><strong>Send To Mail?</strong> &#8211; send an email.</li>
+<li><strong>Mail Header</strong> &#8211; email header.</li>
+<li><strong>Notifications?</strong> &#8211; sends push notifications to the mobile terminals.<br />
+Panel</li>
+</ul>
+</li>
+<li>
+<p><strong>Panel?</strong> &#8211; display the panel.</p>
+<ul>
+<li><strong>Starting X</strong> &#8211; starting horizontal position (in pixels).</li>
+<li><strong>Starting Y</strong> &#8211; starting vertical position (in pixels).</li>
+<li><strong>Size multiplier</strong> &#8211; panel size multiplier.</li>
+<li><strong>Color</strong> &#8211; panel background color.</li>
+<li><strong>Transparent %</strong> &#8211; panel transparency (from 10 to 100).</li>
+<li><strong>Border Color</strong> &#8211; panel border color.</li>
+<li><strong>Slider color</strong> &#8211; slider color.</li>
+<li><strong>Txt color</strong> &#8211; main text color.</li>
+<li><strong>Txt 2 color</strong> &#8211; other text color.<br />
+<a href="#description">more&#8230;</a>  </li>
+</ul>
+</li>
+</ul>
+<h3>Image of Deep Moving Average</h3>
+<p><img src="https://c.mql5.com/31/196/deep-moving-average-screen-9976.png" alt="Deep Moving Average" /></p>
+<p><img src="https://c.mql5.com/31/196/deep-moving-average-screen-1821.png" alt="Deep Moving Average" /></p>
+<p><img src="https://c.mql5.com/31/196/deep-moving-average-screen-8840.png" alt="Deep Moving Average" /></p>
+<h3>Download source code of  Deep Moving Average for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download Deep Moving Average" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/deep-moving-average-download.html">Deep Moving Average Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+	</channel>
+</rss>

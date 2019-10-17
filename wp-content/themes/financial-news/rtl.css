@@ -1,0 +1,4 @@
+blockquote {border-right: 5px solid #005d9d;}
+.mh-slider-widget .flex-control-nav {left: 15px;right: auto;}
+.mh-slider-caption {right: 0;left: auto;}
+.mh-widget-col-1 .flex-control-nav, .mh-widget-col-2 .flex-control-nav {left: 10px;right: auto;}

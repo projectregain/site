@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Pavel Gotkevitch &#8211; Expert Advisor / Indicator</title>
+	<atom:link href="http://project-regain.io/download/pavel-gotkevitch/feed" rel="self" type="application/rss+xml" />
+	<link>http://project-regain.io/</link>
+	<description>Download source coder from any indicator / Expert Advisor file.</description>
+	<lastBuildDate>Sun, 11 Aug 2019 21:30:00 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.2.4</generator>
+	<item>
+		<title>Vates Download</title>
+		<link>http://project-regain.io/vates-download.html</link>
+				<pubDate>Sun, 11 Aug 2019 21:30:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Experts]]></category>
+		<category><![CDATA[Pagot]]></category>
+		<category><![CDATA[Pavel Gotkevitch]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/vates-download.html</guid>
+				<description><![CDATA[<p>Author : Pavel Gotkevitch Category : Experts Last Update : 14 July 2017 Rent Price : 50 USD Version : 1.3 Vates is a Latin <a class="mh-excerpt-more" href="http://project-regain.io/vates-download.html" title="Vates Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/vates-download.html">Vates Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Pavel Gotkevitch<br />
+Category : Experts<br />
+Last Update : 14 July 2017<br />
+Rent Price : 50 USD<br />
+Version : 1.3<br />
+</code></p>
+<p>Vates is a Latin word meaning a prophet.</p>
+<p>Vates is a multicurrency trend Expert Advisor that can run on any type real accounts, on any timeframe, with any initial deposit, with a fixed or varying lot size, with four and five-digit quotes, with brokers offering different order filling types.</p>
+<p>A distinctive feature of the EA is its stability and reliability. The results of Expert Advisor testing in the Strategy Tester in four modes (two main modes – normal and with a delay, and two additional modes – all ticks and OHLC on M1), as well as its operation on demo and live accounts are virtually identical.</p>
+<p>The EA should be tested and optimized in a normal mode or with any delay, OHLC at M1, timeframe &#8211; any.</p>
+<p>The Expert Advisor determines the direction of the trend, as well as oversold or overbought states of the market, and when it receives a signal, it opens a buy or sell position. The position is then closed by a reverse signal or by Stop Loss or Trailing.</p>
+<p>The EA can open additional orders in the direction of the opened position with the same lot size. Additional orders are opened only if the EA receives one more signal to open a position in the same direction after it has opened a position, and if the drawdown of the open position has exceeded the amount specified in the Drawdown Percent parameter.</p>
+<p>When power is off, Internet connection is lost, the computer or the terminal is restarted, as well as when you chang the input parameters, the Expert Advisor checks open positions for all pairs (with additional orders or without them) and correctly calculates the orders and drawdown on them.</p>
+<p>### Input parameters</p>
+<ul>
+<li>
+<p><strong>Magic</strong> &#8211; a unique magic number for identifying positions opened by the EA;</p>
+<ul>
+<li><strong>Max. Spread</strong> &#8211; maximum allowed spread in points to open a position;</li>
+<li><strong>Slippage</strong> &#8211; allowed slippage in points for market orders;</li>
+<li><strong>Lot</strong> &#8211; Fixed Lot or Lot Percent;</li>
+<li><strong>Fixed Lot</strong> &#8211; the size of the fixed lot for opening a position;</li>
+<li><strong>Lot Percent</strong> &#8211; lot size equal to a percent of the current balance: <strong>lot = Balance * Lot Percent / 100000</strong>;</li>
+<li><strong>Mode</strong> &#8211; select Closed (positions are opened and closed based on a closed bar) or Current (positions are opened and closed based on the current value);</li>
+<li><strong>Applied Price</strong> &#8211; choose one of the seven price types (Close, Open, High, Low, Median, Typical, Weighted);</li>
+<li><strong>Filter</strong> &#8211; choose one of the four price smoothing types;</li>
+<li><strong>X-Factor</strong>, <strong>Y-Factor</strong>, <strong>Z-Factor</strong> &#8211; numerical values ​​that define the EA operation (for EA testing and optimization in the Strategy Tester, the initial and final values, as well as the value modification step are specified in the EA inputs);</li>
+<li><strong>Add Order</strong> &#8211; number of additional orders for an open position (if 0, no addition orders);</li>
+<li><strong>Drawdown Percent</strong> &#8211; drawdown of an open position as a percent of the current balance (active only if Add Order &gt; 0);</li>
+<li><strong>Stop Loss</strong> &#8211; Stop Loss in points (if 0, disabled);</li>
+<li><strong>Use Trailing</strong> &#8211; false/true (if false, trailing is disabled);</li>
+<li><strong>Trailing Start</strong> &#8211; the number of profit points of an open position, reaching which the trailing is activated;</li>
+<li><strong>Trailing Stop</strong> &#8211; in points (if trailing is on, Stop Loss = Price Bid – Trailing Stop for Buy or Stop Loss = Price Ask + Trailing Stop for Sell);</li>
+<li><strong>Order Filling Type</strong> &#8211; select order filling type to prevent the &#8220;Invalid Order Filling Type&#8221; trading error (if this error appears in the log, change the order filling type).<br />
+Note: the values of Max. Spread, Slippage, Stop Loss, Trailing Start and Trailing Stop are specified for 4-digit quotes. No need to change the values for 5-digit quotes, they will be adjusted automatically.</li>
+</ul>
+<p><p><a href="#description">more&#8230;</a>  </p>
+</li>
+</ul>
+<h3>Image of Vates</h3>
+<p><img src="https://c.mql5.com/31/190/vates-screen-8214.png" alt="Vates" /></p>
+<p><img src="https://c.mql5.com/31/190/vates-screen-1453.png" alt="Vates" /></p>
+<p><img src="https://c.mql5.com/31/190/vates-screen-1173.png" alt="Vates" /></p>
+<p><img src="https://c.mql5.com/31/190/vates-screen-4559.png" alt="Vates" /></p>
+<p><img src="https://c.mql5.com/31/190/vates-screen-3458.png" alt="Vates" /></p>
+<p><img src="https://c.mql5.com/31/190/vates-screen-8978.png" alt="Vates" /></p>
+<p><img src="https://c.mql5.com/31/190/vates-screen-8140.png" alt="Vates" /></p>
+<p><img src="https://c.mql5.com/31/190/vates-screen-3988.png" alt="Vates" /></p>
+<p><img src="https://c.mql5.com/31/190/vates-screen-5929.png" alt="Vates" /></p>
+<p><img src="https://c.mql5.com/31/190/vates-screen-4960.png" alt="Vates" /></p>
+<h3>Download source code of  Vates for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download Vates" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/vates-download.html">Vates Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+	</channel>
+</rss>

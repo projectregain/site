@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Henryhawkz &#8211; Expert Advisor / Indicator</title>
+	<atom:link href="http://project-regain.io/download/henryhawkz/feed" rel="self" type="application/rss+xml" />
+	<link>http://project-regain.io/</link>
+	<description>Download source coder from any indicator / Expert Advisor file.</description>
+	<lastBuildDate>Sun, 04 Aug 2019 02:00:00 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.2.4</generator>
+	<item>
+		<title>StableGrid4 Download</title>
+		<link>http://project-regain.io/stablegrid4-download.html</link>
+				<pubDate>Sun, 04 Aug 2019 02:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Experts]]></category>
+		<category><![CDATA[Hao Tan]]></category>
+		<category><![CDATA[Henryhawkz]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/stablegrid4-download.html</guid>
+				<description><![CDATA[<p>Author : Hao Tan Category : Experts Last Update : 20 September 2019 Rent Price : Version : 1.37 This is a kind of GRID-EA, <a class="mh-excerpt-more" href="http://project-regain.io/stablegrid4-download.html" title="StableGrid4 Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/stablegrid4-download.html">StableGrid4 Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Hao Tan<br />
+Category : Experts<br />
+Last Update : 20 September 2019<br />
+Rent Price :<br />
+Version : 1.37<br />
+</code></p>
+<p>This is a kind of GRID-EA, the main feature of which is that we use &#8220;degrading method&#8221; to control risk.</p>
+<p><a href="https://www.mql5.com/en/market/product/41164" title="https://www.mql5.com/en/market/product/41164">the mql5 version of this expert linked here.</a></p>
+<p>You know, we could hardly find any stable trend from market of recent years. volatility has taken increasingly proportion in the daily price patterns. so, grid-trading should be the most suitable way to trade such a market. however, along with grid-ea, often comes fearful risk. we may face stop-out if we added too many orders. In response to this problem, we figured out a set of &#8220;degrading method&#8221;. once we&#8217;re trapped into adverse trend, we can just make the grid degraded. then we could get better average price at the cost of small loss. and what&#8217;s more important is that the grid structure was kept whole. <br />
+   Besides, we add several indicator filters in this ea to keep the equity moving smoothly.    Usage of StableGrid: <br />
+   TimeFrame： H1   Suitable Symbols：EURUSD, GBPUSD, USDJPY, AUDUSD, USDCAD, NZDUSD, EURJPY, EURGBP, CADJPY <br />
+   <strong>Instruction of the parameters ：</strong> <br />
+   <strong>&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;- auto parameter &#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;-</strong>   inp_auto_params = auto parameters switch (recommend:true), optimized parameters have been set inside for all symbols. <br />
+   <strong>&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;- symbol mode setting &#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;-</strong>   inp_symbol_mode：    single_symbol  = trade only one symbol of the current chart.    multi_symbol_in_serie  = all symbols trade in serie mode. when one has already opened some positons, other symbols are locked.    multi_symbol_in_parallel  = all symbols trade in parallel mode. all symbols are traded simultaneously.   inp_symbol_list  = symbols list, split by comma &#8216;,&#8217;   <em>* <br />
+*</em>   <strong>&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8211; volume parameters &#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8211;</strong>   inp_auto_volume = auto volumes switch (recommend false to new user) only after you have run this EA for some time, and have fully learned about it&#8217;s general volume, profit and loss in real-time, you may turn this switch on.   inp_auto_volume_per_10000 = factor used on auto volumes calculation. value means the lots we trade per 10000 USD AccountBalance. when the calculated result happened to be less than 0.01, EA will set 0.01 as the initial lots.   inp_fixed_init_volume = fixed initial lots. set manually.     </p>
+<p>all the sets above affect only the initial order. the lots of following orders will be multiple of the initial lots.</p>
+<pre><code>   **----------------------- risk control parameters -----------------------**   inp\_balance\_percent\_for\_degrade :  when account loss reached a certain percentage of the account balance, EA will launch it's risk control mechanism. that is to partially cut off some positions , we call it degrading. default percentage is 10%. please pay attention to this parameter, if this value is too little, it may cause frequent degrading, account profit will be gone with it. if we set bigger volume on small account, it'll also cause the same problem. so you may moderately magnify this parameter when you are running a small account.
+</code></pre>
+<p>inp_lowest_equity_to_stop_EA :  when account equity is less than the value of this parameter, ea stop running. this is the final stop loss of the account. <br />
+   inp_close_orders_while_stop_EA :  switch, whether to close all positions when ea was stopped by account equity limitation. <br />
+   <strong>the parameters above should be set manually. when you run it on auto_param mode, only the grid interval and indicator parameters would be set automatically.</strong> <br />
+   <strong>Advice on Account Balance and Order Lots：</strong> <br />
+   balance less than 500 $:  use cent account   balance 1000 &#8211; 3000 $:  choose &#8216;multi_symbol_in_serie&#8217; mode to trade all symbols  initial lots = 0.01   balance more than 3000 $:  choose &#8216;multi_symbol_in_parallel&#8217; mode to trade all symbols  initial lots = 0.01   balance more than 5000 $:  could moderately increase volume. eg. using 0.03 for 10000 usd account.</p>
+<p><strong>How to do optimization:</strong> <br />
+   you may optimize parameters yourself. but you need to do some setting first. <br />
+   1、 inp_auto_params:  set to false   2、 inp_symbol_mode:  set to single_symbol   3、 inp_auto_volume:  set to false   4、 inp_fixed_init_volume:  volume should be set smaller. too large a volume will interrupt the optimization.   5、 inp_balance_percent_for_degrade:  this param could also be optimized. value range is 5 &#8211; 100.   6、 inp_lowest_equity_to_stop_EA  this should be set to 0 before optimization.  that&#8217;s it.</p>
+<pre><code>[more...](#description)
+</code></pre>
+<h3>Image of StableGrid4</h3>
+<p><img src="https://c.mql5.com/31/358/stablegrid4-screen-7358.png" alt="StableGrid4" /></p>
+<p><img src="https://c.mql5.com/31/358/stablegrid4-screen-2852.png" alt="StableGrid4" /></p>
+<p><img src="https://c.mql5.com/31/358/stablegrid4-screen-2375.png" alt="StableGrid4" /></p>
+<p><img src="https://c.mql5.com/31/358/stablegrid4-screen-1067.png" alt="StableGrid4" /></p>
+<p><img src="https://c.mql5.com/31/358/stablegrid4-screen-3896.png" alt="StableGrid4" /></p>
+<p><img src="https://c.mql5.com/31/358/stablegrid4-screen-3228.png" alt="StableGrid4" /></p>
+<h3>Download source code of  StableGrid4 for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download StableGrid4" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/stablegrid4-download.html">StableGrid4 Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+	</channel>
+</rss>

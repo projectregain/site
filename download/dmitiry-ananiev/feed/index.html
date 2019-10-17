@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Dmitiry Ananiev &#8211; Expert Advisor / Indicator</title>
+	<atom:link href="http://project-regain.io/download/dmitiry-ananiev/feed" rel="self" type="application/rss+xml" />
+	<link>http://project-regain.io/</link>
+	<description>Download source coder from any indicator / Expert Advisor file.</description>
+	<lastBuildDate>Thu, 29 Aug 2019 13:00:00 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.2.4</generator>
+	<item>
+		<title>HLCZ magnet Download</title>
+		<link>http://project-regain.io/hlcz-magnet-download.html</link>
+				<pubDate>Thu, 29 Aug 2019 13:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Experts]]></category>
+		<category><![CDATA[Dimeon]]></category>
+		<category><![CDATA[Dmitiry Ananiev]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/hlcz-magnet-download.html</guid>
+				<description><![CDATA[<p>Author : Dmitiry Ananiev Category : Experts Last Update : 3 July 2017 Rent Price : Version : 1.2 Night Scalper based on the standard <a class="mh-excerpt-more" href="http://project-regain.io/hlcz-magnet-download.html" title="HLCZ magnet Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/hlcz-magnet-download.html">HLCZ magnet Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Dmitiry Ananiev<br />
+Category : Experts<br />
+Last Update : 3 July 2017<br />
+Rent Price :<br />
+Version : 1.2<br />
+</code></p>
+<p>Night Scalper based on the standard ZigZag indicator. The indicator determines a horizontal channel. But at the bottom, sell at the top of the channel.</p>
+<p>The channel is displayed on the chart. The EA features a unique handling of spread expansion on rollovers and during the news.</p>
+<p>### Signals of this EA</p>
+<ol>
+<li>
+<p><a href="https://www.mql5.com/en/signals/301211">https://www.mql5.com/en/signals/301211</a> &#8211; with a relatively low risk.</p>
+<ol>
+<li><a href="https://www.mql5.com/en/signals/299579">https://www.mql5.com/en/signals/299579</a> &#8211; with a high risk.</li>
+</ol>
+<h3>Description</h3>
+</li>
+<li>
+<p><em>*show_info_on_chart *</em>&#8211; flag to display information on the chart.</p>
+<ul>
+<li><em>*ColorText *</em>&#8211; color of the Balance, Equity and the current spread on the screen.</li>
+<li><em>*InpDepth *</em>=16 &#8211; the fist parameter of the indicator. The rest are calculated automatically. Optimization: 2/1/100.</li>
+<li><strong>om</strong>=0.8 &#8211; coefficient for the channel. Optimization: 0.05/0.05/1.5.</li>
+<li><strong>Delta</strong>=35 &#8211; minimum width of the channel in points. Optimization: 10/1/200.</li>
+<li><strong>typ_spread0</strong>=7 &#8211; average spread before rollover. It is recommended to a value 10-20 % lower than average. Not optimized.</li>
+<li><strong>typ_spread1</strong>=20 &#8211; average spread in the first hour after rollover. It is recommended to a value 10-20 % lower than average. Not optimized.</li>
+<li><em>*magnetlevel *</em>= 0 ; &#8211; snap levels to numbers similar to 1.12120. Optimization: 0/1/5.</li>
+<li><em>*magnetbid *</em>= 0; snapping Bid prices to a round level. Optimization: 0/1/5.</li>
+<li><strong>Lot</strong>=0.00; &#8211; trading a fixed lot. Not optimized.</li>
+<li><strong>MaximumRisk</strong>=0.2; if Lot = 0, then risk is taken into account. Optimization: 0.05/0.05/1.5.</li>
+<li><em>*SmartRisk *</em>= 10; this parameter takes into account the latest deals. If the profit in points is less than zero, the risk is decreased. Optimization: 0/1/20.</li>
+<li><strong>SL</strong>=110; virtual stop loss in points. Protected against spread expansions. Optimization: 0/5/1000.</li>
+<li><strong>Starthour</strong>=22; trading start time. Optimization: 0/1/24.</li>
+<li><strong>Endhour</strong>=2; trading end time. After this time, deals are not opened and closed by signals. Optimization: 0/1/24.</li>
+<li><strong>EndTradeFriday</strong>=23; after the specified time on Friday, deals are not opened. Not optimized.</li>
+<li><strong>StartHourTradeMonday</strong>=0; time to start trading on Monday. Not optimized.</li>
+<li><em>*TradeAfterRollover *</em>= true &#8211; enable/disable opening and closing after a rollover. Used in tests and in real trading.</li>
+<li><strong>RolloverHour</strong>=0; &#8211; time of rollover. Not optimized.</li>
+<li><strong>Minute_after_RollOver</strong>=45; trading start time in minutes. For example, if Minute_after_RollOver=45 deals are still opened closed after 0:45 by the terminal time. It can take values from 0 to 59.<br />
+<a href="#description">more&#8230;</a>  </li>
+</ul>
+</li>
+</ol>
+<h3>Image of HLCZ magnet</h3>
+<p><img src="https://c.mql5.com/31/180/hlcz-magnit-screen-4840.gif" alt="HLCZ magnet" /></p>
+<p><img src="https://c.mql5.com/31/180/hlcz-magnit-screen-2762.gif" alt="HLCZ magnet" /></p>
+<p><img src="https://c.mql5.com/31/180/hlcz-magnit-screen-9584.gif" alt="HLCZ magnet" /></p>
+<p><img src="https://c.mql5.com/31/180/hlcz-magnit-screen-8745.gif" alt="HLCZ magnet" /></p>
+<p><img src="https://c.mql5.com/31/180/hlcz-magnit-screen-9603.gif" alt="HLCZ magnet" /></p>
+<p><img src="https://c.mql5.com/31/180/hlcz-magnit-screen-9488.gif" alt="HLCZ magnet" /></p>
+<p><img src="https://c.mql5.com/31/180/hlcz-magnit-screen-4498.png" alt="HLCZ magnet" /></p>
+<p><img src="https://c.mql5.com/31/180/hlcz-magnit-screen-1307.png" alt="HLCZ magnet" /></p>
+<p><img src="https://c.mql5.com/31/180/hlcz-magnit-screen-1161.png" alt="HLCZ magnet" /></p>
+<p><img src="https://c.mql5.com/31/180/hlcz-magnit-screen-5053.png" alt="HLCZ magnet" /></p>
+<h3>Download source code of  HLCZ magnet for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download HLCZ magnet" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/hlcz-magnet-download.html">HLCZ magnet Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+	</channel>
+</rss>

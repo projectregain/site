@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Vjacheslav Lapaev &#8211; Expert Advisor / Indicator</title>
+	<atom:link href="http://project-regain.io/download/vjacheslav-lapaev/feed" rel="self" type="application/rss+xml" />
+	<link>http://project-regain.io/</link>
+	<description>Download source coder from any indicator / Expert Advisor file.</description>
+	<lastBuildDate>Sat, 31 Aug 2019 22:30:00 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.2.4</generator>
+	<item>
+		<title>Basic statistics Download</title>
+		<link>http://project-regain.io/basic-statistics-download.html</link>
+				<pubDate>Sat, 31 Aug 2019 22:30:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Indicators]]></category>
+		<category><![CDATA[Sherkh]]></category>
+		<category><![CDATA[Vjacheslav Lapaev]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/basic-statistics-download.html</guid>
+				<description><![CDATA[<p>Author : Vjacheslav Lapaev Category : Indicators Last Update : 27 October 2015 Rent Price : Version : 2.0 Basic statistics and variation series. ### <a class="mh-excerpt-more" href="http://project-regain.io/basic-statistics-download.html" title="Basic statistics Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/basic-statistics-download.html">Basic statistics Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Vjacheslav Lapaev<br />
+Category : Indicators<br />
+Last Update : 27 October 2015<br />
+Rent Price :<br />
+Version : 2.0<br />
+</code></p>
+<p>Basic statistics and variation series.</p>
+<p>### Comment to the algorithm</p>
+<p>Basic statistics and variation series are calculated once in the process of initialization. Algorithms for calculating the mean standard deviation and corresponding frequency shift (probabilities) are built directly in the indicator.</p>
+<p>### Comment to trading</p>
+<p>The indicator is designed for monitoring the most important dynamic statistics (mean standard deviation) and probability of occurrence of the fluctuation band of the given symbol&#8217;s prices.</p>
+<p>### Inputs</p>
+<p><strong>Block I</strong></p>
+<ul>
+<li>
+<p><strong>financialInstrument</strong> — financial instrument the indicator performs its calculations for</p>
+<ul>
+<li><strong>theScaleFactor</strong> — scale ratio for displaying numbers (1, 10, 100, 1000).<br />
+<strong>Block II</strong></li>
+</ul>
+</li>
+<li>
+<p><strong>theNumberOfBarsToCalculateTF</strong> — number of candles on the current timeframe to calculate the indicator&#8217;s parameters;</p>
+<ul>
+<li><strong>theNumberOfBarsToCalculateH1</strong> — number of candles on H1 to calculate the indicator&#8217;s parameters;</li>
+<li><strong>theNumberOfBarsToCalculateH4</strong> — number of candles on H4 to calculate the indicator&#8217;s parameters;</li>
+<li><strong>theNumberOfBarsToCalculateD1</strong> — number of candles on D1 to calculate the indicator&#8217;s parameters;</li>
+<li><strong>theNumberOfBarsToCalculateW1</strong> — number of candles on W1 to calculate the indicator&#8217;s parameters;</li>
+<li><strong>theNumberOfBarsToCalculateMN1</strong> — number of candles on MN1 to calculate the indicator&#8217;s parameters.<br />
+<strong>Block III</strong></li>
+</ul>
+</li>
+<li>
+<p><strong>font</strong> — font for all elements of the indicator</p>
+<ul>
+<li><strong>mainFontSize</strong> — font size for the main headings;</li>
+<li><strong>dataFontSize</strong> — font size for the data headings;</li>
+<li><strong>curFontSize</strong> — font size for the current data;</li>
+<li><strong>valFontSize</strong> — font size for the main statistics data;</li>
+<li><strong>varsFontSize</strong> — font size for the variation series data.<br />
+<strong>Block IV</strong></li>
+</ul>
+</li>
+<li>
+<p><strong>shift_Y_Total</strong> — total shift of all objects of the indicator along the Y axis;</p>
+<ul>
+<li><strong>shift_X_Total</strong> — total shift of all objects of the indicator along the X axis.<br />
+<strong>Block V</strong></li>
+</ul>
+</li>
+<li>
+<p><strong>shift_1R1C</strong> — shift of all elements in the 1st line.<br />
+<strong>Block VI</strong></p>
+</li>
+<li>
+<p><strong>shift_2R1C</strong> — shift of the 1st element in the 2nd line;</p>
+<ul>
+<li><strong>shift_2R2C</strong> — shift of the 2nd element in the 2nd line;</li>
+<li><strong>shift_2R3C</strong> — shift of the 3rd element in the 2nd line.<br />
+<strong>Block VII</strong></li>
+</ul>
+</li>
+<li>
+<p><strong>shift_3R1C</strong> — shift of the 1st element in the 3rd line;</p>
+<ul>
+<li><strong>shift_3R2C</strong> — shift of the 2nd element in the 3rd line;</li>
+<li><strong>shift_3R3C</strong> — shift of the 3rd element in the 3rd line;</li>
+<li><strong>shift_3R4C</strong> — shift of the 4th element in the 3rd line.<br />
+<strong>Block VIII</strong></li>
+</ul>
+</li>
+<li>
+<p><strong>shift_4RNC</strong> — shift of all elements in the 4th line;</p>
+<ul>
+<li><strong>shift_5RNC</strong> — shift of all elements in the 5th line.<br />
+<strong>Block IX</strong></li>
+</ul>
+</li>
+<li>
+<p><strong>shift_6RNC</strong> — shift of all elements in the 6th line;</p>
+<ul>
+<li><strong>shift_7RNC</strong> — shift of all elements in the 7th line;</li>
+<li><strong>shift_8RNC</strong> — shift of all elements in the 8th line;</li>
+<li><strong>shift_9RNC</strong> — shift of all elements in the 9th line;</li>
+<li><strong>shift_10RNC</strong> — shift of all elements in the 10th line;</li>
+<li><strong>shift_11RNC</strong> — shift of all elements in the 11th line.<br />
+<strong>Block X</strong></li>
+</ul>
+</li>
+<li>
+<p><strong>shift_12RNC</strong> — shift of all elements in the 12th line;</p>
+<ul>
+<li><strong>shift_13RNC</strong> — shift of all elements in the 13th line;</li>
+<li><strong>shift_14RNC</strong> — shift of all elements in the 14th line;</li>
+<li>
+<p><strong>shift_vs</strong> — distance between columns containing elements of the indicator.<br />
+<strong>Block XI</strong></p>
+</li>
+<li>
+<p><strong>color1R1C</strong> — color of elements in the 1st line;</p>
+</li>
+<li><strong>&#8230;</strong><br />
+<a href="#description">more&#8230;</a>  </li>
+</ul>
+</li>
+</ul>
+<h3>Image of Basic statistics</h3>
+<p><img src="https://c.mql5.com/31/79/basic-statistics-screen-6705.png" alt="Basic statistics" /></p>
+<p><img src="https://c.mql5.com/31/79/basic-statistics-screen-2282.png" alt="Basic statistics" /></p>
+<p><img src="https://c.mql5.com/31/79/basic-statistics-screen-4758.png" alt="Basic statistics" /></p>
+<h3>Download source code of  Basic statistics for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download Basic statistics" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/basic-statistics-download.html">Basic statistics Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>Variational series Download</title>
+		<link>http://project-regain.io/variational-series-download.html</link>
+				<pubDate>Sat, 31 Aug 2019 20:30:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Indicators]]></category>
+		<category><![CDATA[Sherkh]]></category>
+		<category><![CDATA[Vjacheslav Lapaev]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/variational-series-download.html</guid>
+				<description><![CDATA[<p>Author : Vjacheslav Lapaev Category : Indicators Last Update : 27 October 2015 Rent Price : 10 USD Version : 3.0 Basic statistics and variation <a class="mh-excerpt-more" href="http://project-regain.io/variational-series-download.html" title="Variational series Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/variational-series-download.html">Variational series Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Vjacheslav Lapaev<br />
+Category : Indicators<br />
+Last Update : 27 October 2015<br />
+Rent Price : 10 USD<br />
+Version : 3.0<br />
+</code></p>
+<p>Basic statistics and variation series of a financial instrument.</p>
+<p>### Comment to the algorithm</p>
+<p>Basic statistics and variation series are calculated once in the process of the indicator&#8217;s initialization.</p>
+<p>Algorithms for calculating the mean standard deviation, mode and corresponding frequency shift (probabilities) are built directly in the indicator.</p>
+<p><strong>Comment to trading</strong></p>
+<p>The indicator is designed for monitoring the most important dynamic statistics (mean standard deviation, mode) and probability of occurrence of the fluctuation band of the given symbol&#8217;s prices.</p>
+<p>### Input parameters:</p>
+<p><strong>_I</strong> &#8211; block header</p>
+<ul>
+<li>
+<p><strong>minuend</strong> &#8211; minuend price to form the range</p>
+<ul>
+<li><strong>subtrahend</strong> &#8211; subtractive price to form the range</li>
+<li><strong>theScaleFactor</strong> &#8211; scale ratio<br />
+<strong>_II</strong> &#8211; block header</li>
+</ul>
+</li>
+<li>
+<p><em>*theNumberOfBarsToCalculateM1 *</em>&#8211; number of bars to calculate statistics on M1</p>
+<ul>
+<li><em>*theNumberOfBarsToCalculateM5 *</em>&#8211; number of bars to calculate statistics on M5</li>
+<li><em>*theNumberOfBarsToCalculateM15 *</em>&#8211; number of bars to calculate statistics on M15</li>
+<li><em>*theNumberOfBarsToCalculateM30 *</em>&#8211; number of bars to calculate statistics on M30</li>
+<li><em>*theNumberOfBarsToCalculateH1 *</em>&#8211; number of bars to calculate statistics on H1</li>
+<li><em>*theNumberOfBarsToCalculateH4 *</em>&#8211; number of bars to calculate statistics on H4</li>
+<li><em>*theNumberOfBarsToCalculateD1 *</em>&#8211; number of bars to calculate statistics on D1</li>
+<li><em>*theNumberOfBarsToCalculateW1 *</em>&#8211; number of bars to calculate statistics on W1</li>
+<li><strong>theNumberOfBarsToCalculateMN1 <em>*- number of bars to calculate statistics on W1<br />
+*</em>_III</strong> &#8211; block header</li>
+</ul>
+</li>
+<li>
+<p><em>*font *</em>&#8211; font of the indicator&#8217;s data</p>
+<ul>
+<li><strong>tableFontSize <em>*- font size of the main data in the table<br />
+*</em>_IV</strong> &#8211; block header</li>
+</ul>
+</li>
+<li>
+<p><strong>shift_Y_Total</strong> &#8211; total shift of all objects along the Y axis</p>
+<ul>
+<li><strong>shift_X_Total</strong> &#8211; total shift of all objects along the X axis<br />
+<strong>_V</strong> &#8211; block header</li>
+</ul>
+</li>
+<li>
+<p><em>*pqToDisplay *</em>&#8211; data which are higher than this probability are displayed in different color</p>
+<ul>
+<li><em>*colorPQ *</em>&#8211; color to display probabilities higher than the preset one</li>
+<li><em>*color1RNC *</em>&#8211; table header color</li>
+<li><em>*color2RNC *</em>&#8211; table header substring color</li>
+<li><em>*color3RNC *</em>&#8211; color of statistics header elements</li>
+<li><em>*color4RNC *</em>&#8211; color of string elements of data headers</li>
+<li><em>*color5RNC *</em>&#8211; table data color<br />
+<a href="#description">more&#8230;</a>  </li>
+</ul>
+</li>
+</ul>
+<h3>Image of Variational series</h3>
+<p><img src="https://c.mql5.com/31/79/variational-series-20-screen-5260.png" alt="Variational series" /></p>
+<p><img src="https://c.mql5.com/31/79/variational-series-20-screen-4029.png" alt="Variational series" /></p>
+<p><img src="https://c.mql5.com/31/79/variational-series-20-screen-2991.png" alt="Variational series" /></p>
+<p><img src="https://c.mql5.com/31/79/variational-series-20-screen-6525.png" alt="Variational series" /></p>
+<h3>Download source code of  Variational series for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download Variational series" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/variational-series-download.html">Variational series Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>Basic statistics weekdays Download</title>
+		<link>http://project-regain.io/basic-statistics-weekdays-download.html</link>
+				<pubDate>Sat, 31 Aug 2019 20:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Indicators]]></category>
+		<category><![CDATA[Sherkh]]></category>
+		<category><![CDATA[Vjacheslav Lapaev]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/basic-statistics-weekdays-download.html</guid>
+				<description><![CDATA[<p>Author : Vjacheslav Lapaev Category : Indicators Last Update : 27 October 2015 Rent Price : Version : 2.0 Basic statistics and variation series of <a class="mh-excerpt-more" href="http://project-regain.io/basic-statistics-weekdays-download.html" title="Basic statistics weekdays Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/basic-statistics-weekdays-download.html">Basic statistics weekdays Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Vjacheslav Lapaev<br />
+Category : Indicators<br />
+Last Update : 27 October 2015<br />
+Rent Price :<br />
+Version : 2.0<br />
+</code></p>
+<p>Basic statistics and variation series of a financial instrument during weekdays.</p>
+<p>### Comment to the algorithm</p>
+<p>Basic statistics and variation series are calculated once in the process of the indicator&#8217;s initialization.</p>
+<p>Algorithms for calculating the mean standard deviation, mode and corresponding frequency shift (probabilities) are built directly in the indicator.</p>
+<p>### Comment to trading</p>
+<p>The indicator is designed for monitoring the most important dynamic statistics (mean standard deviation, mode) and probability of occurrence of the fluctuation band of the given symbol&#8217;s prices.</p>
+<p>### Input parameters:</p>
+<p><strong>_I</strong> &#8211; block header</p>
+<ul>
+<li>
+<p><strong>minuend</strong> &#8211; minuend price to form the range</p>
+<ul>
+<li><strong>subtrahend</strong> &#8211; subtractive price to form the range</li>
+<li><em>*pqToDisplay *</em>&#8211; data which are higher than this probability are displayed in different color</li>
+<li><strong>theScaleFactor</strong> &#8211; scale ratio<br />
+<strong>_II</strong> &#8211; block header</li>
+</ul>
+</li>
+<li>
+<p><strong>theNumberOfBarsToCalculateTF <em>*- number of bars to calculate statistics on the current timeframe<br />
+*</em>_III</strong> &#8211; block header</p>
+</li>
+<li>
+<p><em>*font *</em>&#8211; font of the indicator&#8217;s data</p>
+<ul>
+<li><strong>maxFontSize</strong> &#8211; font size of the table header string</li>
+<li><strong>subFontSize</strong> &#8211; font size of the table header substring</li>
+<li><strong>tableFontSize <em>*- font size of the main data in the table<br />
+*</em>_IV</strong> &#8211; block header</li>
+</ul>
+</li>
+<li>
+<p><strong>shift_Y_Total</strong> &#8211; total shift of all objects along the Y axis</p>
+<ul>
+<li><strong>shift_X_Total</strong> &#8211; total shift of all objects along the X axis<br />
+<strong>_V</strong> &#8211; block header</li>
+</ul>
+</li>
+<li>
+<p><em>*shift_0RNC *</em>&#8211; shift of the main header of the indicator table</p>
+<ul>
+<li><strong>shift_1RNC</strong> &#8211; shift of the subheader of the indicator table<br />
+<strong>_VI</strong> &#8211; block header</li>
+</ul>
+</li>
+<li>
+<p><em>*colorPQ *</em>&#8211; color to display probabilities higher than the preset one</p>
+<ul>
+<li><strong>colorDay</strong> &#8211; color to display a label of the current weekday</li>
+<li><strong>colorDayWeek</strong> &#8211; color to display a label of the current weekday</li>
+<li><em>*color1RNC *</em>&#8211; table header color</li>
+<li><em>*color2RNC *</em>&#8211; table header substring color</li>
+<li><em>*color3RNC *</em>&#8211; color of statistics header elements</li>
+<li><em>*color4RNC *</em>&#8211; color of string elements of data headers</li>
+<li><em>*color5RNC *</em>&#8211; table data color<br />
+<a href="#description">more&#8230;</a>  </li>
+</ul>
+</li>
+</ul>
+<h3>Image of Basic statistics weekdays</h3>
+<p><img src="https://c.mql5.com/31/81/basic-statistics-weekdays-screen-6941.png" alt="Basic statistics weekdays" /></p>
+<p><img src="https://c.mql5.com/31/81/basic-statistics-weekdays-screen-4025.png" alt="Basic statistics weekdays" /></p>
+<p><img src="https://c.mql5.com/31/81/basic-statistics-weekdays-screen-1089.png" alt="Basic statistics weekdays" /></p>
+<h3>Download source code of  Basic statistics weekdays for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download Basic statistics weekdays" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/basic-statistics-weekdays-download.html">Basic statistics weekdays Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+	</channel>
+</rss>

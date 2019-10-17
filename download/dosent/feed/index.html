@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Dosent &#8211; Expert Advisor / Indicator</title>
+	<atom:link href="http://project-regain.io/download/dosent/feed" rel="self" type="application/rss+xml" />
+	<link>http://project-regain.io/</link>
+	<description>Download source coder from any indicator / Expert Advisor file.</description>
+	<lastBuildDate>Tue, 27 Aug 2019 13:00:00 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.2.4</generator>
+	<item>
+		<title>Dual Raff Channel Download</title>
+		<link>http://project-regain.io/dual-raff-channel-download.html</link>
+				<pubDate>Tue, 27 Aug 2019 13:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Experts]]></category>
+		<category><![CDATA[Dosent]]></category>
+		<category><![CDATA[Vadim Zotov]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/dual-raff-channel-download.html</guid>
+				<description><![CDATA[<p>Author : Vadim Zotov Category : Experts Last Update : 13 June 2018 Rent Price : 80 USD Version : 1.4 The robot is designed <a class="mh-excerpt-more" href="http://project-regain.io/dual-raff-channel-download.html" title="Dual Raff Channel Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/dual-raff-channel-download.html">Dual Raff Channel Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Vadim Zotov<br />
+Category : Experts<br />
+Last Update : 13 June 2018<br />
+Rent Price : 80 USD<br />
+Version : 1.4<br />
+</code></p>
+<p>The robot is designed for trading on a real account. It draws two Hilbert Raff channels. The outer channel allows determining the direction of the global trend. In another channel, which is inside it, trend following trades are performed. You can optionally use the martingale strategy and the money management system, all trades are protected with Stop Loss.</p>
+<p>### Trading strategy characteristics</p>
+<p>The robot calculates two channels by the method of Hilbert Raff. These channels cover different periods and reflect the global and the local trend. The most effective way to trade is when the directions of identified trends coincide. The EA enters the market and take profit near the borders of the internal channel. Positions are only opened in the trend direction, which is determined by the outer channel. So the EA tries to close most positions with a profit. Losing positions are averaged using additional deals, which are calculated so that their aggregate sum could also be closed with profit. As the deposit grows, the money management is applied to increase the volume of trades to match returns and risk with available funds. Robot testing and use are demonstrated in the <a href="https://www.mql5.com/go?link=https://youtu.be/6lntaf7BiEM" title="/go?link=https://youtu.be/6lntaf7BiEM">video</a>.</p>
+<p>### Results</p>
+<p>During testing at the interval from January 2015 to April 2018, using EURUSD, GBPUSD and XAGUSD data on the H1 timeframe and the initial deposit of 1000$, the EA with default settings managed to reach the profit value of $1928-3873 with the spread of 10-20. During testing on XAUUSD with optimized parameters (set files on the Comments page), on the same period and timeframe, with the spread of 200 the robot managed to earn $2061. </p>
+<p>### Recommendations on Usage</p>
+<p>No indicators are required for the EA operation. All necessary algorithms are contained in a single EA file. To control the EA operation, you can additionally use indicator<a href="https://www.mql5.com/en/market/product/28856" title="https://www.mql5.com/en/market/product/28856"> Raff Channel indicator</a>, which displays the Raff channel. The indicator can be launched in the chart where the EA is running. Two indicators are attached on one chart, their parameters should be equal to the ones used in the EA.</p>
+<p>By changing the switching the <em>*Open counter positions *</em>parameter, you can enable or disable setting opposite positions when opposite position entry criteria are met. If you allow opposite positions, the total number of trading cycles will be increased.</p>
+<p>The robot is easily optimizable for other currency pairs and timeframes.</p>
+<p>I will provide the product buyers with the optimization specifics in a personal message.   </p>
+<p>### Program Parameters</p>
+<p><strong>Most Relevant Parameters</strong></p>
+<ul>
+<li>
+<p><strong>Language</strong> &#8211; the language of the EA&#8217;s messages (Eng, Rus);</p>
+<ul>
+<li><em>*Magic *</em>&#8211; order magic number;</li>
+<li><strong>Open counter positions</strong> &#8211; open opposite positions (Yes, No);</li>
+<li><strong>Number of bars</strong> &#8211; the number of bars used for calculating the outer and the internal channels;</li>
+<li><strong>Coefficient of the channel width</strong> &#8211; coefficient for the width of the internal and outer channels;</li>
+<li><strong>Entry criteria</strong> &#8211; distance to the trend line (% of the channel width) to enter/exit a trade;</li>
+<li><strong>Gradient criteria</strong> &#8211; gradient of the internal channel, with which trades are allowed;</li>
+<li><strong>Offset for determining Gradient criteria</strong> &#8211; offset value for calculating the gradient;</li>
+<li><strong>Distance to safety levels</strong> &#8211; distance in points.<br />
+<strong>Averaging parameters</strong></li>
+</ul>
+</li>
+<li>
+<p><strong>Use martingale</strong> &#8211; enable the martingale function (Yes, No);</p>
+<ul>
+<li><strong>Step of averaging positions</strong> &#8211; step of averaging in points;</li>
+<li><strong>Lot increase coefficient</strong> &#8211; lot increase ratio;</li>
+<li><strong>Maximum number of steps for averaging positions</strong> &#8211; the maximum number of averaging step (if exceeded, close all);</li>
+<li><strong>Coefficient of stop</strong> &#8211; the proportion of the averaging step, 0.1&#8230; 1;</li>
+<li><strong>Specified profit with averaging</strong> &#8211; preset averaging profit, $ per 0.01 lot.<br />
+<strong>Extra parameters</strong></li>
+</ul>
+</li>
+<li>
+<p><strong>Clearance</strong> &#8211; gap above distinctive spots (points);</p>
+<ul>
+<li><strong>Use money management</strong> &#8211; Yes, No.</li>
+<li><strong>Initial lot</strong> &#8211; initial lot.<br />
+The robot can be used on 5- and 4-digit quotes. The number of digits in quotes is defined automatically. All parameters specified in points should always be set for 5-digit quotes (set by default).</li>
+</ul>
+<p><p>For any questions, private message me. I will be glad to help you.    <a href="#description">more&#8230;</a>  </p>
+</li>
+</ul>
+<h3>Image of Dual Raff Channel</h3>
+<p><img src="https://c.mql5.com/31/241/dual-raff-channel-screen-1117.png" alt="Dual Raff Channel" /></p>
+<p><img src="https://c.mql5.com/31/241/dual-raff-channel-screen-6776.png" alt="Dual Raff Channel" /></p>
+<p><img src="https://c.mql5.com/31/241/dual-raff-channel-screen-3913.png" alt="Dual Raff Channel" /></p>
+<p><img src="https://c.mql5.com/31/241/dual-raff-channel-screen-9689.png" alt="Dual Raff Channel" /></p>
+<p><img src="https://c.mql5.com/31/241/dual-raff-channel-screen-6577.png" alt="Dual Raff Channel" /></p>
+<h3>Download source code of  Dual Raff Channel for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download Dual Raff Channel" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/dual-raff-channel-download.html">Dual Raff Channel Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>Bollinger Channel Download</title>
+		<link>http://project-regain.io/bollinger-channel-download.html</link>
+				<pubDate>Wed, 14 Aug 2019 22:30:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Experts]]></category>
+		<category><![CDATA[Dosent]]></category>
+		<category><![CDATA[Vadim Zotov]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/bollinger-channel-download.html</guid>
+				<description><![CDATA[<p>Author : Vadim Zotov Category : Experts Last Update : 6 March 2018 Rent Price : 60 USD Version : 1.5 A robot is designed <a class="mh-excerpt-more" href="http://project-regain.io/bollinger-channel-download.html" title="Bollinger Channel Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/bollinger-channel-download.html">Bollinger Channel Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Vadim Zotov<br />
+Category : Experts<br />
+Last Update : 6 March 2018<br />
+Rent Price : 60 USD<br />
+Version : 1.5<br />
+</code></p>
+<p>A robot is designed for trading on a real account. The robot trades inside a channel formed by Bollinger bands. Trades are only opened with trend, near the border line of the channel. Take Profit is set at the opposite side of the channel. Deals are always by stop losses.</p>
+<p>### Trading Strategy Characteristics</p>
+<p>The robot calculates the channel formed by Bollinger bands. Market entries will be made near the channel borders if there is a sufficient gradient. Profit is fixed on the opposite side of the channel. Since the deals are only opened in the trend direction, the EA tries to close the majority of deals with profit. Losing positions are averaged using additional deals, which are calculated so that their aggregate sum could also be closed with profit. As the deposit grows, the money management is applied to increase the volume of trades to match returns and risk with available funds. Robot testing and use are demonstrated in the <a href="https://www.mql5.com/go?link=https://youtu.be/P2__QKMDK9E" title="https://youtu.be/IrJKWA2NoRs">video</a>.</p>
+<p>### Outputs</p>
+<p>The default parameters are optimized to trade with the minimal risk on EURUSD H1. The EA was tested with the specified parameters using Alpari real account quotes. Testing showed that the trading robot can start working with the minimum starting deposit of 100$, with a profit of 100% per year in testing. Use of a higher deposit and of the initial lot may proportionally increase profitability. There is potential for its expansion by a simple optimization of some of its parameters.</p>
+<p>### Usage Tips</p>
+<p>No indicators are required for the EA operation. All necessary algorithms are contained in a single EA file. To control the EA operation, you can use the standard Bollinger Bands indicator from the MetaTrader 4 terminal. You can enable or disable placing of opposite positions when the opposite direction entry criteria are met (parameter <strong>Open counter positions</strong>). If you allow opposite positions, the total number of trading cycles will be increased, while increasing the probable profit and reducing drawdown through locking.</p>
+<p>The robot is easily optimizable for other currency pairs and timeframes. Parameters recommended for optimization are marked by (*). I will provide the product buyers with the optimization specifics in a personal message.</p>
+<p>### Parameters</p>
+<p><strong>Main Parameters</strong></p>
+<ul>
+<li>
+<p><strong>Language</strong> &#8211; English, Russian;</p>
+<ul>
+<li><strong>Magic number</strong> &#8211; magic number for orders;</li>
+<li><strong>Open counter positions</strong> &#8211; open opposite positions (Yes, No);</li>
+<li><strong>Period Bollinger bands</strong> &#8211; BBands period; (*)</li>
+<li><strong>Deviation Bollinger bands</strong> &#8211; deviation; (*)</li>
+<li><strong>Entry criteria</strong> &#8211; the distance to the trend line (% of the channel width) to enter/exit a trade;</li>
+<li><strong>Gradient criteria</strong> &#8211; minimum gradient of the channel, with which market entry is allowed, pts; (*)</li>
+<li><strong>Offset for determining Gradient criteria</strong> &#8211; offset of the historic bar, relative to which the gradient is determined;</li>
+<li><strong>Distance to safety levels</strong> &#8211; distance in points.<br />
+<strong>Averaging parameters</strong></li>
+</ul>
+</li>
+<li>
+<p><strong>Use martingale</strong> &#8211; enable the martingale function (Yes, No);</p>
+<ul>
+<li><strong>Step of averaging positions</strong> &#8211; step in points (*);</li>
+<li><strong>Lot increase coefficient</strong> &#8211; lot increase ratio;</li>
+<li><strong>Maximum number of steps for averaging positions</strong> &#8211; the maximum number of averaging step (if exceeded, close all) (*);</li>
+<li><strong>Coefficient of stop</strong> &#8211; the proportion of the averaging step, determining the stop behind the level of the last order, 0.1 &#8230; 1) (*);</li>
+<li><strong>Specified profit with averaging</strong> &#8211; preset averaging profit, $ per 0.01 lot.<br />
+<strong>Extra parameters</strong></li>
+</ul>
+</li>
+<li>
+<p><strong>Clearance</strong> &#8211; gap above distinctive spots (points);</p>
+<ul>
+<li><strong>Use money management</strong> &#8211; enable the money management system (Yes, No).</li>
+<li><strong>Initial lot</strong> &#8211; initial lot.<br />
+<strong>Interface parameters</strong> allow setting the information display style on the screen and does not require comments.</li>
+</ul>
+<p>The robot can be used on 5 and 4 digit quotes. Automatically detects the number of digits in quotes. At the same time, the input parameters specified in points should always be set as for 5-digit quotes (set by default).</p>
+<p><p>For any questions please send me a private message. I will be glad to help you.    <a href="#description">more&#8230;</a>  </p>
+</li>
+</ul>
+<h3>Image of Bollinger Channel</h3>
+<p><img src="https://c.mql5.com/31/188/bollinger-channel-screen-7833.png" alt="Bollinger Channel" /></p>
+<p><img src="https://c.mql5.com/31/188/bollinger-channel-screen-5372.png" alt="Bollinger Channel" /></p>
+<p><img src="https://c.mql5.com/31/188/bollinger-channel-screen-3861.png" alt="Bollinger Channel" /></p>
+<p><img src="https://c.mql5.com/31/188/bollinger-channel-screen-5416.png" alt="Bollinger Channel" /></p>
+<p><img src="https://c.mql5.com/31/188/bollinger-channel-screen-7786.png" alt="Bollinger Channel" /></p>
+<h3>Download source code of  Bollinger Channel for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download Bollinger Channel" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/bollinger-channel-download.html">Bollinger Channel Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>Gap and Trail Download</title>
+		<link>http://project-regain.io/gap-and-trail-download.html</link>
+				<pubDate>Mon, 05 Aug 2019 16:30:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Experts]]></category>
+		<category><![CDATA[Dosent]]></category>
+		<category><![CDATA[Vadim Zotov]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/gap-and-trail-download.html</guid>
+				<description><![CDATA[<p>Author : Vadim Zotov Category : Experts Last Update : 15 July 2019 Rent Price : 250 USD Version : 2.6 Professional trading on a <a class="mh-excerpt-more" href="http://project-regain.io/gap-and-trail-download.html" title="Gap and Trail Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/gap-and-trail-download.html">Gap and Trail Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Vadim Zotov<br />
+Category : Experts<br />
+Last Update : 15 July 2019<br />
+Rent Price : 250 USD<br />
+Version : 2.6<br />
+</code></p>
+<p>Professional trading on a real account. The effect of closing the price gap (gap) is used. Trailing stop of open positions reduces risk. Minimum deposit of $ 10.</p>
+<p>###  Features of the trading strategy</p>
+<p>After weekends or holidays, gaps often appear on the market (gaps in price charts). According to statistics, most gaps closes (the price returns to the beginning of the gap). The trading strategy implemented by this robot is based on this regularity. At the time of the gap, the robot opens the position in the direction of its closure. For each transaction, individual goals are calculated depending on the characteristics of the market. Open positions are accompanied by a robot. In the process of price movement, a trailing stop is performed on the extremes of the formed candles, which significantly reduces trading risks.</p>
+<p>The robot has all the protections that allow it to work successfully in adverse conditions on a real account. Also, flexible money management adapts transactions for the accumulated volumes and allows you to reinvest the funds received. All this makes the work of the robot as safe and efficient as possible.  </p>
+<p>On major currency pairs, gaps occur relatively rarely, usually after weekends or holidays. Therefore, the robot opens transactions infrequently (2-4 per month). However, transactions are very accurate and open with increased volume, providing a given high trading efficiency.</p>
+<p>###  Results</p>
+<p>Testing was conducted on the quotes of the standard real account of the Alpari broker and showed the stability of the operation of the robot over long periods (3-5 years). When testing for the period 2017 &#8211; 2018 g with a starting deposit of $ 100, the following results were obtained (rounded): on EURUSD $30000; on GBPJPY $217000 and on GBPUSD $98000. The results are shown in the screenshots.</p>
+<h3>Options</h3>
+<ul>
+<li>
+<p><em>*Magic number *</em>&#8211; magic number for orders;</p>
+<ul>
+<li><strong>Language <em>*- robot message language (</strong>Eng</em>* /<em>* Rus</em>*);</li>
+<li><strong>Trading days</strong> &#8211; allowed trading days (<strong>Only monday</strong> / <strong>All days</strong>);</li>
+<li>
+<p><strong>Use money management</strong> &#8211; use of automatic capital management ( <strong>Yes <em>*/ *</em>No</strong>);   </p>
+</li>
+<li>
+<p><strong>Magnification factor of the lot</strong> &#8211; coefficient of linear dependence of the lot on the available funds in money management;</p>
+</li>
+<li><strong>Initial lot</strong> &#8211; initial lot with money management disabled;</li>
+<li><strong>Size of the gap</strong> &#8211; the minimum size of the gap, which is allowed to open trades, points;</li>
+<li>
+<p><strong>Coefficient of the take profit</strong> &#8211; gap share used for profit (0.2-1.0);  </p>
+</li>
+<li>
+<p><strong>Stop loss</strong> &#8211; initial stop loss, points;</p>
+</li>
+<li><strong>To control the spread before opening order <em>*- (</strong>Yes <strong>/ *</em>No</strong>);</li>
+<li><strong>Maximum spread <em>*- maximum spread for opening trades (if a *</em>To control the spread</strong> = Yes).<br />
+<h3>Recommendations for use</h3>
+</li>
+</ul>
+<p>The robot can be used to trade on any accounts. But it is preferable to use accounts with 5-digit quotes, low spread and high speed. Account leverage is preferably at least 1: 500.</p>
+<p><p>In the case of a floating spread, when it is possible to have an unacceptable spread, you should prohibit positioning with an invalid spread value using the <strong>To control the spread = Yes</strong> parameter. The deal will be opened when the spread becomes less than the value specified in <strong>Maximum spread</strong>.  </p>
+</li>
+</ul>
+<p>The <em>*Maximum spread *</em>parameter must be greater than the minimum spread of a specific account. Otherwise, the robot will not work. Good results are obtained if the broker provides a fixed spread of no more than 10-30 points.  </p>
+<p>Optimization over time is usually not needed. However, when switching to other brokers, especially with an increase in the spread, optimization may be necessary.  </p>
+<p>If optimization is needed, I will tell the buyer details of it in a personal message.</p>
+<p>If you have questions, write me a private message. I am pleased to help on any issue.</p>
+<h3>Image of Gap and Trail</h3>
+<p><img src="https://c.mql5.com/31/287/gap-and-trail-screen-9023.gif" alt="Gap and Trail" /></p>
+<p><img src="https://c.mql5.com/31/287/gap-and-trail-screen-7408.png" alt="Gap and Trail" /></p>
+<p><img src="https://c.mql5.com/31/287/gap-and-trail-screen-5840.png" alt="Gap and Trail" /></p>
+<p><img src="https://c.mql5.com/31/287/gap-and-trail-screen-2666.png" alt="Gap and Trail" /></p>
+<h3>Download source code of  Gap and Trail for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download Gap and Trail" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/gap-and-trail-download.html">Gap and Trail Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+	</channel>
+</rss>

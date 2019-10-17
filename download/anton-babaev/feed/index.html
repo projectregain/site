@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Anton Babaev &#8211; Expert Advisor / Indicator</title>
+	<atom:link href="http://project-regain.io/download/anton-babaev/feed" rel="self" type="application/rss+xml" />
+	<link>http://project-regain.io/</link>
+	<description>Download source coder from any indicator / Expert Advisor file.</description>
+	<lastBuildDate>Sun, 01 Sep 2019 14:30:00 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.2.4</generator>
+	<item>
+		<title>Spearman rank correlation Download</title>
+		<link>http://project-regain.io/spearman-rank-correlation-download.html</link>
+				<pubDate>Sun, 01 Sep 2019 14:30:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Indicators]]></category>
+		<category><![CDATA[Anton Babaev]]></category>
+		<category><![CDATA[Tonjo]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/spearman-rank-correlation-download.html</guid>
+				<description><![CDATA[<p>Author : Anton Babaev Category : Indicators Last Update : 25 February 2013 Rent Price : Version : 1.20 Spearman rank correlation. The indicator shows <a class="mh-excerpt-more" href="http://project-regain.io/spearman-rank-correlation-download.html" title="Spearman rank correlation Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/spearman-rank-correlation-download.html">Spearman rank correlation Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Anton Babaev<br />
+Category : Indicators<br />
+Last Update : 25 February 2013<br />
+Rent Price :<br />
+Version : 1.20<br />
+</code></p>
+<p><strong>Spearman rank correlation.</strong> The indicator shows statistical correlations between symbols, selected by user.</p>
+<p><em>*Input parameters: <br />
+*</em></p>
+<ul>
+<li>
+<p><strong>Time frame</strong> &#8211; timeframe for analysis (Current, 1 Minute, 2 Minutes, 3 Minutes, 4 Minutes, 5 Minutes, 6 Minutes, M10 Minutes, M12 Minutes, M15 Minutes, M20 Minutes, M30 Minutes, 1 Hour, 2 Hours, 3 Hours, 4 Hours, 6 Hours, 8 Hours, 12 Hours, 1 Day, 1 Week, 1 Month).;</p>
+<ul>
+<li><strong>Prices</strong> &#8211; price type, used in analysis (Close price, Open price, High price, Low price);</li>
+<li><strong>Limit analysis</strong> &#8211; Number of bars, used in analysis (в барах); </li>
+<li><strong>Length analysis</strong> &#8211; length of analysis;</li>
+<li><strong>Pair 01, Ticker 01</strong> &#8211; Ticker 1 of the pair 1, for example, EURUSD;*</li>
+<li><strong>Pair 01, Ticker 02</strong> &#8211; Ticker 2 of the pair 1, for example, GBPUSD;*</li>
+<li><strong>Pair 02, Ticker 01</strong> &#8211; Ticker 1 of the pair 2, for example, EURUSD;*</li>
+<li><strong>Pair 02, Ticker 02</strong> &#8211; Ticker 2 of the pair 2, for example, USDCHF;*</li>
+<li><strong>Pair 03, Ticker 01</strong> &#8211; Ticker 1 of the pair 3, for example, EURUSD;*</li>
+<li><strong>Pair 03, Ticker 02</strong> &#8211; Ticker 2 of the pair 3, for example, USDJPY;*</li>
+<li><strong>Pair 04, Ticker 01</strong> &#8211; Ticker 1 of the pair 4, for example, EURUSD;*</li>
+<li><strong>Pair 04, Ticker 02</strong> &#8211; Ticker 2 of the pair 4, for example, AUDUSD;*</li>
+<li><strong>Pair 05, Ticker 01</strong> &#8211; Ticker 1 of the pair 5, for example, EURUSD;*</li>
+<li><strong>Pair 05, Ticker 02</strong> &#8211; Ticker 2 of the pair 5, for example, USDCAD*;</li>
+<li><strong>Pair 06, Ticker 01</strong> &#8211; Ticker 1 of the pair 6, for example, EURUSD;*</li>
+<li><strong>Pair 06, Ticker 02</strong> &#8211; Ticker 2 of the pair 6, for example, EURJPY;*</li>
+<li><strong>Pair 07, Ticker 01</strong> &#8211; Ticker 1 of the pair 7, for example, EURUSD;*</li>
+<li><strong>Pair 07, Ticker 02</strong> &#8211; Ticker 2 of the pair 7, for example, GBPJPY;*</li>
+<li><strong>Pair 08, Ticker 01</strong> &#8211; Ticker 1 of the pair 8, for example, EURUSD;*</li>
+<li>
+<p><strong>Pair 08, Ticker 02</strong> &#8211; Ticker 2 of the pair 8, for example, EURGBP;* <br />
+*Any symbol from &#8220;Market Watch&#8221; window can be used as ticker.. If you don&#8217;t need to analyse some currency pair, set &#8220;NONE&#8221;, &#8220;None&#8221; or &#8220;none&#8221; to the value.  </p>
+</li>
+<li>
+<p><strong>Color of a line Pair 1</strong> &#8211; line color for correlation coefficient of the pair 1, for example, clrMaroon;</p>
+</li>
+<li><strong>Color of a line Pair 2</strong> &#8211; line color for correlation coefficient of the pair 2, for example, clrIndigo;</li>
+<li><strong>Color of a line Pair 3</strong> &#8211; line color for correlation coefficient of the pair 3, for example, clrFireBrick;</li>
+<li><strong>Color of a line Pair 4</strong> &#8211; line color for correlation coefficient of the pair 4, for example, clrLime;</li>
+<li><strong>Color of a line Pair 5</strong> &#8211; line color for correlation coefficient of the pair 5, for example, clrDarkOrange;</li>
+<li><strong>Color of a line Pair 6</strong> &#8211; line color for correlation coefficient of the pair 6, for example, clrGold;</li>
+<li><strong>Color of a line Pair 7</strong> &#8211; line color for correlation coefficient of the pair 7, for example, clrDeepPink;</li>
+<li><strong>Color of a line Pair 8</strong> &#8211; line color for correlation coefficient of the pair 8, for example, clrAqua;</li>
+<li><strong>Color Rect1</strong> &#8211; color of the rectangle with currency pairs;</li>
+<li><strong>Color Rect2</strong> &#8211; color of the rectangle with the current state;</li>
+<li><em>*Color State *</em> &#8211; text color;</li>
+<li><strong>Line width</strong> &#8211; line width; </li>
+<li><strong>Line style</strong> &#8211; line style (Solid, Dash, Dot, Dashdot, Dashdotdot).</li>
+</ul>
+<p><p><a href="#description">more&#8230;</a>  </p>
+</li>
+</ul>
+<h3>Image of Spearman rank correlation</h3>
+<p><img src="https://c.mql5.com/31/0/Spearman.jpg" alt="Spearman rank correlation" /></p>
+<h3>Download source code of  Spearman rank correlation for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download Spearman rank correlation" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/spearman-rank-correlation-download.html">Spearman rank correlation Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>Fechner correlation Download</title>
+		<link>http://project-regain.io/fechner-correlation-download.html</link>
+				<pubDate>Sun, 01 Sep 2019 13:30:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Indicators]]></category>
+		<category><![CDATA[Anton Babaev]]></category>
+		<category><![CDATA[Tonjo]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/fechner-correlation-download.html</guid>
+				<description><![CDATA[<p>Author : Anton Babaev Category : Indicators Last Update : 9 February 2012 Rent Price : Version : 1.10 Fechner correlation coefficient. The indicator shows <a class="mh-excerpt-more" href="http://project-regain.io/fechner-correlation-download.html" title="Fechner correlation Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/fechner-correlation-download.html">Fechner correlation Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Anton Babaev<br />
+Category : Indicators<br />
+Last Update : 9 February 2012<br />
+Rent Price :<br />
+Version : 1.10<br />
+</code></p>
+<p><strong>Fechner correlation coefficient.</strong> The indicator shows statistical correlations between symbols, selected by user.</p>
+<p><em>*Input parameters: <br />
+*</em></p>
+<ul>
+<li>
+<p><strong>Time frame</strong> &#8211; timeframe for analysis (Current, 1 Minute, 2 Minutes, 3 Minutes, 4 Minutes, 5 Minutes, 6 Minutes, M10 Minutes, M12 Minutes, M15 Minutes, M20 Minutes, M30 Minutes, 1 Hour, 2 Hours, 3 Hours, 4 Hours, 6 Hours, 8 Hours, 12 Hours, 1 Day, 1 Week, 1 Month).;</p>
+<ul>
+<li><strong>Prices</strong> &#8211; price type, used in analysis (Close price, Open price, High price, Low price);</li>
+<li><strong>Limit analysis</strong> &#8211; Number of bars, used in analysis (в барах); </li>
+<li><strong>Length analysis</strong> &#8211; length of analysis;</li>
+<li><strong>Pair 01, Ticker 01</strong> &#8211; Ticker 1 of the pair 1, for example, EURUSD;*</li>
+<li><strong>Pair 01, Ticker 02</strong> &#8211; Ticker 2 of the pair 1, for example, GBPUSD;*</li>
+<li><strong>Pair 02, Ticker 01</strong> &#8211; Ticker 1 of the pair 2, for example, EURUSD;*</li>
+<li><strong>Pair 02, Ticker 02</strong> &#8211; Ticker 2 of the pair 2, for example, USDCHF;*</li>
+<li><strong>Pair 03, Ticker 01</strong> &#8211; Ticker 1 of the pair 3, for example, EURUSD;*</li>
+<li><strong>Pair 03, Ticker 02</strong> &#8211; Ticker 2 of the pair 3, for example, USDJPY;*</li>
+<li><strong>Pair 04, Ticker 01</strong> &#8211; Ticker 1 of the pair 4, for example, EURUSD;*</li>
+<li><strong>Pair 04, Ticker 02</strong> &#8211; Ticker 2 of the pair 4, for example, AUDUSD;*</li>
+<li><strong>Pair 05, Ticker 01</strong> &#8211; Ticker 1 of the pair 5, for example, EURUSD;*</li>
+<li><strong>Pair 05, Ticker 02</strong> &#8211; Ticker 2 of the pair 5, for example, USDCAD*;</li>
+<li><strong>Pair 06, Ticker 01</strong> &#8211; Ticker 1 of the pair 6, for example, EURUSD;*</li>
+<li><strong>Pair 06, Ticker 02</strong> &#8211; Ticker 2 of the pair 6, for example, EURJPY;*</li>
+<li><strong>Pair 07, Ticker 01</strong> &#8211; Ticker 1 of the pair 7, for example, EURUSD;*</li>
+<li><strong>Pair 07, Ticker 02</strong> &#8211; Ticker 2 of the pair 7, for example, GBPJPY;*</li>
+<li><strong>Pair 08, Ticker 01</strong> &#8211; Ticker 1 of the pair 8, for example, EURUSD;*</li>
+<li>
+<p><strong>Pair 08, Ticker 02</strong> &#8211; Ticker 2 of the pair 8, for example, EURGBP;* <br />
+*Any symbol from &#8220;Market Watch&#8221; window can be used as ticker.. If you don&#8217;t need to analyse some currency pair, set &#8220;NONE&#8221;, &#8220;None&#8221; or &#8220;none&#8221; to the value.  </p>
+</li>
+<li>
+<p><strong>Color of a line Pair 1</strong> &#8211; line color for correlation coefficient of the pair 1, for example, clrMaroon;</p>
+</li>
+<li><strong>Color of a line Pair 2</strong> &#8211; line color for correlation coefficient of the pair 2, for example, clrIndigo;</li>
+<li><strong>Color of a line Pair 3</strong> &#8211; line color for correlation coefficient of the pair 3, for example, clrFireBrick;</li>
+<li><strong>Color of a line Pair 4</strong> &#8211; line color for correlation coefficient of the pair 4, for example, clrLime;</li>
+<li><strong>Color of a line Pair 5</strong> &#8211; line color for correlation coefficient of the pair 5, for example, clrDarkOrange;</li>
+<li><strong>Color of a line Pair 6</strong> &#8211; line color for correlation coefficient of the pair 6, for example, clrGold;</li>
+<li><strong>Color of a line Pair 7</strong> &#8211; line color for correlation coefficient of the pair 7, for example, clrDeepPink;</li>
+<li><strong>Color of a line Pair 8</strong> &#8211; line color for correlation coefficient of the pair 8, for example, clrAqua;</li>
+<li><strong>Color Rect1</strong> &#8211; color of the rectangle with currency pairs;</li>
+<li><strong>Color Rect2</strong> &#8211; color of the rectangle with the current state;</li>
+<li><em>*Color State *</em> &#8211; text color;</li>
+<li><strong>Line width</strong> &#8211; line width; </li>
+<li><strong>Line style</strong> &#8211; line style (Solid, Dash, Dot, Dashdot, Dashdotdot).<br />
+<a href="#description">more&#8230;</a>  </li>
+</ul>
+</li>
+</ul>
+<h3>Image of Fechner correlation</h3>
+<p><img src="https://c.mql5.com/31/0/Fechner.jpg" alt="Fechner correlation" /></p>
+<h3>Download source code of  Fechner correlation for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download Fechner correlation" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/fechner-correlation-download.html">Fechner correlation Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+	</channel>
+</rss>

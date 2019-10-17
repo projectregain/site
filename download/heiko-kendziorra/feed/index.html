@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Heiko Kendziorra &#8211; Expert Advisor / Indicator</title>
+	<atom:link href="http://project-regain.io/download/heiko-kendziorra/feed" rel="self" type="application/rss+xml" />
+	<link>http://project-regain.io/</link>
+	<description>Download source coder from any indicator / Expert Advisor file.</description>
+	<lastBuildDate>Thu, 29 Aug 2019 23:00:00 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.2.4</generator>
+	<item>
+		<title>Pyramid Expert Download</title>
+		<link>http://project-regain.io/pyramid-expert-download.html</link>
+				<pubDate>Thu, 29 Aug 2019 23:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Experts]]></category>
+		<category><![CDATA[Heiko Kendziorra]]></category>
+		<category><![CDATA[Mtradertools.Co]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/pyramid-expert-download.html</guid>
+				<description><![CDATA[<p>Author : Heiko Kendziorra Category : Experts Last Update : 26 September 2017 Rent Price : 399 USD Version : 1.5 Pyramid splits the trading <a class="mh-excerpt-more" href="http://project-regain.io/pyramid-expert-download.html" title="Pyramid Expert Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/pyramid-expert-download.html">Pyramid Expert Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Heiko Kendziorra<br />
+Category : Experts<br />
+Last Update : 26 September 2017<br />
+Rent Price : 399 USD<br />
+Version : 1.5<br />
+</code></p>
+<p>Pyramid splits the trading risk &#8211; bit by bit as positions grow. A unique risk management sets new orders only if the first ones are safe. Pyramid works fully automaticaly with a control panel on the chart for active traders. No grid, no martingale, all orders with stop loss.</p>
+<p>The Pyramid algorithm is optimized for the german DAX30 index (like GER30 or similar) on the M5 chart as trends in indexes are more frequent. Pyramid with the index algorithm deactivated works semi-automatically, similar to <a href="https://www.mql5.com/en/market/product/25062">Pyramid Light</a></p>
+<p>The <strong>auto risk management</strong> stops opening orders if the possible loss in % of equity reaches the level set in <strong>MaxRisk</strong>.</p>
+<p>A order with stop loss (SL) on or above order open (entry) price is out of risk.</p>
+<p>If price goes up (buy) more SL are set to entry, more new orders are opened.</p>
+<p><strong>Minimum account size</strong> is $2000. If minimum lot size is 0.1 &#8211; some brokers have Dax CFD 0.01 &#8211; then $200 is ok.</p>
+<p>### A click on <em>But</em> opens the <strong>control panel</strong></p>
+<p><strong>One click on a button can</strong> &#8211; (see Fig. 2 &#8211; 4)</p>
+<ul>
+<li>
+<p>De/activate automatic buy and/or sell [AutoBuy] [AutoSell]</p>
+<ul>
+<li>De/activate auto closing of positions [AutoCloB] [AutoCloS]</li>
+<li>Start automatic continuous opening of orders every new bar, independent of algorithm [PyraBuy] [PyraSell]</li>
+<li>Place a single order at next bar open [NextBuy] [NextSell] </li>
+<li>Place a single order directly [BuyNow] [Sell Now] </li>
+<li>Choose if bar must be rising or falling for single or continuous ordering [BuyUp] [BuyDn] [SellUp] [SellDn]</li>
+<li>Set stop loss of all orders to entry price (break even &#8216;BE&#8217;) [SlBuyBE] [SlSellBE]</li>
+<li>Close all orders [CloAllBuy] [CloAllSell]</li>
+<li>Modify stop loss of all orders once or continuously, writing the trail distance in field below the button [TrailDistB] [TrailDistS]<br />
+Test the control panel and all functions of the Pyramid Expert in <em>Visual Mode</em> backtest!</li>
+</ul>
+<p>(For a correct backtest in M5 chart, the D1 and H4 charts must also be open &#8211; the EA takes data from them)</p>
+<p><strong>A comment above the control panel</strong> shows how many trades are open, how many at risk (SL below BE) and how many left to open according to risk setting.  </p>
+<p>For orientation <strong>trendlines</strong> are drawn in the chart and highs &amp; lows of previous days, see settings.</p>
+<p><strong>Custom trendlines</strong> can be used as triggers &#8211; see it working in video of <a href="https://www.mql5.com/en/market/product/25062">Pyramid Light</a> description!</p>
+<p>Draw a trendline and name it:</p>
+</li>
+<li>
+<p><strong>al1</strong> or <strong>al2</strong> &#8211; if Bid rises over or falls under line &#8211; alarm</p>
+<ul>
+<li><strong>al3</strong> or <strong>al4</strong> &#8211; if bar closes over or under line &#8211; alarm<br />
+(Alarm button pressed)</li>
+</ul>
+</li>
+<li>
+<p><strong>slbc</strong> &#8211; SL line closes all buys if bar closes below line</p>
+<ul>
+<li><strong>slb</strong> &#8211; closes all buys if Bid below line</li>
+<li><strong>slsc</strong> &#8211; SL line closes all sells if bar closes above line</li>
+<li><strong>slb</strong> &#8211; closes all sells if Ask above line<br />
+(Trendl button pressed)</li>
+</ul>
+<p>Once triggered lines get description <em>done</em> &#8211; don&#8217;t trigger twice  </p>
+<h3>Settings</h3>
+</li>
+<li>
+<p><strong>Lot</strong> &#8211; lots for each opened trade if not Autolots.</p>
+<p>md5-14d686574ead2252488c14f3570c58a0</p>
+<h3>Image of Pyramid Expert</h3>
+<p><img src="https://c.mql5.com/31/200/pyramid-expert-screen-2768.png" alt="Pyramid Expert" /></p>
+<p><img src="https://c.mql5.com/31/200/pyramid-expert-screen-5249.png" alt="Pyramid Expert" /></p>
+<p><img src="https://c.mql5.com/31/200/pyramid-expert-screen-1128.png" alt="Pyramid Expert" /></p>
+<p><img src="https://c.mql5.com/31/200/pyramid-expert-screen-6776.png" alt="Pyramid Expert" /></p>
+<p><img src="https://c.mql5.com/31/200/pyramid-expert-screen-3400.png" alt="Pyramid Expert" /></p>
+<p><img src="https://c.mql5.com/31/200/pyramid-expert-screen-2047.png" alt="Pyramid Expert" /></p>
+<h3>Download source code of  Pyramid Expert for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download Pyramid Expert" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/pyramid-expert-download.html">Pyramid Expert Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+	</channel>
+</rss>

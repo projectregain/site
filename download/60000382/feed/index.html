@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>60000382 &#8211; Expert Advisor / Indicator</title>
+	<atom:link href="http://project-regain.io/download/60000382/feed" rel="self" type="application/rss+xml" />
+	<link>http://project-regain.io/</link>
+	<description>Download source coder from any indicator / Expert Advisor file.</description>
+	<lastBuildDate>Fri, 02 Aug 2019 02:00:00 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.2.4</generator>
+	<item>
+		<title>Asummetry Download</title>
+		<link>http://project-regain.io/asummetry-download.html</link>
+				<pubDate>Fri, 02 Aug 2019 02:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Indicators]]></category>
+		<category><![CDATA[60000382]]></category>
+		<category><![CDATA[Aleksey Ivanov]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/asummetry-download.html</guid>
+				<description><![CDATA[<p>Author : Aleksey Ivanov Category : Indicators Last Update : 4 September 2019 Rent Price : 39 USD Version : 1.10 ### The principle of <a class="mh-excerpt-more" href="http://project-regain.io/asummetry-download.html" title="Asummetry Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/asummetry-download.html">Asummetry Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Aleksey Ivanov<br />
+Category : Indicators<br />
+Last Update : 4 September 2019<br />
+Rent Price : 39 USD<br />
+Version : 1.10<br />
+</code></p>
+<p>###  <strong><em>The principle of the indicator.</em></strong></p>
+<p>The <strong><em>Asummetry</em></strong>indicator allows you to predict the beginning of a change in the direction of trends, long before their visual appearance on the price chart. </p>
+<p>The author statistically revealed that before changing the direction of the trend, the probability distribution function of the price is made as asymmetric as possible. More precisely, the price movement in any direction always pulls sideways the function of its distribution, but when the third-degree root of asymmetry divided by the standard deviation exceeds the unit in absolute value, the price will change its direction. The indicator operation is based on this regularity. The indicator calculates the value of the third degree root asymmetry normalized to the standard deviation, i.e. magnitude </p>
+<p>ASUMM= (&lt; (x &#8211; <x>)^3 &gt;)^(1/3)/ (&lt; (x &#8211; <x>)^2 &gt;)^(1/2), </p>
+<p>where &lt;&#8230;&gt; is the averaging sign, which, when it is module exceeded the unit , serves as a powerful signal to change the direction of a previously established trend. </p>
+<pre><code>It has also been established that the asymmetry plot changes sign when the price probability density function makes a sharp jump, which is characteristic of price dynamics.
+</code></pre>
+<p>The sliding asymmetry counted in a particular window, as well as the variance and the moving average, lags behind by about the floor of the averaging period used. Therefore: (1) For past price values, the asymmetry plot shifts back through history by the amount of delay; (2) To receive a signal in a timely manner, a special compression algorithm for the asymmetry calculation period is applied when approaching the beginning of the current history. At the same time, to ensure the possibility of calculating such asymmetry (creating a sufficient array of calculated points) on the M5-H4 time frames, be used the data of the minute chart is M1, the daily time frame is &#8211; M5, the weekly &#8211; M30, and the monthly &#8211; H1. On M1, this indicator, respectively, is not used.</p>
+<p>### <em>Using the Asummetry indicator in trading</em>.</p>
+<p>The indicator is very sensitive to the current state of the market and, therefore, is dynamic for current values, which is not its disadvantage. The interval of the indicator readings, that important for the trader (for the current history), where the averaging period compression algorithm is used, is colored in other colors than the rest of the indicator readings, and all points of this interval serve to assess the current market situation.</p>
+<p>If the position according to the trend is already open, then even a one-time exceeding by the module of ASUMM by one serves as the signal to close the position, since after that, a trend change is likely to follow. </p>
+<p>If the position is not open yet, then | ASUMM |&gt; 1 gives the trader a sign that a new trend will begin soon and the trader should then be in a state of readiness to open a position. But the direction of the trend and the moment of entry into the position need to be determined by another indicator, for example, <a href="https://www.mql5.com/en/market/product/36336" title="https://www.mql5.com/en/market/product/36336"> <strong><em>Identify_Trend</em></strong></a> or <a href="https://www.mql5.com/en/market/product/34171" title="https://www.mql5.com/en/market/product/34171"> <strong>* Sensitive Signal*</strong></a> or some other sensitive trend indicator.  </p>
+<p>###  <strong><em>Indicator settings.</em></strong></p>
+<ul>
+<li>
+<p><em>Price type</em> &#8211; applied price. Values: <em>Close price</em> (default)), <em>Open price, High price, Low price, Median price</em> ((high + low)/2), <em>Typical price</em> ((high + low + close)/3), <em>Weighted price</em> ((high + low + 2*close)/4). </p>
+<ul>
+<li><em>The averaging period</em> &#8211; averaging period. Values: any integer (15 default). </li>
+<li><em>Number of countable bars of the current chart</em>. &#8211; Number of calculated indicator graph bars . Values: any positive integer  (1000 default).</li>
+<li><em>Global shift</em> &#8211; Global shift of the beginning of the indicator readings in bars. Values: any positive integer (0 default).</li>
+<li><em>The non-lagging asymmetry is calculated?</em> &#8211; Values: <strong><em>true</em></strong>(default), <strong><em>false</em></strong>.</li>
+</ul>
+<p><p><a href="#description">more&#8230;</a>  </p>
+</li>
+</ul>
+<h3>Image of Asummetry</h3>
+<p><img src="https://c.mql5.com/31/345/asummetry-screen-2603.png" alt="Asummetry" /></p>
+<p><img src="https://c.mql5.com/31/345/asummetry-screen-7806.png" alt="Asummetry" /></p>
+<p><img src="https://c.mql5.com/31/345/asummetry-screen-9506.png" alt="Asummetry" /></p>
+<p><img src="https://c.mql5.com/31/345/asummetry-screen-7198.png" alt="Asummetry" /></p>
+<p><img src="https://c.mql5.com/31/345/asummetry-screen-4861.png" alt="Asummetry" /></p>
+<p><img src="https://c.mql5.com/31/345/asummetry-screen-9636.png" alt="Asummetry" /></p>
+<h3>Download source code of  Asummetry for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download Asummetry" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/asummetry-download.html">Asummetry Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>Estimation moving average without lag Download</title>
+		<link>http://project-regain.io/estimation-moving-average-without-lag-download.html</link>
+				<pubDate>Thu, 01 Aug 2019 21:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Indicators]]></category>
+		<category><![CDATA[60000382]]></category>
+		<category><![CDATA[Aleksey Ivanov]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/estimation-moving-average-without-lag-download.html</guid>
+				<description><![CDATA[<p>Author : Aleksey Ivanov Category : Indicators Last Update : 4 September 2019 Rent Price : 33.90 USD Version : 2.10 *The principle of the <a class="mh-excerpt-more" href="http://project-regain.io/estimation-moving-average-without-lag-download.html" title="Estimation moving average without lag Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/estimation-moving-average-without-lag-download.html">Estimation moving average without lag Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Aleksey Ivanov<br />
+Category : Indicators<br />
+Last Update : 4 September 2019<br />
+Rent Price : 33.90 USD<br />
+Version : 2.10<br />
+</code></p>
+<p><strong>*The principle of the indicator. *</strong></p>
+<p>A simple moving average (SMA) with an averaging period (2n + 1) of bars is always obtained lagging by n bars. If SMA or other types of moving averages are the basis for making trading decisions, then their strong delay does not allow to open positions in time and close positions, which leads to losses. </p>
+<p>The <strong><em>Estimation moving average without lag</em></strong> (<strong><em>EMAWL</em></strong>) indicator calculates the non-lagging moving average, which is calculated at the points (Inf, n + 1) in the usual way, and at the points of the [n, 0] segment, where 0 is the last bar number, is algorithmically and there is a curvilinear sector (cover out the confidence interval) in which the line of the non-lagging moving average fits with the confidence level specified in the indicator settings. It is clear that the more the confidence probability value is taken (which by default is equal to 0.67), the wider the curvilinear sector of the confidence interval is obtained. If we take the confidence probability equal to zero, then the sector of the indicator readings at points [n, 0] will shrink to a curve, which will pass through the most probable values ​​of the non-lagging average. Statistical studies show that the price around the non-remaining average is distributed according to the Laplace law. Knowledge of the distribution law and the algorithm for calculating the most likely non-lagging average on the [n, 0] segment allow us to calculate the confidence interval sector. </p>
+<p><strong><em>Trade using the *</em><em>*</strong>Estimation moving average without lag<strong></em> <em></strong>indicator.</em>**</p>
+<p>If the lower border of the figure sector of the <strong><em>EMAWL</em></strong> indicator moves to the up, then there is an uptrend and you need to open positions on <strong><em>Buy</em></strong>. If the upper boundary of the curvilinear sector of the <strong><em>EMAWL</em></strong> indicator is oriented downwards, then there is a downward trend and you need to open positions on <strong><em>Sell</em></strong>. In such cases, you can be sure of the correctness of the established trend direction with the confidence level set in the indicator settings. If the upper limit of the figure sector of the EMAWL indicator moves to the up, and the lower limit moves down, then there is a flat, which serves as a signal for closing trend positions. </p>
+<p><strong><em>Indicator settings.</em><em>*</em></strong> <em>*</em></p>
+<ul>
+<li><em>Price type</em> &#8211; applied price. Values: <em>Close price, Open price, High price, Low price, Median price</em> ((high + low)/2 &#8211; default), <em>Typical price</em> ((high + low + close)/3), <em>Weighted price * ((high + low + 2</em>close)/4).
+<ul>
+<li><em>The averaging method</em> &#8211; averaging method. Values:* Simple <em>(default)</em>, Exponential, Smoothed, Linear weighted<em>.</li>
+<li><em>The averaging period</em> &#8211; averaging period. Any integer (21 by default).</li>
+<li><em>Confidence</em></em> <em><em>probability</em> &#8211; Values:</em> <em>from 0 to 0.999 (0.67 by default).</li>
+<li><em>Global shift &#8211; *Global shift to start calculating indicator readings. Values:</em> <em>any integer (0 by default).</em> *</li>
+<li><em>Paint over the confidence interval?</em> &#8211; Values:</em> <em><em>true</em> (by default), <em>false</em>.</li>
+<li></em>Color of the line. – *The color of the indicator line and its figure sector. </li>
+</ul>
+</li>
+</ul>
+<hr />
+<pre><code>[more...](#description)
+</code></pre>
+<h3>Image of Estimation moving average without lag</h3>
+<p><img src="https://c.mql5.com/31/318/estimation-moving-average-without-lag-screen-3701.png" alt="Estimation moving average without lag" /></p>
+<p><img src="https://c.mql5.com/31/318/estimation-moving-average-without-lag-screen-9553.png" alt="Estimation moving average without lag" /></p>
+<p><img src="https://c.mql5.com/31/318/estimation-moving-average-without-lag-screen-7726.png" alt="Estimation moving average without lag" /></p>
+<p><img src="https://c.mql5.com/31/318/estimation-moving-average-without-lag-screen-8278.png" alt="Estimation moving average without lag" /></p>
+<p><img src="https://c.mql5.com/31/318/estimation-moving-average-without-lag-screen-9778.png" alt="Estimation moving average without lag" /></p>
+<p><img src="https://c.mql5.com/31/318/estimation-moving-average-without-lag-screen-8789.png" alt="Estimation moving average without lag" /></p>
+<p><img src="https://c.mql5.com/31/318/estimation-moving-average-without-lag-screen-8044.png" alt="Estimation moving average without lag" /></p>
+<p><img src="https://c.mql5.com/31/318/estimation-moving-average-without-lag-screen-1672.png" alt="Estimation moving average without lag" /></p>
+<p><img src="https://c.mql5.com/31/318/estimation-moving-average-without-lag-screen-5954.png" alt="Estimation moving average without lag" /></p>
+<p><img src="https://c.mql5.com/31/318/estimation-moving-average-without-lag-screen-1476.png" alt="Estimation moving average without lag" /></p>
+<p><img src="https://c.mql5.com/31/318/estimation-moving-average-without-lag-screen-5373.png" alt="Estimation moving average without lag" /></p>
+<p><img src="https://c.mql5.com/31/318/estimation-moving-average-without-lag-screen-2479.png" alt="Estimation moving average without lag" /></p>
+<h3>Download source code of  Estimation moving average without lag for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download Estimation moving average without lag" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/estimation-moving-average-without-lag-download.html">Estimation moving average without lag Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+	</channel>
+</rss>

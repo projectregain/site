@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Theinvestbay &#8211; Expert Advisor / Indicator</title>
+	<atom:link href="http://project-regain.io/download/theinvestbay/feed" rel="self" type="application/rss+xml" />
+	<link>http://project-regain.io/</link>
+	<description>Download source coder from any indicator / Expert Advisor file.</description>
+	<lastBuildDate>Mon, 12 Aug 2019 18:30:00 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.2.4</generator>
+	<item>
+		<title>RSI Dashboard Multi Overbought Oversold Analyzer Download</title>
+		<link>http://project-regain.io/rsi-dashboard-multi-overbought-oversold-analyzer-download.html</link>
+				<pubDate>Mon, 12 Aug 2019 18:30:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Utilities]]></category>
+		<category><![CDATA[Dominik Mandok]]></category>
+		<category><![CDATA[Theinvestbay]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/rsi-dashboard-multi-overbought-oversold-analyzer-download.html</guid>
+				<description><![CDATA[<p>Author : Dominik Mandok Category : Utilities Last Update : 12 April 2016 Rent Price : 25 USD Version : 5.0 RSI Dashboard is a <a class="mh-excerpt-more" href="http://project-regain.io/rsi-dashboard-multi-overbought-oversold-analyzer-download.html" title="RSI Dashboard Multi Overbought Oversold Analyzer Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/rsi-dashboard-multi-overbought-oversold-analyzer-download.html">RSI Dashboard Multi Overbought Oversold Analyzer Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Dominik Mandok<br />
+Category : Utilities<br />
+Last Update : 12 April 2016<br />
+Rent Price : 25 USD<br />
+Version : 5.0<br />
+</code></p>
+<p><strong>RSI Dashboard</strong> is a great tool for quickest possible analysis of <strong>multiple currency pairs</strong> in terms of <em>*Oversold *</em>or <em>*Overbought *</em>at the same time.</p>
+<p>The number of displayed symbols is 30 and the name of each symbol can be edited in the parameters, so we are able to analyze not only predetermined currency pairs, but also other ones, commodities, equities, indices, currency pairs with prefixes and suffixes etc&#8230;</p>
+<p>This analyzer is perfect for <em>*alert *</em>notifications through the MetaTrader terminal, push <em>*notifications *</em>to mobile device and also <em>*email *</em>alerts, e.g. from a VPS.</p>
+<p>The most important parameters are period of RSI (<strong><em>&#8220;RSI_Period&#8221;</em></strong>) and 2 levels (<strong><em>&#8220;RSI_Low_Level&#8221;</em></strong>, <strong>* &#8220;RSI_High_Level&#8221;*</strong>), below and above which we will get alerts.</p>
+<p>For example, if you set RSI_Period=7, RSI_Low_Level=20 and RSI_High_Level=80, you will receive alerts when the value of RSI (for period 7) for a given currency pair and a given timeframe will be below 20 (oversold) or above 80 (overbought).</p>
+<p>Another parameter is <strong><em>&#8220;Use_Only_Closed_Bars&#8221;</em></strong> &#8211; if set to &#8220;True&#8221; alerts come only from closed candles. If set to &#8220;False&#8221; &#8211; alerts come immediately from current candles.</p>
+<p><strong>RSI Dashboard <em>*gives us possibility to choose alerts from *</em>combined timeframes</strong> (with coincident conditions):</p>
+<ul>
+<li>
+<p>a) M5 + M15 + M30 (&#8220;Alerts_if_3_Lower_TFs_coherent&#8221;),</p>
+<ul>
+<li>b) H1 + H4 + D1 (&#8220;Alerts_if_3_Higher_TFs_coherent&#8221;),</li>
+<li>c) M5 + M15 + M30 + H1 + H4 + D1 (&#8220;Alerts_if_ALL_TFs_coherent&#8221;).<br />
+For every alerts we can add comments that work in two cases. <strong>* &#8220;Oversold_Comment&#8221;<em></strong> works in the case of RSI oversold (RSI value lower than &#8220;RSI_Low_Level&#8221; &#8211; default comment: &#8220;BUY&#8221;) and <strong></em> &#8220;Overbought_Comment&#8221;*</strong> works in the case of RSI overbought (RSI value higher than &#8220;RSI_High_Level&#8221; &#8211; default comment: &#8220;SELL&#8221;). Comments in alerts are embedded between timeframe and RSI period. Information that we receive in the email alerts are: symbol name, timeframe, comment, RSI (with given period) is lower/higher than (set in parameters) RSI level, eg.:</li>
+</ul>
+<p><em>*EURUSD M15 BUY &#8211; RSI (14) lower than 20 *</em>or</p>
+<p><strong>USDCHF H1 SELL &#8211; RSI (7) higher than 75</strong></p>
+<p>If we leave blank fields in these parameters we will get alerts without comments.</p>
+<p>We can choose whether the whole text of email alert is in the body or in the subject of email messages (<strong><em>&#8220;Whole_Text_In_Email_Subject&#8221;</em></strong>). When set to True alerts will look like (comments off):</p>
+<p>Subject: <strong>GBPUSD</strong> <strong>M5 &#8211; RSI (14) higher than 70</strong></p>
+<p>If set to True:</p>
+<p>Subject: <strong>GBPUSD <br />
+<em>*Body:</strong> <strong>M5 &#8211; RSI (14) higher than 70</em>*</strong></p>
+<p>In header of dashboard are displayed 4 actual parameters: RSI Period, 2 RSI Levels and text: &#8220;Real Time Values&#8221; or &#8220;Only Closed Bars&#8221; (depending on parameter &#8220;Use_Only_Closed_Bars&#8221;).</p>
+<p>Every color of RSI Dashboard is modifiable.</p>
+<p>Default colors of values and meaning:</p>
+</li>
+<li>
+<p><em>*Green &#8211; *</em>means that value of RSI is below RSI Low Level.</p>
+<ul>
+<li><strong>Red &#8211;</strong> RSI is above RSI High Level.</li>
+<li><strong>Gray <em>*- RSI value is maximal *</strong>&#8220;Near_Level_Percent&#8221;<strong></em> points above RSI Low Level or below RSI High Level.<br />
+We can set maximum spread at which the notifications will come (<em></strong>&#8220;Alerts_Max_Spread&#8221;</em>**).</li>
+</ul>
+<p>Spread values also can have different colors:</p>
+</li>
+<li>
+<p>a) when value is lower or equal to <strong><em>&#8220;</em><em>*</em></strong>Alerts_Max_Spread&#8221;<em>*</em>,</p>
+<ul>
+<li>b) between 1 and 1.5 times higher than this parameter,</li>
+<li>c) above 1.5 times higher than this parameter.<br />
+I suggest to make a new template with &#8220;RSI Dashboard&#8221; and scheme without colors (&#8220;None&#8221;), only Background and Foreground set to &#8220;White&#8221;.</li>
+</ul>
+<p>Remember, no one except yourself is responsible for any investment decision made by you.</p>
+<p>You are responsible for your own investment research and investment decisions.</p>
+<p>Good luck!   </p>
+<p><p><a href="#description">more&#8230;</a>  </p>
+</li>
+</ul>
+<h3>Image of RSI Dashboard Multi Overbought Oversold Analyzer</h3>
+<p><img src="https://c.mql5.com/31/114/rsi-dashboard-multi-overbought-oversold-analyzer-screen-4901.png" alt="RSI Dashboard Multi Overbought Oversold Analyzer" /></p>
+<p><img src="https://c.mql5.com/31/114/rsi-dashboard-multi-overbought-oversold-analyzer-screen-7292.png" alt="RSI Dashboard Multi Overbought Oversold Analyzer" /></p>
+<p><img src="https://c.mql5.com/31/114/rsi-dashboard-multi-overbought-oversold-analyzer-screen-9118.png" alt="RSI Dashboard Multi Overbought Oversold Analyzer" /></p>
+<p><img src="https://c.mql5.com/31/114/rsi-dashboard-multi-overbought-oversold-analyzer-screen-6390.png" alt="RSI Dashboard Multi Overbought Oversold Analyzer" /></p>
+<p><img src="https://c.mql5.com/31/114/rsi-dashboard-multi-overbought-oversold-analyzer-screen-9261.png" alt="RSI Dashboard Multi Overbought Oversold Analyzer" /></p>
+<p><img src="https://c.mql5.com/31/114/rsi-dashboard-multi-overbought-oversold-analyzer-screen-7102.png" alt="RSI Dashboard Multi Overbought Oversold Analyzer" /></p>
+<p><img src="https://c.mql5.com/31/114/rsi-dashboard-multi-overbought-oversold-analyzer-screen-3546.png" alt="RSI Dashboard Multi Overbought Oversold Analyzer" /></p>
+<h3>Download source code of  RSI Dashboard Multi Overbought Oversold Analyzer for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download RSI Dashboard Multi Overbought Oversold Analyzer" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/rsi-dashboard-multi-overbought-oversold-analyzer-download.html">RSI Dashboard Multi Overbought Oversold Analyzer Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+	</channel>
+</rss>

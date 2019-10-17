@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Andriy Konovalov &#8211; Expert Advisor / Indicator</title>
+	<atom:link href="http://project-regain.io/download/andriy-konovalov/feed" rel="self" type="application/rss+xml" />
+	<link>http://project-regain.io/</link>
+	<description>Download source coder from any indicator / Expert Advisor file.</description>
+	<lastBuildDate>Mon, 12 Aug 2019 23:00:00 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.2.4</generator>
+	<item>
+		<title>Trade history MT4 Download</title>
+		<link>http://project-regain.io/trade-history-mt4-download.html</link>
+				<pubDate>Mon, 12 Aug 2019 23:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Indicators]]></category>
+		<category><![CDATA[Andriy Konovalov]]></category>
+		<category><![CDATA[Kanua]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/trade-history-mt4-download.html</guid>
+				<description><![CDATA[<p>Author : Andriy Konovalov Category : Indicators Last Update : 1 July 2019 Rent Price : 30 USD Version : 1.2 The indicator plots charts <a class="mh-excerpt-more" href="http://project-regain.io/trade-history-mt4-download.html" title="Trade history MT4 Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/trade-history-mt4-download.html">Trade history MT4 Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Andriy Konovalov<br />
+Category : Indicators<br />
+Last Update : 1 July 2019<br />
+Rent Price : 30 USD<br />
+Version : 1.2<br />
+</code></p>
+<p>The indicator plots charts of profit taken at the Close of candles for closed (or partially closed) long and short orders individually. The indicator allows to filter orders by the current symbol and specified expert ID (magic number), to set the start time and the periodicity of profit reset (daily, weekly or monthly) to calculate the profit chart. The indicator also displays the floating (not fixed) profit of the orders opened after its was launched, according to the filter settings at the candle closure. It is the analog of the <a href="https://www.mql5.com/en/market/product/20462" title="https://www.mql5.com/en/market/product/20462">Trade history</a> for the MetaTrader 5 platform.</p>
+<p>The indicator works with any timeframes and instruments. It can be useful for analysis of efficiency of multiple experts trading on different symbols and directions on one account from a certain point of time.</p>
+<p>The available history of orders fixing a profit is used to plot charts of the fixed profit. To allow the indicator to display the full trading history, it is necessary to select the &#8220;All History&#8221; option in the context menu of the &#8220;Account History&#8221; tab before starting the indicator.</p>
+<p>Additional features of new versions of the indicator are described in the <a href="https://www.mql5.com/en/market/product/20786#!tab=updates" title="https://www.mql5.com/en/market/product/20786#!tab=updates">What&#8217;s New</a> tab.</p>
+<p>You can test the work of the indicator using the free demo version: <a href="https://www.mql5.com/en/market/product/23884" title="https://www.mql5.com/en/market/product/20786">Trade history MT4 demo</a>.</p>
+<p>### Indicator operation in the strategy tester</p>
+<p>The trial version of the indicator is available for testing in the MetaTrader 4 Strategy Tester. In testing mode, the indicator always displays the trading history of the real or demo account from the &#8220;Account History&#8221; tab of the &#8220;Terminal&#8221; window, and not the history of trading during the test from the &#8220;Results&#8221; tab of the &#8220;Tester&#8221; window (see the last screenshot for this description).</p>
+<p>### Indicator Parameters</p>
+<ul>
+<li>
+<p><strong>Current symbol only</strong> &#8211; boolean parameter (<strong>true</strong>/<strong>false</strong>), indicating the need for filtering orders by the current symbol.</p>
+<ul>
+<li><strong>Use expert ID filter</strong> &#8211; boolean parameter (<strong>true</strong>/<strong>false</strong>), indicating the need for filtering orders by expert advisor ID (magic number).</li>
+<li><strong>Expert ID (</strong>magic number<strong>)</strong> &#8211; expert advisor ID (integer) which is used in filtering orders by expert ID (for manual trading expert ID equals 0). This parameter is not used when the <strong>Use expert ID filter</strong> option is set to <strong>false</strong>.</li>
+<li><strong>Profit values in</strong> &#8211; selection of profit units (deposit currency, percentage of start balance, points).</li>
+<li><strong>Take into account commissions and swaps</strong> &#8211; boolean parameter (<strong>true</strong>/<strong>false</strong>), indicating the need for accounting of commission and swap of orders when calculating profit in units of deposit currency or percentage of balance.</li>
+<li><strong>Show profit curves for buy &amp; sell orders</strong> &#8211; boolean parameter (<strong>true</strong>/<strong>false</strong>), indicating the need to display separate charts of fixed profit for long and short orders.</li>
+<li><strong>Start time</strong> &#8211; date &amp; time parameter, specifying the initial time moment for calculating charts of profit.</li>
+<li><strong>Reset profit at</strong> &#8211; parameter of enumeration type with the values <strong>no_reset</strong>, <strong>day_begin</strong>, <strong>week_begin</strong>, <strong>month_begin</strong>. It indicates the need for daily, weekly or monthly reset of profits.</li>
+<li><strong>Draw trade signs in the main window</strong> &#8211; the need for drawing trade signs in the main window of a current chart.</li>
+</ul>
+<h3>The indicator graphic series (lines)</h3>
+</li>
+<li>
+<p><strong>Floating profit</strong> &#8211; line (solid yellow by default) showing floating (not fixed) profit of orders opened according to the filter settings at the candle closure since the indicator was launched. The indicator buffers 0 and 5 are used to plot this line.</p>
+<p>md5-0da9cc508d5089238a1d734f92b36cc9</p>
+<h3>Image of Trade history MT4</h3>
+<p><img src="https://c.mql5.com/31/159/trade-history-mt4-screen-9925.png" alt="Trade history MT4" /></p>
+<p><img src="https://c.mql5.com/31/159/trade-history-mt4-screen-9573.png" alt="Trade history MT4" /></p>
+<p><img src="https://c.mql5.com/31/159/trade-history-mt4-screen-8383.png" alt="Trade history MT4" /></p>
+<p><img src="https://c.mql5.com/31/159/trade-history-mt4-screen-9993.png" alt="Trade history MT4" /></p>
+<p><img src="https://c.mql5.com/31/159/trade-history-mt4-screen-6982.png" alt="Trade history MT4" /></p>
+<p><img src="https://c.mql5.com/31/159/trade-history-mt4-screen-4613.png" alt="Trade history MT4" /></p>
+<p><img src="https://c.mql5.com/31/159/trade-history-mt4-screen-7970.png" alt="Trade history MT4" /></p>
+<p><img src="https://c.mql5.com/31/159/trade-history-mt4-screen-3805.png" alt="Trade history MT4" /></p>
+<p><img src="https://c.mql5.com/31/159/trade-history-mt4-screen-5440.png" alt="Trade history MT4" /></p>
+<p><img src="https://c.mql5.com/31/159/trade-history-mt4-screen-2444.png" alt="Trade history MT4" /></p>
+<p><img src="https://c.mql5.com/31/159/trade-history-mt4-screen-8741.png" alt="Trade history MT4" /></p>
+<p><img src="https://c.mql5.com/31/159/trade-history-mt4-screen-7624.png" alt="Trade history MT4" /></p>
+<h3>Download source code of  Trade history MT4 for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download Trade history MT4" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/trade-history-mt4-download.html">Trade history MT4 Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>Trade history Download</title>
+		<link>http://project-regain.io/trade-history-download.html</link>
+				<pubDate>Sun, 11 Aug 2019 21:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Indicators]]></category>
+		<category><![CDATA[Andriy Konovalov]]></category>
+		<category><![CDATA[Kanua]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/trade-history-download.html</guid>
+				<description><![CDATA[<p>Author : Andriy Konovalov Category : Indicators Last Update : 5 July 2019 Rent Price : 30 USD Version : 1.2 The indicator plots charts <a class="mh-excerpt-more" href="http://project-regain.io/trade-history-download.html" title="Trade history Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/trade-history-download.html">Trade history Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Andriy Konovalov<br />
+Category : Indicators<br />
+Last Update : 5 July 2019<br />
+Rent Price : 30 USD<br />
+Version : 1.2<br />
+</code></p>
+<p>The indicator plots charts of profit taken at the Close of candles for closed (or partially closed) long and short positions individually. The indicator allows filtering positions by the current symbol and specified expert ID (magic number), to set the start time and the periodicity of profit reset (daily, weekly or monthly) to calculate the profit chart. The indicator also displays the floating (not fixed) profit of the positions opened after its was launched, according to the filter settings at the candle closure.</p>
+<p>The indicator works with any timeframes and instruments (including stock exchange). It can be useful for analysis of efficiency of multiple experts trading on different symbols and directions on one account from a certain point of time.</p>
+<p>The available history of deals fixing a profit is used to plot charts of the fixed profit.</p>
+<p>Additional features of new versions of the indicator are described in the <a href="https://www.mql5.com/en/market/product/20462#!tab=updates" title="https://www.mql5.com/en/market/product/20786#!tab=updates">What&#8217;s New</a> tab.</p>
+<p>You can test the work of the indicator using the free demo version: <a href="https://www.mql5.com/en/market/product/23614" title="https://www.mql5.com/en/market/product/23614">Trade history demo</a>.</p>
+<p>### Indicator Parameters</p>
+<ul>
+<li>
+<p><strong>Current symbol only</strong> &#8211; boolean parameter (<strong>true</strong>/<strong>false</strong>), indicating the need for filtering deals by the current symbol.</p>
+<ul>
+<li><strong>Use expert ID filter</strong> &#8211; boolean parameter (<strong>true</strong>/<strong>false</strong>), indicating the need for filtering deals by expert advisor ID (magic number).</li>
+<li><strong>Expert ID (</strong>magic number<strong>)</strong> &#8211; expert advisor ID (integer) which is used in filtering deals by expert ID (for manual trading expert ID equals 0). This parameter is not used when the <strong>Use expert ID filter</strong> option is set to <strong>false</strong>.</li>
+<li><strong>Profit values in</strong> &#8211; parameter of enumeration type with the values <strong>deposit_currency</strong>, <strong>percentage_of_start_balance</strong> to select profit units.</li>
+<li><strong>Take into account commissions and swaps</strong> &#8211; boolean parameter (<strong>true</strong>/<strong>false</strong>), indicating the need for accounting of commission and swap of deals.</li>
+<li><strong>Show profit curves for buy &amp; sell positions</strong> &#8211; boolean parameter (<strong>true</strong>/<strong>false</strong>), indicating the need to display separate charts of fixed profit for long and short positions.</li>
+<li><strong>Start time</strong> &#8211; date &amp; time parameter, specifying the initial time moment for calculating charts of fixed profit.</li>
+<li><strong>Reset profit at</strong> &#8211; parameter of enumeration type with the values <strong>no_reset</strong>, <strong>day_begin</strong>, <strong>week_begin</strong>, <strong>month_begin</strong>. It indicates the need for daily, weekly or monthly reset of profits.</li>
+</ul>
+<h3>The indicator plots (lines)</h3>
+</li>
+<li>
+<p><strong>Floating profit</strong> &#8211; line (solid yellow by default) showing floating (not fixed) profit of positions opened according to the filter settings at the candle closure since the indicator was launched.</p>
+<ol>
+<li><strong>Fixed profit</strong> &#8211; line (solid lime by default) showing fixed profit at the candle closure for closed (or partially closed) long and short positions according to the filter settings.</li>
+<li><strong>Fixed profit (buy)</strong> &#8211; line (dotted blue by default) showing fixed profit at the candle closure for closed (or partially closed) long positions according to the filter settings. This line is not visible when the <strong>Show profit curves for buy &amp; sell positions</strong> option is set to <strong>false.</strong></li>
+<li><strong>Fixed profit (sell)</strong> &#8211; line (dot red by default) showing fixed profit at the candle closure for closed (or partially closed) short positions according to the filter settings. This line is not visible when the <strong>Show profit curves for buy &amp; sell positions</strong> option is set to <strong>false.</strong></li>
+<li><strong>Invisible service buffer</strong> &#8211; hidden auxiliary buffer which should be ignored.<br />
+<a href="#description">more&#8230;</a>  </li>
+</ol>
+</li>
+</ul>
+<h3>Image of Trade history</h3>
+<p><img src="https://c.mql5.com/31/156/trade-history-screen-9716.png" alt="Trade history" /></p>
+<p><img src="https://c.mql5.com/31/156/trade-history-screen-6231.png" alt="Trade history" /></p>
+<p><img src="https://c.mql5.com/31/156/trade-history-screen-4069.png" alt="Trade history" /></p>
+<p><img src="https://c.mql5.com/31/156/trade-history-screen-1407.png" alt="Trade history" /></p>
+<p><img src="https://c.mql5.com/31/156/trade-history-screen-2449.png" alt="Trade history" /></p>
+<p><img src="https://c.mql5.com/31/156/trade-history-screen-4694.png" alt="Trade history" /></p>
+<p><img src="https://c.mql5.com/31/156/trade-history-screen-5751.png" alt="Trade history" /></p>
+<h3>Download source code of  Trade history for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download Trade history" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/trade-history-download.html">Trade history Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+	</channel>
+</rss>

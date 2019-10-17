@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Evgenii Kuznetsov &#8211; Expert Advisor / Indicator</title>
+	<atom:link href="http://project-regain.io/download/evgenii-kuznetsov/feed" rel="self" type="application/rss+xml" />
+	<link>http://project-regain.io/</link>
+	<description>Download source coder from any indicator / Expert Advisor file.</description>
+	<lastBuildDate>Thu, 15 Aug 2019 16:00:00 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.2.4</generator>
+	<item>
+		<title>PairsTrading Download</title>
+		<link>http://project-regain.io/pairstrading-download.html</link>
+				<pubDate>Thu, 15 Aug 2019 16:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Experts]]></category>
+		<category><![CDATA[Evgenii Kuznetsov]]></category>
+		<category><![CDATA[Master_255]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/pairstrading-download.html</guid>
+				<description><![CDATA[<p>Author : Evgenii Kuznetsov Category : Experts Last Update : 16 October 2018 Rent Price : 100 USD Version : 3.0 The EA identifies divergences <a class="mh-excerpt-more" href="http://project-regain.io/pairstrading-download.html" title="PairsTrading Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/pairstrading-download.html">PairsTrading Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Evgenii Kuznetsov<br />
+Category : Experts<br />
+Last Update : 16 October 2018<br />
+Rent Price : 100 USD<br />
+Version : 3.0<br />
+</code></p>
+<p>The EA identifies divergences in two correlated currency pairs and trades in the direction where they converge back.</p>
+<p>Working timeframe: <strong>M30</strong></p>
+<p>### Input parameters</p>
+<ul>
+<li>
+<p><strong>MagicNumber</strong> &#8211; identification number for the EA.</p>
+<ul>
+<li><strong>OrdersComment</strong> &#8211; comment to order, automatic if an empty value is set.</li>
+<li><strong>Lots</strong> &#8211; lot size.</li>
+<li><strong>DepoPer001Lot</strong> &#8211; automatic lot calculation (specify the balance per 0.01 lot) (if 0, the value from &#8216;Lots&#8217; parameter is used).</li>
+<li><strong>TimeFrame</strong> &#8211; working timeframe.</li>
+<li><strong>Symbol #2</strong> &#8211; correlated currency.</li>
+<li><strong>Symbol #2 reverse</strong> &#8211; currency #2 with a reverse correlation to the current.</li>
+<li><strong>Symbol #2 lot</strong> &#8211; lot of currency #2, automatic if a zero value is set.</li>
+<li>
+<p><strong>TradeType</strong> &#8211; drop-down list for selecting the trade direction: </p>
+<ul>
+<li><strong>+Sell/Buy | -Buy/Sell</strong> &#8211; standard, for pairs with direct correlation.</li>
+<li><strong>+Sell/Sell | -Buy/Buy</strong> &#8211; pairs with inverse correlation require this or the next value.</li>
+<li><strong>+Buy/Buy | -Sell/Sell</strong> &#8211; pairs with inverse correlation require this or the previous value.</li>
+</ul>
+</li>
+<li>
+<p><strong>Min Correlation</strong> &#8211; minimum divergence for opening orders, in the range of 0.1 &#8211; 0.5.</p>
+</li>
+<li><strong>Open signal shift</strong> &#8211; offset of the signal to open. If set to &#8220;0&#8221;, the current incomplete bar; if &#8220;1&#8221;, the previous closed bar, etc.</li>
+<li><strong>Close signal shift</strong> &#8211; offset of the signal to close. If set to &#8220;0&#8221;, the current incomplete bar; if &#8220;1&#8221;, the previous closed bar, etc.</li>
+<li><strong>Min dist reopen (pips)</strong> &#8211; step in points for opening additional orders in case of a repeated signal.</li>
+<li><strong>Max spread</strong> &#8211; the maximum spread for opening new orders.</li>
+<li><strong>Hour start</strong> &#8211; hour to start searching for the entry signals.</li>
+<li><strong>Minute start</strong> &#8211; minute to start searching for the entry signals.</li>
+<li><strong>Hour end</strong> &#8211; hour to stop searching for the entry signals.</li>
+<li><strong>Minute end</strong> &#8211; minute to stop searching for the entry signals.</li>
+<li><strong>Close only in profit ($/lot)</strong> &#8211; profit value, at which closing orders is allowed.</li>
+<li><strong>Exit minutes</strong> &#8211; time for closing a trade, in case there were no other signals to close.</li>
+<li><strong>Profit time exit ($/lot)</strong> &#8211; profit value, at which closing orders by time is allowed.</li>
+<li><strong>Trail start ($/lot)</strong> &#8211; the number of points to start the trailing stop by equity.</li>
+<li><strong>Trail stop ($/lot)</strong> &#8211; trailing distance.</li>
+<li><strong>Stop loss ($/lot)</strong> &#8211; stop loss in currency.</li>
+<li><strong>Take profit ($/lot)</strong> &#8211; take profit in currency.<br />
+The value of parameters specified with <strong>($/lot)</strong> are multiplied by the lot, so as not to change them as the lot size increases. Thus, if a parameter value is 100 and lot is 0.1, position will be closed upon reaching a profit of &gt;= $10.</li>
+</ul>
+<p>The EA should be attached to one currency only, there is no need to attach the EA to the currency specified in <strong>Symbol #2</strong>.</p>
+<p><p><a href="#description">more&#8230;</a>  </p>
+</li>
+</ul>
+<h3>Image of PairsTrading</h3>
+<p><img src="https://c.mql5.com/31/200/pairstrading-screen-8427.png" alt="PairsTrading" /></p>
+<h3>Download source code of  PairsTrading for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download PairsTrading" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/pairstrading-download.html">PairsTrading Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>Rebate System Download</title>
+		<link>http://project-regain.io/rebate-system-download.html</link>
+				<pubDate>Thu, 08 Aug 2019 13:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Experts]]></category>
+		<category><![CDATA[Evgenii Kuznetsov]]></category>
+		<category><![CDATA[Master_255]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/rebate-system-download.html</guid>
+				<description><![CDATA[<p>Author : Evgenii Kuznetsov Category : Experts Last Update : 24 May 2017 Rent Price : 10 USD Version : 1.6 Rebate System performs a <a class="mh-excerpt-more" href="http://project-regain.io/rebate-system-download.html" title="Rebate System Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/rebate-system-download.html">Rebate System Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Evgenii Kuznetsov<br />
+Category : Experts<br />
+Last Update : 24 May 2017<br />
+Rent Price : 10 USD<br />
+Version : 1.6<br />
+</code></p>
+<p>Rebate System performs a large number of trades with the minimum profit, which gives the opportunity to earn from receiving rebates (returning part of a spread).</p>
+<p>It is based on two grids (buy and sell), when one of them is in a drawdown, the other one can enter with an increased lot size, keeping the account away from the drawdown.</p>
+<p>It features a news filter, which prevents the possibility of getting into a trend without rollback caused by news releases.</p>
+<p>The default parameters are for <strong>EURUSD</strong> and a minimum deposit of 3000 units of the base currency (<strong>cent</strong> for cent accounts, <strong>$</strong> for classic accounts)</p>
+<p>### Input parameters</p>
+<ul>
+<li>
+<p><strong>StopAfterTP</strong> – stop trading after closing all grids;</p>
+<ul>
+<li><strong>TF_FirstOrder</strong> – period for opening the first orders in the grid;</li>
+<li><strong>TF_SeriesOrder</strong> – period for opening averaging orders;</li>
+<li><strong>Lot</strong> – lot size;</li>
+<li><strong>Takeprofit</strong> – take profit;</li>
+<li><strong>StepNextOrder</strong> – the minimum allowed distance between grid orders;</li>
+<li><strong>LotMultiply</strong> – multiplier for the lot of the current open order of the grid;</li>
+<li><strong>MaxTrades</strong> – the maximum number of orders in the grid.<br />
+<strong>Break-even parameters</strong></li>
+</ul>
+</li>
+<li>
+<p><strong>BE &#8211; number series</strong> – the number of order in the series after which the stop loss will be placed;</p>
+<ul>
+<li><strong>BE &#8211; start after point</strong> – the number of profit points after which the stop loss will be placed;</li>
+<li><strong>BE &#8211; distance point</strong> – distance from the breakeven of the series at which the stop loss will be placed.<br />
+<strong>Lock parameters</strong></li>
+</ul>
+</li>
+<li>
+<p><strong>Lock &#8211; number series</strong> – the number of order in the series after which the opposite grid increases the lot for locking;</p>
+<ul>
+<li><strong>Lock &#8211; % lots grid</strong> – locking percentage, lot size as a percentage of the sum of the opposite grid;</li>
+<li><strong>Lock &#8211; max lot</strong> – the maximum lot size of the first locking order.<br />
+<strong>Other parameters</strong></li>
+</ul>
+</li>
+<li>
+<p><strong>Slippage</strong> – slippage;</p>
+<ul>
+<li><strong>MagicNumberSell</strong> – identification number for sell orders;</li>
+<li><strong>MagicNumberBuy</strong> – identification number for buy orders;</li>
+<li><strong>UpdateSecond</strong> – timer for checking the placed take profits and stop losses.<br />
+<strong>Parameters of the news filter</strong></li>
+</ul>
+</li>
+<li>
+<p><strong>News Filter</strong> – list for selecting the values</p>
+</li>
+<li><strong>High</strong> – filter high-impact news;
+<ul>
+<li><strong>High &amp; Medium</strong> – filter high-impact and medium-impact news;</li>
+<li><strong>High, Medium &amp; Low</strong> – filter news with any importance;</li>
+<li><strong>OFF</strong> – disable the news filter.</li>
+</ul>
+</li>
+<li><strong>News before hour</strong> – the number of hours before the news release to stop trading
+<ul>
+<li><strong>News after hour</strong> – the number of hours after the news release for the EA not to trade</li>
+<li><strong>News stop type</strong> &#8211; a list for selecting values</li>
+</ul>
+</li>
+<li>
+<p><strong>First order</strong> &#8211; not to open the first order, but continue the started grid</p>
+<ul>
+<li><strong>All grid</strong> &#8211; stop all deals in the news range<br />
+To use the news filter, it is necessary to add the following URL:  </li>
+</ul>
+</li>
+<li>
+<p>http://www.forexfactory.com</p>
+<ul>
+<li>https://cdn-nfs.forexfactory.net</li>
+<li>http://ec.forexprostools.com<br />
+to the list of allowed URL on the Expert Advisors tab.</li>
+</ul>
+<p><strong>Visualization parameters</strong></p>
+</li>
+<li>
+<p><strong>Color_BE_buy</strong> – color of the breakeven level for buy orders;</p>
+<ul>
+<li><strong>Color_BE_buy</strong> – color of the breakeven level for buy orders;<br />
+Parameters are for four-digits quotes, they will be multiplied by 10 on five-digit instruments.    <a href="#description">more&#8230;</a>  </li>
+</ul>
+</li>
+</ul>
+<h3>Image of Rebate System</h3>
+<p><img src="https://c.mql5.com/31/165/rebate-system-screen-1833.png" alt="Rebate System" /></p>
+<p><img src="https://c.mql5.com/31/165/rebate-system-screen-6637.png" alt="Rebate System" /></p>
+<h3>Download source code of  Rebate System for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download Rebate System" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/rebate-system-download.html">Rebate System Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+	</channel>
+</rss>

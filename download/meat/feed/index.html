@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Meat &#8211; Expert Advisor / Indicator</title>
+	<atom:link href="http://project-regain.io/download/meat/feed" rel="self" type="application/rss+xml" />
+	<link>http://project-regain.io/</link>
+	<description>Download source coder from any indicator / Expert Advisor file.</description>
+	<lastBuildDate>Wed, 14 Aug 2019 18:00:00 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.2.4</generator>
+	<item>
+		<title>ChartBuilder MT5 Download</title>
+		<link>http://project-regain.io/chartbuilder-mt5-download.html</link>
+				<pubDate>Wed, 14 Aug 2019 18:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Indicators]]></category>
+		<category><![CDATA[Alexey Navoykov]]></category>
+		<category><![CDATA[Meat]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/chartbuilder-mt5-download.html</guid>
+				<description><![CDATA[<p>Author : Alexey Navoykov Category : Indicators Last Update : 8 June 2019 Rent Price : 60 USD Version : 2.61 The indicator is designed <a class="mh-excerpt-more" href="http://project-regain.io/chartbuilder-mt5-download.html" title="ChartBuilder MT5 Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/chartbuilder-mt5-download.html">ChartBuilder MT5 Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Alexey Navoykov<br />
+Category : Indicators<br />
+Last Update : 8 June 2019<br />
+Rent Price : 60 USD<br />
+Version : 2.61<br />
+</code></p>
+<p>The indicator is designed for easy construction of synthetic charts based on data of various financial instruments. It will be useful both arbitrage and pair trading, as well as for analysis purposes. Its main advantage is simplicity and clarity. Each chart is given as a common mathematical formula. For example, if you want to plot the spread (difference) between EURUSD and GBPUSD with coefficients 4 and 3, then set the following formula:</p>
+<p><strong>EURUSD * 4 &#8211; GBPUSD * 3</strong> The resulting chart is shown in the screenshot. But this is one of the simplest examples. Indicator allows you to draw charts of much more complex and interesting things. It also can monitor certain price levels set by the user, and generate a signal when price reaches the levels.</p>
+<p>Please find the full description of the indicator on the <a href="https://www.mql5.com/ru/market/product/6197#!tab=comments&amp;page=1" title="https://www.mql5.com/ru/market/product/6197#!tab=comments&amp;page=1">Comments</a> tab (Russian).</p>
+<p>### Indicator Parameters</p>
+<ul>
+<li>
+<p><em>*Formula1 *</em></p>
+<ul>
+<li><strong>Formula2</strong></li>
+<li><strong>&#8230;</strong></li>
+<li><em>*Formula12 *</em> &#8211; set formulas for each chart</li>
+<li><strong>Precision</strong> &#8211; indicator precision after a decimal point</li>
+<li><em>*TimeShift_minutes *</em>&#8211; time shift for all charts relative to the price scale (in minutes)</li>
+<li><strong>TimeSnap_Mode <em>*- time snapping resulting values to the displayed bars of the indicator. It can be set in &#8220;</strong>bars<strong>&#8221; or in &#8220;</strong>minutes</em>*&#8221;</li>
+<li><em>*TimeSnap_Size *</em>&#8211; maximum snapping size. If the time lag between the calculated bar and the actual bar exceeds this size, the bar will not be displayed on the screen. If set to -1, then there are no snapping limits</li>
+<li>
+<p><strong>OpenPrices_Synchronize</strong> &#8211; full synchronization of bar Open prices by time  </p>
+</li>
+<li>
+<p><em>*Draw Mode *</em>&#8211; chart drawing mode:</p>
+</li>
+</ul>
+</li>
+<li>LINE
+<ul>
+<li>BARS</li>
+<li>CANDLE</li>
+<li>SECTION (sections between non-empty values)</li>
+<li>HISTOGRAM</li>
+<li>POINTS</li>
+<li>AUTO (selected automatically in accordance with the selected display mode in the main window)</li>
+</ul>
+</li>
+<li>
+<p><strong>Interpolation Timeframe</strong> &#8211; the timeframe for the interpolation of intra-bar values when building synthetic bars. Default is M1</p>
+<ul>
+<li>
+<p><strong>RefreshRate_sec</strong> &#8211; chart update frequency in seconds  </p>
+</li>
+<li>
+<p><strong>Auto Scale</strong> &#8211; chart auto scale mode. Specify the number of the main chart; all other charts will be adjusted to the height of this chart</p>
+</li>
+<li><em>*Show Labels *</em>&#8211; choose location of names of formulas in the chart window (left or right)</li>
+<li><em>*Show Bid/Ask *</em>&#8211; show synthetic Bid/Ask for each chart</li>
+<li><strong>Signal_ChartNumber</strong> chart number for which signal values and signal lines are used.</li>
+<li><em>*Signal_HighValue *</em>&#8211; the upper signal value, after reaching which a signal will be generated</li>
+<li><em>*Signal_LowValue *</em>&#8211; the lower signal value</li>
+<li><em>*Signal_HighLine *</em>&#8211; the name of the upper signal line, after reaching which a signal will be generated</li>
+<li><em>*Signal_LowLine *</em>&#8211; the name of the lower signal line</li>
+<li><strong>Signal_CrossCharts</strong> &#8211; chart numbers (separated by commas or spaces), when they are crossed a signal will be generated</li>
+<li><strong>Signal_Pause</strong> &#8211; a pause between repetitions of the same signal (in seconds)</li>
+<li><strong>Save_ChartNumber</strong> &#8211; the number of the chart, the values of which should be saved to a text file</li>
+<li><strong>Save_FileName</strong> &#8211; the name of the text file to save chart values</li>
+<li><strong>Save_FileDelimiter</strong> &#8211; text separator used in the file. If nothing is specified, the tab character will be used.<br />
+<a href="#description">more&#8230;</a>  </li>
+</ul>
+</li>
+</ul>
+<h3>Image of ChartBuilder MT5</h3>
+<p><img src="https://c.mql5.com/31/38/chartbuilder-mt5-screen-2216.png" alt="ChartBuilder MT5" /></p>
+<h3>Download source code of  ChartBuilder MT5 for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download ChartBuilder MT5" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/chartbuilder-mt5-download.html">ChartBuilder MT5 Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+	</channel>
+</rss>

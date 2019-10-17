@@ -1,0 +1,658 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Indicators &#8211; Expert Advisor / Indicator</title>
+	<atom:link href="http://project-regain.io/forex/indicators/feed" rel="self" type="application/rss+xml" />
+	<link>http://project-regain.io/</link>
+	<description>Download source coder from any indicator / Expert Advisor file.</description>
+	<lastBuildDate>Mon, 02 Sep 2019 21:00:00 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.2.4</generator>
+	<item>
+		<title>Trend state Geometrical Mean Download</title>
+		<link>http://project-regain.io/trend-state-geometrical-mean-download.html</link>
+				<pubDate>Mon, 02 Sep 2019 21:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Indicators]]></category>
+		<category><![CDATA[Artyom Martynenko]]></category>
+		<category><![CDATA[Cyberpunk]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/trend-state-geometrical-mean-download.html</guid>
+				<description><![CDATA[<p>Author : Artyom Martynenko Category : Indicators Last Update : 2 August 2013 Rent Price : 10 USD Version : 1.1 ### Description: The indicator <a class="mh-excerpt-more" href="http://project-regain.io/trend-state-geometrical-mean-download.html" title="Trend state Geometrical Mean Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/trend-state-geometrical-mean-download.html">Trend state Geometrical Mean Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Artyom Martynenko<br />
+Category : Indicators<br />
+Last Update : 2 August 2013<br />
+Rent Price : 10 USD<br />
+Version : 1.1<br />
+</code></p>
+<p>### Description:</p>
+<p>The indicator draws the colored weighted moving geometrical mean in the price chart window. Besides, this indicator can be used for colored drawing of other indicators that do not have this feature as a default one. &#8220;Trend state Geometrical Mean&#8221; can be drawn using other indicator values but in this case, all values of this indicator should be greater than zero.</p>
+<p>### Parameters:</p>
+<ul>
+<li>
+<p><strong>Averaging period</strong> – indicator averaging period.</p>
+<ul>
+<li><strong>First weight</strong> – weight of the first (earliest) averaging period values.</li>
+<li><strong>Weight incrementation</strong> – incrementation of the averaged values&#8217; weight.</li>
+<li><strong>Vertical shift</strong> – vertical shift of the indicator in points.</li>
+<li><strong>Horizontal shift</strong> – horizontal shift of the indicator in bars.<br />
+&#8220;Averaging period&#8221; parameter should be greater than zero. In addition, the following ratio between parameter values should be true:</li>
+</ul>
+<p>(FW * 2) != (WI * (1 &#8211; AP)) where:</p>
+</li>
+<li>
+<p>FW – &#8220;First weight&#8221; parameter value.</p>
+<ul>
+<li>WI – &#8220;Weight incrementation&#8221; parameter value.</li>
+<li>AP – &#8220;Averaging period&#8221; parameter value.</li>
+<li>&#8220;!=&#8221; – &#8220;Not equal&#8221; ratio.<br />
+No limits are imposed on &#8220;Vertical shift&#8221; and &#8220;Horizontal shift&#8221; parameter values.</li>
+</ul>
+<h3>Examples of Settings:</h3>
+</li>
+<li>
+<p>In order to draw standard moving geometrical mean, set &#8220;First weight&#8221; parameter to one, while &#8220;Weight incrementation&#8221; should be equal to zero.</p>
+<p>md5-9202972f56fc2433b85ca1c0499db8fb</p>
+<h3>Image of Trend state Geometrical Mean</h3>
+<p><img src="https://c.mql5.com/31/6/trend-state-geometrical-mean-screen-3996.png" alt="Trend state Geometrical Mean" /></p>
+<p><img src="https://c.mql5.com/31/6/trend-state-geometrical-mean-screen-7006.png" alt="Trend state Geometrical Mean" /></p>
+<p><img src="https://c.mql5.com/31/6/trend-state-geometrical-mean-screen-1159.png" alt="Trend state Geometrical Mean" /></p>
+<p><img src="https://c.mql5.com/31/6/trend-state-geometrical-mean-screen-1520.png" alt="Trend state Geometrical Mean" /></p>
+<p><img src="https://c.mql5.com/31/6/trend-state-geometrical-mean-screen-5800.png" alt="Trend state Geometrical Mean" /></p>
+<p><img src="https://c.mql5.com/31/6/trend-state-geometrical-mean-screen-4331.png" alt="Trend state Geometrical Mean" /></p>
+<p><img src="https://c.mql5.com/31/6/trend-state-geometrical-mean-screen-9244.png" alt="Trend state Geometrical Mean" /></p>
+<p><img src="https://c.mql5.com/31/6/trend-state-geometrical-mean-screen-9623.png" alt="Trend state Geometrical Mean" /></p>
+<p><img src="https://c.mql5.com/31/6/trend-state-geometrical-mean-screen-3328.png" alt="Trend state Geometrical Mean" /></p>
+<p><img src="https://c.mql5.com/31/6/trend-state-geometrical-mean-screen-4123.png" alt="Trend state Geometrical Mean" /></p>
+<p><img src="https://c.mql5.com/31/6/trend-state-geometrical-mean-screen-6894.png" alt="Trend state Geometrical Mean" /></p>
+<h3>Download source code of  Trend state Geometrical Mean for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download Trend state Geometrical Mean" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/trend-state-geometrical-mean-download.html">Trend state Geometrical Mean Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>Yunny Fractals senior TF Download</title>
+		<link>http://project-regain.io/yunny-fractals-senior-tf-download.html</link>
+				<pubDate>Mon, 02 Sep 2019 19:30:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Indicators]]></category>
+		<category><![CDATA[Alex_L]]></category>
+		<category><![CDATA[Alexey Lifatov]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/yunny-fractals-senior-tf-download.html</guid>
+				<description><![CDATA[<p>Author : Alexey Lifatov Category : Indicators Last Update : 27 February 2014 Rent Price : 15 USD Version : 2.0 This indicator supplements the <a class="mh-excerpt-more" href="http://project-regain.io/yunny-fractals-senior-tf-download.html" title="Yunny Fractals senior TF Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/yunny-fractals-senior-tf-download.html">Yunny Fractals senior TF Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Alexey Lifatov<br />
+Category : Indicators<br />
+Last Update : 27 February 2014<br />
+Rent Price : 15 USD<br />
+Version : 2.0<br />
+</code></p>
+<p>This indicator supplements the standard Fractals. In addition to already formed fractals, Yunny Fractals senior TF draws points where Fractals may appear in future. The indicator displays information from any timeframe that is equal to or greater than the current one.</p>
+<p><strong>Indicator Input Parameters:</strong></p>
+<ul>
+<li><strong>Period</strong> &#8211; timeframe for calculation of the indicator;
+<ul>
+<li><strong>Arrow shift</strong> &#8211; shift of labels relative to the maximum (minimum) of a bar;</li>
+<li><strong>Set color to all plots</strong> &#8211; sets a single color for all plots of the indicator.<br />
+<a href="#description">more&#8230;</a>  </li>
+</ul>
+</li>
+</ul>
+<h3>Image of Yunny Fractals senior TF</h3>
+<p><img src="https://c.mql5.com/31/6/yunny-fractals-sntf-screen-4696.png" alt="Yunny Fractals senior TF" /></p>
+<h3>Download source code of  Yunny Fractals senior TF for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download Yunny Fractals senior TF" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/yunny-fractals-senior-tf-download.html">Yunny Fractals senior TF Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>Argo AoC Download</title>
+		<link>http://project-regain.io/argo-aoc-download.html</link>
+				<pubDate>Mon, 02 Sep 2019 17:30:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Indicators]]></category>
+		<category><![CDATA[Alexander Lasygin]]></category>
+		<category><![CDATA[Argo]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/argo-aoc-download.html</guid>
+				<description><![CDATA[<p>Author : Alexander Lasygin Category : Indicators Last Update : 6 November 2013 Rent Price : 30 USD Version : 1.1 The indicator implements Awesome <a class="mh-excerpt-more" href="http://project-regain.io/argo-aoc-download.html" title="Argo AoC Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/argo-aoc-download.html">Argo AoC Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Alexander Lasygin<br />
+Category : Indicators<br />
+Last Update : 6 November 2013<br />
+Rent Price : 30 USD<br />
+Version : 1.1<br />
+</code></p>
+<p>The indicator implements Awesome Oscillator operation principles. It reveals what is happening at the current moment with the market&#8217;s driving force. Thus, we can apply the same trading rules to it. The difference from АО is that it does not lag. This is especially noticeable after a strong market movement. This feature provides the indicator with a considerable advantage over Awesome Oscillator. It also displays &#8220;classic divergence&#8221; and &#8220;reverse divergence&#8221;. The line of the last &#8220;reverse divergence&#8221; is extended in the chart&#8217;s main window (it is colored in Aqua in the screenshot). Its breakthrough provides a signal for the market reversal or continuation of the price movement. </p>
+<p>Since this line is a strong support/resistance line, DelLine function has been provided in the indicator. Disable this function if you want this line to remain on the screen when moving to another time frame or to be colored in various colors (each one for specific time frame) for ease of viewing and analysis.</p>
+<p>Other settings:</p>
+<ul>
+<li>DivergenceAlertON &#8211; new divergence alert.
+<ul>
+<li>Divergence &#8211; enable/disable determining the divergence.</li>
+<li>drawIndicatorTrendLines &#8211; drawing divergence lines in the chart&#8217;s main window.</li>
+<li>drawPriceTrendLines &#8211; drawing divergence lines in the indicator window.</li>
+<li>DrawLine &#8211; drawing reverse divergence continuation lines in the chart&#8217;s main window.</li>
+<li>BearishColorLine &#8211; color of the bearish divergence lines.</li>
+<li>BullishColorLine &#8211; color of the bullish divergence lines.</li>
+<li>ColorLine &#8211; color of the reverse divergence &#8220;continuation&#8221; line (DelLine=false).</li>
+<li>Bar &#8211; number of the bars, at which the divergence is determined.<br />
+<a href="#description">more&#8230;</a>  </li>
+</ul>
+</li>
+</ul>
+<h3>Image of Argo AoC</h3>
+<p><img src="https://c.mql5.com/31/9/argo-aoc-screen-1048.png" alt="Argo AoC" /></p>
+<p><img src="https://c.mql5.com/31/9/argo-aoc-screen-4026.png" alt="Argo AoC" /></p>
+<h3>Download source code of  Argo AoC for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download Argo AoC" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/argo-aoc-download.html">Argo AoC Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>Foresight 1NN single currency Download</title>
+		<link>http://project-regain.io/foresight-1nn-single-currency-download.html</link>
+				<pubDate>Mon, 02 Sep 2019 17:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Indicators]]></category>
+		<category><![CDATA[Cysp74]]></category>
+		<category><![CDATA[Gabor Hauzer]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/foresight-1nn-single-currency-download.html</guid>
+				<description><![CDATA[<p>Author : Gabor Hauzer Category : Indicators Last Update : 9 December 2013 Rent Price : 10 USD Version : 1.2 This indicator tries to <a class="mh-excerpt-more" href="http://project-regain.io/foresight-1nn-single-currency-download.html" title="Foresight 1NN single currency Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/foresight-1nn-single-currency-download.html">Foresight 1NN single currency Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Gabor Hauzer<br />
+Category : Indicators<br />
+Last Update : 9 December 2013<br />
+Rent Price : 10 USD<br />
+Version : 1.2<br />
+</code></p>
+<p>This indicator tries to forecast possible moving of the symbol with NN algorithm. NN algorithm (generally) is easy to understand, and it works with incredible high efficiency in real world. NN belongs to the best data mining solutions, however that&#8217;s non-parametric algorithm. However please remember this indicator only tries to predict but it doesn&#8217;t know the future and the prediction can work in short term only.</p>
+<p>Basic theory behind the indicator is that the history always repeats in the market too.</p>
+<p>This indicator was made for serious application, not for playing. On every new bar it recalculates and shows the most similar pattern. Thus this indicator can dramatically increase your chances to take a right position.</p>
+<p>### Features</p>
+<p>This version is able to use either the base symbol or another indicator data as a source.</p>
+<p>### Recommendations</p>
+<p>For better result it is strongly recommended to set &#8220;Max bars in chart&#8221; to &#8220;unlimited&#8221; to provide enough historical data for the indicator.</p>
+<p>Probably this is the fastest prediction indicator on the MetaTrader market, ideal for trading on 1 minute timeframe.</p>
+<p>### Settings</p>
+<ul>
+<li>
+<p><strong>inp_force_cpu_opencl</strong> &#8211; instructs the indicator to ignore available GPU. If you intend to use GPU instead of CPU, it must be able to calculate with fp64 (double precision). True on default.</p>
+<ul>
+<li><strong>inp_pattern_length</strong> &#8211; sets the reference pattern length. True on default.</li>
+<li><strong>inp_predict_length</strong> &#8211; sets the predicted length, it doesn&#8217;t matter if it is too long in real environment. 10 on default.</li>
+<li><strong>inp_use_weight</strong> &#8211; uses linear weighted patterns. In linear weighted patterns the most recent data is more important than the older data. True on default.</li>
+<li><strong>inp_price_select</strong> &#8211; selects the basic source for the indicator on the given symbol. Available options: Open, High, Low, Close. Default is Open.</li>
+<li><strong>inp_primary_data_source</strong> &#8211; instructs the indicator to take the source data from the given indicator instead of the base source (OHLC). Default is none. The format must be following: indicator name,its buffer number (comma separated).</li>
+<li><strong>inp_show_correlation_coefficient</strong> &#8211; shows the correleation coefficient on the left top side of the chart. True on default.</li>
+<li><strong>inp_show_debug_messages</strong> &#8211; this product is bug free <img src="https://s.w.org/images/core/emoji/12.0.0-1/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /> But in case you found a strange feature while working with it, please turn this parameter on send the related messages. False on default.</li>
+</ul>
+<h3>Requirements</h3>
+</li>
+<li>
+<p>OpenCL must be installed on the target machine, because massive and bulky calculations are running in background (for further information check: <a href="https://www.mql5.com/en/articles/690">https://www.mql5.com/en/articles/690</a>).</p>
+<p>md5-1098cfc46ec2b4735d201e80934f801d</p>
+<h3>Image of Foresight 1NN single currency</h3>
+<p><img src="https://c.mql5.com/31/12/foresight-1nn-single-currency-screen-3496.png" alt="Foresight 1NN single currency" /></p>
+<p><img src="https://c.mql5.com/31/12/foresight-1nn-single-currency-screen-3047.png" alt="Foresight 1NN single currency" /></p>
+<h3>Download source code of  Foresight 1NN single currency for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download Foresight 1NN single currency" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/foresight-1nn-single-currency-download.html">Foresight 1NN single currency Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>KLEO CONSOLIDATION CHANNEL Download</title>
+		<link>http://project-regain.io/kleo-consolidation-channel-download.html</link>
+				<pubDate>Mon, 02 Sep 2019 16:30:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Indicators]]></category>
+		<category><![CDATA[Keon]]></category>
+		<category><![CDATA[Viacheslav Koshelev]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/kleo-consolidation-channel-download.html</guid>
+				<description><![CDATA[<p>Author : Viacheslav Koshelev Category : Indicators Last Update : 16 January 2014 Rent Price : 30 USD Version : 14.1 As the name suggests,* <a class="mh-excerpt-more" href="http://project-regain.io/kleo-consolidation-channel-download.html" title="KLEO CONSOLIDATION CHANNEL Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/kleo-consolidation-channel-download.html">KLEO CONSOLIDATION CHANNEL Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Viacheslav Koshelev<br />
+Category : Indicators<br />
+Last Update : 16 January 2014<br />
+Rent Price : 30 USD<br />
+Version : 14.1<br />
+</code></p>
+<p>As the name suggests,<em>* KLEO CONSOLIDATION CHANNEL</em>* is a price consolidation channel. This indicator is not just a tool for visual analysis. It contains a complete solution that can form the basis of the trading system. The indicator allows users to quickly test the system parameters, trade manually or use it as part of an Expert Advisor. The indicator works on various currency pairs and time frames. </p>
+<p>The indicator:</p>
+<ul>
+<li>
+<p>looks for price consolidation periods and creates <strong>Consolidation channel</strong> and <strong>Advance channel</strong>. The levels of the channels serve as landmarks for the market entry,</p>
+<ul>
+<li>generates signals for opening and closing trades, </li>
+<li>marks trades on the chart and displays their results,</li>
+<li>calculates trading statistics.<br />
+By changing input parameters, we can immediately see potential trading results. In other words, the indicator allows users to test the system and select optimal parameter values for a particular currency pair and chart period.</li>
+</ul>
+<h3>1. Description</h3>
+</li>
+<li>
+<p>If the price change range for <strong>Period <em>*bars does not exceed *</em>Range</strong> points, it is considered that consolidation has started. Color of levels is yellow. The channel is recalculated when a new bar appears till the price movement range exceeds the specified limit. </p>
+<p>md5-c997dbdca948cbd96efe7fcb3363789d</p>
+<h3>2. Buffers</h3>
+<p>Buffer index Name and purpose     0 <strong>High level</strong> &#8211; Upper level of the consolidation channel.    2 <strong>Low level</strong> &#8211; Lower level of the consolidation channel.    4 <strong>Advance High level</strong> &#8211; Upper level of the advance channel.   6 <strong>Advance Low level <em>*- Lower level of the advance channel.    8 *</em>Trade buffer</strong> &#8211; Signal buffer. At the moment of the channel&#8217;s breakthrough, the buffer takes the value of the exceeded level. That serves as a market entry signal. The value is positive in case of a buy signal or negative in case of a sell one. The buffer value reset is a signal for the market exit.    ### </p>
+<h3>3. Parameters</h3>
+<p>CONSOLIDATION CHANNEL parameters  Description      <strong>&#8212;&#8212;&#8212;&#8212;&#8212;Channel parameter&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;-</strong> <strong>Channel parameters.</strong>   <strong>Period</strong> Initial period of the consolidation.   <strong>Range <em>* Maximum range of the price change ((</strong>High &#8211; Low<strong>) value for the *</em>Period</strong> period) to consider that prices are consolidating.   <strong>Shift from High</strong> Channel&#8217;s upper level shift in points.    <strong>Shift from Low</strong> Channel&#8217;s lower level shift in points.    <strong>&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;Trading&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8211;</strong> <strong>Trading</strong>   <strong>Show trades</strong> Show trades on the chart.<em>* On/Off <strong>&#8211; enabled/disabled    *</em>Open mode</strong>  Market entry modes: <br />
+<em>* Levels after consolidation</em>* &#8211; entering the market at the channel levels&#8217; breakthrough after the price consolidation, (Green)  </p>
+<ul>
+<li><strong>Advance levels</strong> &#8211; entering the market during the levels&#8217; breakthrough after consolidation and advance levels, (Green+Blue)  </li>
+<li><strong>Consolidation levels</strong> &#8211; entering the market during the levels&#8217; breakthrough after and during consolidation. (Green+Yellow)    <strong>Start time</strong>  operation start.    <strong>Close time</strong>  operation end. (<strong>Start time</strong> &gt; <strong>Close time</strong>) means overnight working time. (<strong>Start time</strong> = <strong>Close time</strong>) means twenty-four-hour operation. Outside of working hours, the color of channel levels is white by default.   <strong>Color <em>*  Color of the trade result text and trade line.    *</em>&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;Test period&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8211;</strong> <strong>Period for calculating statistics.</strong>   <em>* Start</em>*  Start year.    <strong>Stop</strong>  Stop year.    </li>
+</ul>
+<p>Be careful when changing <strong>Period <em>*and *</em>Range</strong> parameters!</p>
+</li>
+<li>
+<p>if <em>*Period *</em>value is too big and/or <em>*Range *</em>one is too small, there may not be periods matching the specified parameters and therefore, the indicator cannot be generated.</p>
+<ul>
+<li>The more stringent conditions are set by these parameters, the slower the calculation is performed.   </li>
+</ul>
+<h3> </h3>
+<h3>4. Screenshots and video</h3>
+<p>Screenshots Symbol Chart period <br />
+Period Range Shift from High / Low  Working hours  Start / Stop     1, 3 GBPUSD H1 5 20 20 / 20  Around the clock  2012 / 2013   2 GBPUSD H1 5 20 20 / 20  8:00 &#8211; 23:00  2012 / 2013   4 GBPUSD M15 5 10 10 / 10  Around the clock  2012 / 2013   5 GBPUSD M5 10 10 10 / 10  Around the clock  2012 / 2013   6, 7 EURUSD H1 6 15 15 / 15  Around the clock  2012 / 2013   8 EURJPY H1 5 25 10 / 10  Around the clock  2010 / 2013   9 EURJPY  H4 3 50 15 / 15  Around the clock  2010 / 2013     </p>
+<p>The first part of the video contains examples of working with the indicator. The second part presents a fragment of the indicator&#8217;s operation in the strategy tester.   </p>
+<p><strong>Warning</strong> <br />
+Tooltips do not display statistics in visualization mode.  Watch for new publications in the <a href="https://www.mql5.com/en/market">Market</a>! </p>
+<p>I am waiting for your comments. Leave your feedback.</p>
+<p>I wish you successful trading!</p>
+<p><p><a href="#description">more&#8230;</a>  </p>
+</li>
+</ul>
+<h3>Image of KLEO CONSOLIDATION CHANNEL</h3>
+<p><img src="https://c.mql5.com/31/10/kleo-consolidation-channel-screen-9519.png" alt="KLEO CONSOLIDATION CHANNEL" /></p>
+<p><img src="https://c.mql5.com/31/10/kleo-consolidation-channel-screen-4551.png" alt="KLEO CONSOLIDATION CHANNEL" /></p>
+<p><img src="https://c.mql5.com/31/10/kleo-consolidation-channel-screen-7446.png" alt="KLEO CONSOLIDATION CHANNEL" /></p>
+<p><img src="https://c.mql5.com/31/10/kleo-consolidation-channel-screen-6356.png" alt="KLEO CONSOLIDATION CHANNEL" /></p>
+<p><img src="https://c.mql5.com/31/10/kleo-consolidation-channel-screen-9544.png" alt="KLEO CONSOLIDATION CHANNEL" /></p>
+<p><img src="https://c.mql5.com/31/10/kleo-consolidation-channel-screen-1594.png" alt="KLEO CONSOLIDATION CHANNEL" /></p>
+<p><img src="https://c.mql5.com/31/10/kleo-consolidation-channel-screen-4412.png" alt="KLEO CONSOLIDATION CHANNEL" /></p>
+<p><img src="https://c.mql5.com/31/11/kleo-consolidation-channel-screen-7897.png" alt="KLEO CONSOLIDATION CHANNEL" /></p>
+<p><img src="https://c.mql5.com/31/11/kleo-consolidation-channel-screen-9961.png" alt="KLEO CONSOLIDATION CHANNEL" /></p>
+<h3>Download source code of  KLEO CONSOLIDATION CHANNEL for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download KLEO CONSOLIDATION CHANNEL" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/kleo-consolidation-channel-download.html">KLEO CONSOLIDATION CHANNEL Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>PivotPoints Download</title>
+		<link>http://project-regain.io/pivotpoints-download.html</link>
+				<pubDate>Mon, 02 Sep 2019 15:30:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Indicators]]></category>
+		<category><![CDATA[Max.Pol]]></category>
+		<category><![CDATA[Maxim Polishchuk]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/pivotpoints-download.html</guid>
+				<description><![CDATA[<p>Author : Maxim Polishchuk Category : Indicators Last Update : 1 April 2016 Rent Price : 10 USD Version : 1.1 PivotPoints indicator calculates and <a class="mh-excerpt-more" href="http://project-regain.io/pivotpoints-download.html" title="PivotPoints Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/pivotpoints-download.html">PivotPoints Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Maxim Polishchuk<br />
+Category : Indicators<br />
+Last Update : 1 April 2016<br />
+Rent Price : 10 USD<br />
+Version : 1.1<br />
+</code></p>
+<p><strong>PivotPoints</strong> indicator calculates and displays monthly, weekly and daily support and resistance levels. It also warns when the price approaches the Pivot levels.</p>
+<ul>
+<li>
+<p>Pivot points are potential reversal levels used by banks and financial institutions.</p>
+<ul>
+<li>They are the basis of most kinds of the technical analysis.<br />
+The indicator can calculate Pivot levels using the following methods:</li>
+</ul>
+</li>
+<li>
+<p>Standard;</p>
+<ul>
+<li>Camarilla;</li>
+<li>Woodie;</li>
+<li>De Mark.</li>
+</ul>
+<h3>Notation</h3>
+</li>
+<li>
+<p>РР &#8211; central Pivot level.</p>
+<p>md5-8be91e47388bc59430265f8d1ef22534</p>
+<h3>Settings</h3>
+</li>
+<li>
+<p>Method &#8211; Pivot levels calculation method:</p>
+</li>
+<li>Standard;
+<p>md5-f4b940f32cfbc0fe43718b8cf4f79e2a</p>
+<h3>Image of PivotPoints</h3>
+<p><img src="https://c.mql5.com/31/50/pivotpoints-screen-1401.jpg" alt="PivotPoints" /></p>
+<p><img src="https://c.mql5.com/31/50/pivotpoints-screen-8724.jpg" alt="PivotPoints" /></p>
+<p><img src="https://c.mql5.com/31/50/pivotpoints-screen-2982.jpg" alt="PivotPoints" /></p>
+<p><img src="https://c.mql5.com/31/50/pivotpoints-screen-1769.jpg" alt="PivotPoints" /></p>
+<p><img src="https://c.mql5.com/31/50/pivotpoints-screen-7482.jpg" alt="PivotPoints" /></p>
+<p><img src="https://c.mql5.com/31/50/pivotpoints-screen-7160.jpg" alt="PivotPoints" /></p>
+<p><img src="https://c.mql5.com/31/50/pivotpoints-screen-1319.jpg" alt="PivotPoints" /></p>
+<p><img src="https://c.mql5.com/31/50/pivotpoints-screen-7834.jpg" alt="PivotPoints" /></p>
+<h3>Download source code of  PivotPoints for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download PivotPoints" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/pivotpoints-download.html">PivotPoints Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>ASTForecast Download</title>
+		<link>http://project-regain.io/astforecast-download.html</link>
+				<pubDate>Mon, 02 Sep 2019 15:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Indicators]]></category>
+		<category><![CDATA[Alexander Lasygin]]></category>
+		<category><![CDATA[Argo]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/astforecast-download.html</guid>
+				<description><![CDATA[<p>Author : Alexander Lasygin Category : Indicators Last Update : 10 February 2016 Rent Price : 30 USD Version : 1.1 The indicator displays the <a class="mh-excerpt-more" href="http://project-regain.io/astforecast-download.html" title="ASTForecast Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/astforecast-download.html">ASTForecast Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Alexander Lasygin<br />
+Category : Indicators<br />
+Last Update : 10 February 2016<br />
+Rent Price : 30 USD<br />
+Version : 1.1<br />
+</code></p>
+<p>The indicator displays the price range channel boundaries and, more importantly, the areas where the sentiments of different trader groups match.</p>
+<p>It is based on the author&#8217;s vision of the behavior of traders inside the market, described in details in the blog (<a href="https://www.mql5.com/ru/blogs/post/371629">https://www.mql5.com/en/users/argo/blog</a>).</p>
+<p>Between the red and blue dots is the congestion area, in the middle of which runs the white line of balance. Between the yellow and blue ones is the main channel of the price range. The main movement of the price happens within it during consolidation. The direction of its breakthrough points at the upcoming price movement with high probability.</p>
+<p>The orange and pale green rectangles are the areas of reversal in cases of false channel breakouts. The red and green ones are the &#8220;areas of sentiment matches.&#8221; The consolidation or the reversal of the market happens in them.</p>
+<p>### Settings</p>
+<ul>
+<li>
+<p>atr_Slow_period &#8211; the width of the channel of the main price range.</p>
+<ul>
+<li>atr_Fast_period &#8211; congestion channel width.<br />
+The values of both parameters are specified as percentages (Fibonacci numbers).</li>
+</ul>
+</li>
+<li>
+<p>target_Level &#8211; number of simultaneously displayed levels</p>
+<ul>
+<li>filter_Small_Zones &#8211; disable filter by «false breakout areas» of the price range (the levels are drawn immediately, without waiting for the price to leave the «false breakout area»)</li>
+<li>min_Width &#8211; the minimum width of the area. Specified in pips (5 digits).</li>
+<li>look_History &#8211; Enable historical data (only for the analysis of the indicator operation)</li>
+<li>depth_to_Histories &#8211; the number of trend changes to check<br />
+<a href="#description">more&#8230;</a>  </li>
+</ul>
+</li>
+</ul>
+<h3>Image of ASTForecast</h3>
+<p><img src="https://c.mql5.com/31/101/astforecast-screen-7102.png" alt="ASTForecast" /></p>
+<p><img src="https://c.mql5.com/31/101/astforecast-screen-8864.png" alt="ASTForecast" /></p>
+<p><img src="https://c.mql5.com/31/101/astforecast-screen-4628.png" alt="ASTForecast" /></p>
+<h3>Download source code of  ASTForecast for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download ASTForecast" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/astforecast-download.html">ASTForecast Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>Renko Charts Download</title>
+		<link>http://project-regain.io/renko-charts-download.html</link>
+				<pubDate>Mon, 02 Sep 2019 14:30:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Indicators]]></category>
+		<category><![CDATA[Konstantin Gruzdev]]></category>
+		<category><![CDATA[Lizar]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/renko-charts-download.html</guid>
+				<description><![CDATA[<p>Author : Konstantin Gruzdev Category : Indicators Last Update : 29 April 2015 Rent Price : 299 USD Version : 1.17 The iRenkoChart indicator allows <a class="mh-excerpt-more" href="http://project-regain.io/renko-charts-download.html" title="Renko Charts Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/renko-charts-download.html">Renko Charts Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Konstantin Gruzdev<br />
+Category : Indicators<br />
+Last Update : 29 April 2015<br />
+Rent Price : 299 USD<br />
+Version : 1.17<br />
+</code></p>
+<p>The iRenkoChart indicator allows creating custom Renko charts. It uses an open format of history files, easy switching between the charts based on Bid and Ask prices, history quality control, ability to use the Expert Advisors, indicators and chart objects for technical analysis and many other things.</p>
+<p>This indicator is based on <a href="/en/market/product/186">iCustomChart</a> and represents its particular implementation. iCustomChart demo version can be downloaded for <a href="/en/market/product/203">free</a>. ### Contents:</p>
+<ol>
+<li>
+<p>Advantages and Features</p>
+<ol>
+<li>Input Parameters</li>
+<li>Indicator Buffers</li>
+<li>Data Window</li>
+<li>History Files</li>
+<li>History Quality Control</li>
+<li>Time Scale</li>
+<li>Graphical Objects for Technical Analysis</li>
+<li>Indicators and Experts<br />
+<h3><strong>1. Advantages and Features</strong></h3>
+</li>
+</ol>
+</li>
+<li>
+<p>runs and works at any open chart window (called &#8220;base chart&#8221; further on in this document);</p>
+<ul>
+<li>looks like a common chart after launching (see Screenshots);</li>
+<li>to get started, previously created history files are not required;</li>
+<li>open history file format is used;</li>
+<li>MetaTrader 4 and MetaTrader 5 data format can be used;</li>
+<li>easy switching between charts based on Bid or Ask prices;</li>
+<li>history quality control (see Screenshot 7);</li>
+<li>full format of history including open time of boxes (bars), spread, tick and exchange volume;</li>
+<li>built-in Data Window (see Screenshot 4);</li>
+<li>built-in Time Scale (see Screenshot 6);</li>
+<li>auto scaling of price scale;</li>
+<li>major part of the objects from the MetaTrader 5 standard set can be used for technical analysis (see Screenshot 2);</li>
+<li>displaying online and offline charts;</li>
+<li>controlling bars open time up to milliseconds;</li>
+<li>custom indicators and Expert Advisors can be created based on the iRenkoChart chart using <a href="/en/market/product/196">LibCustomChart</a> (see Screenshots 3, 8).<br />
+<h3>2. Input Parameters</h3>
+</li>
+</ul>
+</li>
+<li>
+<p><em>*Max bars in chart *</em>&#8211; allows displaying a fixed number of bars (boxes) in a chart window. Zero value of the parameter allows displaying the maximum possible number of bars, but no more than the number specified in the client terminal settings. This parameter acts as the equivalent parameter of the client terminal described in <a href="https://www.metatrader5.com/en/terminal/help/settings">Help</a>. The default value is 1000.</p>
+<ul>
+<li><em>*Size of box *</em>&#8211; range or size of boxes (bars) in points from open price to close price. The default value is 200.</li>
+<li><em>*Value of zero buffer *</em>&#8211; zero buffer value calculated according to selected <a href="/en/docs/constants/indicatorconstants/prices">price constant</a>.<br />
+<h3>3. Indicator Buffers</h3>
+</li>
+</ul>
+<p>Indicator Buffer Number Content     0 Contains selected <a href="/en/docs/constants/indicatorconstants/prices">price constant</a>. The buffer is basically created for other indicators that use <a href="/ru/docs/basis/function/events">the first call form</a> to get data.   1 Bar (box) open time.   2 Bar open price.   3 Bar high price.   4 Bar low price.   5 Bar closing price.   6 Bar color.   7 Exchange volume.   8 Tick volume.   9 Spread.    ### 4. Data Window</p>
+<p>Built-in data window looks similar to the standard MetaTrader 5 data window, but has some additional features (Screenshot 4). Data fields displayed in the window:</p>
+</li>
+<li>
+<p><em>*Upper field *</em>&#8211; symbol name and parameter. Parameter is a size of bar in points (Size of box), specified in the indicator input parameters. The window containing data on a history file will be opened once you click on this field (Screenshot 5).</p>
+<ul>
+<li><strong>Date</strong> &#8211; bar open date.</li>
+<li><strong>Time</strong> &#8211; bar open time.</li>
+<li><strong>Open</strong> &#8211; bar open price.</li>
+<li><strong>High</strong> &#8211; bar high price.</li>
+<li><strong>Low</strong> &#8211; bar low price.</li>
+<li><strong>Close</strong> &#8211; bar close price.</li>
+<li><strong>Volume</strong> &#8211; exchange volume.</li>
+<li><strong>Tick Volume</strong> &#8211; tick volume.</li>
+<li><strong>Spread</strong> &#8211; bar spread.</li>
+<li><strong>Bar</strong> &#8211; bar index; zero bar &#8211; last unfinished bar.<br />
+Data window has several buttons to control the chart:</li>
+</ul>
+</li>
+<li>
+<p><strong>Shadows</strong> &#8211; enables/disables displaying shadows, the same action is executed by pressing the &#8220;<strong>S</strong>&#8221; key;</p>
+<ul>
+<li><strong>Update</strong> &#8211; enables/disables the chart update mode (&#8220;<strong>U</strong>&#8221; hot key);</li>
+<li><strong>Bid/Ask</strong> &#8211; switches the chart to displaying using Bid or Ask prices (&#8220;<strong>B</strong>&#8221; and &#8220;<strong>A</strong>&#8221; hot keys, respectively);</li>
+<li><strong>Open/Close</strong> &#8211; the button for opening/closing the data window is located in the upper right corner of the data window (&#8220;<strong>W</strong>&#8221; hot key);</li>
+<li><strong>Redraw</strong> &#8211; chart redraw button is located near the data window close button (&#8220;<strong>R</strong>&#8221; hot key).<br />
+Hot keys work only in an active chart window.</li>
+</ul>
+<h3>5. History files (HST-files)</h3>
+<p>Open history files format described in the <a href="https://www.metatrader4.com">MetaTrader 4 user guide</a> is used to draw charts. A user can take a ready-made Renko history file or create one on their own. Then the iRenkoChart indicator can be used to display a chart.</p>
+<p>History file format is as following. The History file header goes first:</p>
+<p>struct HistoryHeader { int version // base version char copyright[64]; // copyright char symbol[12]; // symbol int parameter; // symbol period or parameter, for iRenkoChart it is &#8220;Size of box&#8221; input parameter value int digits; // number of digits after the decimal point in a symbol time_t timesign; // base creation timestamp time_t last_sync; // last synchronization time int type; // type of history stored, 1 &#8211; Ask-history, 2 &#8211; Bid-history, // any other value of the parameter &#8211; history type is not identified int unused[12]; // for future use }; Note that a new &#8220;type&#8221; parameter is added into the standard header.</p>
+<p>The version of the base for MetaTrader 4 history files is specified as &#8220;400&#8221;, while for MetaTrader 5 it is &#8220;500&#8221;. This is important, as each version has its own bar data structure.</p>
+<p>The standard representation of the bars array following the header for the version &#8220;400&#8221; of history file looks as follows:</p>
+<h1>pragma pack(push,1) struct RateInfo { time_t ctm;  // time in seconds double open;  // bar open price double low; // bar low price double high; // bar high price double close; // bar close price double vol; // volume }; #pragma pack(pop) The standard representation of the bars array for the version &#8220;500&#8221; of history file looks as follows:</h1>
+<h1>pragma pack(push,1) struct MqlRates {  datetime time; // bar time in seconds or mulliseconds double open; // open price double high; // high price for the period double low; // low price for the period double close; // closing price long tick_volume; // tick volume int spread; // spread long real_volume; // market volume  }; #pragma pack(pop) Note that bar time can be set either in seconds or in milliseconds for version &#8220;500&#8221;. iRenkoChart can correctly recognize both time formats. Important: users are responsible for the correctness of history files. To make iRenkoChart recognize a history file, it must be located in &#8220;terminal_data_folder\MQL5\Files\iRenkoChart\History\broker_ name&#8221;.</h1>
+</li>
+<li>
+<p>The history file name must start with &#8220;Renko&#8221; prefix. Before the prefix you can add &#8220;Ask&#8221; or &#8220;Bid&#8221;, if the file contains the corresponding type of history;</p>
+<ol>
+<li>Then it must contain the symbol name on the base chart of which the indicator will be loaded (for example, &#8220;EURUSD&#8221;);</li>
+<li>Then it must contain the value of the &#8220;Size of box&#8221; input parameter;</li>
+<li>Finally it must have the &#8220;.hst&#8221; extension.<br />
+An example of the file name: AskRenkoEURUSD200.hst.</li>
+</ol>
+<p>If the history file doesn&#8217;t exist, it will be automatically created from the minute history available in the terminal. If it exists, it will be updated in accordance with the built-in algorithm.</p>
+<h3>6. History Quality Control</h3>
+<p>For history files created by iRenkoChart, history quality control is available.</p>
+<p>Any new history file is created from the minute history available in the terminal. Accordingly, there can be situations when the simulated bars can differ from bars created online. Each doubtful simulated bar on the chart is displayed in lighter color than correct bars (Screenshot 7). It allows estimating history quality visually.</p>
+<p>When initializing the indicator or switching between Bid and Ask price histories, a message about its quality will appear in the log (Screenshot 7). It can be estimated in the percentage of good and bad bars. Please note that history quality calculation is performed only for bars displayed on charts, not for the whole history file.</p>
+<p>Gaps are also considered when forming the history. Gaps are visually displayed in the form of gray bars and with zero volume on default.</p>
+<p>Using the indicator buffer &#8220;Bar color&#8221; you can programmatically estimate the history quality in your own indicators and the Expert Advisors. It allows making adequate solutions when implementing a trading strategy.</p>
+<p>You can improve the history quality using iRenkoChart in the online mode only. At coming of tick data iRenkoChart correctly calculates all parameters of bars and saves them in the history file. For example, bar open time will be calculated to milliseconds and saved. If there is no tick data to build history for a period of time (connection failure, terminal is turned off or any other nonstandard situation), so the missing Renko history will be formed on the basis of a minute history. </p>
+<h3>7. Time Scale</h3>
+<p>Time scale of charts created using iRenkoChart, does not usually coincide with a base chart time scale and it is non-linear. Therefore, the indicator is built to visualize a custom time scale (see Screenshot 6). Built-in scale features:</p>
+</li>
+<li>
+<p>looks similar to the standard time scale;</p>
+<ul>
+<li>easy to move vertically;</li>
+<li>semi-transparent background, always visible chart objects and price chart behind the scale.<br />
+<h3>8. Graphical Objects for Technical Analysis</h3>
+</li>
+</ul>
+<p>Standard <a href="https://www.metatrader5.com/en/terminal/help/objects">graphical objects</a> of the terminal are bound to a base chart time scale when placed in a chart window. Therefore, iRenkoChart automatically rebinds applied graphical objects to its time scale. It allows using the standard graphical objects for technical analysis of Renko charts. Synchronization with iRenkoChart is supported for the following standard MetaTrader 5 graphical objects:</p>
+</li>
+<li>
+<p><a href="https://www.metatrader5.com/en/terminal/help/objects/lines">lines</a>: horizontal, vertical, trend, trend by angle, cycle, arrowed;</p>
+<ul>
+<li><a href="https://www.metatrader5.com/en/terminal/help/objects/channels">channels</a>: equidistant, Andrews Pitchfork;</li>
+<li><a href="https://www.metatrader5.com/en/terminal/help/objects/fibo">Fibonacci tools</a>: retracement, time zones, fan, arcs, channel, expansion;</li>
+<li><a href="https://www.metatrader5.com/en/terminal/help/objects/elliott">Elliott tools</a>: motive wave, corrective wave;</li>
+<li><a href="https://www.metatrader5.com/en/terminal/help/objects/shapes">shapes</a>: triangle, rectangle, ellipse;</li>
+<li><a href="https://www.metatrader5.com/en/terminal/help/objects/arrows">arrows</a>: thumbs up, thumbs down, arrow down, arrow up, stop sign, check sign, left and right price labels, Buy and Sell signs, arrow.<br />
+In some cases, for example when closing the terminal, iRenkoChart saves the objects data to a temporary file located in the &#8220;terminal_data_folder\MQL5\Files\iRenkoChart\Objects&#8221; directory. All temporary files are deleted when iRenkoChart is removed from a chart window.</li>
+</ul>
+<h3>9. Indicators and Experts</h3>
+<p>Standard indicators follow the time scale of a base chart, as well as the objects. Free <a href="/en/market/product/196">LibCustomChart</a> library should be used for binding the indicators to the iRenkoChart time scale.</p>
+<p>The library functions allow developing indicators that are automatically connected to iRenkoChart (Screenshot 3), if it is run on a chart. In case it is not run, these indicators will work on a common chart. Besides, the library provides simplified access to iRenkoChart time series.</p>
+<p>In case the library functions are used in an Expert Advisor, then it will also automatically use iRenkoChart data, in case the latter has already been run on a chart window. In case iRenkoChart is not run, the Expert Advisor will work on a common chart window and use its data.</p>
+<p>Examples of the library use in <a href="/en/code/869">indicators</a> and <a href="/en/code/870">the Expert Advisors</a> can be found in <strong>Code Base.</strong></p>
+<p><p>This indicator is based on <a href="/en/market/product/186">iCustomChart</a> and represents its particular implementation. iCustomChart demo version can be downloaded for <a href="/en/market/product/203">free</a>.    <a href="#description">more&#8230;</a>  </p>
+</li>
+</ol>
+<h3>Image of Renko Charts</h3>
+<p><img src="https://c.mql5.com/31/3/iRrenkoChart_1.png" alt="Renko Charts" /></p>
+<p><img src="https://c.mql5.com/31/3/iRenkoChart_2.png" alt="Renko Charts" /></p>
+<p><img src="https://c.mql5.com/31/3/iRenkoChart_3.png" alt="Renko Charts" /></p>
+<p><img src="https://c.mql5.com/31/3/iRenkoChart_4.png" alt="Renko Charts" /></p>
+<p><img src="https://c.mql5.com/31/3/iRenkoChart_5.png" alt="Renko Charts" /></p>
+<p><img src="https://c.mql5.com/31/3/iRenkoChart_6.png" alt="Renko Charts" /></p>
+<p><img src="https://c.mql5.com/31/3/iRenkoChart_7en.png" alt="Renko Charts" /></p>
+<p><img src="https://c.mql5.com/31/3/iRenkoChart_8.png" alt="Renko Charts" /></p>
+<h3>Download source code of  Renko Charts for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download Renko Charts" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/renko-charts-download.html">Renko Charts Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>Price Value For RSI Level Download</title>
+		<link>http://project-regain.io/price-value-for-rsi-level-download.html</link>
+				<pubDate>Mon, 02 Sep 2019 14:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Indicators]]></category>
+		<category><![CDATA[Algo1111]]></category>
+		<category><![CDATA[Dmitry Belunskiy]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/price-value-for-rsi-level-download.html</guid>
+				<description><![CDATA[<p>Author : Dmitry Belunskiy Category : Indicators Last Update : 15 February 2016 Rent Price : 12.50 USD Version : 2.0 The indicator is intended <a class="mh-excerpt-more" href="http://project-regain.io/price-value-for-rsi-level-download.html" title="Price Value For RSI Level Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/price-value-for-rsi-level-download.html">Price Value For RSI Level Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Dmitry Belunskiy<br />
+Category : Indicators<br />
+Last Update : 15 February 2016<br />
+Rent Price : 12.50 USD<br />
+Version : 2.0<br />
+</code></p>
+<p>The indicator is intended to predict a price level at which RSI will have a predefined value. The indicator has two input parameters: <br />
+* Period RSI (default value is 14);  </p>
+<ul>
+<li>Required RSI level (default value is 70.0).<br />
+During operation the indicator displays a line in the chart window. The line shows what price value is needed for the RSI with the specified period (14) to have the specified value (70). It allows analyzing the current overbought and oversold levels on the market, and place pending orders beforehand. The algorithm of RSI calculation is the same as used in МetaТrader 4/МetaТrader 5.</li>
+</ul>
+<p>A version for MetaTrader 4 is also available. To get it send me a personal order in the &#8220;<a href="/en/job">Jobs</a>&#8221; section.</p>
+<h3>Image of Price Value For RSI Level</h3>
+<p><img src="https://c.mql5.com/31/4/RSI_Level01.png" alt="Price Value For RSI Level" /></p>
+<p><img src="https://c.mql5.com/31/4/RSI_Level02.png" alt="Price Value For RSI Level" /></p>
+<p><img src="https://c.mql5.com/31/4/RSI_Level03.PNG" alt="Price Value For RSI Level" /></p>
+<p><img src="https://c.mql5.com/31/4/RSI_Level04.PNG" alt="Price Value For RSI Level" /></p>
+<h3>Download source code of  Price Value For RSI Level for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download Price Value For RSI Level" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/price-value-for-rsi-level-download.html">Price Value For RSI Level Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>LevelsMA Download</title>
+		<link>http://project-regain.io/levelsma-download.html</link>
+				<pubDate>Mon, 02 Sep 2019 12:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Indicators]]></category>
+		<category><![CDATA[Dimich55]]></category>
+		<category><![CDATA[Dmitry Shishkin]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/levelsma-download.html</guid>
+				<description><![CDATA[<p>Author : Dmitry Shishkin Category : Indicators Last Update : 24 March 2016 Rent Price : 15 USD Version : 2.0 The indicator is based <a class="mh-excerpt-more" href="http://project-regain.io/levelsma-download.html" title="LevelsMA Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/levelsma-download.html">LevelsMA Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Dmitry Shishkin<br />
+Category : Indicators<br />
+Last Update : 24 March 2016<br />
+Rent Price : 15 USD<br />
+Version : 2.0<br />
+</code></p>
+<p>The indicator is based on a channel formed by 2 moving averages. By default, the indicator uses EMA-10. It uses timeframes H1, H4 and D1. The timeframe of the terminal and the timeframe of the indicator must match. Ideally, I recommend to use D1. However, since ге is sometimes hard to wait till 00-00 terminal time, you can use H4 and H1.</p>
+<p>Earlier signals are received when using H1, but in ерш case there can be more false entry signals. A signal to open a trade is the first candlestick closed above or below the channel formed by the moving averages. A candlestick close above EMA-10(high) suggests a possibility of opening a buy trade. The candlestick close below EMA-10(low) suggests a possibility of opening a sell order. Choose any instrument to trade, but more volatile pairs are preferred.   </p>
+<h3>Basic settings:</h3>
+<ul>
+<li>perMA &#8211; 10 (adjustable)</li>
+<li>TF &#8211; H1-H4-D1 (selectable)<br />
+<a href="#description">more&#8230;</a>  </li>
+</ul>
+<h3>Image of LevelsMA</h3>
+<p><img src="https://c.mql5.com/31/86/proboikanalama-screen-3857.png" alt="LevelsMA" /></p>
+<p><img src="https://c.mql5.com/31/86/proboikanalama-screen-8948.png" alt="LevelsMA" /></p>
+<h3>Download source code of  LevelsMA for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download LevelsMA" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/levelsma-download.html">LevelsMA Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+	</channel>
+</rss>

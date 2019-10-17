@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Roman Korotchenko &#8211; Expert Advisor / Indicator</title>
+	<atom:link href="http://project-regain.io/download/roman-korotchenko/feed" rel="self" type="application/rss+xml" />
+	<link>http://project-regain.io/</link>
+	<description>Download source coder from any indicator / Expert Advisor file.</description>
+	<lastBuildDate>Thu, 22 Aug 2019 18:30:00 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.2.4</generator>
+	<item>
+		<title>SSA Stochastic Limited Edition Download</title>
+		<link>http://project-regain.io/ssa-stochastic-limited-edition-download.html</link>
+				<pubDate>Thu, 22 Aug 2019 18:30:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Indicators]]></category>
+		<category><![CDATA[Roman Korotchenko]]></category>
+		<category><![CDATA[Solitonic]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/ssa-stochastic-limited-edition-download.html</guid>
+				<description><![CDATA[<p>Author : Roman Korotchenko Category : Indicators Last Update : 12 April 2017 Rent Price : Version : 2.0 An analogue of the Stochastic oscillator <a class="mh-excerpt-more" href="http://project-regain.io/ssa-stochastic-limited-edition-download.html" title="SSA Stochastic Limited Edition Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/ssa-stochastic-limited-edition-download.html">SSA Stochastic Limited Edition Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Roman Korotchenko<br />
+Category : Indicators<br />
+Last Update : 12 April 2017<br />
+Rent Price :<br />
+Version : 2.0<br />
+</code></p>
+<p>An analogue of the <strong>Stochastic oscillator</strong> based on algorithms of singular spectrum analysis (SSA)</p>
+<p><strong>SSA</strong> is an effective method to handle non-stationary time series with unknown internal structure. It is used for determining the main components (trend, seasonal and wave fluctuations), smoothing and noise reduction. The method allows finding previously unknown series periods and make forecasts on the basis of the detected periodic patterns.</p>
+<p>Indicator signals are identical to signals of the original indicator, but have an important advantage &#8211; no time delay with respect to the price dynamics and more accurately and synchronously reflect the variability of the price series behavior. This is achieved by the fact that the &#8220;SSA-% D&#8221; signal is generated not by a moving average, but by a low-pass filtering using the SSA algorithm. Accordingly, this indicator has solved the problem of lagging. </p>
+<p>Adjustable noise filtering allows to significantly reduce the number of false signals, that are typical for the original indicator.</p>
+<p>The resulting forecast for the identified &#8220;SSA-%K&#8221; and &#8220;SSA-%D&#8221; price fluctuations takes into account the aggregate analysis of various detected factors, which form the &#8220;wave&#8221; behavior of the price series, and it can be used to reduce risks in a strategy.</p>
+<p>The characteristic behavior, as well as the signals and interpretation of the indicator correspond to the same properties of the Stochastic oscillator. </p>
+<p>For the convenience of the user, the original &#8220;%K&#8221; and &#8220;%D&#8221;, as well as the upgraded &#8220;SSA-%K&#8221; and &#8220;SSA-%D&#8221; estimations are provided.</p>
+<p>The &#8220;Limited&#8221; version contains certain limitations in the parameter settings and indicator control.</p>
+<p>### Parameters</p>
+<ol>
+<li>
+<p><strong>K period</strong> — observation period</p>
+<ol>
+<li><strong>D period</strong> — smoothing period</li>
+<li><strong>Slowing</strong> — period of repeated smoothing</li>
+<li><em>*Algorithm *</em>– forecast method</li>
+<li><strong>N: Data fragment</strong> – fragment of the %K series for the analysis</li>
+<li><strong>Time-dependent lag</strong> &#8211; window of history &#8220;influence&#8221; on the value at point</li>
+<li><strong>%K high-frequency limit</strong> — noise filtering parameter for processing &#8220;%K&#8221;.</li>
+<li><strong>%D frequency limit</strong> — smoothing and filtering method for plotting &#8220;%D&#8221;.</li>
+<li><strong>Forecast smoothing</strong> — smoothing/regularization of the forecast</li>
+<li><strong>Recalculate period</strong> — indicator refresh interval</li>
+<li><strong>Predictable Points</strong> — the number of forecast points.</li>
+<li><strong>BackwardShift</strong> — a shift of the analyzed fragment deeper into the history. Configuration of the model and forecast based on known data.</li>
+<li><strong>VISUAL OPTIONS</strong> — color settings of the &#8220;SSA-%K&#8221; and &#8220;SSA-%D&#8221; graphs.</li>
+<li><strong>INTERFACE/Magic Number</strong> — identifier to use the indicator as a part of an expert</li>
+</ol>
+<h3>Explanation to setting the parameters</h3>
+<p><strong>High frequency limit</strong> determines the level of filtering and suppressing the &#8220;high-frequency noise&#8221; contribution to data. All oscillations with contribution not exceeding this level will be filtered out.</p>
+<p><strong>BackwardShift</strong> is designed for adjusting the indicator to a specific price series. By setting the shift, it is possible to compare the forecast with the indicator data and to select the indicator parameters.</p>
+<p><strong>Forecast smoothing</strong> allows to smooth the forecast results by suppressing the &#8220;spikes&#8221; or by using the &#8220;weight coefficients&#8221;, taking the significance of the previous results into account.</p>
+<p>NOTE: If you select the &#8220;weight coefficients&#8221; method for smoothing the forecast, four estimations of forecast values are computed in the first step of indicator calculation in order to initialize the smoothing stack.</p>
+<p>Therefore, the first step requires more computing time. It is not required in the next steps.</p>
+<p><em>*Magic Number. *</em>The indicator results can be included in an expert by requesting buffers 8 (&#8220;%K&#8221;-original), 9 (&#8220;%D&#8221;-original), 10 (&#8220;SSA-%K&#8221;) and 11 (&#8220;SSA-%D&#8221;).</p>
+<p><p><a href="#description">more&#8230;</a>  </p>
+</li>
+</ol>
+<h3>Image of SSA Stochastic Limited Edition</h3>
+<p><img src="https://c.mql5.com/31/155/ssa-stochastic-limited-edition-screen-8668.png" alt="SSA Stochastic Limited Edition" /></p>
+<p><img src="https://c.mql5.com/31/155/ssa-stochastic-limited-edition-screen-8375.png" alt="SSA Stochastic Limited Edition" /></p>
+<p><img src="https://c.mql5.com/31/155/ssa-stochastic-limited-edition-screen-9054.png" alt="SSA Stochastic Limited Edition" /></p>
+<p><img src="https://c.mql5.com/31/155/ssa-stochastic-limited-edition-screen-1773.png" alt="SSA Stochastic Limited Edition" /></p>
+<p><img src="https://c.mql5.com/31/155/ssa-stochastic-limited-edition-screen-7858.png" alt="SSA Stochastic Limited Edition" /></p>
+<p><img src="https://c.mql5.com/31/155/ssa-stochastic-limited-edition-screen-3347.png" alt="SSA Stochastic Limited Edition" /></p>
+<p><img src="https://c.mql5.com/31/155/ssa-stochastic-limited-edition-screen-9601.png" alt="SSA Stochastic Limited Edition" /></p>
+<p><img src="https://c.mql5.com/31/155/ssa-stochastic-limited-edition-screen-3913.png" alt="SSA Stochastic Limited Edition" /></p>
+<p><img src="https://c.mql5.com/31/155/ssa-stochastic-limited-edition-screen-9981.png" alt="SSA Stochastic Limited Edition" /></p>
+<p><img src="https://c.mql5.com/31/155/ssa-stochastic-limited-edition-screen-9784.png" alt="SSA Stochastic Limited Edition" /></p>
+<p><img src="https://c.mql5.com/31/155/ssa-stochastic-limited-edition-screen-6291.png" alt="SSA Stochastic Limited Edition" /></p>
+<p><img src="https://c.mql5.com/31/155/ssa-stochastic-limited-edition-screen-4309.png" alt="SSA Stochastic Limited Edition" /></p>
+<h3>Download source code of  SSA Stochastic Limited Edition for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download SSA Stochastic Limited Edition" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/ssa-stochastic-limited-edition-download.html">SSA Stochastic Limited Edition Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+	</channel>
+</rss>

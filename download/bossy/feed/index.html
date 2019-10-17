@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Bossy &#8211; Expert Advisor / Indicator</title>
+	<atom:link href="http://project-regain.io/download/bossy/feed" rel="self" type="application/rss+xml" />
+	<link>http://project-regain.io/</link>
+	<description>Download source coder from any indicator / Expert Advisor file.</description>
+	<lastBuildDate>Sun, 25 Aug 2019 21:00:00 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.2.4</generator>
+	<item>
+		<title>Cougar Scalper Download</title>
+		<link>http://project-regain.io/cougar-scalper-download.html</link>
+				<pubDate>Sun, 25 Aug 2019 21:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Experts]]></category>
+		<category><![CDATA[Bossy]]></category>
+		<category><![CDATA[Burcak Sengezer]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/cougar-scalper-download.html</guid>
+				<description><![CDATA[<p>Author : Burcak Sengezer Category : Experts Last Update : 29 August 2017 Rent Price : 100 USD Version : 3.10 Cougar Scalper is a <a class="mh-excerpt-more" href="http://project-regain.io/cougar-scalper-download.html" title="Cougar Scalper Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/cougar-scalper-download.html">Cougar Scalper Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Burcak Sengezer<br />
+Category : Experts<br />
+Last Update : 29 August 2017<br />
+Rent Price : 100 USD<br />
+Version : 3.10<br />
+</code></p>
+<p><strong>Cougar Scalper</strong> is a fully automated expert advisor. That is a medium-term trend scalper.</p>
+<p>Our EA has been created to work confidentially. So, it can close orders with actual account currency value at profit or loss. Also works with stop loss. The EA&#8217;s strategy has been improved to make reasonable and low-medium risk profit. But, you can also increase your risk, although we do not recommend doing that.</p>
+<p>The EA&#8217;s logic is little bit complicated. However, easy to use. Most of settings are set by the EA automatically when you change timeframe. The EA opens trades when these occur:</p>
+<ol>
+<li>
+<p>The EA searches for a main and a medium trend. Then, waits for a medium trend to be exhausted at OBOS levels (pullback).</p>
+<ol>
+<li>It confirms that medium trend reversal with the indicator.</li>
+<li>The EA opens a trade with take profit or without it.</li>
+<li>If the first trade is at loss and you did not set &#8220;Max Orders&#8221; &#8211; 1, the EA waits for new trade opportunities at that symbol. If you did set Min Distance, the EA will not open any trade until that value, even if the EA finds a good trading opportunity.</li>
+<li>When the EA finds a good trade and reaches that Min Distance value, the EA will open second trade. The EA will renew this process until Max Orders value or Profit To Close value are reached.</li>
+<li>The EA always monitors profit and loss each tick. If profit or loss reaches that value, the EA closes all that symbol&#8217;s order(s). But, we do not recommend setting small values for Loss To Close since the EA&#8217;s best feature is loss recovery system.</li>
+</ol>
+<h3>Requirements</h3>
+</li>
+<li>
+<p><strong>TimeFrame:</strong> M15</p>
+<p>md5-02a26a6134463dd99fc4c408f0fbe852</p>
+<h3>Parametres</h3>
+<p><strong>General Settings</strong></p>
+</li>
+<li>
+<p><strong>Take Profit (Pips):</strong> Take Profit for the first order. If that opens the second trade, the system will modify the take profit to 0.</p>
+<ul>
+<li><strong>Stop Loss (Pips):</strong> Stop Loss for the first order. If you did not set Max Orders to 1, the EA will disable stop loss and the system will open new trades in the same direction to average losses.</li>
+<li><strong>Fixed Lot Size:</strong> If Risk 0, the EA will open fixed lot size.</li>
+<li><strong>Risk 0.1&#215;1000$€ = 0.1 lot (if 0 then OFF):</strong> Risk calculated by FREE MARGIN. 0.01 means 1%. 0.1 means 10% of your free margin.</li>
+<li><strong>Max Spread (If 0 then OFF):</strong> Maximum allowed spread.</li>
+<li><strong>Show Info Panel:</strong> YES/NO. The EA will show some details about the EA, trades, server and symbol on the left.</li>
+<li><strong>Magic Number:</strong> Unique magic number for the EA&#8217;s trades.</li>
+<li><strong>Order Comment:</strong> Special comment for orders.<br />
+<strong>Multiple Orders Settings</strong></li>
+</ul>
+</li>
+<li>
+<p><strong>Max Orders:</strong> The maximum number of opened orders at the symbol. 0 &#8211; Unlimited. 1 &#8211; No Multiple Orders. 0-2-3-4-5 &#8211; Multiple Orders.</p>
+</p>
+<ul>
+<li><strong>Min Distance in Orders (Pips):</strong> Won&#8217;t open any trade before reaching that value, even if the EA finds a good trade opportunity. If 0, OFF.</li>
+<li><strong>Lot Martingale Type:</strong> No Martingale / Lot Multiplier / Lot Addition.</li>
+<li><strong>Lot Multiplier:</strong> Multiplies lot size by previous order.</li>
+<li><strong>Lot Addition:</strong> Adds lot size by previous order.</li>
+<li><strong>Max Lot (If 0 then OFF):</strong> Max Lot protects your balance. The EA will never open a greater order lot than Max Lot. The EA will stop at Max Lot while calculating Lot Size. This is not valid for Fixed Lot Size.<br />
+<strong>Close Settings</strong></li>
+</ul>
+</li>
+<li>
+<p><strong>Profit To Close (If 0 then OFF):</strong> When the current profit reaches that value, the EA will close all symbol orders.</p>
+</p>
+<ul>
+<li><strong>Loss To Close (If 0 then OFF):</strong> When the current loss reaches that value, the EA will close all symbol orders. You must enter positive numbers. For example, 250-300-635. No negative numbers!<br />
+<a href="#description">more&#8230;</a>  </li>
+</ul>
+</li>
+</ol>
+<h3>Image of Cougar Scalper</h3>
+<p><img src="https://c.mql5.com/31/192/cougar-scalper-screen-1928.jpg" alt="Cougar Scalper" /></p>
+<p><img src="https://c.mql5.com/31/192/cougar-scalper-screen-4324.jpg" alt="Cougar Scalper" /></p>
+<p><img src="https://c.mql5.com/31/192/cougar-scalper-screen-6527.jpg" alt="Cougar Scalper" /></p>
+<p><img src="https://c.mql5.com/31/192/cougar-scalper-screen-2531.jpg" alt="Cougar Scalper" /></p>
+<p><img src="https://c.mql5.com/31/192/cougar-scalper-screen-3623.jpg" alt="Cougar Scalper" /></p>
+<p><img src="https://c.mql5.com/31/192/cougar-scalper-screen-3971.jpg" alt="Cougar Scalper" /></p>
+<p><img src="https://c.mql5.com/31/192/cougar-scalper-screen-7290.jpg" alt="Cougar Scalper" /></p>
+<h3>Download source code of  Cougar Scalper for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download Cougar Scalper" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/cougar-scalper-download.html">Cougar Scalper Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>Combined SCCC Download</title>
+		<link>http://project-regain.io/combined-sccc-download.html</link>
+				<pubDate>Sun, 25 Aug 2019 20:30:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Experts]]></category>
+		<category><![CDATA[Bossy]]></category>
+		<category><![CDATA[Burcak Sengezer]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/combined-sccc-download.html</guid>
+				<description><![CDATA[<p>Author : Burcak Sengezer Category : Experts Last Update : 29 August 2017 Rent Price : 250 USD Version : 2.10 Combined SCCC is an <a class="mh-excerpt-more" href="http://project-regain.io/combined-sccc-download.html" title="Combined SCCC Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/combined-sccc-download.html">Combined SCCC Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Burcak Sengezer<br />
+Category : Experts<br />
+Last Update : 29 August 2017<br />
+Rent Price : 250 USD<br />
+Version : 2.10<br />
+</code></p>
+<p><strong>Combined SCCC</strong> is an all in one Expert Advisor. The EA combined 4 expert advisors.</p>
+<p>Our EA has been created to work confidentially. So, it can close orders with actual account currency value at profit or loss. Also works with stop loss. The EA&#8217;s strategies have been improved to make reasonable and low-medium risk profit. But, you can also increase your risk, although we do not recommend doing that.</p>
+<p>### Combined SCCC Combined these EAs;</p>
+<ul>
+<li>
+<p><em>*Secret Scalper EA &#8211; *</em><a href="https://www.mql5.com/en/market/product/24112"> https://www.mql5.com/en/market/product/24112</a></p>
+<ul>
+<li><em>*Cybernetics EA &#8211; *</em><a href="https://www.mql5.com/en/market/product/24385"> https://www.mql5.com/en/market/product/24385</a></li>
+<li><em>*Cougar Scalper &#8211; *</em><a href="https://www.mql5.com/en/market/product/24505"> https://www.mql5.com/en/market/product/24505</a></li>
+<li><em>*Challenger EA &#8211; *</em><a href="https://www.mql5.com/en/market/product/24753"> https://www.mql5.com/en/market/product/24753</a></li>
+</ul>
+<h3>Requirements</h3>
+</li>
+<li>
+<p><strong>Digits:</strong> Any</p>
+<p>md5-327433bc9a9fb4e80ae4c87d36e8acf8</p>
+<h3>Important:</h3>
+<p><strong>What is important difference between traditional averager system and our EAs&#8217; system</strong>? Traditional Averager Systems open orders according to pips distance or equity value. But, our EA&#8217;s advantage is that our ea opens orders, if a trade opportunity occurs and reaches pips distance. This provides more success and less DD% on trades.</p>
+<h3>Parametres</h3>
+<p><strong>General settings</strong></p>
+</li>
+<li>
+<p><strong>EA Selection:</strong> Choose one of 4 EAs. Secret Scalper EA / Cybernetics EA / Cougar Scalper / Challenger EA.</p>
+<ul>
+<li><strong>Take Profit (Pips):</strong> Take Profit for the first order. If that opens the second trade, the system will modify the take profit to 0.</li>
+<li><strong>Stop Loss (Pips):</strong> Stop Loss for the first order. If you did not set Max Orders to 1, the EA will disable stop loss and the system will open new trades in the same direction to average losses.</li>
+<li><strong>Fixed Lot Size:</strong> If Risk 0, the EA will open fixed lot size.</li>
+<li><strong>Risk 0.1&#215;1000$€ = 0.1 lot (if 0 then OFF):</strong> Risk calculated by FREE MARGIN. 0.01 means 1%. 0.1 means 10% of your free margin.</li>
+<li><strong>Max Spread (If 0 then OFF):</strong> Maximum allowed spread.</li>
+<li><strong>Show Info Panel:</strong> YES/NO. The EA will show some details about EA, trades, server and symbol on the left.</li>
+<li><strong>Magic Number:</strong> Unique magic number for EA&#8217;s trades. You must set same magic number for same EA Selection at each symbol. For example, if you choose Secret Scalper EA at EA Selection, magic number must be same for all Secret Scalper EA symbols. If you use the set files at comment area, you do not need to set magic numbers manually.</li>
+<li><strong>Order Comment:</strong> Special comment for orders.<br />
+<strong>Multiple order settings</strong></li>
+</ul>
+</li>
+<li>
+<p><strong>Max Orders:</strong> Maximum number of opened orders at the symbol. 0 &#8211; Unlimited. 1 &#8211; No Multiple Orders. 0-2-3-4-5&#8230; &#8211; Multiple orders.</p>
+<ul>
+<li><strong>Min Distance in Orders (Pips):</strong> Will not open any trade until reaching that value, even if the EA finds a good trade opportunity. If 0, OFF.</li>
+<li><strong>Lot Martingale Type:</strong> No Martingale / Lot Multiplier / Lot Addition.</li>
+<li><strong>Lot Multiplier:</strong> Multiplies lot size by previous order. HIGHLY UNRECOMMENDED FOR LOT STEP 0.1 BROKERS.</li>
+<li><strong>Lot Addition:</strong> Adds lot size by previous order.</li>
+<li><strong>Max Lot (If 0 then OFF):</strong> Max Lot protects your balance. The EA will never open a greater order lot than Max Lot. The EA will stop at Max Lot while calculating Lot Size. This is not valid for Fixed Lot Size.<br />
+<strong>Close Settings</strong></li>
+</ul>
+</li>
+<li>
+<p><strong>Profit To Close (If 0 then OFF):</strong> When the current profit reaches that value, the EA closes all symbol orders.</p>
+<ul>
+<li><strong>Loss To Close (If 0 then OFF):</strong> When the current loss reaches that value, the EA closes all symbol orders.<br />
+<a href="#description">more&#8230;</a>  </li>
+</ul>
+</li>
+</ul>
+<h3>Image of Combined SCCC</h3>
+<p><img src="https://c.mql5.com/31/195/combined-sccc-screen-5395.jpg" alt="Combined SCCC" /></p>
+<p><img src="https://c.mql5.com/31/195/combined-sccc-screen-8363.jpg" alt="Combined SCCC" /></p>
+<p><img src="https://c.mql5.com/31/195/combined-sccc-screen-4682.jpg" alt="Combined SCCC" /></p>
+<p><img src="https://c.mql5.com/31/195/combined-sccc-screen-8300.jpg" alt="Combined SCCC" /></p>
+<p><img src="https://c.mql5.com/31/195/combined-sccc-screen-3310.jpg" alt="Combined SCCC" /></p>
+<p><img src="https://c.mql5.com/31/195/combined-sccc-screen-7087.jpg" alt="Combined SCCC" /></p>
+<p><img src="https://c.mql5.com/31/195/combined-sccc-screen-4594.jpg" alt="Combined SCCC" /></p>
+<p><img src="https://c.mql5.com/31/195/combined-sccc-screen-1635.jpg" alt="Combined SCCC" /></p>
+<h3>Download source code of  Combined SCCC for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download Combined SCCC" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/combined-sccc-download.html">Combined SCCC Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>Eliminator EA Download</title>
+		<link>http://project-regain.io/eliminator-ea-download.html</link>
+				<pubDate>Sun, 25 Aug 2019 20:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Experts]]></category>
+		<category><![CDATA[Bossy]]></category>
+		<category><![CDATA[Burcak Sengezer]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/eliminator-ea-download.html</guid>
+				<description><![CDATA[<p>Author : Burcak Sengezer Category : Experts Last Update : 7 December 2017 Rent Price : 65 USD Version : 1.10 Eliminator EA is a <a class="mh-excerpt-more" href="http://project-regain.io/eliminator-ea-download.html" title="Eliminator EA Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/eliminator-ea-download.html">Eliminator EA Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Burcak Sengezer<br />
+Category : Experts<br />
+Last Update : 7 December 2017<br />
+Rent Price : 65 USD<br />
+Version : 1.10<br />
+</code></p>
+<p><strong>Eliminator EA</strong> is a professional and fully automated scalper. Easy to use, proved strategy many years and just focused on GBPCAD. This EA uses some calculated price and time actions with 6 indicators&#8217; confirmations. No need for unnecessary EA parameters. The EA sets everything automatically.</p>
+<p>### Advantages</p>
+<ul>
+<li>
+<p>NO Grid, NO Martingale, NO Averaging and high risk strategies.</p>
+<ul>
+<li>The EA always uses Stop Loss and Trailing. No needs to enter stop loss or take profit manually.</li>
+<li>Dropdown style Money Management can be set easily. Also, fixed lot size available.</li>
+<li>No needs extra settings. Default settings are enough.</li>
+<li>This EA only works with the GBPCAD currency pair and the M15 timeframe. Does not need time for multicurrency tests, installation, settings, controls, tracking.</li>
+</ul>
+<h3>Requirements</h3>
+</li>
+<li>
+<p><strong>TimeFrame:</strong> M15</p>
+<p>md5-bb5308421a6de2c642e90e29bbcb80d8</p>
+<h3>Parametres</h3>
+</li>
+<li>
+<p><strong>Money Management:</strong> Money Management is calculated by FREE MARGIN. That will open lot size dynamically.</p>
+<p>md5-8ba628062c683008bda051456b9785cc</p>
+<p><a href="#description">more&#8230;</a>  </p>
+</li>
+</ul>
+<h3>Image of Eliminator EA</h3>
+<p><img src="https://c.mql5.com/31/207/eliminator-ea-screen-5569.jpg" alt="Eliminator EA" /></p>
+<p><img src="https://c.mql5.com/31/207/eliminator-ea-screen-4986.jpg" alt="Eliminator EA" /></p>
+<p><img src="https://c.mql5.com/31/207/eliminator-ea-screen-2627.jpg" alt="Eliminator EA" /></p>
+<h3>Download source code of  Eliminator EA for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download Eliminator EA" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/eliminator-ea-download.html">Eliminator EA Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>Secret Scalper Download</title>
+		<link>http://project-regain.io/secret-scalper-download.html</link>
+				<pubDate>Sun, 25 Aug 2019 18:30:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Experts]]></category>
+		<category><![CDATA[Bossy]]></category>
+		<category><![CDATA[Burcak Sengezer]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/secret-scalper-download.html</guid>
+				<description><![CDATA[<p>Author : Burcak Sengezer Category : Experts Last Update : 29 August 2017 Rent Price : 125 USD Version : 3.10 Secret Scalper EA is <a class="mh-excerpt-more" href="http://project-regain.io/secret-scalper-download.html" title="Secret Scalper Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/secret-scalper-download.html">Secret Scalper Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Burcak Sengezer<br />
+Category : Experts<br />
+Last Update : 29 August 2017<br />
+Rent Price : 125 USD<br />
+Version : 3.10<br />
+</code></p>
+<p><strong>Secret Scalper EA</strong> is a fully automated Expert Advisor. The EA is a medium-term scalper.</p>
+<p>Our EA has been created to work confidentially. So, it can close orders with actual account currency value at profit or loss. Also works with stop loss. The EA&#8217;s strategy has been improved to make reasonable and low-medium risk profit. But, you can also increase your risk, although we do not recommend doing that.</p>
+<p>The EA&#8217;s logic is little bit complicated. However, easy to use. Most of settings are set by the EA automatically when you change timeframe. The EA opens trades when these occur;</p>
+<ol>
+<li>
+<p>The EA looks for some price action patterns.</p>
+<ol>
+<li>When the EA finds a good price action, it confirms that with the indicator.</li>
+<li>The EA opens a trade with or without take profit.</li>
+<li>If the first trade is at loss and you have not set &#8220;Max Orders&#8221; to 1, the EA waits for new trade opportunities at that symbol. If you did set Min Distance, the EA won&#8217;t open any trade until that value, even if the EA finds a good trading opportunity.</li>
+<li>When the EA finds a good trade and reaches that Min Distance value, the EA opens a second trade. The EA will renew this process until Max Orders value or Profit To Close value are reached.</li>
+<li>The EA always monitors profit and loss each tick. If profit or loss reaches that value, the EA closes all that symbol&#8217;s order(s). But, we do not recommend setting small values for Loss To Close since the EA&#8217;s best feature is loss recovery system.</li>
+</ol>
+<h3>Requirements</h3>
+</li>
+<li>
+<p><strong>TimeFrame:</strong> H1</p>
+<p>md5-68644dda2a27cbe6cade53c7e7e82c48</p>
+<h3>Parametres</h3>
+<p><strong>General settings</strong></p>
+</li>
+<li>
+<p><strong>Take Profit (Pips):</strong> Take Profit for the first order. If that opens the second trade, the system will modify the take profit to 0.</p>
+<ul>
+<li><strong>Stop Loss (Pips):</strong> Stop Loss for the first order. If you did not set Max Orders to 1, the EA will disable stop loss and the system will open new trades in the same direction to average losses.</li>
+<li><strong>Fixed Lot Size:</strong> If Risk 0, the EA will open fixed lot size.</li>
+<li><strong>Risk 0.1&#215;1000$€ = 0.1 lot (if 0 then OFF):</strong> Risk calculated by FREE MARGIN. 0.01 means 1%. 0.1 means 10% of your free margin.</li>
+<li><strong>Max Spread (If 0 then OFF):</strong> Maximum allowed spread.</li>
+<li><strong>Show Info Panel:</strong> YES/NO. The EA will show some details about EA, trades, server and symbol on the left.</li>
+<li><strong>Magic Number:</strong> Unique magic number for EA&#8217;s trades.</li>
+<li><strong>Order Comment:</strong> Special comment for orders.<br />
+<strong>Multiple order settings</strong></li>
+</ul>
+</li>
+<li>
+<p><strong>Max Orders:</strong> Maximum number of opened orders at the symbol. 0 &#8211; Unlimited. 1 &#8211; No Multiple Orders. 0-2-3-4-5&#8230; &#8211; Multiple orders.</p>
+</p>
+<ul>
+<li><strong>Min Distance in Orders (Pips):</strong> Won&#8217;t open any trade until reaching that value, even if the EA finds a good trade opportunity. If 0, OFF.</li>
+<li><strong>Lot Martingale Type:</strong> No martingale / Lot multiplier / Lot addition.</li>
+<li><strong>Lot Multiplier:</strong> Multiplies lot size by previous order. HIGHLY UNRECOMMENDED FOR LOT STEP 0.1 BROKERS.</li>
+<li><strong>Lot Addition:</strong> Adds lot size by previous order.</li>
+<li><strong>Max Lot (If 0 then OFF):</strong> Max Lot protects your balance. The EA will never open a greater order lot than Max Lot. The EA will stop at Max Lot while calculating Lot Size. This is not valid for Fixed Lot Size.<br />
+<strong>Close Settings</strong></li>
+</ul>
+</li>
+<li>
+<p><strong>Profit To Close (If 0 then OFF):</strong> When the current profit reaches that value, the EA closes all symbol orders.</p>
+</p>
+<ul>
+<li><strong>Loss To Close (If 0 then OFF):</strong> When the current loss reaches that value, the EA closes all symbol orders.<br />
+<a href="#description">more&#8230;</a>  </li>
+</ul>
+</li>
+</ol>
+<h3>Image of Secret Scalper</h3>
+<p><img src="https://c.mql5.com/31/188/secret-scalper-screen-9491.jpg" alt="Secret Scalper" /></p>
+<p><img src="https://c.mql5.com/31/188/secret-scalper-screen-6952.jpg" alt="Secret Scalper" /></p>
+<p><img src="https://c.mql5.com/31/188/secret-scalper-screen-8204.jpg" alt="Secret Scalper" /></p>
+<p><img src="https://c.mql5.com/31/188/secret-scalper-screen-4696.jpg" alt="Secret Scalper" /></p>
+<p><img src="https://c.mql5.com/31/188/secret-scalper-screen-5560.jpg" alt="Secret Scalper" /></p>
+<p><img src="https://c.mql5.com/31/188/secret-scalper-screen-4633.jpg" alt="Secret Scalper" /></p>
+<p><img src="https://c.mql5.com/31/188/secret-scalper-screen-2590.jpg" alt="Secret Scalper" /></p>
+<h3>Download source code of  Secret Scalper for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download Secret Scalper" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/secret-scalper-download.html">Secret Scalper Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>Challenger EA Download</title>
+		<link>http://project-regain.io/challenger-ea-download.html</link>
+				<pubDate>Sun, 25 Aug 2019 18:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Experts]]></category>
+		<category><![CDATA[Bossy]]></category>
+		<category><![CDATA[Burcak Sengezer]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/challenger-ea-download.html</guid>
+				<description><![CDATA[<p>Author : Burcak Sengezer Category : Experts Last Update : 29 August 2017 Rent Price : 100 USD Version : 2.10 Challenger EA is a <a class="mh-excerpt-more" href="http://project-regain.io/challenger-ea-download.html" title="Challenger EA Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/challenger-ea-download.html">Challenger EA Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Burcak Sengezer<br />
+Category : Experts<br />
+Last Update : 29 August 2017<br />
+Rent Price : 100 USD<br />
+Version : 2.10<br />
+</code></p>
+<p><strong>Challenger EA</strong> is a fully automated Expert Advisor. The EA is a medium-term scalper.</p>
+<p>Our EA has been created to work confidentially. So, it can close orders with actual account currency value at profit or loss. Also works with stop loss. The EA&#8217;s strategy has been improved to make reasonable and low-medium risk profit. But, you can also increase your risk, although we do not recommend doing that.</p>
+<p>The EA opens trades when these events occur;</p>
+<ol>
+<li>
+<p>The EA searches a main trend. Then, waits for a medium trend to be exhausted at OBOS levels (pullback).</p>
+<ol>
+<li>It confirms that medium trend reversal with the indicators.</li>
+<li>The EA opens a trade with or without take profit.</li>
+<li>If the first trade is at loss and you have not set &#8220;Max Orders&#8221; to 1, the EA waits for new trade opportunities at that symbol. If you did set Min Distance, the EA will not open any trade until that value, even if the EA finds a good trading opportunity.</li>
+<li>When the EA finds a good trade and reaches that Min Distance value, the EA opens a second trade. The EA will renew this process until Max Orders value or Profit To Close value are reached.</li>
+<li>The EA always monitors profit and loss each tick. If profit or loss reaches that value, the EA closes all that symbol&#8217;s order(s). But, we do not recommend setting small values for Loss To Close, since the EA&#8217;s best feature is loss recovery system.</li>
+</ol>
+<h3>Requirements</h3>
+</li>
+<li>
+<p><strong>Digits:</strong> Any</p>
+<p>md5-327433bc9a9fb4e80ae4c87d36e8acf8</p>
+<h3>Best Symbols, Timeframes, Lot Types</h3>
+</li>
+<li>
+<p>AUDCAD &#8211; M15 &#8211; No Martingale-Lot Multiplier</p>
+<p>md5-b25ca659958fff166373a036f5ea9563</p>
+<h3>Important:</h3>
+<p><strong>What is important difference between traditional averager system and our EAs&#8217; system</strong>? Averager Systems open orders according to pips distance or equity value. But, Our EA&#8217;s difference is that our ea opens orders, if a trade opportunity occurs and reaches pips distance. This provides more success and less DD% on trades.</p>
+<h3>Parametres</h3>
+<p><strong>General settings</strong></p>
+</li>
+<li>
+<p><strong>Take Profit (Pips):</strong> Take Profit for the first order. If that opens the second trade, the system will modify the take profit to 0.</p>
+<ul>
+<li><strong>Stop Loss (Pips):</strong> Stop Loss for the first order. If you did not set Max Orders to 1, the EA will disable stop loss and the system will open new trades in the same direction to average losses.</li>
+<li><strong>Fixed Lot Size:</strong> If Risk 0, the EA will open fixed lot size.</li>
+<li><strong>Risk 0.1&#215;1000$€ = 0.1 lot (if 0 then OFF):</strong> Risk calculated by FREE MARGIN. 0.01 means 1%. 0.1 means 10% of your free margin.</li>
+<li><strong>Max Spread (If 0 then OFF):</strong> Maximum allowed spread.</li>
+<li><strong>Show Info Panel:</strong> YES/NO. The EA will show some details about EA, trades, server and symbol on the left.</li>
+<li><strong>Magic Number:</strong> Unique magic number for EA&#8217;s trades.</li>
+<li><strong>Order Comment:</strong> Special comment for orders.<br />
+<strong>Multiple order settings</strong></li>
+</ul>
+</li>
+<li>
+<p><strong>Max Orders:</strong> Maximum number of opened orders at the symbol. 0 &#8211; Unlimited. 1 &#8211; No Multiple Orders. 0-2-3-4-5&#8230; &#8211; Multiple orders.</p>
+</p>
+<ul>
+<li><strong>Min Distance in Orders (Pips):</strong> Will not open any trade until reaching that value, even if the EA finds a good trade opportunity. If 0, OFF.</li>
+<li><strong>Lot Martingale Type:</strong> No Martingale / Lot Multiplier / Lot Addition.</li>
+<li><strong>Lot Multiplier:</strong> Multiplies lot size by previous order. HIGHLY UNRECOMMENDED FOR LOT STEP 0.1 BROKERS.</li>
+<li><strong>Lot Addition:</strong> Adds lot size by previous order.</li>
+<li><strong>Max Lot (If 0 then OFF):</strong> Max Lot protects your balance. The EA will never open a greater order lot than Max Lot. The EA will stop at Max Lot while calculating Lot Size. This is not valid for Fixed Lot Size.<br />
+<strong>Close Settings</strong></li>
+</ul>
+</li>
+<li>
+<p><strong>Profit To Close (If 0 then OFF):</strong> When the current profit reaches that value, the EA closes all symbol orders.</p>
+</p>
+<ul>
+<li><strong>Loss To Close (If 0 then OFF):</strong> When the current loss reaches that value, the EA closes all symbol orders.<br />
+<a href="#description">more&#8230;</a>  </li>
+</ul>
+</li>
+</ol>
+<h3>Image of Challenger EA</h3>
+<p><img src="https://c.mql5.com/31/195/challenger-ea-screen-9909.jpg" alt="Challenger EA" /></p>
+<p><img src="https://c.mql5.com/31/195/challenger-ea-screen-6113.jpg" alt="Challenger EA" /></p>
+<p><img src="https://c.mql5.com/31/195/challenger-ea-screen-3527.jpg" alt="Challenger EA" /></p>
+<p><img src="https://c.mql5.com/31/195/challenger-ea-screen-5154.jpg" alt="Challenger EA" /></p>
+<p><img src="https://c.mql5.com/31/195/challenger-ea-screen-7428.jpg" alt="Challenger EA" /></p>
+<p><img src="https://c.mql5.com/31/195/challenger-ea-screen-8264.jpg" alt="Challenger EA" /></p>
+<p><img src="https://c.mql5.com/31/195/challenger-ea-screen-2099.jpg" alt="Challenger EA" /></p>
+<p><img src="https://c.mql5.com/31/195/challenger-ea-screen-6073.jpg" alt="Challenger EA" /></p>
+<p><img src="https://c.mql5.com/31/195/challenger-ea-screen-9063.jpg" alt="Challenger EA" /></p>
+<p><img src="https://c.mql5.com/31/195/challenger-ea-screen-4915.jpg" alt="Challenger EA" /></p>
+<h3>Download source code of  Challenger EA for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download Challenger EA" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/challenger-ea-download.html">Challenger EA Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>Cybernetics EA Download</title>
+		<link>http://project-regain.io/cybernetics-ea-download.html</link>
+				<pubDate>Sun, 25 Aug 2019 17:30:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Experts]]></category>
+		<category><![CDATA[Bossy]]></category>
+		<category><![CDATA[Burcak Sengezer]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/cybernetics-ea-download.html</guid>
+				<description><![CDATA[<p>Author : Burcak Sengezer Category : Experts Last Update : 29 August 2017 Rent Price : 125 USD Version : 3.10 Cybernetics EA is a <a class="mh-excerpt-more" href="http://project-regain.io/cybernetics-ea-download.html" title="Cybernetics EA Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/cybernetics-ea-download.html">Cybernetics EA Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Burcak Sengezer<br />
+Category : Experts<br />
+Last Update : 29 August 2017<br />
+Rent Price : 125 USD<br />
+Version : 3.10<br />
+</code></p>
+<p><strong>Cybernetics EA</strong> is a fully automated Expert Advisor. That is a medium-term trend follower. <br />
+ Our EA has been created to work confidentially. So, it can close orders with actual account currency value at profit or loss. Also works with stop loss. The EA&#8217;s strategy has been improved to make reasonable and low-medium risk profit. But, you can also increase your risk, although we do not recommend doing that. <br />
+ The EA&#8217;s logic is little bit complicated. However, easy to use. Most of settings are set by the EA automatically when you change timeframe. The EA opens trades when these events occur: <br />
+ 1. The EA searches a medium trend.<br />
+ 3. The EA looks for some price action patterns at pullback.<br />
+ 5. When the EA finds a good price action, it confirms that with the indicator.<br />
+ 7. The EA opens a trade with or without take profit.<br />
+ 9. If the first trade is at loss and you have not set &#8220;Max Orders&#8221; to 1, the EA waits for new trade opportunities at that symbol. If you did set Min Distance, the EA will not open any trade until that value, even if the EA finds a good trading opportunity.<br />
+ 11. When the EA finds a good trade and reaches that Min Distance value, the EA opens a second trade. The EA will renew this process until Max Orders value or Profit To Close value are reached.<br />
+ 13. The EA always monitors profit and loss each tick. If profit or loss reaches that value, the EA closes all that symbol&#8217;s order(s). But, we do not recommend setting small values for Loss To Close, because the EA&#8217;s best feature is loss recovery system.</p>
+<p>### Requirements</p>
+<ul>
+<li><strong>TimeFrame:</strong> M15</li>
+<li><strong>Symbols:</strong> AUDCHF, AUDUSD, CHFJPY, GBPCHF, GBPUSD, NZDUSD, USDCHF, USDJPY</li>
+<li><strong>Digits:</strong> Any</li>
+<li><strong>Broker:</strong> ECN or any</li>
+<li><strong>Server:</strong> VPS with low ping to your broker server</li>
+<li>
+<p><strong>Balance&amp;Lot:</strong> $1000 for 0.01 Lot. If Risk (1%) 0.01, that&#8217;ll open 0.01 lot at Server Min Lot 0.01 with $1000 Balance. If Server Min Lot is 0.10, Balance must be 10k. Try at the strategy tester first!</p>
+<h3>Parametres</h3>
+<p><strong>General Settings</strong> * <strong>Take Profit (Pips):</strong> Take Profit for the first order. If that opens the second trade, the system will modify the take profit to 0.</p>
+</li>
+<li><strong>Stop Loss (Pips):</strong> Stop Loss for the first order. If you did not set Max Orders to 1, the EA will disable stop loss and the system will open new trades in the same direction to average losses. </li>
+<li><strong>Fixed Lot Size:</strong> If Risk 0, the EA will open fixed lot size.</li>
+<li><strong>Risk 0.1&#215;1000$€ = 0.1 lot (if 0 then OFF):</strong> Risk calculated by FREE MARGIN. 0.01 means 1%. 0.1 means 10% of your free margin. </li>
+<li><strong>Max Spread (If 0 then OFF):</strong> Maximum allowed spread.</li>
+<li><strong>Show Info Panel:</strong> YES/NO. The EA will show some details about the EA, trades, server and symbol on the left.</li>
+<li><strong>Magic Number:</strong> Unique magic number for EA&#8217;s trades.</li>
+<li>
+<p><strong>Order Comment:</strong> Special comment for orders.</p>
+<p><strong>Multiple Orders Settings</strong> * <strong>Max Orders:</strong> The maximum number of opened orders at the symbol. 0 &#8211; Unlimited. 1 &#8211; No Multiple Orders. 0-2-3-4-5 &#8211; Multiple Orders.</p>
+</li>
+<li><strong>Min Distance in Orders (Pips):</strong> Do not open any trade before reaching that value, even if the EA finds a good trading opportunity. 0 &#8211; disabled.</li>
+<li><strong>Lot Martingale Type:</strong> No Martingale / Lot Multiplier / Lot Addition.</li>
+<li><strong>Lot Multiplier:</strong> Multiplies lot size by previous order.</li>
+<li><strong>Lot Addition:</strong> Adds lot size by previous order.</li>
+<li>
+<p><strong>Max Lot (If 0 then OFF):</strong> Max Lot protects your balance. The EA will never open a greater order lot than Max Lot. The EA will stop at Max Lot while calculating Lot Size. This is not valid for Fixed Lot Size. </p>
+<p><strong>Close Settings</strong> * <strong>Profit To Close (If 0 then OFF):</strong> When the current profit reaches that value, the EA will close all symbol orders.</p>
+</li>
+<li><strong>Loss To Close (If 0 then OFF):</strong> When the current loss reaches that value, the EA will close all symbol orders. You must enter plus numbers. For example, 250-300-635. No negative numbers!<br />
+   <a href="#description">more&#8230;</a>  </li>
+</ul>
+<h3>Image of Cybernetics EA</h3>
+<p><img src="https://c.mql5.com/31/191/cybernetics-ea-screen-9496.jpg" alt="Cybernetics EA" /></p>
+<p><img src="https://c.mql5.com/31/191/cybernetics-ea-screen-8763.jpg" alt="Cybernetics EA" /></p>
+<p><img src="https://c.mql5.com/31/191/cybernetics-ea-screen-1895.jpg" alt="Cybernetics EA" /></p>
+<p><img src="https://c.mql5.com/31/191/cybernetics-ea-screen-9019.jpg" alt="Cybernetics EA" /></p>
+<p><img src="https://c.mql5.com/31/191/cybernetics-ea-screen-8711.jpg" alt="Cybernetics EA" /></p>
+<p><img src="https://c.mql5.com/31/191/cybernetics-ea-screen-2765.jpg" alt="Cybernetics EA" /></p>
+<p><img src="https://c.mql5.com/31/191/cybernetics-ea-screen-4837.jpg" alt="Cybernetics EA" /></p>
+<p><img src="https://c.mql5.com/31/191/cybernetics-ea-screen-9681.jpg" alt="Cybernetics EA" /></p>
+<h3>Download source code of  Cybernetics EA for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download Cybernetics EA" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/cybernetics-ea-download.html">Cybernetics EA Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+	</channel>
+</rss>

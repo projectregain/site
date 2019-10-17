@@ -1,0 +1,70 @@
+body {color: #333;}
+.mh-container-outer {margin: 0 auto;box-shadow: none;}
+h1, h2, h3, h4, h5, h6 {color: #333;}
+blockquote {color: #333;border-color: #005d9d;}
+a {color: #333;}
+a:hover {color: #005d9d;}
+.mh-header-tagline {color: #005d9d;}
+.mh-main-nav-wrap {background: #333;}
+.mh-main-nav {background: #333;border-bottom: none;}
+.mh-main-nav li:hover {background: #005d9d;}
+.mh-main-nav ul li:hover > ul {background: #333;}
+.mh-main-nav .menu > .current-menu-item {background: none;}
+.mh-main-nav .menu > .current-menu-item:hover {background: #005d9d;}
+.slicknav_btn {background: #005d9d;}
+.slicknav_menu {border-color: #333;background: #005d9d;}
+.slicknav_nav ul {border-color: #333;}
+.slicknav_nav .slicknav_item:hover, .slicknav_nav a:hover {background: #005d9d;}
+.mh-main-nav-wrap .slicknav_btn, .mh-main-nav-wrap .slicknav_menu, .mh-main-nav-wrap .slicknav_nav .slicknav_item:hover, .mh-main-nav-wrap .slicknav_nav a:hover {background: transparent;}
+.mh-main-nav-wrap .slicknav_nav ul {border-color: #005d9d;}
+.mh-main-nav-wrap .slicknav_nav ul ul {border: none;}
+.page-title {color: #333;}
+.mh-meta a:hover {color: #005d9d;}
+.entry-content a {color: #005d9d;}
+.entry-content a:hover {color: #005d9d;}
+.entry-tags li {background: #333;}
+.entry-tags li:hover {background: #005d9d;}
+.entry-tags .fa {background: #005d9d;}
+.page-numbers {color: #333;}
+.page-numbers:hover, .mh-loop-pagination .current, .mh-comments-pagination .current, a:hover .pagelink {background: #005d9d;}
+.pagelink {background: #005d9d;}
+a .pagelink {color: #333;}
+.mh-footer {background: #333;}
+.mh-footer a, .mh-footer .mh-meta a:hover {color: #fff;}
+.mh-copyright-wrap {border-color: #555;background: #333;}
+.mh-copyright, .mh-copyright a {color: #fff;}
+.wp-caption-text {color: #333;}
+.gallery-caption {color: #fff;}
+.bypostauthor .mh-comment-meta-author:after, .mh-comment-meta-links .comment-reply-link:before, #respond #cancel-comment-reply-link:before {color: #005d9d;}
+input[type=text]:hover, input[type=email]:hover, input[type=tel]:hover, input[type=url]:hover, textarea:hover {border-color: #005d9d;}
+input[type=submit] {background: #005d9d;}
+input[type=submit]:hover {background: #333;}
+.mh-widget-title {font-size: 14px;font-size: .875rem;color: #fff;padding: 10px 15px;background: #005d9d;border-bottom: none;}
+.mh-widget-title a {color: #fff;}
+.mh-slider-widget img {width: 100%;display: block;}
+.mh-slider-widget .flex-control-nav {width: auto;top: 20px;right: 15px;bottom: auto;}
+.mh-slider-widget .flex-control-paging li a {width: 20px;height: 20px;background: #fff;border: none;-webkit-border-radius: 0;-moz-border-radius: 0;-o-border-radius: 0;border-radius: 0;-webkit-box-shadow: none;-moz-box-shadow: none;-o-box-shadow: none;box-shadow: none;}
+.mh-slider-widget .flex-control-paging li a:hover {background: #f5f5f5;}
+.mh-slider-widget .flex-control-paging li a.flex-active {background: #005d9d;border: none;}
+.mh-slider-caption {top: 0;bottom: 0;left: 0;background: #333;background: rgba(51,51,51,.8);border: none;}
+.mh-slider-caption, .mh-slider-caption .mh-excerpt-more, .mh-slider-title {color: #fff;}
+.mh-widget-col-1 .flex-control-nav, .mh-widget-col-2 .flex-control-nav {top: 15px;right: 10px;}
+.mh-widget-col-1 .mh-slider-caption {background: #333;}
+.mh-footer-widget .mh-slider-caption {background: rgba(51,51,51,.8);}
+.mh-posts-stacked-title {background: #333;background: rgba(51,51,51,.8);}
+.mh-posts-stacked-meta {background: #005d9d;}
+#mh-mobile .mh-footer-widget .mh-posts-stacked-overlay {border-color: #333;}
+.mh-tabbed-widget, .mh-tabbed-widget a {color: #333;}
+.mh-tabbed-widget a:hover {color: #005d9d;}
+.mh-tabbed-widget .tagcloud a {color: #fff;}
+.mh-tab-buttons {border-bottom: 3px solid #005d9d;}
+.mh-tab-button.active, .mh-tab-button.active:hover {color: #fff;background: #005d9d;}
+.mh-footer-widget .mh-tabbed-widget, .mh-footer-widget .mh-tabbed-widget a {color: #fff;}
+.mh-footer-widget .mh-tab-button.active {background: #005d9d;}
+.mh-footer-widget .mh-tab-comment-excerpt {background: #333;}
+.mh-widget .tagcloud a {background: #333;}
+.mh-footer-widget .tagcloud a {background: #333;}
+.tagcloud a:hover, .mh-widget .tagcloud a:hover, .mh-footer-widget .tagcloud a:hover {background: #005d9d;}
+@media screen and (max-width: 900px) {#mh-mobile .mh-slider-caption {background: #333;background: rgba(51,51,51,1);}
+	#mh-mobile .mh-footer-widget .mh-slider-caption {background: rgba(255,255,255,.1);}}
+@media only screen and (max-width: 420px) {.mh-copyright-wrap {padding: 15px 20px;}}

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Marketeer &#8211; Expert Advisor / Indicator</title>
+	<atom:link href="http://project-regain.io/download/marketeer/feed" rel="self" type="application/rss+xml" />
+	<link>http://project-regain.io/</link>
+	<description>Download source coder from any indicator / Expert Advisor file.</description>
+	<lastBuildDate>Sat, 17 Aug 2019 01:00:00 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.2.4</generator>
+	<item>
+		<title>OrderBook Recorder Download</title>
+		<link>http://project-regain.io/orderbook-recorder-download.html</link>
+				<pubDate>Sat, 17 Aug 2019 01:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Utilities]]></category>
+		<category><![CDATA[Marketeer]]></category>
+		<category><![CDATA[Stanislav Korotky]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/orderbook-recorder-download.html</guid>
+				<description><![CDATA[<p>Author : Stanislav Korotky Category : Utilities Last Update : 20 April 2019 Rent Price : Version : 1.1 Order Book, known also as Market <a class="mh-excerpt-more" href="http://project-regain.io/orderbook-recorder-download.html" title="OrderBook Recorder Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/orderbook-recorder-download.html">OrderBook Recorder Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Stanislav Korotky<br />
+Category : Utilities<br />
+Last Update : 20 April 2019<br />
+Rent Price :<br />
+Version : 1.1<br />
+</code></p>
+<p>Order Book, known also as Market Book, market depth, Level 2, &#8211; is a dynamically updated table with current volumes of orders to buy and to sell specific financial instument at price levels near Bid and Ask.</p>
+<p>MetaTrader 5 provides the means for receiving <a href="https://www.metatrader5.com/en/terminal/help/depth_of_market" title="https://www.metatrader5.com/en/terminal/help/depth_of_market">market book</a> from your broker in real time. The expert <strong>OrderBook Recorder</strong> records market book changes and stores them in local files for further usage in indicators and expert adviser, including testing in the tester.</p>
+<p>The expert stores market book of the work symbol of the chart, where it&#8217;s attached.</p>
+<p>The files are created in the folder MQL5/Files/Books, where &#8220;Books&#8221; &#8211; is an adjustable name, given through a special input parameter (see below). Inside the folder another folder is created for every specific work symbol, which contains every day records in dedicated file YYYYMMDD.hob, where YYYY, MM, DD &#8211; year, month, day correspondingly. The extension &#8220;hob&#8221; stands for History of Order Book. For example, the ticker GAZP will produce the files MQL5/Files/Books/GAZP/*.hob.</p>
+<p>The data from the files should be read by the library <a href="https://www.mql5.com/en/market/product/30681" title="https://www.mql5.com/en/market/product/30681">OrderBook History Library</a>. In particular, this library is used for reading market books in the indicator <a href="https://www.mql5.com/en/market/product/30682" title="https://www.mql5.com/en/market/product/30682">OrderBook Cumulative Indicator</a> and demo expert adviser <a href="https://www.mql5.com/en/market/product/30680" title="https://www.mql5.com/en/market/product/30680">OrderBook History Playback</a>. The library is intended to embedding into your MQL programs (source codes of the programs are required).</p>
+<p>The expert adviser shows a comment like that:</p>
+<p>YYYY.MM.DD HH:SS N [X] YYYY.MM.DD HH:SS &#8211; date and time of the latest processed event;</p>
+<p>N &#8211; total number of events written by the expert into current file since its start;</p>
+<p>X &#8211; the size of the market book in the latest event;</p>
+<p>### Parameters</p>
+<ul>
+<li>
+<p>FileFolder &#8211; a string with the root folder name, where to place all files with market books for all symbols (in a separate subfolder for every symbol), by default &#8211; &#8220;Books&#8221;;<br />
+Attention! Current server time is stored in the files &#8220;as is&#8221;, preserving offset to GMT. Reading file archives for the same account or other accounts on the same server requires no further processing. However, if the archive is transferred to a terminal, connected to a server with different time zone (offset to GMT), one should properly adjust the parameter OrderBook_TimeZoneCorrection in the library <strong>OrderBook History Library</strong>. Please note, that the tester does always emulate a server with the timezone GMT+0, regardless of actual timezone of the quotes!</p>
+<p><a href="#description">more&#8230;</a>  </p>
+</li>
+</ul>
+<h3>Image of OrderBook Recorder</h3>
+<p><img src="https://c.mql5.com/31/258/orderbook-recorder-screen-2581.png" alt="OrderBook Recorder" /></p>
+<p><img src="https://c.mql5.com/31/258/orderbook-recorder-screen-8362.png" alt="OrderBook Recorder" /></p>
+<p><img src="https://c.mql5.com/31/258/orderbook-recorder-screen-2727.png" alt="OrderBook Recorder" /></p>
+<h3>Download source code of  OrderBook Recorder for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download OrderBook Recorder" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/orderbook-recorder-download.html">OrderBook Recorder Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>OrderBook Cumulative Indicator Download</title>
+		<link>http://project-regain.io/orderbook-cumulative-indicator-download.html</link>
+				<pubDate>Sat, 17 Aug 2019 00:30:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Indicators]]></category>
+		<category><![CDATA[Marketeer]]></category>
+		<category><![CDATA[Stanislav Korotky]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/orderbook-cumulative-indicator-download.html</guid>
+				<description><![CDATA[<p>Author : Stanislav Korotky Category : Indicators Last Update : 20 April 2019 Rent Price : 49 USD Version : 1.2 Order Book, known also <a class="mh-excerpt-more" href="http://project-regain.io/orderbook-cumulative-indicator-download.html" title="OrderBook Cumulative Indicator Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/orderbook-cumulative-indicator-download.html">OrderBook Cumulative Indicator Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Stanislav Korotky<br />
+Category : Indicators<br />
+Last Update : 20 April 2019<br />
+Rent Price : 49 USD<br />
+Version : 1.2<br />
+</code></p>
+<p>Order Book, known also as Market Book, market depth, Level 2, &#8211; is a dynamically updated table with current volumes of orders to buy and to sell specific financial instument at price levels near Bid and Ask.</p>
+<p>MetaTrader 5 provides the means for receiving <a href="https://www.metatrader5.com/en/terminal/help/depth_of_market" title="https://www.metatrader5.com/en/terminal/help/depth_of_market">market book</a> from your broker, but in real time only, without access to its history. The indicator <strong>OrderBook Cumulative Indicator</strong> accumulates market book data online and visualizes them on the chart. In addition, the indicator can show the market book on the history, by reading archive data, created by <a href="https://www.mql5.com/en/market/product/30679" title="https://www.mql5.com/en/market/product/30679">OrderBook Recorder</a>. The indicator is based on the library <a href="https://www.mql5.com/en/market/product/30681" title="https://www.mql5.com/en/market/product/30681">OrderBook History Library</a>, which can be embedded into your expert or indicator.</p>
+<p>The archive files can be stored in the data folder of the terminal (usually, it looks like C:\Program Files\MetaTrader 5 MetaQuotes\MQL5\Files), or in the common data folder for all terminals (for example, &#8216;C:\Users\<UserName>\AppData\Roaming\MetaQuotes\Terminal\Common\Files&#8217;). In either case, inside the folder another subfolder is used as a root for all market books, and the name of the subfolder is specified in the input parameter OrderBook_FileFolder, by default &#8211; &#8220;Books&#8221;. Inside the root subfolder another level of subfolders is created &#8211; each subfolder corresponds to a specific work symbol, and every single day data is saved in a file YYYYMMDD.hob, where YYYY, MM, DD are year, month, day correspondingly. The extension &#8220;hob&#8221; stands for History of Order Book. For example, the ticker GAZP will produce the files MQL5/Files/Books/GAZP/*.hob.</p>
+<p>### Parameters</p>
+<ul>
+<li>ShowHistory &#8211; an option to enable market book view on the history, based on the archive; by default, false &#8211; disabled, that is the indicator collects and displays online data;
+<ul>
+<li>ShowHistoryFrom &#8211; a date to start searching the archives from while showing market books on the history (when ShowHistory is enabled);</li>
+<li>CharCode &#8211; a character code to display indicator&#8217;s marks; it can be any symbol from the <a href="https://www.mql5.com/en/docs/constants/objectconstants/wingdings" title="https://www.mql5.com/en/docs/constants/objectconstants/wingdings">Wingdings</a> font or -1; by default -1, which means that numeric bullets with values from 1 to 10 are displayed, denoting relative volume size;</li>
+<li>AveragingPeriod &#8211; a period for averaging values from the market book using exponential moving average, continuously; by default &#8211; 0, which means that accumulation and averaging of the data is performed separately for every bar; when a bar is completed, previous statistics are discarded, and volumes are averaged from scratch;</li>
+<li>OrderBook_FileFolder &#8211; a name of the root folder, where subfolders and files of the market books are stored; by default &#8211; &#8220;Books&#8221;; every subfolder is named according to specific work symbol;</li>
+<li>OrderBook_UseCommonFiles &#8211; an option for reading files from the data folder of the current terminal (false, by default) or from the common data folder for all terminals (true); use the common folder for tests in the local tester;</li>
+<li>OrderBook_TimeZoneCorrection &#8211; a correction of date and time, which is required in case, that archives are read in a terminal with a timezone, which differs from a timezone of the terminal where the archives were created; specified in seconds; for example, if the market book was saved with the server time in GMT+3, and then it&#8217;s applied on quotes from a server, where time is in GMT+2, the correction should be 1 hour (-3600 seconds), because times in GMT+2 go 1 hour late in comparison to (i.e. they are 1 hour smaller than) GMT+3; 15:00 in GMT+3 is 14:00 in GMT+2;<br />
+<a href="#description">more&#8230;</a>  </li>
+</ul>
+</li>
+</ul>
+<h3>Image of OrderBook Cumulative Indicator</h3>
+<p><img src="https://c.mql5.com/31/258/orderbook-cumulative-indicator-screen-6295.png" alt="OrderBook Cumulative Indicator" /></p>
+<p><img src="https://c.mql5.com/31/258/orderbook-cumulative-indicator-screen-2096.png" alt="OrderBook Cumulative Indicator" /></p>
+<p><img src="https://c.mql5.com/31/258/orderbook-cumulative-indicator-screen-6657.png" alt="OrderBook Cumulative Indicator" /></p>
+<h3>Download source code of  OrderBook Cumulative Indicator for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download OrderBook Cumulative Indicator" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/orderbook-cumulative-indicator-download.html">OrderBook Cumulative Indicator Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>OrderBook History Playback Download</title>
+		<link>http://project-regain.io/orderbook-history-playback-download.html</link>
+				<pubDate>Sat, 17 Aug 2019 00:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Utilities]]></category>
+		<category><![CDATA[Marketeer]]></category>
+		<category><![CDATA[Stanislav Korotky]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/orderbook-history-playback-download.html</guid>
+				<description><![CDATA[<p>Author : Stanislav Korotky Category : Utilities Last Update : 20 April 2019 Rent Price : Version : 1.1 Order Book, known also as Market <a class="mh-excerpt-more" href="http://project-regain.io/orderbook-history-playback-download.html" title="OrderBook History Playback Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/orderbook-history-playback-download.html">OrderBook History Playback Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Stanislav Korotky<br />
+Category : Utilities<br />
+Last Update : 20 April 2019<br />
+Rent Price :<br />
+Version : 1.1<br />
+</code></p>
+<p>Order Book, known also as Market Book, market depth, Level 2, &#8211; is a dynamically updated table with current volumes of orders to buy and to sell specific financial instument at price levels near Bid and Ask.</p>
+<p>MetaTrader 5 provides the means for receiving <a href="https://www.metatrader5.com/en/terminal/help/depth_of_market" title="https://www.metatrader5.com/en/terminal/help/depth_of_market">market book</a> from your broker, but in real time only, without access to its history. This expert adviser <strong>OrderBook History Playback</strong> allows you to playback the market book events on the history using files, created by <a href="https://www.mql5.com/en/market/product/30679" title="https://www.mql5.com/en/market/product/30679">OrderBook Recorder</a>. The expert is based on the library <a href="https://www.mql5.com/en/market/product/30681" title="https://www.mql5.com/en/market/product/30681">OrderBook History Library</a>, which can be as well embedded into your expert adviser or indicator (source codes are required). The library sends appropriate OnBookEvent events to your program in the tester, which make it possible to test trading strategies based on volumes analysis in the market book.</p>
+<p>The archive files can be stored in the data folder of the terminal (usually, it looks like C:\Program Files\MetaTrader 5 MetaQuotes\MQL5\Files), or in the common data folder for all terminals (for example, &#8216;C:\Users\<UserName>\AppData\Roaming\MetaQuotes\Terminal\Common\Files&#8217;). In either case, inside the folder another subfolder is used as a root for all market books, and the name of the subfolder is specified in the input parameter OrderBook_FileFolder, by default &#8211; &#8220;Books&#8221;. Inside the root subfolder another level of subfolders is created &#8211; each subfolder corresponds to a specific work symbol, and every single day data is saved in a file YYYYMMDD.hob, where YYYY, MM, DD are year, month, day correspondingly. The extension &#8220;hob&#8221; stands for History of Order Book. For example, the ticker GAZP will produce the files MQL5/Files/Books/GAZP/*.hob.</p>
+<p>This is a non-trading expert, it does only show a comment with available information of the market book live or on the history. On every single record the following information is displayed: index, requested trade types (S for sells, B for buys), price level, volume.</p>
+<p>### Parameters</p>
+<ul>
+<li>ShowCursor &#8211; an option to enable one of the 2 modes: false (by default) &#8211; monitors the market book online; true &#8211; creates a vertical line as a cursor, which can be dragged to highlight a bar in the past; if the market book data is available for this bar, it&#8217;s displayed in the comment; only one book is shown per bar, but normally many events are available for a single bar in the file (up to one event per tick), so custom source code can analyze much more data;
+<ul>
+<li>TimerPeriod &#8211; period of the timer, in seconds, by default &#8211; 0, which means no timer, and the library is executed by ticks; the timer is useful on weekends, and on slow market;</li>
+<li>OrderBook_FileFolder &#8211; a name of the root folder, where subfolders and files of the market books are stored; by default &#8211; &#8220;Books&#8221;; every subfolder is named according to specific work symbol;</li>
+<li>OrderBook_UseCommonFiles &#8211; an option for reading files from the data folder of the current terminal (false, by default) or from the common data folder for all terminals (true); use the common folder for testing this and other expert advisers in the local tester; otherwise, all the hob-files should be linked to the source code using the directive <em>#property tester_file</em>;</li>
+<li>OrderBook_TimeZoneCorrection &#8211; a correction of date and time, which is required in case, that archives are read in a terminal with a timezone, which differs from a timezone of the terminal where the archives were created; specified in seconds; for example, if the market book was saved with the server time in GMT+3, and then it&#8217;s applied on quotes from a server, where time is in GMT+2, the correction should be 1 hour (-3600 seconds), because times in GMT+2 go 1 hour late in comparison to (i.e. they are 1 hour smaller than) GMT+3; 15:00 in GMT+3 is 14:00 in GMT+2;<br />
+<a href="#description">more&#8230;</a>  </li>
+</ul>
+</li>
+</ul>
+<h3>Image of OrderBook History Playback</h3>
+<p><img src="https://c.mql5.com/31/258/orderbook-history-playback-screen-3713.png" alt="OrderBook History Playback" /></p>
+<p><img src="https://c.mql5.com/31/258/orderbook-history-playback-screen-5385.png" alt="OrderBook History Playback" /></p>
+<p><img src="https://c.mql5.com/31/258/orderbook-history-playback-screen-1004.png" alt="OrderBook History Playback" /></p>
+<h3>Download source code of  OrderBook History Playback for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download OrderBook History Playback" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/orderbook-history-playback-download.html">OrderBook History Playback Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+	</channel>
+</rss>

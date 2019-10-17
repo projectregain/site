@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Timinva &#8211; Expert Advisor / Indicator</title>
+	<atom:link href="http://project-regain.io/download/timinva/feed" rel="self" type="application/rss+xml" />
+	<link>http://project-regain.io/</link>
+	<description>Download source coder from any indicator / Expert Advisor file.</description>
+	<lastBuildDate>Sun, 25 Aug 2019 01:30:00 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.2.4</generator>
+	<item>
+		<title>Tva Martin Download</title>
+		<link>http://project-regain.io/tva-martin-download.html</link>
+				<pubDate>Sun, 25 Aug 2019 01:30:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Experts]]></category>
+		<category><![CDATA[Timinva]]></category>
+		<category><![CDATA[Valerii Timin]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/tva-martin-download.html</guid>
+				<description><![CDATA[<p>Author : Valerii Timin Category : Experts Last Update : 1 October 2018 Rent Price : 30 USD Version : 1.3 Целью создания советника была <a class="mh-excerpt-more" href="http://project-regain.io/tva-martin-download.html" title="Tva Martin Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/tva-martin-download.html">Tva Martin Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Valerii Timin<br />
+Category : Experts<br />
+Last Update : 1 October 2018<br />
+Rent Price : 30 USD<br />
+Version : 1.3<br />
+</code></p>
+<p>Целью создания советника была автоматическая работа терминала в отсутствие трейдера. </p>
+<p>Используемая стратегия &#8211; мартингейл. Одновременно работает в обоих направлениях. Необходимо иметь не менее 100 USD депозита на центовом счете. Параметры советника работают от месячной и недельной волатильностей рынка. Целевая ставка возврата составляет от 0% до 20% каждый месяц. Желательная валюта транзакций: eur/usd. Период удержания позиции составляет от 1 дня до 1 месяца, в среднем &#8211; 1 неделя. </p>
+<p>Описание настраиваемых параметров советника </p>
+<p>Назначение параметраЗначение по умолчанию Описание   <strong>Открытие первого ордера</strong>     Type orders -1 Типы открываемых ордеров: 0-Buy,1-Sell,-1-All,иначе &#8211; none   Lots  0.12 Процент маржи на первый открываемый ордер для рассчета размера первого лота.    num_TF-1(0..9)for OpenOrder1 2 Номер тайм-фрейма, используемый при открытии первого ордера:0-none,1-1min,2-5min,3-15min,4-30min,5-hour,6-4 hour,7-days,8-weekly,9-month           <strong>Открытие локирующих ордеров</strong>     Take Lok1(~TL) 11 ТейкеЛок &#8211; минимальное расстояние между локируемыми ордерами; рассчитывается от типа ордера в процентах от средней месячной волатильности.   Take Lok0(=TL0) 7 То же,рассчитывается от типа ордера в процентах от текущей волатильности.   per_TF_Volatil(num_TF=9)(TL0) 9 Период используемого по умолчанию месячного тайм-фрейма для расчета волатильности   num_TF-1(0..9)(MACD)(TL0) 3 Номер тайм-фрейма индикатора MACD, используемый при открытии лок-ордера.           <strong>ЗАКРЫТИЕ ордеров одного типа всех <br />
+ одновременно</strong>   TakeProfit (TP0)- Common 23 Закрытие всех ордеров одновременно по установленному у всех ордеров TakeProfit-у. TakeProfit  расчитывается от средней цены всех ордеров одного типа в процентах от средней недельной волатильности.   per_TF_Volatil(num_TF=8)(TP,ATP) 2 Период используемого по умолчанию недельного тайм-фрейма для расчета волатильности   AutoTakeProfit(ATP) for Common 11 Закрытие всех ордеров одновременно по установленному у всех ордеров автоматическому TakeProfit-у при изменении направления тренда по MACD. TakeProfit  расчитывается от средней цены всех ордеров одного типа в процентах от недельной волатильности.   num_TF-1(0..9)(MACD)(ATP) 4 Номер тайм-фрейма индикатора MACD, используемый при закрытии по авто-TakeProfit-у.           <strong>ЗАКРЫТИЕ всех ордеров одновременно</strong> (<em>Эти параметры автоматически записываются в &#8220;Сервис &#8211; Глобальные параметры&#8221; для общего использования всеми включенными советниками</em>)   Work Is Resolved 1 Работа всех открытых советников разрешена   Percent of MaxCurrenProfit 6 Общее закрытие всех открытых ордеров по Проценту общей максимальной прибыли к балансу   Percent of MinFreeMargine 80Установка флага закрытие всех ордеров при наступлении события положительной общей прибыли    Percent of MaxMargin 7Общее закрытие всех ордеров по превышению используемой маржи в процентах к балансу   Percent of Risk 50 Общее закрытие всех ордеров при понижении собственных средств ниже минимального порога     Все параметры работают незаметно для ДЦ, кроме <strong>TakeProfit.</strong> </p>
+<p>Важно! Ни один советник, никакая другая автоматическая программа для трейдинга не может гарантировать Вам 100% выигрышную стратегию. Стратегия уменьшения этого проигрыша называется управлением капиталом. Наиболее четко эту роль исполняют параметры, контролирующие величину убытка. В данном советнике эта цель достигается использованием последних параметров (см. таблицу) Абсолютно выигрышная стратегия возможна только для бесконечного значения Вашего депозита. </p>
+<p><em>*Советы: <br />
+*</em>Компьютер при работе программы должен быть всегда включен на Internet; <br />
+Для ознакомления с продуктом поработайте на Demo-счетах;</p>
+<p><strong>Риски</strong>: <br />
+ Важно понимать, что торговля на финансовых рынках связана с высокими рисками, и имеется вероятность весьма значительных убытков от торговых операций. Прежде чем приступить к торговой деятельности, рекомендуется пройти обучение основам работы на Forex, При начале работы на Forex рекомендуется провести тщательный анализ рынка и своего финансового положения. Несмотря на всю предосторожность, трейдер осознает, что существует риск потери депозита в полном объеме в процессе проведения торговых операций на рынке. </p>
+<pre><code>[more...](#description)
+</code></pre>
+<h3>Image of Tva Martin</h3>
+<p><img src="https://c.mql5.com/31/268/tva-martin-screen-8434.PNG" alt="Tva Martin" /></p>
+<p><img src="https://c.mql5.com/31/268/tva-martin-screen-6034.PNG" alt="Tva Martin" /></p>
+<p><img src="https://c.mql5.com/31/268/tva-martin-screen-3292.PNG" alt="Tva Martin" /></p>
+<p><img src="https://c.mql5.com/31/268/tva-martin-screen-1456.PNG" alt="Tva Martin" /></p>
+<p><img src="https://c.mql5.com/31/268/tva-martin-screen-7409.PNG" alt="Tva Martin" /></p>
+<p><img src="https://c.mql5.com/31/268/tva-martin-screen-3342.PNG" alt="Tva Martin" /></p>
+<p><img src="https://c.mql5.com/31/268/tva-martin-screen-8943.PNG" alt="Tva Martin" /></p>
+<p><img src="https://c.mql5.com/31/268/tva-martin-screen-1112.PNG" alt="Tva Martin" /></p>
+<p><img src="https://c.mql5.com/31/268/tva-martin-screen-3365.PNG" alt="Tva Martin" /></p>
+<p><img src="https://c.mql5.com/31/268/tva-martin-screen-8829.PNG" alt="Tva Martin" /></p>
+<p><img src="https://c.mql5.com/31/268/tva-martin-screen-6366.png" alt="Tva Martin" /></p>
+<p><img src="https://c.mql5.com/31/268/tva-martin-screen-5221.png" alt="Tva Martin" /></p>
+<h3>Download source code of  Tva Martin for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download Tva Martin" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/tva-martin-download.html">Tva Martin Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+	</channel>
+</rss>

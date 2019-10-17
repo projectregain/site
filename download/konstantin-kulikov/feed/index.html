@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Konstantin Kulikov &#8211; Expert Advisor / Indicator</title>
+	<atom:link href="http://project-regain.io/download/konstantin-kulikov/feed" rel="self" type="application/rss+xml" />
+	<link>http://project-regain.io/</link>
+	<description>Download source coder from any indicator / Expert Advisor file.</description>
+	<lastBuildDate>Mon, 05 Aug 2019 22:00:00 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.2.4</generator>
+	<item>
+		<title>Breakthrough Strategy Download</title>
+		<link>http://project-regain.io/breakthrough-strategy-download.html</link>
+				<pubDate>Mon, 05 Aug 2019 22:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Experts]]></category>
+		<category><![CDATA[Konstantin Kulikov]]></category>
+		<category><![CDATA[Test-Standart]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/breakthrough-strategy-download.html</guid>
+				<description><![CDATA[<p>Author : Konstantin Kulikov Category : Experts Last Update : 29 April 2019 Rent Price : 234 USD Version : 1.4 This EA can be <a class="mh-excerpt-more" href="http://project-regain.io/breakthrough-strategy-download.html" title="Breakthrough Strategy Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/breakthrough-strategy-download.html">Breakthrough Strategy Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Konstantin Kulikov<br />
+Category : Experts<br />
+Last Update : 29 April 2019<br />
+Rent Price : 234 USD<br />
+Version : 1.4<br />
+</code></p>
+<p>This EA can be used with a large number of sets of settings.</p>
+<p>The type of the basic strategy is selected by switching the &#8220;Breach_else_Channel&#8221; parameter: channel breakout or trading withing the channel. The basic strategy is divided into two blocks (A and B) with different filters and logic for performing trades. They can be used both in conjunction and separately. You can perform the optimization for any instruments and trading hours. It is possible to consider the economic news in testing, since the EA contains them (from January 1, 2015 to December 31, 2017). The &#8220;Pass_of_News_else_Trade_at_News&#8221; parameter determines the trading logic during the release of economic news: do not trade at the specified time intervals during the news release, or trade only at the specified intervals during the news release.</p>
+<p>The full list of parameters can be found in the blog: <a href="https://www.mql5.com/en/blogs/post/695169" title="https://www.mql5.com/en/blogs/post/695169">https://www.mql5.com/en/blogs/post/695169</a></p>
+<p>While testing or at real work, use the sets of settings from Сomments.</p>
+<p><strong>Highlights to pay attention to</strong></p>
+<p><strong>1</strong>. During live operation of the expert the GMT offset parameter is determined automatically based on local time of the computer (GMT_Offset_AUTO=true).</p>
+<p>This parameter provides synchronization of the expert settings with the MetaTrader 4 server time.</p>
+<p>To ensure the correctness of settings it is necessary:</p>
+<ul>
+<li>
+<p>to compare the GMT time in expert information area on the chart of currency pair, to which the expert is attached, with http://time.is/GMT (or other reliable source).</p>
+<ul>
+<li>If the values do not match, then set GMT_Offset_AUTO=false and set a value of GMT_Offset_Manual according to the instructions in <a href="https://www.mql5.com/en/blogs/post/682539" title="https://www.mql5.com/en/blogs/post/682539">https://www.mql5.com/en/blogs/post/682539</a><br />
+<strong>2</strong>. In order to activate the News filter function, enable &#8220;Allow WebRequest&#8221; and add https://sslecal2.forexprostools.com/ to the URL list for WebRequest.</li>
+</ul>
+<p>To do this, open Tools &gt; Options &gt; Expert Advisors. Check the option &#8220;Allow WebRequests for listed URL:&#8221;. Add https://sslecal2.forexprostools.com/ and click OK.</p>
+<p>The EA contains a news archive (01.01.2015 &#8211; 19.05.2019), which is used for testing.</p>
+<p><p><strong>3.</strong> By default, in the expert settings, the trading lot size is set to 0.01 for every 100 units of balance.</p>
+</li>
+</ul>
+<p>After testing on real accounts this parameter can be changed depending on your preferences. I recommend using a fixed lot (Use_Fix_Lots) or a recovery money management (Use_MM_Reg_1 or Use_MM_Reg_2).</p>
+<p><strong>4.</strong> The expert works on any timeframe equally well, as it automatically takes the necessary data from multiple timeframes.</p>
+<p>As the expert uses multiple timeframes for the analysis, it is necessary for the quotes of all timeframes (M1, M15, M30, H1, H4) to be downloaded in the terminal for testing. At the same time, the test itself is produced on the M1 timeframe.</p>
+<p><strong>5</strong>. For brokers with the rule &#8220;First In First Out&#8221; enable the parameter FIFO_MODE = true.</p>
+<p><strong>6</strong>. The EA logs information on spread, slippage and other useful information when performing trades, and also when it is possible to make trades.</p>
+<p>To write this information, set the parameter Record_Deals = true;</p>
+<p>To view this information:</p>
+<ul>
+<li>
+<p>go to MQL4/Files in the terminal folder and open the corresponding file (this action can be made in time which is not coinciding with time of opening of transactions by the expert and when there is no open transactions of the expert);</p>
+<ul>
+<li>after viewing, close the file (so that the expert could write down information further).<br />
+<strong>7.</strong> If you use an expert on different currency pairs, then there is no need to change the magic numbers (&#8220;magics&#8221;), since the expert identifies the transactions simultaneously by magic number and by currency pair.</li>
+</ul>
+<p><p><a href="#description">more&#8230;</a>  </p>
+</li>
+</ul>
+<h3>Image of Breakthrough Strategy</h3>
+<p><img src="https://c.mql5.com/31/221/breakthrough-strategy-screen-1786.png" alt="Breakthrough Strategy" /></p>
+<p><img src="https://c.mql5.com/31/221/breakthrough-strategy-screen-1126.png" alt="Breakthrough Strategy" /></p>
+<p><img src="https://c.mql5.com/31/221/breakthrough-strategy-screen-4771.png" alt="Breakthrough Strategy" /></p>
+<p><img src="https://c.mql5.com/31/221/breakthrough-strategy-screen-4057.png" alt="Breakthrough Strategy" /></p>
+<p><img src="https://c.mql5.com/31/221/breakthrough-strategy-screen-1100.png" alt="Breakthrough Strategy" /></p>
+<p><img src="https://c.mql5.com/31/221/breakthrough-strategy-screen-4293.png" alt="Breakthrough Strategy" /></p>
+<p><img src="https://c.mql5.com/31/221/breakthrough-strategy-screen-9803.png" alt="Breakthrough Strategy" /></p>
+<p><img src="https://c.mql5.com/31/221/breakthrough-strategy-screen-7115.png" alt="Breakthrough Strategy" /></p>
+<p><img src="https://c.mql5.com/31/221/breakthrough-strategy-screen-3556.png" alt="Breakthrough Strategy" /></p>
+<p><img src="https://c.mql5.com/31/221/breakthrough-strategy-screen-3558.png" alt="Breakthrough Strategy" /></p>
+<p><img src="https://c.mql5.com/31/221/breakthrough-strategy-screen-7217.png" alt="Breakthrough Strategy" /></p>
+<p><img src="https://c.mql5.com/31/221/breakthrough-strategy-screen-8806.png" alt="Breakthrough Strategy" /></p>
+<h3>Download source code of  Breakthrough Strategy for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download Breakthrough Strategy" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/breakthrough-strategy-download.html">Breakthrough Strategy Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+	</channel>
+</rss>

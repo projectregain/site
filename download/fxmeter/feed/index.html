@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Fxmeter &#8211; Expert Advisor / Indicator</title>
+	<atom:link href="http://project-regain.io/download/fxmeter/feed" rel="self" type="application/rss+xml" />
+	<link>http://project-regain.io/</link>
+	<description>Download source coder from any indicator / Expert Advisor file.</description>
+	<lastBuildDate>Fri, 30 Aug 2019 15:00:00 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.2.4</generator>
+	<item>
+		<title>Quick Panel Pro Hedging Download</title>
+		<link>http://project-regain.io/quick-panel-pro-hedging-download.html</link>
+				<pubDate>Fri, 30 Aug 2019 15:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Utilities]]></category>
+		<category><![CDATA[Fxmeter]]></category>
+		<category><![CDATA[Ziheng Zhuang]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/quick-panel-pro-hedging-download.html</guid>
+				<description><![CDATA[<p>Author : Ziheng Zhuang Category : Utilities Last Update : 31 July 2017 Rent Price : 30 USD Version : 4.0 Note: This EA only <a class="mh-excerpt-more" href="http://project-regain.io/quick-panel-pro-hedging-download.html" title="Quick Panel Pro Hedging Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/quick-panel-pro-hedging-download.html">Quick Panel Pro Hedging Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Ziheng Zhuang<br />
+Category : Utilities<br />
+Last Update : 31 July 2017<br />
+Rent Price : 30 USD<br />
+Version : 4.0<br />
+</code></p>
+<p>Note: This EA only works on Hedging account. The MetaTrader 4 version <a href="https://www.mql5.com/en/market/product/24255">Quick Panel Pro</a> This Expert Advisor is a professional trading tool, which integrates a flexible risk control and 6 groups of trading panel.</p>
+<p>### Features</p>
+<ul>
+<li>
+<p>Calculating lots is easy and fast, when you move the StopLine, the calculation is processed at the same time.</p>
+<ul>
+<li>Most trading operations can be quickly made by clicking the button on these panels.</li>
+<li>Changing panels is quick just by clicking the green button.</li>
+<li>EA can run on visual chart in strategy tester, which provides an easy method to practice trading on history data.</li>
+</ul>
+<h3>Panel</h3>
+<p>The panel includes two columns. The left column is about sell and the right is about buy.</p>
+</li>
+<li>
+<p><em>*sell: *</em>open a sell order.</p>
+<ul>
+<li><em>*first: *</em>close the first sell order. The first refers to Open Time.</li>
+<li><em>*last: *</em>close the last sell order. The last refers to Open Time.</li>
+<li><em>*all+: *</em>close sell orders in profit.</li>
+<li><em>*all-: *</em>close sell orders in loss.</li>
+<li><strong>max+:</strong> close the sell order with the maximum profit.</li>
+<li><em>*max-: *</em>close the sell order with the maximum loss.</li>
+<li><strong>min+:</strong> close the sell order with the minimum profit.</li>
+<li><em>*min-: *</em>close the sell order with the minimum loss.</li>
+<li><strong>All:</strong> close all sell orders.</li>
+<li><strong>buy:</strong> open a buy order.</li>
+<li><em>*first: *</em>close the first buy order. The first refers to Open Time.</li>
+<li><em>*last: *</em>close the last buy order. The last refers to Open Time.</li>
+<li><em>*all+: *</em>close buy orders in profits.</li>
+<li><strong>all-:</strong> close buy orders in loss.</li>
+<li><strong>max+:</strong>close the buy order with the maximum profit.</li>
+<li><strong>max-:</strong> close the buy order with the maximum loss.</li>
+<li><strong>min+:</strong>close the buy order with the minimum profit.</li>
+<li><strong>min-:</strong> close the buy order with the minimum loss.</li>
+<li><em>*All: *</em>close all buy orders.</li>
+</ul>
+<h3>Inputs</h3>
+</li>
+<li>
+<p>AlertLanguage: Select one from English and Chinese as language for popup Alert.</p>
+<p>md5-ccb2816bbd9b6073b102b290ebc91546</p>
+<h3>How Is Lots Determined?</h3>
+<p>Lots is determined by risk money, stop loss (pips) and the value of pips.</p>
+<p>The risk money is the amount of money that one order would lose.</p>
+<p>Stop loss is the distance between StopLine and market price.</p>
+<p>Let&#8217;s say, you select Risk_Money as LotsMode, and set Risk_Money to 50 dollars, the risk money is 50 and move the StopLine to 100 pips from the market price on EURUSD chart. The value of pips for EURUSD is 10, so lots is calculated as below:</p>
+</li>
+<li>
+<p>lots = 50/(100*10) = 0.05.<br />
+In this case, the loss for every order is 50 dollars and it is relatively fixed.</p>
+<p>Why is it not absolutely fixed? This is because cross rates have not the fixed pips value, such as EURGBP, EURAUD, AUDNZD.</p>
+<p>If you select Risk_Percent and set RiskPercent to 3, let&#8217;s suppose the free margin is 1000 dollars, the calculation will be as below:</p>
+</li>
+<li>
+<p>risk money = 1000 *3% = 30</p>
+<ul>
+<li>lots = 30/(100*10) = 0.03.<br />
+In this case, the loss for every order is not fixed, it will vary as the free margin.</li>
+</ul>
+<h3>Compare with another version Quick Panel (<a href="https://www.mql5.com/en/market/product/24325">Link</a>):</h3>
+<ol>
+<li>Quick Panel Pro: each order has SL/TP, and TP is equal to SL * RewardRiskRation.</li>
+<li>Quick Panel: each order &#8216;s SL/TP depends on the input StopLossInPips/TakeProfitInPips, and TP is independent of SL.<br />
+<a href="#description">more&#8230;</a>  </li>
+</ol>
+</li>
+</ul>
+<h3>Image of Quick Panel Pro Hedging</h3>
+<p><img src="https://c.mql5.com/31/190/quick-panel-pro-hedging-screen-4283.png" alt="Quick Panel Pro Hedging" /></p>
+<p><img src="https://c.mql5.com/31/190/quick-panel-pro-hedging-screen-5246.png" alt="Quick Panel Pro Hedging" /></p>
+<p><img src="https://c.mql5.com/31/190/quick-panel-pro-hedging-screen-3896.png" alt="Quick Panel Pro Hedging" /></p>
+<p><img src="https://c.mql5.com/31/190/quick-panel-pro-hedging-screen-3580.png" alt="Quick Panel Pro Hedging" /></p>
+<p><img src="https://c.mql5.com/31/190/quick-panel-pro-hedging-screen-7095.png" alt="Quick Panel Pro Hedging" /></p>
+<p><img src="https://c.mql5.com/31/190/quick-panel-pro-hedging-screen-7887.png" alt="Quick Panel Pro Hedging" /></p>
+<p><img src="https://c.mql5.com/31/190/quick-panel-pro-hedging-screen-8639.png" alt="Quick Panel Pro Hedging" /></p>
+<p><img src="https://c.mql5.com/31/190/quick-panel-pro-hedging-screen-7728.png" alt="Quick Panel Pro Hedging" /></p>
+<p><img src="https://c.mql5.com/31/190/quick-panel-pro-hedging-screen-9395.png" alt="Quick Panel Pro Hedging" /></p>
+<p><img src="https://c.mql5.com/31/190/quick-panel-pro-hedging-screen-9746.png" alt="Quick Panel Pro Hedging" /></p>
+<p><img src="https://c.mql5.com/31/190/quick-panel-pro-hedging-screen-7739.png" alt="Quick Panel Pro Hedging" /></p>
+<p><img src="https://c.mql5.com/31/190/quick-panel-pro-hedging-screen-9424.png" alt="Quick Panel Pro Hedging" /></p>
+<h3>Download source code of  Quick Panel Pro Hedging for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download Quick Panel Pro Hedging" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/quick-panel-pro-hedging-download.html">Quick Panel Pro Hedging Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>Pair Power Trading Download</title>
+		<link>http://project-regain.io/pair-power-trading-download.html</link>
+				<pubDate>Mon, 19 Aug 2019 00:30:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Experts]]></category>
+		<category><![CDATA[Fxmeter]]></category>
+		<category><![CDATA[Ziheng Zhuang]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/pair-power-trading-download.html</guid>
+				<description><![CDATA[<p>Author : Ziheng Zhuang Category : Experts Last Update : 20 March 2019 Rent Price : 99 USD Version : 3.4 The full screenshot &#8211; <a class="mh-excerpt-more" href="http://project-regain.io/pair-power-trading-download.html" title="Pair Power Trading Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/pair-power-trading-download.html">Pair Power Trading Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Ziheng Zhuang<br />
+Category : Experts<br />
+Last Update : 20 March 2019<br />
+Rent Price : 99 USD<br />
+Version : 3.4<br />
+</code></p>
+<p>The full screenshot &#8211; <a href="https://c.mql5.com/1/141/Pair_Power_Trading.png" title="https://c.mql5.com/1/141/2019-03-13_163324.png">Pair Power Trading</a></p>
+<p>The full description &#8211; <a href="https://www.mql5.com/en/blogs/post/725277" title="https://www.mql5.com/en/blogs/post/725277">The user guide for Pair Power Trading</a></p>
+<p>This Expert Advisor is an One-click trading panel for multi pairs. It has the following functions:</p>
+<ol>
+<li>Display the power index of 28 currency pairs.</li>
+<li>Click <strong>OPEN</strong> button to open orders for the selected pairs.</li>
+<li>Click <em>*CLOSE *</em>button to close orders for the selected pairs.</li>
+<li>Click <strong>CLOSE</strong> button is to close the whole order ,instead of partial close. Close action has nothing to do with the number of lots.</li>
+<li>Automatically open the initial order and the grid order</li>
+<li>Close orders of one pair when the average price of the orders of this pair reaches the setting profit.</li>
+<li>Close orders of all pairs when the total profit reaches the persent of the balance.</li>
+<li>Close orders of all pairs when the total profit reaches the amount setted by user.</li>
+<li>Set the input Magic to 0, the EA will help to close manual orders.</li>
+<li>
+<p>Set the input Magic to other EA&#8217;s magic, the EA will help to close those orders opened by other EAs.<br />
+Regarding the currency power,please refer to the indicator <a href="https://www.mql5.com/en/market/product/24310" title="https://www.mql5.com/en/market/product/24310">Currency Relative Strength</a>  </p>
+<p><strong>Usage:</strong></p>
+</li>
+<li>
+<p>Select pairs as per the power index.</p>
+</li>
+<li>Enter lots number for the selected pairs.</li>
+<li>In the power index, the positive is to open buy order,and the negative is to open sell order.</li>
+<li>Click OPEN to open an order for the selected pair.</li>
+<li>Click CLOSE to close the position for the selected pair.</li>
+<li>Check &#8220;AutoInitialBuy&#8221;,&#8221;AutoGridBuyWin&#8221;,&#8221;AutoGridBuyLoss&#8221;,etc., EA will automaticall open/close orders when the condition is met.<br />
+<strong>Input:</strong></li>
+</ol>
+<ul>
+<li>Magic &#8211; The Magic Number of EA</li>
+<li>Select SL/TP Mode &#8211; This is a 2-option input for SL/TP mode. Select SL_TP_POINT or SL_TP_ATR</li>
+<li>StopLoss &#8211; StopLoss in Point. If it is 0, orders will not be set SL</li>
+<li>TakeProfit &#8211; TakeProfit in Point. If it is 0, orders will not be set TP</li>
+<li>SL_ATR_Multiplier &#8211; The SL will be ATR * Multiplier.If it is 0, orders will not be set SL</li>
+<li>TP_ATR_Multiplier &#8211; The TP will be ATR * Multiplier. If it is 0, orders will not be set TP</li>
+<li>MaxLots &#8211; The max. lots. If the lots number is larger than this MaxLots,the lots will be the MaxLots</li>
+<li>MaxBuyOrders &#8211; The max. number of buy orders for every pair</li>
+<li>MaxSellOrders &#8211; The max. number of sell ofders for every pair</li>
+<li>MaxCountInitialBuy &#8211; The max. count of opening the initial buy order</li>
+<li>MaxCountInitialSell &#8211; The max. count of opening the initial sell order</li>
+<li>MaxOrders_GridBuyWin &#8211; The max. number of grid buy orders in win status</li>
+<li>MaxOrders_GridBuyLoss &#8211; The max. number of grid buy orders in loss status</li>
+<li>MaxOrders_GridSellWin &#8211; The max. number of sell orders in win status</li>
+<li>MaxOrders_GridSellLoss &#8211; The max. number of sell orders in loss status</li>
+<li>MinPairPower_InitBuy &#8211; The min. pair power for opening the initial buy order</li>
+<li>MinPairPower_InitSell &#8211; The min. pair power for opening the initial sell order</li>
+<li>MinPairPower_GridBuyWin &#8211; The min. pair power for opening the grid buy orders in win status</li>
+<li>MinPairPower_GridBuyLoss &#8211; </li>
+<li>MinPairPower_GridSellWin &#8211; </li>
+<li>MinPairPower_GridSellLoss &#8211; </li>
+<li>&#8230;&#8230;</li>
+<li>&#8230;&#8230;</li>
+<li>&#8230;&#8230;</li>
+<li>
+</li>
+<li>TimeFrame &#8211; The Timeframe of the indicator <a href="https://www.mql5.com/en/market/product/24310" title="https://www.mql5.com/en/market/product/24310">Currency Relative Strength</a> ,the default is D1.</li>
+<li>BarsToCalculate &#8211; The number of bars to calculate strength.</li>
+<li>MaPeriodsToSmoothLines &#8211; The moving Average periods for smoothing strength lines.</li>
+<li>Suffix &#8211; Symbol suffix</li>
+<li>Alert Settings &#8212; The below is the alert setting</li>
+<li>UpLevel &#8211; The default is 20, if the strength value cross the level from the below to the above,then send alert by popup window or email.</li>
+<li>DnLevel &#8211; The default is -20, if the strength value cross the level from the above to the below,then send alert by popup window or email.</li>
+<li>IntervalMinutes &#8211; The default is 5 minutes, it is the time interval of alert for every pairs.</li>
+<li>Popup &#8211; true,alert by popup window.if false ,no alert.</li>
+<li>Email &#8211; true,alert by email,if false,no alert.<br />
+<strong>Note:</strong></li>
+</ul>
+<ol>
+<li>
+<p>MaxLots: this input is to avoid the mistake when you enter a larger number on the trading panel.</p>
+<p>If the entered lots number is larger than the MaxLots, the trade lots will be limited to the MaxLots.</p>
+<p>If the MaxLots is set to 0, there is no limitation.</p>
+</li>
+<li>
+<p>On the trading panel, if the entered lots number is negative,in this case, the trade direction will be reversed.</p>
+<p>Namely, we will reverse the trade direction of positive power index to sell order,and the negative power index to buy order. </p>
+<p><a href="#description">more&#8230;</a>  </p>
+</li>
+</ol>
+<h3>Image of Pair Power Trading</h3>
+<p><img src="https://c.mql5.com/31/266/pair-power-trading-screen-9363.png" alt="Pair Power Trading" /></p>
+<p><img src="https://c.mql5.com/31/315/pair-power-trading-screen-9113.png" alt="Pair Power Trading" /></p>
+<p><img src="https://c.mql5.com/31/315/pair-power-trading-screen-5584.png" alt="Pair Power Trading" /></p>
+<p><img src="https://c.mql5.com/31/266/pair-power-trading-screen-9449.png" alt="Pair Power Trading" /></p>
+<h3>Download source code of  Pair Power Trading for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download Pair Power Trading" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/pair-power-trading-download.html">Pair Power Trading Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+	</channel>
+</rss>

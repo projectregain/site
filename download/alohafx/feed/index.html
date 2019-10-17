@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Alohafx &#8211; Expert Advisor / Indicator</title>
+	<atom:link href="http://project-regain.io/download/alohafx/feed" rel="self" type="application/rss+xml" />
+	<link>http://project-regain.io/</link>
+	<description>Download source coder from any indicator / Expert Advisor file.</description>
+	<lastBuildDate>Sun, 01 Sep 2019 20:00:00 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.2.4</generator>
+	<item>
+		<title>SymbolSynthesizer OrderPanel Download</title>
+		<link>http://project-regain.io/symbolsynthesizer-orderpanel-download.html</link>
+				<pubDate>Sun, 01 Sep 2019 20:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Utilities]]></category>
+		<category><![CDATA[Alohafx]]></category>
+		<category><![CDATA[Atsushi Yamanaka]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/symbolsynthesizer-orderpanel-download.html</guid>
+				<description><![CDATA[<p>Author : Atsushi Yamanaka Category : Utilities Last Update : 9 February 2016 Rent Price : Version : 2.2 It synthesizes any symbol if you <a class="mh-excerpt-more" href="http://project-regain.io/symbolsynthesizer-orderpanel-download.html" title="SymbolSynthesizer OrderPanel Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/symbolsynthesizer-orderpanel-download.html">SymbolSynthesizer OrderPanel Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Atsushi Yamanaka<br />
+Category : Utilities<br />
+Last Update : 9 February 2016<br />
+Rent Price :<br />
+Version : 2.2<br />
+</code></p>
+<p>It synthesizes any symbol if you have the source symbols in Market Watch window. This is the Order Panel for that. Same concept with symbolsynthesizer.mq5 (<a href="https://www.mql5.com/en/code/909">https://www.mql5.com/en/code/909</a>), but a lot more functions. First design was to use with SymbolSynthesizer_Chart.mq4 (<a href="https://www.mql5.com/en/code/14596">https://www.mql5.com/en/code/14596</a>). You can download it free. And then generate a real-time off-line chart for the pair symbol you want to synthesize, please refer to the explanation on <a href="https://www.mql5.com/en/code/14596">the link above</a>. You can attach this EA on the generated chart. If you do so, the synthesized symbol and source symbols will be set automatically by the chart setting. Also show ask line and trade levels. You can use this panel also without virtual chart, but not with drag&#8217;n drop controls and pending order function.</p>
+<p>When you click &#8220;Buy&#8221; or &#8220;Sell&#8221; button, the panel will entry two positions. One is source symbol 1 with preset lots, and also source symbol 2 with the automatically calculated lots. So they make virtual position for the synthesized symbol. If it&#8217;s on the synthesized chart, SL/TP are modifiable by drag&#8217;n drop like any MT4 online charts, but after selected by double click. If you move the Buy entry line to the above, the TP line will be there. Move down makes (if SL does not exist) or moves SL line. Pending Order can be put by 2 steps. First click either &#8220;Pending Sell&#8221; button or &#8220;Pending Buy&#8221; button, and then click on the price you want to put the order in the chart. For example, if you click &#8220;Pending Buy&#8221; and you click above the Ask line, it will be pending Buy-Stop order, but if click below the Ask line, it will be pending Buy-Limt order.</p>
+<p>Only one order or position for one chart.</p>
+<p>So, if you want to open multiple positions for same symbol, you need to synthesize different name symbol with different magic but same source symbols. Or different source symbols for opposite position if your broker doesn&#8217;t like hedge.</p>
+<p>Note: SL/TP are not on the server side, they are on the EA which is attached. Thus if you close your MT4 or the chart, they are not going to work. Same thing for pending order.</p>
+<p>### Input parameters:</p>
+<ul>
+<li>
+<p><strong>Magic Number</strong> &#8211; The magic number</p>
+<ul>
+<li><strong>The digits for synthesized symbol</strong> &#8211; The digits for synthesized symbol.</li>
+<li><strong>Spread in point. 0 means current.</strong> &#8211; Since MetaTrader 4 history file doesn&#8217;t have past spread data, we need them to determine Ask price for the case dividing to calculate the virtual prices.</li>
+<li><strong>Virtual symbol</strong> &#8211; The one you want to generate. Any name is OK but less than 11 characters.</li>
+<li>string sSym01=&#8221;EURUSD&#8221;;//Source symbol 1 (This is NOT external variable, automatically set for attached chart symbol)</li>
+<li><strong>Source symbol 2</strong> &#8211; Source symbol#2. It must have an exact same name on Market Watch include prefix and/or suffix.</li>
+<li><strong>Calculation method</strong> &#8211; The calculation to synthesize. &#8220;M&#8221; means &#8220;Multiply&#8221;, or put &#8220;D&#8221; means &#8220;Divide&#8221;.</li>
+<li><strong>Show Ask line</strong> &#8211; True for show Ask line, false for not. Ignored if chart is not the virtual one.</li>
+<li><em>*Show and operate Trade Levels &#8211; *</em>True for show trade levels, false for not.</li>
+<li><em>*Show Profit and Loss in Text &#8211; *</em>True for show text about position and profit or loss, false for not.</li>
+<li><strong>Preset Lots for symbol 1</strong> &#8211; Default lots for source symbol 1</li>
+<li><strong>Preset Slippage in Points</strong> &#8211; Default slippage</li>
+<li><strong>Pｒeset Stop Loss in Points</strong> &#8211; Default preset Stop Loss</li>
+<li><strong>Pｒeset Take Profit in Points</strong> &#8211; Default preset Take Profit</li>
+<li><strong>Pｒeset Trailing Stop Loss in Points</strong> &#8211; Default preset Trailing Stop</li>
+</ul>
+<h3>Examples for source symbols and synthesized symbol</h3>
+<p>If the virtual price of vSymbol can be calculated by sSym01 multiply sSym02, put &#8220;M&#8221;.</p>
+<p><strong>Ex:</strong> vSymbol=&#8221;EURUSD&#8221; sSym01=&#8221;EURGBP&#8221; sSym02=&#8221;GBPUSD&#8221;</p>
+<p>vSymbol=&#8221;EURJPY&#8221; sSym01=&#8221;EURGBP&#8221; sSym02=&#8221;GBPJPY&#8221;</p>
+<p>vSymbol=&#8221;EURJPY&#8221; sSym01=&#8221;EURUSD&#8221; sSym02=&#8221;USDJPY&#8221;</p>
+<p>vSymbol=&#8221;BTCJPY&#8221; sSym01=&#8221;BTCUSD&#8221; sSym02=&#8221;USDJPY&#8221;</p>
+<p><strong>Note:</strong> sSym01 and sSym02 can be switched with each other since we multiply them. Major pair should be sSym01 for more often ticks.</p>
+<p>If the virtual price of vSymbol can be calculated by sSym02 divided by sSym01, put &#8220;D&#8221; or any other string but &#8220;M&#8221;.</p>
+<p><strong>Ex:</strong> vSymbol=&#8221;USDJPY&#8221; sSym01=&#8221;EURUSD&#8221; sSym02=&#8221;EURJPY&#8221;</p>
+<p>vSymbol=&#8221;ZARJPY&#8221; sSym01=&#8221;USDZAR&#8221; sSym02=&#8221;USDJPY&#8221;</p>
+<p>vSymbol=&#8221;EURUSD&#8221; sSym01=&#8221;USDJPY&#8221; sSym02=&#8221;EURJPY&#8221;</p>
+<p><strong>Note:</strong> sSym01 and sSym02 can NOT be switched with each other since we divide.</p>
+<p>The currencies with under-bar are &#8220;media currency&#8221;.</p>
+<p><p><a href="#description">more&#8230;</a>  </p>
+</li>
+</ul>
+<h3>Image of SymbolSynthesizer OrderPanel</h3>
+<p><img src="https://c.mql5.com/31/96/symbolsynthesizer-orderpanel-screen-7356.png" alt="SymbolSynthesizer OrderPanel" /></p>
+<p><img src="https://c.mql5.com/31/96/symbolsynthesizer-orderpanel-screen-4988.png" alt="SymbolSynthesizer OrderPanel" /></p>
+<h3>Download source code of  SymbolSynthesizer OrderPanel for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download SymbolSynthesizer OrderPanel" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/symbolsynthesizer-orderpanel-download.html">SymbolSynthesizer OrderPanel Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+	</channel>
+</rss>

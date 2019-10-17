@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Lizar &#8211; Expert Advisor / Indicator</title>
+	<atom:link href="http://project-regain.io/download/lizar/feed" rel="self" type="application/rss+xml" />
+	<link>http://project-regain.io/</link>
+	<description>Download source coder from any indicator / Expert Advisor file.</description>
+	<lastBuildDate>Mon, 02 Sep 2019 14:30:00 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.2.4</generator>
+	<item>
+		<title>Renko Charts Download</title>
+		<link>http://project-regain.io/renko-charts-download.html</link>
+				<pubDate>Mon, 02 Sep 2019 14:30:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Indicators]]></category>
+		<category><![CDATA[Konstantin Gruzdev]]></category>
+		<category><![CDATA[Lizar]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/renko-charts-download.html</guid>
+				<description><![CDATA[<p>Author : Konstantin Gruzdev Category : Indicators Last Update : 29 April 2015 Rent Price : 299 USD Version : 1.17 The iRenkoChart indicator allows <a class="mh-excerpt-more" href="http://project-regain.io/renko-charts-download.html" title="Renko Charts Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/renko-charts-download.html">Renko Charts Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Konstantin Gruzdev<br />
+Category : Indicators<br />
+Last Update : 29 April 2015<br />
+Rent Price : 299 USD<br />
+Version : 1.17<br />
+</code></p>
+<p>The iRenkoChart indicator allows creating custom Renko charts. It uses an open format of history files, easy switching between the charts based on Bid and Ask prices, history quality control, ability to use the Expert Advisors, indicators and chart objects for technical analysis and many other things.</p>
+<p>This indicator is based on <a href="/en/market/product/186">iCustomChart</a> and represents its particular implementation. iCustomChart demo version can be downloaded for <a href="/en/market/product/203">free</a>. ### Contents:</p>
+<ol>
+<li>
+<p>Advantages and Features</p>
+<ol>
+<li>Input Parameters</li>
+<li>Indicator Buffers</li>
+<li>Data Window</li>
+<li>History Files</li>
+<li>History Quality Control</li>
+<li>Time Scale</li>
+<li>Graphical Objects for Technical Analysis</li>
+<li>Indicators and Experts<br />
+<h3><strong>1. Advantages and Features</strong></h3>
+</li>
+</ol>
+</li>
+<li>
+<p>runs and works at any open chart window (called &#8220;base chart&#8221; further on in this document);</p>
+<ul>
+<li>looks like a common chart after launching (see Screenshots);</li>
+<li>to get started, previously created history files are not required;</li>
+<li>open history file format is used;</li>
+<li>MetaTrader 4 and MetaTrader 5 data format can be used;</li>
+<li>easy switching between charts based on Bid or Ask prices;</li>
+<li>history quality control (see Screenshot 7);</li>
+<li>full format of history including open time of boxes (bars), spread, tick and exchange volume;</li>
+<li>built-in Data Window (see Screenshot 4);</li>
+<li>built-in Time Scale (see Screenshot 6);</li>
+<li>auto scaling of price scale;</li>
+<li>major part of the objects from the MetaTrader 5 standard set can be used for technical analysis (see Screenshot 2);</li>
+<li>displaying online and offline charts;</li>
+<li>controlling bars open time up to milliseconds;</li>
+<li>custom indicators and Expert Advisors can be created based on the iRenkoChart chart using <a href="/en/market/product/196">LibCustomChart</a> (see Screenshots 3, 8).<br />
+<h3>2. Input Parameters</h3>
+</li>
+</ul>
+</li>
+<li>
+<p><em>*Max bars in chart *</em>&#8211; allows displaying a fixed number of bars (boxes) in a chart window. Zero value of the parameter allows displaying the maximum possible number of bars, but no more than the number specified in the client terminal settings. This parameter acts as the equivalent parameter of the client terminal described in <a href="https://www.metatrader5.com/en/terminal/help/settings">Help</a>. The default value is 1000.</p>
+<ul>
+<li><em>*Size of box *</em>&#8211; range or size of boxes (bars) in points from open price to close price. The default value is 200.</li>
+<li><em>*Value of zero buffer *</em>&#8211; zero buffer value calculated according to selected <a href="/en/docs/constants/indicatorconstants/prices">price constant</a>.<br />
+<h3>3. Indicator Buffers</h3>
+</li>
+</ul>
+<p>Indicator Buffer Number Content     0 Contains selected <a href="/en/docs/constants/indicatorconstants/prices">price constant</a>. The buffer is basically created for other indicators that use <a href="/ru/docs/basis/function/events">the first call form</a> to get data.   1 Bar (box) open time.   2 Bar open price.   3 Bar high price.   4 Bar low price.   5 Bar closing price.   6 Bar color.   7 Exchange volume.   8 Tick volume.   9 Spread.    ### 4. Data Window</p>
+<p>Built-in data window looks similar to the standard MetaTrader 5 data window, but has some additional features (Screenshot 4). Data fields displayed in the window:</p>
+</li>
+<li>
+<p><em>*Upper field *</em>&#8211; symbol name and parameter. Parameter is a size of bar in points (Size of box), specified in the indicator input parameters. The window containing data on a history file will be opened once you click on this field (Screenshot 5).</p>
+<ul>
+<li><strong>Date</strong> &#8211; bar open date.</li>
+<li><strong>Time</strong> &#8211; bar open time.</li>
+<li><strong>Open</strong> &#8211; bar open price.</li>
+<li><strong>High</strong> &#8211; bar high price.</li>
+<li><strong>Low</strong> &#8211; bar low price.</li>
+<li><strong>Close</strong> &#8211; bar close price.</li>
+<li><strong>Volume</strong> &#8211; exchange volume.</li>
+<li><strong>Tick Volume</strong> &#8211; tick volume.</li>
+<li><strong>Spread</strong> &#8211; bar spread.</li>
+<li><strong>Bar</strong> &#8211; bar index; zero bar &#8211; last unfinished bar.<br />
+Data window has several buttons to control the chart:</li>
+</ul>
+</li>
+<li>
+<p><strong>Shadows</strong> &#8211; enables/disables displaying shadows, the same action is executed by pressing the &#8220;<strong>S</strong>&#8221; key;</p>
+<ul>
+<li><strong>Update</strong> &#8211; enables/disables the chart update mode (&#8220;<strong>U</strong>&#8221; hot key);</li>
+<li><strong>Bid/Ask</strong> &#8211; switches the chart to displaying using Bid or Ask prices (&#8220;<strong>B</strong>&#8221; and &#8220;<strong>A</strong>&#8221; hot keys, respectively);</li>
+<li><strong>Open/Close</strong> &#8211; the button for opening/closing the data window is located in the upper right corner of the data window (&#8220;<strong>W</strong>&#8221; hot key);</li>
+<li><strong>Redraw</strong> &#8211; chart redraw button is located near the data window close button (&#8220;<strong>R</strong>&#8221; hot key).<br />
+Hot keys work only in an active chart window.</li>
+</ul>
+<h3>5. History files (HST-files)</h3>
+<p>Open history files format described in the <a href="https://www.metatrader4.com">MetaTrader 4 user guide</a> is used to draw charts. A user can take a ready-made Renko history file or create one on their own. Then the iRenkoChart indicator can be used to display a chart.</p>
+<p>History file format is as following. The History file header goes first:</p>
+<p>struct HistoryHeader { int version // base version char copyright[64]; // copyright char symbol[12]; // symbol int parameter; // symbol period or parameter, for iRenkoChart it is &#8220;Size of box&#8221; input parameter value int digits; // number of digits after the decimal point in a symbol time_t timesign; // base creation timestamp time_t last_sync; // last synchronization time int type; // type of history stored, 1 &#8211; Ask-history, 2 &#8211; Bid-history, // any other value of the parameter &#8211; history type is not identified int unused[12]; // for future use }; Note that a new &#8220;type&#8221; parameter is added into the standard header.</p>
+<p>The version of the base for MetaTrader 4 history files is specified as &#8220;400&#8221;, while for MetaTrader 5 it is &#8220;500&#8221;. This is important, as each version has its own bar data structure.</p>
+<p>The standard representation of the bars array following the header for the version &#8220;400&#8221; of history file looks as follows:</p>
+<h1>pragma pack(push,1) struct RateInfo { time_t ctm;  // time in seconds double open;  // bar open price double low; // bar low price double high; // bar high price double close; // bar close price double vol; // volume }; #pragma pack(pop) The standard representation of the bars array for the version &#8220;500&#8221; of history file looks as follows:</h1>
+<h1>pragma pack(push,1) struct MqlRates {  datetime time; // bar time in seconds or mulliseconds double open; // open price double high; // high price for the period double low; // low price for the period double close; // closing price long tick_volume; // tick volume int spread; // spread long real_volume; // market volume  }; #pragma pack(pop) Note that bar time can be set either in seconds or in milliseconds for version &#8220;500&#8221;. iRenkoChart can correctly recognize both time formats. Important: users are responsible for the correctness of history files. To make iRenkoChart recognize a history file, it must be located in &#8220;terminal_data_folder\MQL5\Files\iRenkoChart\History\broker_ name&#8221;.</h1>
+</li>
+<li>
+<p>The history file name must start with &#8220;Renko&#8221; prefix. Before the prefix you can add &#8220;Ask&#8221; or &#8220;Bid&#8221;, if the file contains the corresponding type of history;</p>
+<ol>
+<li>Then it must contain the symbol name on the base chart of which the indicator will be loaded (for example, &#8220;EURUSD&#8221;);</li>
+<li>Then it must contain the value of the &#8220;Size of box&#8221; input parameter;</li>
+<li>Finally it must have the &#8220;.hst&#8221; extension.<br />
+An example of the file name: AskRenkoEURUSD200.hst.</li>
+</ol>
+<p>If the history file doesn&#8217;t exist, it will be automatically created from the minute history available in the terminal. If it exists, it will be updated in accordance with the built-in algorithm.</p>
+<h3>6. History Quality Control</h3>
+<p>For history files created by iRenkoChart, history quality control is available.</p>
+<p>Any new history file is created from the minute history available in the terminal. Accordingly, there can be situations when the simulated bars can differ from bars created online. Each doubtful simulated bar on the chart is displayed in lighter color than correct bars (Screenshot 7). It allows estimating history quality visually.</p>
+<p>When initializing the indicator or switching between Bid and Ask price histories, a message about its quality will appear in the log (Screenshot 7). It can be estimated in the percentage of good and bad bars. Please note that history quality calculation is performed only for bars displayed on charts, not for the whole history file.</p>
+<p>Gaps are also considered when forming the history. Gaps are visually displayed in the form of gray bars and with zero volume on default.</p>
+<p>Using the indicator buffer &#8220;Bar color&#8221; you can programmatically estimate the history quality in your own indicators and the Expert Advisors. It allows making adequate solutions when implementing a trading strategy.</p>
+<p>You can improve the history quality using iRenkoChart in the online mode only. At coming of tick data iRenkoChart correctly calculates all parameters of bars and saves them in the history file. For example, bar open time will be calculated to milliseconds and saved. If there is no tick data to build history for a period of time (connection failure, terminal is turned off or any other nonstandard situation), so the missing Renko history will be formed on the basis of a minute history. </p>
+<h3>7. Time Scale</h3>
+<p>Time scale of charts created using iRenkoChart, does not usually coincide with a base chart time scale and it is non-linear. Therefore, the indicator is built to visualize a custom time scale (see Screenshot 6). Built-in scale features:</p>
+</li>
+<li>
+<p>looks similar to the standard time scale;</p>
+<ul>
+<li>easy to move vertically;</li>
+<li>semi-transparent background, always visible chart objects and price chart behind the scale.<br />
+<h3>8. Graphical Objects for Technical Analysis</h3>
+</li>
+</ul>
+<p>Standard <a href="https://www.metatrader5.com/en/terminal/help/objects">graphical objects</a> of the terminal are bound to a base chart time scale when placed in a chart window. Therefore, iRenkoChart automatically rebinds applied graphical objects to its time scale. It allows using the standard graphical objects for technical analysis of Renko charts. Synchronization with iRenkoChart is supported for the following standard MetaTrader 5 graphical objects:</p>
+</li>
+<li>
+<p><a href="https://www.metatrader5.com/en/terminal/help/objects/lines">lines</a>: horizontal, vertical, trend, trend by angle, cycle, arrowed;</p>
+<ul>
+<li><a href="https://www.metatrader5.com/en/terminal/help/objects/channels">channels</a>: equidistant, Andrews Pitchfork;</li>
+<li><a href="https://www.metatrader5.com/en/terminal/help/objects/fibo">Fibonacci tools</a>: retracement, time zones, fan, arcs, channel, expansion;</li>
+<li><a href="https://www.metatrader5.com/en/terminal/help/objects/elliott">Elliott tools</a>: motive wave, corrective wave;</li>
+<li><a href="https://www.metatrader5.com/en/terminal/help/objects/shapes">shapes</a>: triangle, rectangle, ellipse;</li>
+<li><a href="https://www.metatrader5.com/en/terminal/help/objects/arrows">arrows</a>: thumbs up, thumbs down, arrow down, arrow up, stop sign, check sign, left and right price labels, Buy and Sell signs, arrow.<br />
+In some cases, for example when closing the terminal, iRenkoChart saves the objects data to a temporary file located in the &#8220;terminal_data_folder\MQL5\Files\iRenkoChart\Objects&#8221; directory. All temporary files are deleted when iRenkoChart is removed from a chart window.</li>
+</ul>
+<h3>9. Indicators and Experts</h3>
+<p>Standard indicators follow the time scale of a base chart, as well as the objects. Free <a href="/en/market/product/196">LibCustomChart</a> library should be used for binding the indicators to the iRenkoChart time scale.</p>
+<p>The library functions allow developing indicators that are automatically connected to iRenkoChart (Screenshot 3), if it is run on a chart. In case it is not run, these indicators will work on a common chart. Besides, the library provides simplified access to iRenkoChart time series.</p>
+<p>In case the library functions are used in an Expert Advisor, then it will also automatically use iRenkoChart data, in case the latter has already been run on a chart window. In case iRenkoChart is not run, the Expert Advisor will work on a common chart window and use its data.</p>
+<p>Examples of the library use in <a href="/en/code/869">indicators</a> and <a href="/en/code/870">the Expert Advisors</a> can be found in <strong>Code Base.</strong></p>
+<p><p>This indicator is based on <a href="/en/market/product/186">iCustomChart</a> and represents its particular implementation. iCustomChart demo version can be downloaded for <a href="/en/market/product/203">free</a>.    <a href="#description">more&#8230;</a>  </p>
+</li>
+</ol>
+<h3>Image of Renko Charts</h3>
+<p><img src="https://c.mql5.com/31/3/iRrenkoChart_1.png" alt="Renko Charts" /></p>
+<p><img src="https://c.mql5.com/31/3/iRenkoChart_2.png" alt="Renko Charts" /></p>
+<p><img src="https://c.mql5.com/31/3/iRenkoChart_3.png" alt="Renko Charts" /></p>
+<p><img src="https://c.mql5.com/31/3/iRenkoChart_4.png" alt="Renko Charts" /></p>
+<p><img src="https://c.mql5.com/31/3/iRenkoChart_5.png" alt="Renko Charts" /></p>
+<p><img src="https://c.mql5.com/31/3/iRenkoChart_6.png" alt="Renko Charts" /></p>
+<p><img src="https://c.mql5.com/31/3/iRenkoChart_7en.png" alt="Renko Charts" /></p>
+<p><img src="https://c.mql5.com/31/3/iRenkoChart_8.png" alt="Renko Charts" /></p>
+<h3>Download source code of  Renko Charts for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download Renko Charts" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/renko-charts-download.html">Renko Charts Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>Smooth price for Monarch MT4 Download</title>
+		<link>http://project-regain.io/smooth-price-for-monarch-mt4-download.html</link>
+				<pubDate>Tue, 20 Aug 2019 15:30:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Indicators]]></category>
+		<category><![CDATA[Konstantin Gruzdev]]></category>
+		<category><![CDATA[Lizar]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/smooth-price-for-monarch-mt4-download.html</guid>
+				<description><![CDATA[<p>Author : Konstantin Gruzdev Category : Indicators Last Update : 13 February 2019 Rent Price : Version : 2.5 The Smooth Price technical indicator is <a class="mh-excerpt-more" href="http://project-regain.io/smooth-price-for-monarch-mt4-download.html" title="Smooth price for Monarch MT4 Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/smooth-price-for-monarch-mt4-download.html">Smooth price for Monarch MT4 Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Konstantin Gruzdev<br />
+Category : Indicators<br />
+Last Update : 13 February 2019<br />
+Rent Price :<br />
+Version : 2.5<br />
+</code></p>
+<p>The Smooth Price technical indicator is used for plotting a smoothed line as close to the price of the financial instrument as possible, and serves to eliminate its noise components. The indicator is part of the Monarch trading system, but here it is presented as an independent technical analysis tool.</p>
+<p>The indicator is based on the <a href="https://www.mql5.com/en/articles/812">cluster digital filter</a>, which, unlike the <a href="https://www.mql5.com/en/market/product/10921">ClusterSMA</a>, is applied directly to the price time series. Smooth Price does not redraw (except the very last, zero bar) and is an improved version of the famous <a href="https://www.mql5.com/ru/blogs/post/204">similarly named indicator</a>. Features of the cluster filter based indicators are described in the <a href="https://www.mql5.com/ru/blogs/post/644795">author&#8217;s blog</a>.</p>
+<p>### Advantages</p>
+<ol>
+<li>
+<p>No delay on a formed trend.</p>
+<ol>
+<li>Minimum delay during reversals.</li>
+<li>Gently smooths noise movements of the price.</li>
+<li>Stable on the flat.</li>
+<li>Indicators, based on the Smooth Price instead of the price, contain less false signals (see screenshots).</li>
+</ol>
+<h3>Parameters</h3>
+<ol>
+<li>Main settings:</li>
+</ol>
+</li>
+<li>
+<p><em>*Sensitivity *</em>&#8211; indicator sensitivity, can have values from 0 to 255.<br />
+The highest sensitivity is at the zero value &#8211; the indicator replicates the price movements. The lowest sensitivity is at value 255 &#8211; the indicator algorithm tries to eliminate noise movements of the price as much as possible. Default value is 0. The maximum limitation of 255 has been introduced due to the &#8220;heavy&#8221; calculation part of the cluster filter.</p>
+<ol>
+<li>Appearance:</li>
+</ol>
+</li>
+<li>
+<p><strong>Max bars in chart</strong> &#8211; the maximum number of bars, that are calculated and displayed in the indicator&#8217;s window during the product&#8217;s start or re-calculation. The default value is 256 bars. This greatly speeds up the preparation of the indicator for trading and testing. If 0, the indicator is calculated at the entire available history. The minimum amount of displayed bars is three.</p>
+<ul>
+<li>
+<p><strong>Recalculation of the last bar</strong> &#8211; select the re-calculation mode of the last unfinished bar. The &#8216;Every tick&#8217; mode is set by default. There are three options: </p>
+<ul>
+<li><strong>Every tick</strong> &#8211; the indicator is re-calculated at every tick on the last unfinished bar. Use this mode if the indicator readings are important on this bar.</li>
+<li><strong>Every new minute bar</strong> &#8211; the indicator is re-calculated on the last unfinished bar only when a new bar arrives on the M1 timeframe. It is recommended to use the mode on timeframes exceeding M1. This reduces the load on CPU and allows tracking changes in the indicator readings once per minute.</li>
+<li><strong>Every new bar</strong> &#8211; the indicator is re-calculated at the last unfinished bar only when a new bar arrives on the current timeframe. The indicator values on a new bar are often disregarded when defining a signal for a trading system. By selecting the option, you can significantly reduce the indicator calculation time in actual trading, as well as during strategy tests.</li>
+</ul>
+</li>
+<li>
+<p><strong>Color up</strong> &#8211; upward line color.</p>
+</li>
+<li><strong>Color down</strong> &#8211; downward line color.</li>
+<li><em>*Width *</em>&#8211; line width.</li>
+<li><em>*Style *</em>&#8211; line drawing style. When the &#8220;Width&#8221; is set to 1, apart from the Solid line, you can also select Dash, Dotted, Dash-dot, or Dash &#8211; two dots.</li>
+</ul>
+</li>
+<li>
+<p>Alerts (Signals).</p>
+</li>
+<li>
+<p><strong>Bar of alert</strong> &#8211; the number of the bar on which the signal is checked (0 &#8211; the last unfinished bar). Signals are generated when the trend of the indicator line changes. If &#8220;Bar of alert&#8221; is greater than 0, then the signal will be generated only if the indicator moves in the same direction on the specified bar and all the subsequent bars. Thus, the signals are only generated during a steady trend and are ignored in all other cases, to reduce false triggers.</p>
+<ul>
+<li><strong>Sound</strong> &#8211; enable/disable sound alert.</li>
+<li><strong>Log</strong> &#8211; prints the signal message into the log.</li>
+<li><strong>Alert</strong> &#8211; generates a sound alert, prints a message about the signal to the dialog box and to the log.</li>
+<li><strong>Mail</strong> &#8211; sending an email using an address specified on the Email tab of the options window.</li>
+<li><strong>Notification</strong> &#8211; sends a notification to mobile terminals which have their MetaQuotes IDs specified in the &#8220;Notifications&#8221; tab of the terminal settings.<br />
+<a href="#description">more&#8230;</a>  </li>
+</ul>
+</li>
+</ol>
+<h3>Image of Smooth price for Monarch MT4</h3>
+<p><img src="https://c.mql5.com/31/97/smooth-price-for-monarch-mt4-screen-3855.png" alt="Smooth price for Monarch MT4" /></p>
+<p><img src="https://c.mql5.com/31/97/smooth-price-for-monarch-mt4-screen-7847.png" alt="Smooth price for Monarch MT4" /></p>
+<p><img src="https://c.mql5.com/31/97/smooth-price-for-monarch-mt4-screen-5522.png" alt="Smooth price for Monarch MT4" /></p>
+<p><img src="https://c.mql5.com/31/97/smooth-price-for-monarch-mt4-screen-1226.png" alt="Smooth price for Monarch MT4" /></p>
+<h3>Download source code of  Smooth price for Monarch MT4 for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download Smooth price for Monarch MT4" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/smooth-price-for-monarch-mt4-download.html">Smooth price for Monarch MT4 Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+	</channel>
+</rss>

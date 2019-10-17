@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Yurij Izyumov &#8211; Expert Advisor / Indicator</title>
+	<atom:link href="http://project-regain.io/download/yurij-izyumov/feed" rel="self" type="application/rss+xml" />
+	<link>http://project-regain.io/</link>
+	<description>Download source coder from any indicator / Expert Advisor file.</description>
+	<lastBuildDate>Thu, 29 Aug 2019 18:30:00 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.2.4</generator>
+	<item>
+		<title>Delta CCi MTF7 Download</title>
+		<link>http://project-regain.io/delta-cci-mtf7-download.html</link>
+				<pubDate>Thu, 29 Aug 2019 18:30:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Indicators]]></category>
+		<category><![CDATA[Tormovies]]></category>
+		<category><![CDATA[Yurij Izyumov]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/delta-cci-mtf7-download.html</guid>
+				<description><![CDATA[<p>Author : Yurij Izyumov Category : Indicators Last Update : 6 February 2017 Rent Price : 30 USD Version : 1.1 As the proper trading <a class="mh-excerpt-more" href="http://project-regain.io/delta-cci-mtf7-download.html" title="Delta CCi MTF7 Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/delta-cci-mtf7-download.html">Delta CCi MTF7 Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Yurij Izyumov<br />
+Category : Indicators<br />
+Last Update : 6 February 2017<br />
+Rent Price : 30 USD<br />
+Version : 1.1<br />
+</code></p>
+<p>As the proper trading using CCI indicators requires the trader to monitor multiple timeframes and CCI indicators with different periods. For example &#8211; monitor the trend using CCI with the period of 100 or 200 (<strong>slow CCI period</strong>) on the H4 timeframe, and make entries based on the CCI with the period of 13 (<strong>fast CCI period</strong>) on the H1 timeframe. To facilitate this task, the Delta CCi MTF7 indicator was created, which implements monitoring the changes of the price movement trends as well as marks entries with arrows for each timeframe. For those who do no know how to trade using the CCI, see the attached video.</p>
+<p>The indicator collects data on CCI from seven timeframes -* <strong>*М5, М15, М30, М60, H1, H4, D1, W1</strong>. It also allows to display the lines of three CCI indicators from three selected timeframes and the general trend of the currency in one window as a histogram. The trend as a histogram shows the sum of all positive and negative trends from all 7 timeframes, that is, if trend on the third timeframe is in the Buy, and on the fourth timeframe is in the Sell, the histogram will be slightly longer in Sell (Red bars) than in Buy (Blue bars). Accordingly, the greater the preponderance of one of the histograms &#8211; the greater the preponderance of the trend in that direction.</p>
+<p>By default, the indicator is configured for classical trading (<strong>Trend filter</strong> = <strong>hard filter</strong>) – trading based on the trend of the H4 timeframe, with entries by smaller timeframes.</p>
+<p>If necessary, the trend filter can be disabled (<strong>Trend filter= filter disabled</strong>). In that case, all entries of CCI indicators from all timeframes will be displayed.</p>
+<p>There is also a filter by the dominant trend, summarized from all timeframes &#8211; (<strong>Trend filter= medium filter</strong>). If the dominant histogram is blue (buys) only the buy entries will be displayed, if the dominant histogram is red (sells) then only the sell entries will be displayed.</p>
+<p>The recommended timeframe for the indicator: from М5 to H4. It is not recommended to set it higher, as there will be a need to recalculate too much history on the seven timeframes.</p>
+<p>### Indicator parameters</p>
+<ul>
+<li><strong>Fast CCI period (1-2-3)</strong> &#8211; period of the fast CCI, for entry signals, default value is 13.
+<ul>
+<li><strong>Slow CCI period, filter</strong> &#8211; period of the slow CCI, for determining trends, default value is 200 (must be greater than 50).</li>
+<li><em>*Bars limit *</em>&#8211; the limit on the number of candles, calculation of the data from 7 timeframes can load the CPU, default value is 300 candles.</li>
+<li><strong>Type graph</strong> &#8211; type of the trend chart</li>
+</ul>
+</li>
+<li><em>*Histogram *</em>&#8211; Buy and Sell histogram.
+<ul>
+<li><em>*MA &#8211; *</em>line that shows the sum of CCI from all 7 timeframes, if it is less than 0 &#8211; sell, if it is higher than 0 &#8211; buy.</li>
+<li><strong>Delta Histogram</strong> &#8211; difference of the histograms (displays only the difference between the Buy and Sell histogram)</li>
+</ul>
+</li>
+<li><strong>CCI TF 1</strong> &#8211; timeframe of the first drawn CCI line, if not specified, then the current timeframe.
+<ul>
+<li><strong>CCI TF 2</strong> &#8211; timeframe of the second drawn CCI line, by default &#8211; H1.</li>
+<li><strong>CCI TF 3</strong> &#8211; timeframe of the third drawn CCI line, by default &#8211; H4.</li>
+<li><strong>Draw arrows</strong> &#8211; draw the arrows</li>
+<li><strong>Arrow Alerts</strong> &#8211; use sound signal when entries appear.</li>
+<li><strong>Trend filter</strong> &#8211; trend filter.</li>
+</ul>
+</li>
+<li><strong>filter disabled</strong> &#8211; disable filter, all CCI entries for all timeframes will be displayed.
+<ul>
+<li><strong>medium filter</strong> &#8211; filtering by the dominant trend of all timeframes.</li>
+<li><strong>hard filter</strong> &#8211; H4 trend filter (classic trading), this is selected by default.</li>
+</ul>
+</li>
+<li>
+<p><strong>Sell arrow color</strong> &#8211; color of the sell arrows </p>
+<ul>
+<li><strong>Buy arrow color</strong> &#8211; color of the buy arrows </li>
+<li><strong>Color CCI TF1</strong> &#8211; color of the CCI indicator line with the TF1 period </li>
+<li><strong>Color CCI TF2</strong> &#8211; color of the CCI indicator line with the TF2 period </li>
+<li><strong>Color CCI TF3</strong> &#8211; color of the CCI indicator line with the TF3 period </li>
+<li><strong>Sell histogramm color</strong> &#8211; color of the sell histogram </li>
+<li><strong>Buy histogramm color</strong> &#8211; color of the buy histogram </li>
+<li><strong>Color MA type graph</strong> &#8211; color of the indicator line, if the MA chart mode is selected</li>
+</ul>
+<h3>Buffer values</h3>
+</li>
+<li>
+<p><strong>0</strong> &#8211; value of Histogram +</p>
+<p>md5-3c7a48a5f76398fdb515f6c3a5c27a52</p>
+<h3>Image of Delta CCi MTF7</h3>
+<p><img src="https://c.mql5.com/31/115/delta-cci-mtf7-screen-3081.png" alt="Delta CCi MTF7" /></p>
+<p><img src="https://c.mql5.com/31/115/delta-cci-mtf7-screen-2491.png" alt="Delta CCi MTF7" /></p>
+<p><img src="https://c.mql5.com/31/119/delta-cci-mtf7-screen-5700.png" alt="Delta CCi MTF7" /></p>
+<p><img src="https://c.mql5.com/31/119/delta-cci-mtf7-screen-3129.png" alt="Delta CCi MTF7" /></p>
+<p><img src="https://c.mql5.com/31/119/delta-cci-mtf7-screen-8340.png" alt="Delta CCi MTF7" /></p>
+<p><img src="https://c.mql5.com/31/119/delta-cci-mtf7-screen-9411.png" alt="Delta CCi MTF7" /></p>
+<p><img src="https://c.mql5.com/31/119/delta-cci-mtf7-screen-9114.png" alt="Delta CCi MTF7" /></p>
+<h3>Download source code of  Delta CCi MTF7 for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download Delta CCi MTF7" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/delta-cci-mtf7-download.html">Delta CCi MTF7 Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>RSI Alerts Download</title>
+		<link>http://project-regain.io/rsi-alerts-download.html</link>
+				<pubDate>Sat, 24 Aug 2019 18:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Indicators]]></category>
+		<category><![CDATA[Tormovies]]></category>
+		<category><![CDATA[Yurij Izyumov]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/rsi-alerts-download.html</guid>
+				<description><![CDATA[<p>Author : Yurij Izyumov Category : Indicators Last Update : 29 December 2016 Rent Price : 30 USD Version : 1.2 Addition to the standard <a class="mh-excerpt-more" href="http://project-regain.io/rsi-alerts-download.html" title="RSI Alerts Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/rsi-alerts-download.html">RSI Alerts Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Yurij Izyumov<br />
+Category : Indicators<br />
+Last Update : 29 December 2016<br />
+Rent Price : 30 USD<br />
+Version : 1.2<br />
+</code></p>
+<p>Addition to the standard Relative Strength Index (RSI) indicator, which allows to configure various notifications about the events related with the indicator. For those who don&#8217;t know what this indicator is useful for, <a href="https://www.metatrader5.com/en/terminal/help/indicators/oscillators/rsi">read here</a>. This version is for Metatrader 4, version for <a href="https://www.mql5.com/en/market/product/19962">Metatrader 5 is here</a>.</p>
+<p>Currently implemented events:</p>
+<ul>
+<li>
+<p>Crossing from top to bottom &#8211; of the upper signal level (default &#8211; 70) &#8211; sell signal.</p>
+<ul>
+<li>Crossing from bottom to top &#8211; of the upper signal level (default &#8211; 70) &#8211; sell signal.</li>
+<li>Crossing from top to bottom &#8211; of the lower signal level (default &#8211; 30) &#8211; buy signal.</li>
+<li>Crossing from bottom to top &#8211; of the lower signal level (default &#8211; 30) &#8211; buy signal.</li>
+<li>Crossing from top to bottom &#8211; of level 50 &#8211; sell signal.</li>
+<li>Crossing from bottom to top &#8211; of level 50 &#8211; buy signal.<br />
+If necessary, the values of these signal levels can be adjusted in the settings using the variables &#8211; <strong>MaxLevel</strong> and <strong>MinLevel</strong>.</li>
+</ul>
+<p>Configurable notification types:</p>
+</li>
+<li>
+<p>Sound signal with a pop-up message box &#8211; Alert.</p>
+<ul>
+<li>Sending push-notifications to the mobile terminal (for smartphones and tablets)<br />
+Для того чтоIn order to enable the sound signal with a pop-up message in the RSI Alerts indicator, simply set <strong>Alerts = true</strong> in the settings, to disable &#8211; <strong>Alerts = false</strong>.</li>
+</ul>
+<p>In order to enable sending messages about the RSI setting to the mobile terminal, set <strong>SendNotifications = true</strong>, with the <strong>MetaQuotes ID</strong> configured in advance (<a href="https://www.mql5.com/en/forum/43579">if you do not know where</a>).</p>
+<p>The sound alert and notifications can work both simultaneously or individually.</p>
+<p>There is also the <strong>alertShift</strong> parameter &#8211; it is the number of the candle to search for the signal.</p>
+<p>For example, if <em>*alertShift *</em>= 1, then the signals are generated only on completed candles, on the latest one.</p>
+<p>And if you set <em>*alertShift *</em>= 0, then the signals will be generated on the current candle &#8211; zero candle. please note, that in this mode the signal can be false.</p>
+<p>It is also possible to change the text in the message. In the messageUp and messageDown variables, the %level% icons will be replaced by the level the indicator crossed.</p>
+<p>If you need any additional functionality for the indicator, contact me.</p>
+<p><p><a href="#description">more&#8230;</a>  </p>
+</li>
+</ul>
+<h3>Image of RSI Alerts</h3>
+<p><img src="https://c.mql5.com/31/125/rsi-alerts-screen-1338.png" alt="RSI Alerts" /></p>
+<p><img src="https://c.mql5.com/31/125/rsi-alerts-screen-5743.png" alt="RSI Alerts" /></p>
+<h3>Download source code of  RSI Alerts for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download RSI Alerts" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/rsi-alerts-download.html">RSI Alerts Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>Horizontal Channel Alert with Custom Fibo Download</title>
+		<link>http://project-regain.io/horizontal-channel-alert-with-custom-fibo-download.html</link>
+				<pubDate>Thu, 22 Aug 2019 23:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Indicators]]></category>
+		<category><![CDATA[Tormovies]]></category>
+		<category><![CDATA[Yurij Izyumov]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/horizontal-channel-alert-with-custom-fibo-download.html</guid>
+				<description><![CDATA[<p>Author : Yurij Izyumov Category : Indicators Last Update : 7 January 2019 Rent Price : 30 USD Version : 1.7 The indicator trades during <a class="mh-excerpt-more" href="http://project-regain.io/horizontal-channel-alert-with-custom-fibo-download.html" title="Horizontal Channel Alert with Custom Fibo Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/horizontal-channel-alert-with-custom-fibo-download.html">Horizontal Channel Alert with Custom Fibo Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Yurij Izyumov<br />
+Category : Indicators<br />
+Last Update : 7 January 2019<br />
+Rent Price : 30 USD<br />
+Version : 1.7<br />
+</code></p>
+<p>The indicator trades during horizontal channel breakthroughs. It searches for prices exceeding extreme points or bouncing back, monitors night flat and defines targets using customizable Fibo levels with a sound alert, which can be disabled if necessary.</p>
+<p>The indicator allows you to create a horizontal channel between the necessary extreme points in visual mode quickly and easily. It automatically applies your selected Fibo levels to these extreme points (if the appropriate option is enabled in the settings). Besides, when one of the Fibo levels enabled in settings is exceeded, the indicator activates a sound alert and shows a message or sends a push notification to your mobile terminal (if the appropriate option is enabled in the settings). It is possible to monitor the market using the Fibonacci levels for semiautomatic search for a rebound, as well as to reverse the levels.</p>
+<p>Now it is also possible to automatically build night flat levels in the time specified in settings, for example from 11:00 pm to 9:00 am. Levels are automatically moved to the next day.</p>
+<p>Version for MetaTrader 5: <a href="https://www.mql5.com/en/market/product/18855" title="https://www.mql5.com/en/market/product/18855">https://www.mql5.com/en/market/product/18855</a>.</p>
+<p><strong>Horizontal Channel Alert with Custom Fibo</strong> is able to plot channels both at High/Low and Open/Close prices. The channel is automatically attached to prices. The channel area (<strong>Channel Length</strong>) can be expanded or reduced directly on a chart. It is also possible to draw horizontal and Fibo levels successively on timeframes that you need without erasing the levels of the previous timeframes.</p>
+<p>Important!</p>
+<ul>
+<li>
+<p>To move the channel to the left or right without changing its size, drag the central segment of the channel&#8217;s upper or lower part.</p>
+<ul>
+<li>To lengthen or shorten the channel, drag the left or right edge of its top or bottom part to the desired location and release the line.</li>
+<li>If you drag the channel edge and the line is visually distorted, simply click anywhere on the chart to straighten the channel and the Fibo levels.</li>
+<li>If it is necessary to reverse the grid of Fibonacci levels, enable the <strong>Reverse Fibo</strong> option.</li>
+<li>To capture the rebounds of currency pair movements automatically, enable both options &#8211; <strong>Reverse Fibo</strong> and <strong>Fix the right point in the future.</strong></li>
+<li>If you enable sending Push notifications, setting a high for Limit Alerts or removing its limit is not recommended, as numerous push notifications sent from one address may lead to further notifications being disabled by the MetaTrader service.</li>
+<li>&#8220;Auto build Fibo by time range&#8221; and &#8220;Fix the right point in the future&#8221; <strong>cannot</strong> be used together!</li>
+</ul>
+<h3>Settings</h3>
+</li>
+<li>
+<p><strong>Reverse Fibo</strong> &#8211; deploy the grid of Fibonacci levels.</p>
+<p>md5-dbd9c66eed75eac374ded7f012bc3e42</p>
+<p><a href="#description">more&#8230;</a>  </p>
+</li>
+</ul>
+<h3>Image of Horizontal Channel Alert with Custom Fibo</h3>
+<p><img src="https://c.mql5.com/31/207/horizontal-channel-alert-with-custom-fibo-screen-6455.png" alt="Horizontal Channel Alert with Custom Fibo" /></p>
+<p><img src="https://c.mql5.com/31/207/horizontal-channel-alert-with-custom-fibo-screen-6722.png" alt="Horizontal Channel Alert with Custom Fibo" /></p>
+<p><img src="https://c.mql5.com/31/207/horizontal-channel-alert-with-custom-fibo-screen-4819.png" alt="Horizontal Channel Alert with Custom Fibo" /></p>
+<p><img src="https://c.mql5.com/31/242/horizontal-channel-alert-with-custom-fibo-screen-1855.png" alt="Horizontal Channel Alert with Custom Fibo" /></p>
+<p><img src="https://c.mql5.com/31/242/horizontal-channel-alert-with-custom-fibo-screen-4344.png" alt="Horizontal Channel Alert with Custom Fibo" /></p>
+<h3>Download source code of  Horizontal Channel Alert with Custom Fibo for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download Horizontal Channel Alert with Custom Fibo" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/horizontal-channel-alert-with-custom-fibo-download.html">Horizontal Channel Alert with Custom Fibo Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>RSI Panel MTF Download</title>
+		<link>http://project-regain.io/rsi-panel-mtf-download.html</link>
+				<pubDate>Tue, 13 Aug 2019 00:30:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Indicators]]></category>
+		<category><![CDATA[Tormovies]]></category>
+		<category><![CDATA[Yurij Izyumov]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/rsi-panel-mtf-download.html</guid>
+				<description><![CDATA[<p>Author : Yurij Izyumov Category : Indicators Last Update : 3 July 2019 Rent Price : 30 USD Version : 2.0 The RSI Panel MTF <a class="mh-excerpt-more" href="http://project-regain.io/rsi-panel-mtf-download.html" title="RSI Panel MTF Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/rsi-panel-mtf-download.html">RSI Panel MTF Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Yurij Izyumov<br />
+Category : Indicators<br />
+Last Update : 3 July 2019<br />
+Rent Price : 30 USD<br />
+Version : 2.0<br />
+</code></p>
+<p>The <strong>RSI Panel MTF</strong> indicator has been created in order to have the ability to monitor the values of the standard RSI indicator from a multitude of timeframes and symbols on a single chart, as well as to receive timely notifications about the trading opportunities using an audio signal or a notification.</p>
+<p>The indicator can output both the indicator values, and only the indicator signals (confirmed and expected). A user-friendly feature for selecting the required symbol has been implemented &#8211; simply click a cell of the signals table, and a new window with the selected symbol and timeframe will be opened. In addition, the indicator template selected in the settings will be automatically applied to this window (see the demo video).</p>
+<p>### Currently implemented signals</p>
+<ul>
+<li>
+<p>indicator crossing the overbought level downwards, the level is set in the settings;</p>
+<ul>
+<li>indicator crossing the oversold level upwards, the level is set in the settings.<br />
+If it is necessary to monitor the RSI crossing other levels &#8211; 50, oversold and overbought &#8211; use the <a href="https://www.mql5.com/en/market/product/17107" title="https://www.mql5.com/en/market/product/17107"><strong>RSI Alerts</strong></a> indicator, but it can only monitor one symbol and timeframe on a single chart.</li>
+</ul>
+<p>Attention: the indicator does not work in the strategy tester, because it runs using the OnTimer() to reduce the CPU load due to a large number of symbols and timeframes.  The indicator appearance can be customized to any color scheme of the charts.</p>
+<h3>Indicator parameters</h3>
+</li>
+<li>
+<p>‌<strong>RSI Period</strong> &#8211; period of the RSI indicator;</p>
+<p>md5-c76d0c1be7afee6773e6a7c6ac3262f9</p>
+<h3>Image of RSI Panel MTF</h3>
+<p><img src="https://c.mql5.com/31/165/rsi-panel-mtf-screen-1909.png" alt="RSI Panel MTF" /></p>
+<p><img src="https://c.mql5.com/31/165/rsi-panel-mtf-screen-5973.png" alt="RSI Panel MTF" /></p>
+<p><img src="https://c.mql5.com/31/165/rsi-panel-mtf-screen-2241.png" alt="RSI Panel MTF" /></p>
+<p><img src="https://c.mql5.com/31/165/rsi-panel-mtf-screen-5809.png" alt="RSI Panel MTF" /></p>
+<h3>Download source code of  RSI Panel MTF for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download RSI Panel MTF" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/rsi-panel-mtf-download.html">RSI Panel MTF Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>Extremum catcher Download</title>
+		<link>http://project-regain.io/extremum-catcher-download.html</link>
+				<pubDate>Mon, 12 Aug 2019 00:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Indicators]]></category>
+		<category><![CDATA[Tormovies]]></category>
+		<category><![CDATA[Yurij Izyumov]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/extremum-catcher-download.html</guid>
+				<description><![CDATA[<p>Author : Yurij Izyumov Category : Indicators Last Update : 5 July 2017 Rent Price : 30 USD Version : 1.2 The Extremum catcher indicator <a class="mh-excerpt-more" href="http://project-regain.io/extremum-catcher-download.html" title="Extremum catcher Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/extremum-catcher-download.html">Extremum catcher Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Yurij Izyumov<br />
+Category : Indicators<br />
+Last Update : 5 July 2017<br />
+Rent Price : 30 USD<br />
+Version : 1.2<br />
+</code></p>
+<p>The <strong>Extremum catcher</strong> indicator analyzes the price action after breaking the local Highs and Lows, generates price reversal signals with the ability to plot the Price Channel. If you need the version for MetaTrader 5, see <a href="https://www.mql5.com/en/market/product/29168" title="https://www.mql5.com/en/market/product/29168">Extremum catcher MT5</a>.</p>
+<p>The indicator takes the High and Low of the price over the specified period &#8211; 24 bars by default (can be changed). Then, if on the previous candle the price broke the High or Low level and the new candle opened higher than the extremums, then a signal will be generated on the zero candle an arrow for entering a deal (reversal) will be drawn, and the extremum levels will be marked with lines on the chart.</p>
+<p>It is possible to filter the Highs as confirmed (<strong>Extremum</strong>) or unconfirmed (<strong>Maximum</strong>), this option can be enabled in the settings.</p>
+<p>In order to receive push notifications to your mobile terminal, you should properly configure your <strong>MetaQuotes ID</strong> in terminal settings (see the <a href="https://www.mql5.com/en/articles/476" title="https://www.mql5.com/en/articles/476">article</a> for details).   </p>
+<p>### Settings</p>
+<ul>
+<li>
+<p><strong>barPeriod</strong> &#8211; the number of candles to search for local extremums.</p>
+<ul>
+<li><strong>Alert</strong> &#8211; enable sound notification about signal appearance.</li>
+<li><strong>Send notifications</strong> &#8211; allow sending push notifications to your mobile terminal.</li>
+<li><strong>Type search by</strong> &#8211; type of entry searching, based on formed extremums &#8211; Extremum, or based on maximums &#8211; Maximum.</li>
+<li><strong>Show Local Extremum and Maximum</strong> &#8211; enable/disable display of the local levels;</li>
+<li><strong>Show all Extremum and Maximum</strong> &#8211; enable/disable display of all used levels;</li>
+<li><strong>Show Price Channel</strong> &#8211; display the Price Channel indicator on the chart;</li>
+<li><strong>Arrow indentation</strong> &#8211; offset for arrows. If the arrows on the chart get in your way (they are placed at candle Open), this option allows to move them away from the candles;</li>
+<li><strong>Color Sell</strong> &#8211; color of the Sell arrow;</li>
+<li><strong>Color Buy</strong> &#8211; color of the Buy arrow;</li>
+<li><strong>Color Price Channel</strong> &#8211; color of the Price Channel (if it is enabled).</li>
+</ul>
+<h3>Indicator buffers</h3>
+</li>
+<li>
+<p><strong>0</strong> &#8211; Upper border of the Price Channel;</p>
+<p>md5-c910dd3829e62f844b370fa883b1029e</p>
+<h3>Image of Extremum catcher</h3>
+<p><img src="https://c.mql5.com/31/140/extremum-catcher-screen-9704.png" alt="Extremum catcher" /></p>
+<p><img src="https://c.mql5.com/31/140/extremum-catcher-screen-3778.png" alt="Extremum catcher" /></p>
+<p><img src="https://c.mql5.com/31/140/extremum-catcher-screen-9607.png" alt="Extremum catcher" /></p>
+<p><img src="https://c.mql5.com/31/140/extremum-catcher-screen-1792.png" alt="Extremum catcher" /></p>
+<h3>Download source code of  Extremum catcher for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download Extremum catcher" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/extremum-catcher-download.html">Extremum catcher Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>Extremum Reverse Bar Download</title>
+		<link>http://project-regain.io/extremum-reverse-bar-download.html</link>
+				<pubDate>Thu, 08 Aug 2019 23:30:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Indicators]]></category>
+		<category><![CDATA[Tormovies]]></category>
+		<category><![CDATA[Yurij Izyumov]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/extremum-reverse-bar-download.html</guid>
+				<description><![CDATA[<p>Author : Yurij Izyumov Category : Indicators Last Update : 24 August 2019 Rent Price : Version : 1.1 This indicator has been created for <a class="mh-excerpt-more" href="http://project-regain.io/extremum-reverse-bar-download.html" title="Extremum Reverse Bar Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/extremum-reverse-bar-download.html">Extremum Reverse Bar Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Yurij Izyumov<br />
+Category : Indicators<br />
+Last Update : 24 August 2019<br />
+Rent Price :<br />
+Version : 1.1<br />
+</code></p>
+<p>This indicator has been created for finding the probable reversal points of the symbol price. A small candlestick reversal pattern is used it its operation in conjunction with a filter of extremums. The indicator is not redrawn!</p>
+<ul>
+<li>
+<p>If the extremum filter is disabled, the indicator shows all points that have a pattern.</p>
+<ul>
+<li>If the extremum filter is enabled, the condition works – if the history <strong>Previous bars 1</strong> candles back contains higher candles and they are farther than the <strong>Previous bars 2</strong> candle, such an input is not considered an extremum. <strong>Previous bars 1 and Previous bars 2</strong> are specified in the settings.<br />
+It is possible to receive sound and push notifications about the presence of an indicator signal. In order to enable sending messages about the signals to the mobile terminal, set <strong>SendNotifications = true</strong>, with the <strong>MetaQuotes ID</strong> configured in advance (read here <a href="https://www.mql5.com/en/forum/43579" title="https://www.mql5.com/en/forum/43579">if you do not know where</a>).</li>
+</ul>
+<p>With the default settings, a pink dot shows the assumed reversal bar (<strong>Revers bar color</strong>), <strong>blue</strong> and <strong>red</strong> arrows indicate the expected entries (<strong>Bull color and Bear color</strong>).</p>
+<h3>Settings</h3>
+</li>
+<li>
+<p><strong>Alerts</strong> – enable sound notifications.</p>
+<p>md5-a43b917142fc9894218337f6d6e3efbf</p>
+<p><a href="#description">more&#8230;</a>  </p>
+</li>
+</ul>
+<h3>Image of Extremum Reverse Bar</h3>
+<p><img src="https://c.mql5.com/31/192/extremum-reverse-bar-screen-5491.png" alt="Extremum Reverse Bar" /></p>
+<p><img src="https://c.mql5.com/31/192/extremum-reverse-bar-screen-7684.png" alt="Extremum Reverse Bar" /></p>
+<p><img src="https://c.mql5.com/31/192/extremum-reverse-bar-screen-1355.png" alt="Extremum Reverse Bar" /></p>
+<p><img src="https://c.mql5.com/31/192/extremum-reverse-bar-screen-2431.png" alt="Extremum Reverse Bar" /></p>
+<p><img src="https://c.mql5.com/31/192/extremum-reverse-bar-screen-4225.png" alt="Extremum Reverse Bar" /></p>
+<h3>Download source code of  Extremum Reverse Bar for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download Extremum Reverse Bar" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/extremum-reverse-bar-download.html">Extremum Reverse Bar Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+	</channel>
+</rss>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Gianfranco Tanzi &#8211; Expert Advisor / Indicator</title>
+	<atom:link href="http://project-regain.io/download/gianfranco-tanzi/feed" rel="self" type="application/rss+xml" />
+	<link>http://project-regain.io/</link>
+	<description>Download source coder from any indicator / Expert Advisor file.</description>
+	<lastBuildDate>Mon, 19 Aug 2019 17:30:00 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.2.4</generator>
+	<item>
+		<title>MultiCurrStrgy Download</title>
+		<link>http://project-regain.io/multicurrstrgy-download.html</link>
+				<pubDate>Mon, 19 Aug 2019 17:30:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Experts]]></category>
+		<category><![CDATA[G.Tanzi]]></category>
+		<category><![CDATA[Gianfranco Tanzi]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/multicurrstrgy-download.html</guid>
+				<description><![CDATA[<p>Author : Gianfranco Tanzi Category : Experts Last Update : 28 February 2019 Rent Price : 75 USD Version : 1.3 MultiCurrStrgy is an Expert <a class="mh-excerpt-more" href="http://project-regain.io/multicurrstrgy-download.html" title="MultiCurrStrgy Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/multicurrstrgy-download.html">MultiCurrStrgy Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Gianfranco Tanzi<br />
+Category : Experts<br />
+Last Update : 28 February 2019<br />
+Rent Price : 75 USD<br />
+Version : 1.3<br />
+</code></p>
+<p>MultiCurrStrgy is an Expert Advisor with which you can develop a forex trading with the major currency parities and with all the minor currency parities. You can use one of them to set a forex trading with 8 criteria to enter into the market or use up to 7 currency parities to develop a multicurrency trading based on one of the 8 criteria to open trades ( from 0 to 7 TrendType) or using a correlation sequence between the different currencies setting the CParity parameters with &#8220;D&#8221; for direct correlation, &#8220;I&#8221; for inverted correlation.To weigh the correlation level you can use the lots quantity for each currency. Of course, you can also use a smaller number of parities than the 7 possible. The correlation sequence starts from the second currency (symb1) and it is referred to the Parity0.</p>
+<p>Moreover when you intend to use the EA to develop a single currency forex trading using the first parity (symb0), you must set to false the parameter MultiCurrency. When the parameter Multicurrency is set to false, user can develop a forex trading on a single currency parity with Market Orders or LimitOrders.</p>
+<p>All open trades are closed when the ProfitTarget is reached. Each trades may be closed by SL or TP or when is reached the minimum profit or the max loss limit.</p>
+<p>Since MetaTrader 4 strategy tester does not allow users to perform multicurrency tests, then you can perform backtest in the strategy tester, only if you set to false Multicurrency parameter and you set the Parity0 only. </p>
+<p>First, I suggest you to test the EA on a demo account using CLOSE ALL, STOP EA and RE-START EA buttons to try different trading combinations, in order to understand how it works, then, you can use it at a real account.</p>
+<p>To use this MultiCurrStrgy for a multicurrency trading, you must attach it on one chart only with any timeframe and no need to open the others.</p>
+<p>If you intend to use MultiCurrStrgy with a single currency parity, you must attach it to the chart of the parity with any timeframe.</p>
+<p>### Input parameters descriptions:</p>
+<ol>
+<li>
+<p>MultiCurrency, to set to true to activate multicurrecy trading;  </p>
+</li>
+<li>
+<p>Lots , minimum amount of lots per trade;  </p>
+</li>
+<li>
+<p>TrendType , criteria used by EA to identify the trend (from 0 to 6);  </p>
+</li>
+<li>
+<p>PriceTf , time frame used by TrendType to detect the trend market;  </p>
+</li>
+<li>
+<p>OpenPoints, amount of points used by TrendType;  </p>
+</li>
+<li>
+<p>MaxOpenOrders, maximun number of market orders opened;  </p>
+</li>
+<li>
+<p>LimitOrders, to set to true to activate LimitOrders;  </p>
+</li>
+<li>
+<p>DeleteMultiplier, multiplier of range grid values;  </p>
+</li>
+<li>
+<p>LotsGridMultiplier, to multiply lots grid values;  </p>
+</li>
+<li>
+<p>Parity, symbol for each of the 7 currency parities;  </p>
+</li>
+<li>
+<p>Correlation, to set to true to activate correlation;  </p>
+</li>
+<li>
+<p>CParity, correlation code (&#8220;D&#8221; or &#8220;I&#8221;) for each of the 6 currency parities;  </p>
+</li>
+<li>
+<p>MaxSlippage , maximum value of slippage in points;  </p>
+</li>
+<li>
+<p>MaxSpread , limit amount to open trades for each currency ;  </p>
+</li>
+<li>
+<p>PtDivisor applied to ProfitTarget to get a minimum profit target for each currency;  </p>
+</li>
+<li>
+<p>PtMultiplier , applied to ProfitTarget to get a loss limit for each currency;  </p>
+</li>
+<li>
+<p>ProfitInPoints , amount of points applied to Lots to get ProfitTarget;  </p>
+</li>
+<li>
+<p>StopLoss, amount of stop loss for each currency parities;  </p>
+</li>
+<li>
+<p>TakeProfit, amount of take profit for each currency parities;  </p>
+</li>
+<li>
+<p>LotsGrid, values of lots of each element of the grid;  </p>
+</li>
+<li>
+<p>RangeGrid, values of range of each element of the grid;  </p>
+</li>
+<li>
+<p>EnableTrailStp, active trailing stop;</p>
+</li>
+<li>EnableCloseByMaxProfit, closing of trades with maxprofit;</li>
+<li>EnableDeletePO, allow deleting of Limit Orders;</li>
+<li>
+<p>EnableMaxLNP, allow the closing of trades by MaxLoss; </p>
+<p><a href="#description">more&#8230;</a>  </p>
+</li>
+</ol>
+<h3>Image of MultiCurrStrgy</h3>
+<p><img src="https://c.mql5.com/31/308/multicurrstrgy-screen-4470.JPG" alt="MultiCurrStrgy" /></p>
+<p><img src="https://c.mql5.com/31/310/multicurrstrgy-screen-6545.JPG" alt="MultiCurrStrgy" /></p>
+<p><img src="https://c.mql5.com/31/310/multicurrstrgy-screen-7192.JPG" alt="MultiCurrStrgy" /></p>
+<h3>Download source code of  MultiCurrStrgy for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download MultiCurrStrgy" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/multicurrstrgy-download.html">MultiCurrStrgy Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+	</channel>
+</rss>

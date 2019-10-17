@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Ericjt &#8211; Expert Advisor / Indicator</title>
+	<atom:link href="http://project-regain.io/download/ericjt/feed" rel="self" type="application/rss+xml" />
+	<link>http://project-regain.io/</link>
+	<description>Download source coder from any indicator / Expert Advisor file.</description>
+	<lastBuildDate>Sat, 24 Aug 2019 23:30:00 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.2.4</generator>
+	<item>
+		<title>Take a Break FREE Download</title>
+		<link>http://project-regain.io/take-a-break-free-download.html</link>
+				<pubDate>Sat, 24 Aug 2019 23:30:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Utilities]]></category>
+		<category><![CDATA[Eric Emmrich]]></category>
+		<category><![CDATA[Ericjt]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/take-a-break-free-download.html</guid>
+				<description><![CDATA[<p>Author : Eric Emmrich Category : Utilities Last Update : 2 October 2018 Rent Price : Version : 1.20 This is the demo version of <a class="mh-excerpt-more" href="http://project-regain.io/take-a-break-free-download.html" title="Take a Break FREE Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/take-a-break-free-download.html">Take a Break FREE Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Eric Emmrich<br />
+Category : Utilities<br />
+Last Update : 2 October 2018<br />
+Rent Price :<br />
+Version : 1.20<br />
+</code></p>
+<p>This is the demo version of my Expert Advisor &#8220;<a href="https://www.mql5.com/en/market/product/28252" title="https://www.mql5.com/en/market/product/28252">Take a Break</a>&#8220;. It has the all the features of the paid version but is limited to AUDNZD. Due to this, the built-in news filter will only work if there are news for either AUD or NZD.  The basic idea behind Take a Break is being able to use any EA or indicator you like, pause their operation during news releases, times of increased spreads or time-based and resume their normal operation afterwards.</p>
+<p>To prevent unprotected trades, Take a Break will pause your external EAs only when they are not in the market during such times (= no open trades of the external EA). <br />
+If the external EAs are in the market already, the utility will pause them after all their open trades were closed &#8211; either manually or by their own algorithm.</p>
+<p><strong>Example:</strong> Let&#8217;s assume you have a Scalper EA that uses Pending Orders for trading. Usually, this systems works well but you don&#8217;t feel comfortable about trading during a particular news event, e.g. the NFPs (Non-Farm Payrolls). However, your Scalper EA does not come with a built-in news filter so that you need to stop its operation manually every time. This is where Take a Break comes into play as it will pause your EA&#8217;s operation automatically by 3 different filter criterias and continue trading afterwards.</p>
+<p>### Main features</p>
+<ul>
+<li>Works with <strong>any</strong> Expert Advisor or Indicator
+<ul>
+<li>3 built-in filters for protecting your trades:</li>
+</ul>
+</li>
+<li>news filter
+<ul>
+<li>spread filter</li>
+<li>time filter</li>
+</ul>
+</li>
+<li>
+<p>Easy to set up</p>
+<h3>How to set up</h3>
+</li>
+<li>
+<p>Add the URL <em>http://ec.forexprostools.com *to the list of allowed WebRequest URLs (press CTRL+O, tab *Expert Advisors</em>)</p>
+<ol>
+<li>Set up your favourite EAs and Indicators for any symbol</li>
+<li>Right-click on the chart, select <em>Template</em> &gt;&gt; <em>Save Template</em> (use the default <em>/templates/</em> directory)</li>
+<li>Apply the Take a Break EA on the chart and set the EA parameter <em>Show current Chart ID = true</em></li>
+<li>Copy the displayed Chart ID and re-apply your template (right-click, select <em>Template</em> &gt;&gt; <em>Load Template</em>)</li>
+<li>Open another chart for your chosen symbol and apply the Take a Break EA on it</li>
+<li>Configure the EA parameters as you like and remember to set the following parameters:</li>
+</ol>
+</li>
+<li><em>&#8212; Chart Settings &#8212;</em> section:</li>
+<li><strong>Chart ID (for templates):</strong> the Chart ID copied in step 4
+<ol>
+<li><strong>Apply this template if trading is NOT allowed:</strong> any template that should be applied when trading is NOT allowed (preset: <em>default.tpl</em>)</li>
+<li><strong>Apply this template if trading IS allowed:</strong> the name of the template you saved in step 2 (example: <em>My_Favourite_EA.tpl</em>)</li>
+</ol>
+</li>
+<li><em>&#8212; External EA Settings &#8212;</em> section:</li>
+<li>
+<p><strong>External EA &#8211; Magic Number:</strong> the Magic Number of your external EA (for identifying trades)</p>
+<ul>
+<li><strong>External EA &#8211; Delete Pending Orders:</strong> whether Pending Orders of your external EA should be deleted or not</li>
+<li>Pending Orders are deleted only when there are no open Market Orders of this EA (as some EAs use Pending Orders as recovery trades).</li>
+</ul>
+<h3>Other Parameters</h3>
+<p><strong>&#8212; News Settings &#8212;</strong></p>
+</li>
+<li>
+<p><strong>Pause during Low Impact News:</strong> enable/disable filtering by Low Impact News</p>
+<ul>
+<li><strong>Pause before Low Impact News (minutes)</strong></li>
+<li><strong>Pause after Low Impact News (minutes)</strong></li>
+<li><strong>Pause during Medium Impact News:</strong> enable/disable filtering by Medium Impact News</li>
+<li><strong>Pause before Medium Impact News (minutes)</strong></li>
+<li><strong>Pause after Medium Impact News (minutes)</strong></li>
+<li><strong>Pause during High Impact News:</strong> enable/disable filtering by High Impact News</li>
+<li><strong>Pause before High Impact News (minutes)</strong></li>
+<li><strong>Pause after High Impact News (minutes)</strong></li>
+<li><strong>Pause during Non-Farm Payrolls:</strong> enable/disable filtering by the Non-Farm Payrolls</li>
+<li><strong>Pause before Non-Farm Payrolls(minutes)</strong></li>
+<li><strong>Pause after Non-Farm Payrolls (minutes)</strong></li>
+<li><strong>Maximum Spread (0 = not used):</strong> spread filter, set to &#8220;0&#8221; for disabling it</li>
+<li><strong>Draw News Lines on Chart</strong></li>
+<li><strong>Line Color &#8211; Low Impact News</strong></li>
+<li><strong>Line Color &#8211; Medium Impact News</strong></li>
+<li><strong>Line Color &#8211; High Impact News</strong></li>
+<li><strong>Line Width</strong></li>
+<li><strong>Line Style</strong></li>
+<li><strong>News for current symbol only: <em>*if set to &#8220;false&#8221;, ALL news will be taken into account &#8211; even those that may not directly affect the current symbol<br />
+*</em>&#8212; Time Settings &#8212;</strong></li>
+</ul>
+</li>
+<li>
+<p><strong>Use Time Filter (broker time):</strong> enable/disable filtering by time</p>
+<ul>
+<li><strong>Monday trading &#8211; start hour</strong></li>
+<li><strong>Monday trading &#8211; start minute</strong></li>
+<li><strong>Friday trading &#8211; stop hour</strong></li>
+<li><strong>Friday trading &#8211; stop minute</strong><br />
+Feedback, improvements or enhancements are appreciated.</li>
+</ul>
+<p>If you need any assistance, please contact me.</p>
+<p><p><a href="#description">more&#8230;</a>  </p>
+</li>
+</ul>
+<h3>Image of Take a Break FREE</h3>
+<p><img src="https://c.mql5.com/31/234/take-a-break-free-screen-9864.png" alt="Take a Break FREE" /></p>
+<h3>Download source code of  Take a Break FREE for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download Take a Break FREE" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/take-a-break-free-download.html">Take a Break FREE Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+	</channel>
+</rss>

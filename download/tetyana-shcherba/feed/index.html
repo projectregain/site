@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Tetyana Shcherba &#8211; Expert Advisor / Indicator</title>
+	<atom:link href="http://project-regain.io/download/tetyana-shcherba/feed" rel="self" type="application/rss+xml" />
+	<link>http://project-regain.io/</link>
+	<description>Download source coder from any indicator / Expert Advisor file.</description>
+	<lastBuildDate>Mon, 26 Aug 2019 02:30:00 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.2.4</generator>
+	<item>
+		<title>Stop And Close Download</title>
+		<link>http://project-regain.io/stop-and-close-download.html</link>
+				<pubDate>Mon, 26 Aug 2019 02:30:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Utilities]]></category>
+		<category><![CDATA[Tatyanashcerba]]></category>
+		<category><![CDATA[Tetyana Shcherba]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/stop-and-close-download.html</guid>
+				<description><![CDATA[<p>Author : Tetyana Shcherba Category : Utilities Last Update : 23 July 2018 Rent Price : 30 USD Version : 1.5 The utility (Expert Advisor) <a class="mh-excerpt-more" href="http://project-regain.io/stop-and-close-download.html" title="Stop And Close Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/stop-and-close-download.html">Stop And Close Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Tetyana Shcherba<br />
+Category : Utilities<br />
+Last Update : 23 July 2018<br />
+Rent Price : 30 USD<br />
+Version : 1.5<br />
+</code></p>
+<p>The utility (Expert Advisor) is designed for monitoring and controlling the total drawdown, as well as closing all positions after reaching the specified levels or upon the occurrence of a specified time with the ability to disable the operation of the automatic EAs running in the same terminal.</p>
+<ul>
+<li>
+<p>It is capable of tracking the status of the entire account, as well as individual pairs.</p>
+<ul>
+<li>It works with the positions opened manually or by other automatic EAs.</li>
+<li>It tracks the open trades in real time mode and the previously closed trades that had been performed after the start of monitoring.</li>
+<li>It can control the absolute and relative drawdown.</li>
+<li>It can send a notification when reaching the specified drawdown and profit levels.</li>
+<li>It can close all orders and stopped all EAs at a specified time.</li>
+<li>Works on netting and hedging accounts.<br />
+Positions are closed according to the following algorithm:</li>
+</ul>
+</li>
+<li>
+<p>delete all EAs from the monitored pairs</p>
+<ol>
+<li>close all orders</li>
+<li>send notifications</li>
+<li>switch to standby mode until the next activation.</li>
+</ol>
+<h3>Inputs</h3>
+</li>
+<li>
+<p><strong>Stop Level</strong> &#8211; stop loss level.</p>
+<ul>
+<li><strong>Take Level</strong> &#8211; take profit level, or 0 if the total TP is not used.</li>
+<li><strong>Unit</strong> &#8211; units of level measurement (percentage or the deposit currency).</li>
+<li><em>*Drawdown type *</em>&#8211; type of the monitored drawdown (relative or absolute).</li>
+<li><strong>What pairs need to control</strong> &#8211; monitoring mode (All &#8211; monitor all pairs, From the input list &#8211; only the ones present in the list below).</li>
+<li><strong>List of controlled pairs (exact name)</strong> &#8211; list of the monitored currency pairs (the exact name of the pair with the prefix and suffix), separated by commas.</li>
+<li><strong>Close all by time</strong> &#8211; close all orders and stopped all EAs at a specified time.</li>
+<li><strong>Closing Time</strong> &#8211; closing time value.</li>
+<li><strong>Notify me if the drawdown will exceed</strong> &#8211; drawdown level, at which notifications are sent.</li>
+<li><strong>Notify me if the profit will exceed</strong> &#8211; profit level, at which notifications are sent.<br />
+When calculating the current drawdown used a drawdown of orders closed after the start control point (if such transactions exist), as well as the current drawdown of open positions. When the relative drawdown is selected in the settings, the level of the total stop loss will be recalculated based on the current balance, in case the balance increases. The operation will not be disrupted for the EAs running on the pairs that had not added to monitoring list. If multi-currency EAs are running on the account, and you want to monitor them, simply add all pairs those EAs trade and are running on to the monitoring list or choose All.</li>
+</ul>
+<h3>Very easy to use</h3>
+<p>Simply attach it to any chart, customize the input parameters, and once you are ready to start monitoring, press the <em>&#8220;Reset start point&#8221;</em> button and the utility starts monitoring the trades starting from that moment. If you want to reset to the initial point, simply press the <em>&#8220;Reset start point&#8221;</em>. When deleting the <strong>Stop&amp;Close</strong> from the chart, the monitoring start point will also be reset, but when reloading, changing the input variables or closing the terminal, the starting point will be stored, so you need not worry about the VPS restarts or other problems.</p>
+<p><p><a href="#description">more&#8230;</a>  </p>
+</li>
+</ul>
+<h3>Image of Stop And Close</h3>
+<p><img src="https://c.mql5.com/31/164/stop-and-close-screen-8434.png" alt="Stop And Close" /></p>
+<h3>Download source code of  Stop And Close for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download Stop And Close" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/stop-and-close-download.html">Stop And Close Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>StopAndClose Download</title>
+		<link>http://project-regain.io/stopandclose-download.html</link>
+				<pubDate>Sat, 24 Aug 2019 03:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Utilities]]></category>
+		<category><![CDATA[Tatyanashcerba]]></category>
+		<category><![CDATA[Tetyana Shcherba]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/stopandclose-download.html</guid>
+				<description><![CDATA[<p>Author : Tetyana Shcherba Category : Utilities Last Update : 4 April 2017 Rent Price : 30 USD Version : 1.3 The utility (expert) is <a class="mh-excerpt-more" href="http://project-regain.io/stopandclose-download.html" title="StopAndClose Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/stopandclose-download.html">StopAndClose Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Tetyana Shcherba<br />
+Category : Utilities<br />
+Last Update : 4 April 2017<br />
+Rent Price : 30 USD<br />
+Version : 1.3<br />
+</code></p>
+<p>The utility (expert) is designed for monitoring and controlling the total drawdown, as well as closing all positions after reaching the specified levels or time with the ability to disable the operation of the automatic experts running in the same terminal.</p>
+<ul>
+<li>
+<p>It is capable of tracking the status of the entire account, as well as individual pairs.</p>
+<ul>
+<li>It works with the positions opened manually or by other automatic experts.</li>
+<li>It tracks the open trades in real time mode and the previously closed trades that had been performed after the start of monitoring.</li>
+<li>It can control the absolute and relative drawdown.</li>
+<li>It can send a notification when reaching the specified drawdown and profit levels.</li>
+<li>It can close all orders and stop all EAs at a specified time.<br />
+<strong>Positions are closed according to the following algorithm:</strong></li>
+</ul>
+</li>
+<li>
+<p>delete all automatic experts from the monitored pairs.</p>
+<ol>
+<li>close all orders.</li>
+<li>send notifications</li>
+<li>switch to standby mode until the next activation.</li>
+</ol>
+<h3>Input parameters</h3>
+</li>
+<li>
+<p><strong>Stop Level</strong> &#8211; stop loss level.</p>
+<ul>
+<li><strong>Take Level</strong> &#8211; take profit level, or 0 if the total TP is not used.</li>
+<li><strong>Unit</strong> &#8211; units of level measurement (percentage or the deposit currency).</li>
+<li><strong>Drawdown type</strong> &#8211; type of the monitored drawdown (relative or absolute).</li>
+<li><em>*What pairs need to control *</em>&#8211; monitoring mode (All &#8211; monitor all pairs, From the input list &#8211; only the ones present in the list below).</li>
+<li><strong>List of controlled pairs</strong> (exact name) &#8211; list of the monitored currency pairs (the exact name of the pair with the prefix and suffix), separated by commas.</li>
+<li><strong>Close all by time</strong> &#8211; close all at a specified time.</li>
+<li><strong>Closing Time</strong> &#8211; time to close orders (if <strong>Close all by time</strong> is true)</li>
+<li><strong>Notify me if the drawdown will exceed</strong> &#8211; drawdown level at which notifications are sent.</li>
+<li><strong>Notify me if the profit will exceed</strong> &#8211; profit level at which notifications are sent.<br />
+Calculation of the current drawdown considers the results of trades closed after the monitoring started, if any, as well as the current drawdown of the open positions. When the relative drawdown is selected in the settings, the level of the total stop loss will be recalculated based on the current balance, in case the balance increases. The operation will not be disrupted for the experts running on the pairs that had not added to monitoring list. If multi-currency experts are running on the account, and you want to monitor them, simply add all pairs those experts trade and are running on to the monitoring list or choose &#8220;All&#8221;.</li>
+</ul>
+<h3>Very easy to use</h3>
+<p>Simply attach it to any chart, customize the input parameters, and once you are ready to start monitoring, press the <em>&#8220;Reset the start point&#8221;</em> button and the utility till start monitoring the trades starting from that moment. If you want to reset to the initial point, simply press the <em>&#8220;Reset the start point&#8221;</em>. When deleting the Stop&amp;Close from the chart, the monitoring start point will also be reset, but when reloading, changing the input variables or closing the terminal, the starting point will be stored, so you need not worry about the VPS restarts or other problems.</p>
+<p><p><a href="#description">more&#8230;</a>  </p>
+</li>
+</ul>
+<h3>Image of StopAndClose</h3>
+<p><img src="https://c.mql5.com/31/165/stopandclose-screen-4152.png" alt="StopAndClose" /></p>
+<h3>Download source code of  StopAndClose for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download StopAndClose" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/stopandclose-download.html">StopAndClose Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+	</channel>
+</rss>

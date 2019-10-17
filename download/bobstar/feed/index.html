@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Bobstar &#8211; Expert Advisor / Indicator</title>
+	<atom:link href="http://project-regain.io/download/bobstar/feed" rel="self" type="application/rss+xml" />
+	<link>http://project-regain.io/</link>
+	<description>Download source coder from any indicator / Expert Advisor file.</description>
+	<lastBuildDate>Mon, 19 Aug 2019 23:00:00 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.2.4</generator>
+	<item>
+		<title>Dragon post News Download</title>
+		<link>http://project-regain.io/dragon-post-news-download.html</link>
+				<pubDate>Mon, 19 Aug 2019 23:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Experts]]></category>
+		<category><![CDATA[Bobstar]]></category>
+		<category><![CDATA[Roberto La Bella]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/dragon-post-news-download.html</guid>
+				<description><![CDATA[<p>Author : Roberto La Bella Category : Experts Last Update : 22 January 2019 Rent Price : 1500 USD Version : 1.5 This EA works <a class="mh-excerpt-more" href="http://project-regain.io/dragon-post-news-download.html" title="Dragon post News Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/dragon-post-news-download.html">Dragon post News Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Roberto La Bella<br />
+Category : Experts<br />
+Last Update : 22 January 2019<br />
+Rent Price : 1500 USD<br />
+Version : 1.5<br />
+</code></p>
+<p>This EA works on news with high impact like Nonfarm Payrolls and ECB Press Conference. These kind of news move the markets and create volatility, and usually this strength creates the beginning of a trend or a directional movement. With a large prospective it’s possible to take advantage of these movements and in fact this EA after attending 10 minutes from the news date, places 2 pending orders on the max/min of the previous candles (with a specific algorithm), and with a set risk it takes advantage of the price-action directionality. This EA has different strategy variants (1 on NFP and 3 on ECB) and the RR goes from 1:2 to 1:10 (depending on the strategy). It’s a nice trading system that you can add on your portfolio!</p>
+<p>The EA works on: <br />
+ USDJPY M5 (default parameters) for NFP <br />
+ EURJPY M5 (Strategy n.1 on ECB) <br />
+ EURUSD M5 (Strategy n.2 on ECB) <br />
+ EURJPY M5 (Strategy n.3 on ECB)  </p>
+<p>Here the settings:  </p>
+<ul>
+<li>Strategy to use: Strategy to use for this EA.</li>
+<li>Magic Number: identification number in order to run this EA with other EAs.</li>
+<li>risk: risk in percentage based on the balance (for example, 1 means 1% risk)</li>
+<li>compounding: improve the money management with the risk based on the compounding effect.</li>
+<li>lots: option to open orders with a predefined lots, specified in the option lots. If is 0, this option is not used.</li>
+<li>dateNews: put manually the dates of the news separated by comma with this format (yyyy.mm.dd hh:mm:ss), or leave blank in order to let the EA update automatically the news dates from Forex Factory (recommended).</li>
+<li>distSL: distance of the Stop Loss in Points.</li>
+<li>distTP: distance of the Take Profit in Points.</li>
+<li>bufferForBuyStop: buffer in Points of the pending order from the max of the calculated channel.</li>
+<li>bufferForSellStop: buffer in Points of the pending order from the min of the calculated channel.</li>
+<li>OCO Order: cancel/delete the opposite pending order when one is activated.</li>
+<li>Order expiration: expiration in seconds of pending orders.</li>
+<li>Close order too long: seconds of the entire trade lifetime, otherwise it’ll be closed after passing all these seconds (seconds counting from the opening of the pending order).</li>
+<li>StopProfitStrategy: number that define the Strategy of the Stop Loss management during the trade lifetime (leave the default number or put 0 to not use this option).</li>
+<li>TrailingStopMovement: this option allows moving the SL dynamically (Point by Point) until it reaches the breakeven point. It is a Trailing Stop till breakeven Point.</li>
+<li>partialRange1/partialProfits1: range calculated in percentage from the total distance of the Take Profit (for instance if partialRange1 is 0.5 and partialProfits1 is 0.333, it means when the trade reaches 350 Points in profit (partialRange1 x distTP = 0,5 x 700 x 5 = 350) it takes partialProfits1 0,333 (33% or one third of the position in profit).</li>
+<li>partialRange2/partialProfits2: same at the previous one, in this case partialRange2 has to be greater than the first one, otherwise if 0 is not used</li>
+<li>Time Daylight Savings: calculate automatically the daylight savings hour (last Sunday of March and October).</li>
+<li>TimeGMTHourDelay: hour delay.</li>
+<li>activateMoneyManagement: the money management included is the Anti-Martingale system that increase performances and lower the DD (I created a Money Management algorithm included!)</li>
+<li>Upload dates from file txt: upload the news dates from a text file; usually it’s used for backtest purposes. If you leave blank the dates are uploaded directly from the EA (who are stored in the source code from 2014 to jan 2019).</li>
+<li>Name of the news: the name of the news searched in the Forex Factory calendar (if you have chosen a Manual approach, you can put your desired name news). If you leave blank (default) the NFP and ECB news are uploaded automatically.</li>
+<li>commentTrade: put your preffere put your preferred comment or leave blank to the default comment.<br />
+<a href="#description">more&#8230;</a>  </li>
+</ul>
+<h3>Image of Dragon post News</h3>
+<p><img src="https://c.mql5.com/31/300/dragon-post-news-screen-1090.png" alt="Dragon post News" /></p>
+<p><img src="https://c.mql5.com/31/300/dragon-post-news-screen-4294.png" alt="Dragon post News" /></p>
+<p><img src="https://c.mql5.com/31/300/dragon-post-news-screen-9731.png" alt="Dragon post News" /></p>
+<p><img src="https://c.mql5.com/31/300/dragon-post-news-screen-9018.png" alt="Dragon post News" /></p>
+<p><img src="https://c.mql5.com/31/300/dragon-post-news-screen-7091.png" alt="Dragon post News" /></p>
+<p><img src="https://c.mql5.com/31/300/dragon-post-news-screen-9540.png" alt="Dragon post News" /></p>
+<p><img src="https://c.mql5.com/31/300/dragon-post-news-screen-9035.png" alt="Dragon post News" /></p>
+<p><img src="https://c.mql5.com/31/300/dragon-post-news-screen-2031.png" alt="Dragon post News" /></p>
+<p><img src="https://c.mql5.com/31/300/dragon-post-news-screen-1653.png" alt="Dragon post News" /></p>
+<p><img src="https://c.mql5.com/31/300/dragon-post-news-screen-9647.png" alt="Dragon post News" /></p>
+<h3>Download source code of  Dragon post News for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download Dragon post News" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/dragon-post-news-download.html">Dragon post News Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+	</channel>
+</rss>

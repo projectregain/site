@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Mr_Roboto &#8211; Expert Advisor / Indicator</title>
+	<atom:link href="http://project-regain.io/download/mr-roboto/feed" rel="self" type="application/rss+xml" />
+	<link>http://project-regain.io/</link>
+	<description>Download source coder from any indicator / Expert Advisor file.</description>
+	<lastBuildDate>Thu, 22 Aug 2019 17:30:00 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.2.4</generator>
+	<item>
+		<title>GridFury Download</title>
+		<link>http://project-regain.io/gridfury-download.html</link>
+				<pubDate>Thu, 22 Aug 2019 17:30:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Experts]]></category>
+		<category><![CDATA[Mr_Roboto]]></category>
+		<category><![CDATA[Nelson Indriatno]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/gridfury-download.html</guid>
+				<description><![CDATA[<p>Author : Nelson Indriatno Category : Experts Last Update : 14 January 2019 Rent Price : 190 USD Version : 1.26 The EA utilizes 3 <a class="mh-excerpt-more" href="http://project-regain.io/gridfury-download.html" title="GridFury Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/gridfury-download.html">GridFury Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Nelson Indriatno<br />
+Category : Experts<br />
+Last Update : 14 January 2019<br />
+Rent Price : 190 USD<br />
+Version : 1.26<br />
+</code></p>
+<p>The EA utilizes 3 levels grid to capture any direction be it bullish up or bearish down, either way, the EA will end in profit. The EA is called fury as it cuts a very tight loss and immediately compensates the loss into new lot size calculation on the remaining positions. If the initial lot size of level 1 is 0.2 and the EA cuts it at loss at 10 pips, the next lot size will be 0.24 lot (depending on multiplier setting). There will be 3 Buy Stop orders above mid-level, and 3 Sell Stop orders below mid-level. If Buy Stop Level 2 is filled, the 3 Sell Stop Orders below will be re-positioned higher at 2 levels behind the highest Buy Order that has been filled. As consequence, the Sell Grid and Buy Grid will tighten, maximizing the probability the EA hitting its profit target.</p>
+<p>The EA is configurable to operate using 3 trigger mechanism:</p>
+<ol>
+<li>
+<p>Trendline Above: a trend line is drawn above to be placed at critical levels such as Resistance, pivots, or swing highs.</p>
+</li>
+<li>
+<p>Trendline Below: a trend line is drawn below to be placed at critical levels such as Support, pivots, or swing lows.</p>
+</li>
+<li>
+<p>Auto: for immediate trading, that continually runs until the user manually exits the EA.</p>
+<p>The only weakness for The EA is when the market in a tight range for a very long period.</p>
+<p>Please do consult me for optimal settings. The default is set for minimum profit, and very low risk.</p>
+<p><strong>SETTING EXPLANATION</strong></p>
+</li>
+</ol>
+<p>comment = &#8220;GridX&#8221;; // leave this as default</p>
+<p>trigger_mode = AUTO; // 1. Trendline Above 2. Trendline Below 3. Auto</p>
+<p>auto_mode = AUTO_ATR; // only applicable if trigger mode is set to AUTO</p>
+<p>atr_string = &#8220;=========ATR SET========&#8221;;</p>
+<p>atr_period = 14; // ATR filter period setting</p>
+<p>atr_bars = 10; // number of consecutive bars that ATR are decreasing </p>
+<p>step_pips = 20; // step between each level</p>
+<p>slippage_pips = 1; // leave as default</p>
+<p>magicNumber1 = 11111; // to ID level1</p>
+<p>magicNumber2 = 22222; // to ID level2</p>
+<p>magicNumber3 = 33333; // to ID level3</p>
+<p>start_lot1 = 0.04; // initial lot for level 1</p>
+<p>start_lot2 = 0.02; // initial lot for level 2</p>
+<p>start_lot3 = 0.01; // initial lot for level 3</p>
+<p>recoveryMultiplier = 1; // lot size increase after a loss</p>
+<p>max_dd_percent = 100; // cut loss level on drawdown threshold if reached</p>
+<p>max_attempt = 10; // cut loss on 10th attempt after tight SL hit</p>
+<p>resumeBalance = 0; // incase MT4 shuts down, set this to recover previous loss</p>
+<p>time_str = &#8220;========TIME SET=======&#8221;;</p>
+<p>timeFilter = true; // set to true to activate time filter</p>
+<p>beginTime = &#8220;07:00&#8221;; // begin time to monitor trigger</p>
+<p>endTime = &#8220;20:00&#8221;; // end time to monitor trigger</p>
+<p>true; // set to false for continue for continuous cycle after profit</p>
+<p>day_str = &#8220;=========DAY TO TRADE========&#8221;;</p>
+<p>monday_allow = false;</p>
+<p>tuesday_allow = false;</p>
+<p>wednesday_allow = false;</p>
+<p>thursday_allow = true;</p>
+<p>friday_allow = false;</p>
+<p>early_str = &#8220;========EARLY EXIT SET=======&#8221;;</p>
+<p>early_exit = true; // if set to true, EA will try to exit at BEP after in this example 5x tight SL</p>
+<p>early_attempt = 5;</p>
+<p>text_y_adjust = 50; // the distance of trendline drawn</p>
+<p>text_size = 10;</p>
+<p>text_x_shift = 5;</p>
+<p>clr_buy = clrAquamarine;</p>
+<p>clr_sell = clrBeige;</p>
+<pre><code>[more...](#description)
+</code></pre>
+<h3>Image of GridFury</h3>
+<p><img src="https://c.mql5.com/31/297/gridfury-screen-8980.jpg" alt="GridFury" /></p>
+<p><img src="https://c.mql5.com/31/297/gridfury-screen-2024.jpg" alt="GridFury" /></p>
+<p><img src="https://c.mql5.com/31/297/gridfury-screen-8175.jpg" alt="GridFury" /></p>
+<h3>Download source code of  GridFury for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download GridFury" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/gridfury-download.html">GridFury Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+	</channel>
+</rss>

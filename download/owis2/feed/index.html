@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Owis2 &#8211; Expert Advisor / Indicator</title>
+	<atom:link href="http://project-regain.io/download/owis2/feed" rel="self" type="application/rss+xml" />
+	<link>http://project-regain.io/</link>
+	<description>Download source coder from any indicator / Expert Advisor file.</description>
+	<lastBuildDate>Fri, 23 Aug 2019 15:00:00 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.2.4</generator>
+	<item>
+		<title>CodEx Download</title>
+		<link>http://project-regain.io/codex-download.html</link>
+				<pubDate>Fri, 23 Aug 2019 15:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Experts]]></category>
+		<category><![CDATA[Anton Gorin]]></category>
+		<category><![CDATA[Owis2]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/codex-download.html</guid>
+				<description><![CDATA[<p>Author : Anton Gorin Category : Experts Last Update : 31 December 2018 Rent Price : Version : 1.2 Operation of the CodEx Expert Advisor <a class="mh-excerpt-more" href="http://project-regain.io/codex-download.html" title="CodEx Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/codex-download.html">CodEx Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Anton Gorin<br />
+Category : Experts<br />
+Last Update : 31 December 2018<br />
+Rent Price :<br />
+Version : 1.2<br />
+</code></p>
+<p>Operation of the CodEx Expert Advisor is based on patterns composed of consecutive candles. Positions are closed when opposite signals appear.</p>
+<p>Sequences of candles are encoded into an integer according to the following rule. The code number must be converted to binary form and the highest bit must be discarded. The resulting sequence of bits encodes a continuous sequence of candles, where 1 is a bullish candle, 0 is a bearish candle. The higher bits encode the earlier candles. For example: 19[10]=10011[2], the obtained sequence of candles is [bear][bear][bull][bull].</p>
+<p>In the input parameters, the patterns for buy signals are encoded. The EA obtains the patterns for sell signals by inverting the initial patterns.</p>
+<p>### Input parameters</p>
+<ul>
+<li>
+<p><strong>Code Set</strong> &#8211; string parameter that contains numbers separated by comma &#8211; codes of candlestick patterns for buying, used in trading and in testing of the EA.</p>
+<ul>
+<li><strong>Code</strong> &#8211; numeric parameter, that contains the code of the candlestick pattern of the buy signal, used in optimization of the EA.</li>
+<li><strong>Stop Loss</strong> &#8211; loss fixing level in points.</li>
+<li><strong>Take Profit</strong> &#8211; profit fixing levels in points.</li>
+<li><strong>Lot</strong> &#8211; lot size.<br />
+The screenshots demonstrate the backtesting results. The Expert Advisor was tested on EURUSD H1 in the &#8220;Every tick&#8221; mode from 04.01.2016 to 13.08.2017, with the values Code Set=34, Lot=0.1.</li>
+</ul>
+<p><p><a href="#description">more&#8230;</a>  </p>
+</li>
+</ul>
+<h3>Image of CodEx</h3>
+<p><img src="https://c.mql5.com/31/197/codex-screen-2538.png" alt="CodEx" /></p>
+<p><img src="https://c.mql5.com/31/197/codex-screen-1568.png" alt="CodEx" /></p>
+<p><img src="https://c.mql5.com/31/197/codex-screen-5862.png" alt="CodEx" /></p>
+<p><img src="https://c.mql5.com/31/197/codex-screen-6294.png" alt="CodEx" /></p>
+<h3>Download source code of  CodEx for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download CodEx" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/codex-download.html">CodEx Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+	</channel>
+</rss>

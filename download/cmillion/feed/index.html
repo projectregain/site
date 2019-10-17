@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Cmillion &#8211; Expert Advisor / Indicator</title>
+	<atom:link href="http://project-regain.io/download/cmillion/feed" rel="self" type="application/rss+xml" />
+	<link>http://project-regain.io/</link>
+	<description>Download source coder from any indicator / Expert Advisor file.</description>
+	<lastBuildDate>Thu, 08 Aug 2019 02:00:00 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.2.4</generator>
+	<item>
+		<title>SmartHedge Download</title>
+		<link>http://project-regain.io/smarthedge-download.html</link>
+				<pubDate>Thu, 08 Aug 2019 02:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Experts]]></category>
+		<category><![CDATA[Cmillion]]></category>
+		<category><![CDATA[Vladimir Khlystov]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/smarthedge-download.html</guid>
+				<description><![CDATA[<p>Author : Vladimir Khlystov Category : Experts Last Update : 3 August 2019 Rent Price : 99 USD Version : 5.5 The EA compares two <a class="mh-excerpt-more" href="http://project-regain.io/smarthedge-download.html" title="SmartHedge Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/smarthedge-download.html">SmartHedge Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Vladimir Khlystov<br />
+Category : Experts<br />
+Last Update : 3 August 2019<br />
+Rent Price : 99 USD<br />
+Version : 5.5<br />
+</code></p>
+<p>The EA compares two instruments and opens opposite positions when these instruments diverge. Further, when the instruments converge, the EA closes positions on the total profit. The EA works on any instruments. Select couples can be on the table. Advisor enough to put on one pair of bundles. For example, for trading on GBPUSD — EURUSD, it is enough to put the EA on GBPUSD or EURUSD. On the chart, the EA draws both currencies and the bars indicate the distance between them. <br />
+<strong>The parameters of the EA:*</strong> extern string Instrument_2 = &#8220;GBPJPY&#8221;;<br />
+* extern bool direct_correlation = true;//direct correlation)<br />
+* extern double Lot1 = 0.01; // 1 order volume order volume<br />
+* extern double Lot2 = 0.01; // 2 order volume order volume (0-auto)<br />
+* extern ENUM_TIMEFRAMES TF_Trade=5;//TF (the EA will trade only on it)<br />
+* extern double K_Lot = 1.0; // lot factor lot ratio<br />
+* extern int StartDelta1 = 10; // the minimum delta of opening positions 1 minimum Delta of opening positions<br />
+* extern int StartDelta2 = 10; // the minimum delta of opening positions 2 minimum Delta of opening positions<br />
+* extern int StartDelta3 = 10; // the minimum delta of opening positions 3 minimum Delta of opening positions<br />
+* extern double LossClose = 0; // close when receiving a loss (0-off) (in the deposit currency)close at loss (0-off) (in the Deposit currency)<br />
+* extern double ProfitClose = 0; // close when receiving a profit (0-auto) (in the deposit currency)close when receiving a profit (0-auto) (in the deposit currency)<br />
+* extern double K_ProfitClose = 1; // K profit K profit<br />
+* extern double MinProfit = 0.5; // the minimum closing profit for 0 delta (in the deposit currency)minimum closing profit at 0 Delta (in the Deposit currency)<br />
+* extern int BarsWind = 300; // number of candles for calculating the correlationcol-in candles for calculating correlation PCs<br />
+* extern double K_Max_Points = 1.01;//K_Max_Points (coefficient of rollback from the maximum Delta to open positions)<br />
+*   </p>
+<ul>
+<li>extern bool filterTF=false;//filter by Delta of another TF</li>
+<li>extern ENUM_TIMEFRAMES TF_F = 15; //filter TF</li>
+<li>extern int BarsWindF = 300; //filter number of candles for calculating the correlation</li>
+<li>extern int StartDeltaF = 10; //filter the minimum delta of opening positions 1</li>
+<li>extern bool filtervelosity=false;//filter by Delta of another TF</li>
+<li>extern int BarsWindVelosity = 10; //velocity filter number of candles</li>
+<li>extern int Slippage = 10; // slippage</li>
+<li>extern int Magic = 100;</li>
+<li>extern color color1 = clrPink;</li>
+<li>extern color color2 = clrPaleTurquoise;</li>
+<li>extern color color_fon = clrLemonChiffon;</li>
+<li>extern color color_fon1 = clrWhite;</li>
+<li>extern int TrailingStop = 30;//trawl length in points</li>
+<li>extern int MaxSpread = 30;//maximum spread (5 sign auto-increase)</li>
+<li>extern int SleepAfteOpen = 1000;//delay after opening positions</li>
+<li>extern bool AlertOn = true;//disable alert</li>
+</ul>
+<p>If after opening the first pair of positions, the divergence of instruments increases, the EA opens the second pair of orders <br />
+The EA does NOT work in the tester because the MT4 tester is not designed for pair trading.    <a href="#description">more&#8230;</a>  </p>
+<h3>Image of SmartHedge</h3>
+<p><img src="https://c.mql5.com/31/325/smarthedge-screen-4592.png" alt="SmartHedge" /></p>
+<p><img src="https://c.mql5.com/31/325/smarthedge-screen-8514.png" alt="SmartHedge" /></p>
+<p><img src="https://c.mql5.com/31/326/smarthedge-screen-8761.png" alt="SmartHedge" /></p>
+<p><img src="https://c.mql5.com/31/326/smarthedge-screen-7276.png" alt="SmartHedge" /></p>
+<h3>Download source code of  SmartHedge for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download SmartHedge" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/smarthedge-download.html">SmartHedge Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+	</channel>
+</rss>

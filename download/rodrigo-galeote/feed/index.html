@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Rodrigo Galeote &#8211; Expert Advisor / Indicator</title>
+	<atom:link href="http://project-regain.io/download/rodrigo-galeote/feed" rel="self" type="application/rss+xml" />
+	<link>http://project-regain.io/</link>
+	<description>Download source coder from any indicator / Expert Advisor file.</description>
+	<lastBuildDate>Tue, 27 Aug 2019 20:30:00 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.2.4</generator>
+	<item>
+		<title>Gekko Strong Bars Download</title>
+		<link>http://project-regain.io/gekko-strong-bars-download.html</link>
+				<pubDate>Tue, 27 Aug 2019 20:30:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Indicators]]></category>
+		<category><![CDATA[Rgaleote]]></category>
+		<category><![CDATA[Rodrigo Galeote]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/gekko-strong-bars-download.html</guid>
+				<description><![CDATA[<p>Author : Rodrigo Galeote Category : Indicators Last Update : 26 April 2018 Rent Price : 30 USD Version : 1.11 This is Gekko&#8217;s Strong <a class="mh-excerpt-more" href="http://project-regain.io/gekko-strong-bars-download.html" title="Gekko Strong Bars Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/gekko-strong-bars-download.html">Gekko Strong Bars Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Rodrigo Galeote<br />
+Category : Indicators<br />
+Last Update : 26 April 2018<br />
+Rent Price : 30 USD<br />
+Version : 1.11<br />
+</code></p>
+<p>This is Gekko&#8217;s Strong Bars indicator. It produces signals when there is a strong bullish or bearish bar, for that it uses three different conditions: 1 &#8211; when the current bar is higher/lower than the last x bars (x is an input parameter), 2 &#8211; when the current bar size is higher than the average size of the last x bars (x is an input parameter) and 3 &#8211; when the current bar has a short candle tail (shadow).</p>
+<p>### Inputs</p>
+<ul>
+<li><strong>Plot Strong Bar Arrows for the past X Historical Bars:</strong> number of historical bars to plot the indicator, keep it low for better performance;
+<ul>
+<li><em>*How the Size of Bars will be calculated: *</em></li>
+</ul>
+</li>
+<li>1 &#8211; bar size calculated by difference between Open and Close;
+<ul>
+<li>2 &#8211; bar size calculated by difference between High and Low;</li>
+</ul>
+</li>
+<li><strong>How Bar strong signals will be calculated?:</strong></li>
+<li>1 &#8211; both current bar alone or current+last bars are strong<strong>;</strong>
+<ul>
+<li>2 &#8211; only current bar is strong;</li>
+<li>3 &#8211; only currrent + last bars are strong;</li>
+</ul>
+</li>
+<li>
+<p><em>*Number of last X bars to trigger conditions below: *</em>number of bars to be considered for the calculation of the Conditions 1, 2 and 3 below;</p>
+<ul>
+<li><strong>Produces Signal Only When a Bar Closes:</strong> wait for a bar to close to produce a signal (more accurate, by delayed entry) or produces signal online (could trigger false signals);</li>
+<li><em>*Condition #1: Current Bar Size &gt; x% of the average: *</em>one of the conditions for a strong bar is to have its body size greater than x% of the last bars average, configure here this %. Inform 0 to compare against the average, no variations.</li>
+<li><em>*Condition #2: Tail Size: *</em>another condition for a strong bar is that its candle has a very short tail that gives power to the candle. Configure here how big in % the tail has to be in comparison to the enire candle body to be considered a strong bar. Inform 100% to ignore tail&#8217;s size.</li>
+<li><em>*Condition #3: Crossed Top&#8217;s / Bottom&#8217;s: *</em>a strong bar is greater (if bullish) or lower (if bearish) than the last bars, it means it is strong to break through previous prices areas. To avoid fake signals, inform here the % of the last High or last Low for confirmation of a stong bar. Inform 0 to consider last High&#8217;s and last Low&#8217;s without any margin.</li>
+<li><em>*Shows Price Arrows and Tags for Online: *</em>make it true if you want the indicator to show you the price exactly where the signal has been produced (works better when parameter waiting for bar close is false).</li>
+<li><strong>Plays a sound when there is a swing</strong>: set it as <em>true</em> and it will play a sound on the MetaTrader terminal every time there is a new signal produced indicating entry or exit points.</li>
+<li><strong>Write Logs On Terminal Window</strong>: set it as <em>true</em> if you want the indicator to write logs on the terminal&#8217;s Experts tab every time a new signal is produced indicating entry or exit points</li>
+<li><strong>Send Mobile Push Notifications</strong>: set it as <em>true</em> if you desire to receive push notifications on the MetaTrader app on your mobile when a new signal is produced indicating entry or exit points</li>
+<li><strong>Send E-Mail Alerts</strong>: set it as <em>true</em> if you desire to receive e-mail alerts at the e-mail address configured on the terminal when a new signal is produced indicating entry or exit points<br />
+Good trades!</li>
+</ul>
+<p>Donate part of your profit to good causes and humanitarian entities of your choice. &#8220;Money only comes if there&#8217;s a purpose for you to earn it&#8221;.</p>
+<p><p><a href="#description">more&#8230;</a>  </p>
+</li>
+</ul>
+<h3>Image of Gekko Strong Bars</h3>
+<p><img src="https://c.mql5.com/31/228/gekko-strong-bars-screen-8820.png" alt="Gekko Strong Bars" /></p>
+<p><img src="https://c.mql5.com/31/228/gekko-strong-bars-screen-8053.png" alt="Gekko Strong Bars" /></p>
+<p><img src="https://c.mql5.com/31/228/gekko-strong-bars-screen-4024.png" alt="Gekko Strong Bars" /></p>
+<p><img src="https://c.mql5.com/31/228/gekko-strong-bars-screen-7355.png" alt="Gekko Strong Bars" /></p>
+<p><img src="https://c.mql5.com/31/228/gekko-strong-bars-screen-8603.png" alt="Gekko Strong Bars" /></p>
+<p><img src="https://c.mql5.com/31/228/gekko-strong-bars-screen-6669.png" alt="Gekko Strong Bars" /></p>
+<p><img src="https://c.mql5.com/31/228/gekko-strong-bars-screen-6764.png" alt="Gekko Strong Bars" /></p>
+<p><img src="https://c.mql5.com/31/228/gekko-strong-bars-screen-8031.png" alt="Gekko Strong Bars" /></p>
+<p><img src="https://c.mql5.com/31/228/gekko-strong-bars-screen-8934.png" alt="Gekko Strong Bars" /></p>
+<h3>Download source code of  Gekko Strong Bars for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download Gekko Strong Bars" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/gekko-strong-bars-download.html">Gekko Strong Bars Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>HiLo Activator Plus Download</title>
+		<link>http://project-regain.io/hilo-activator-plus-download.html</link>
+				<pubDate>Tue, 27 Aug 2019 18:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Indicators]]></category>
+		<category><![CDATA[Rgaleote]]></category>
+		<category><![CDATA[Rodrigo Galeote]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/hilo-activator-plus-download.html</guid>
+				<description><![CDATA[<p>Author : Rodrigo Galeote Category : Indicators Last Update : 29 August 2017 Rent Price : 30 USD Version : 1.12 HiLo Activator is one <a class="mh-excerpt-more" href="http://project-regain.io/hilo-activator-plus-download.html" title="HiLo Activator Plus Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/hilo-activator-plus-download.html">HiLo Activator Plus Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Rodrigo Galeote<br />
+Category : Indicators<br />
+Last Update : 29 August 2017<br />
+Rent Price : 30 USD<br />
+Version : 1.12<br />
+</code></p>
+<p>HiLo Activator is one of the most used indicators to determine trend. Find it here with the ability to customize period and colors. This indicator also plots up and down arrows when there is a change on the trend, indicating very strong entry and exit points.</p>
+<p>HiLo fits well to different types of periods for day trading. You can easily understand when it is time to buy or sell. It works pretty good also for other periods like daily and monthly signalizing long-term trends.</p>
+<p>The use of the indicator is pretty simple, the main input parameters are:</p>
+<ul>
+<li>
+<p><strong>Period (Bars) for Calculation</strong>: that is the period in bars which is going to be used to calculate and plot the indicator</p>
+<ul>
+<li><strong>Swing Alerts on bar close? If false, on tick</strong>: if <em>true</em>, swing alerts will be fired at the close of the current bar, if <em>false</em> the first detected swing in the bar based on ticks will fire the alert.</li>
+<li><strong>Plays a sound when there is a swing on the indicator</strong>: if you turn this on, it will play a sound on the Metatrader Terminal every time there&#8217;s a swing on the trend, indicating entry or exit points.</li>
+<li><strong>Writes on terminal log when there is a swing</strong>: if you turn this on, it will simply write a log on the Experts tab every time there&#8217;s a swing on the trend, indicating entry or exit points.</li>
+<li><strong>Sends Mobile Push Notification when there is a swing</strong>: if you turn this on, it will send a push notification to your mobile device every time there&#8217;s a swing on the trend, indicating entry or exit points.</li>
+<li><strong>Sends E-mail Notification when there is a swing</strong>: if you turn this on, it will send you an email alert every time there&#8217;s a swing on the trend, indicating entry or exit points.<br />
+Customize the colors:</li>
+</ul>
+</li>
+<li>
+<p>Indicator Dots: take two colors parameters, one for bull and the other for bear trends.</p>
+<ul>
+<li>Indicator ArrowUp: An up arrow will be drawn when there is a swing between trends making a strong signal for entering long positions or exiting short positions.</li>
+<li>Indicator ArrowDown: A down arrow will be drawn when there is a swing between trends making a strong signal for entering short positions or exiting long positions.<br />
+Hope you enjoy it, good trades for you!</li>
+</ul>
+<p>Comments and suggestion are very welcome, please let me know yours.</p>
+<p><p><a href="#description">more&#8230;</a>  </p>
+</li>
+</ul>
+<h3>Image of HiLo Activator Plus</h3>
+<p><img src="https://c.mql5.com/31/130/hilo-activator-plus-screen-5237.png" alt="HiLo Activator Plus" /></p>
+<p><img src="https://c.mql5.com/31/130/hilo-activator-plus-screen-7086.png" alt="HiLo Activator Plus" /></p>
+<p><img src="https://c.mql5.com/31/130/hilo-activator-plus-screen-9059.png" alt="HiLo Activator Plus" /></p>
+<p><img src="https://c.mql5.com/31/98/hilo-high-low-activator-screen-4789.png" alt="HiLo Activator Plus" /></p>
+<p><img src="https://c.mql5.com/31/98/hilo-high-low-activator-screen-3024.png" alt="HiLo Activator Plus" /></p>
+<p><img src="https://c.mql5.com/31/98/hilo-high-low-activator-screen-2237.png" alt="HiLo Activator Plus" /></p>
+<h3>Download source code of  HiLo Activator Plus for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download HiLo Activator Plus" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/hilo-activator-plus-download.html">HiLo Activator Plus Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>Gekko ADX Plus Download</title>
+		<link>http://project-regain.io/gekko-adx-plus-download.html</link>
+				<pubDate>Fri, 23 Aug 2019 20:30:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Indicators]]></category>
+		<category><![CDATA[Rgaleote]]></category>
+		<category><![CDATA[Rodrigo Galeote]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/gekko-adx-plus-download.html</guid>
+				<description><![CDATA[<p>Author : Rodrigo Galeote Category : Indicators Last Update : 30 November 2018 Rent Price : 30 USD Version : 1.11 This is Gekko&#8217;s Cutomized <a class="mh-excerpt-more" href="http://project-regain.io/gekko-adx-plus-download.html" title="Gekko ADX Plus Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/gekko-adx-plus-download.html">Gekko ADX Plus Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Rodrigo Galeote<br />
+Category : Indicators<br />
+Last Update : 30 November 2018<br />
+Rent Price : 30 USD<br />
+Version : 1.11<br />
+</code></p>
+<p>This is Gekko&#8217;s Cutomized Cutomized Average Directional Index (ADX), a customized version of the famous ADX indicator. Use the regular ADX and take advantage two entry signals calculations and different ways of being alerted whenever there is potential entry or exit point.</p>
+<p>### Inputs</p>
+<ul>
+<li><strong>Period:</strong> Period for the ADX calculation;
+<ul>
+<li><strong>PlotSignalType:</strong> How will the indicator calculate entry (swing) signals:</li>
+</ul>
+</li>
+<li><strong>1- ShowSwingsOnTrendLevel</strong>: Show Signals for Trend Confirmation Swings;
+<ul>
+<li><strong>2- ShowSwingsOnTrendLevelDirection:</strong> Shows Signals for Trend Confirmation Swings Plus Entry Direction (Long or Short);</li>
+<li><strong>3- ShowSwingsOnPosAndNegDI:</strong> Shows Entry/Exit (Long or Short) Signals based on DI+ and DI- crossing plus Trend confirmation;</li>
+</ul>
+</li>
+<li>
+<p><em>*Trend Level: *</em>The level used for confirming a Trend formation.</p>
+<ul>
+<li><strong>Plays a sound when there is a swing</strong>: set it as true and it will play a sound on the Metatrader Terminal every time there&#8217;s a swing on the trend, indicating entry or exit points.</li>
+<li><strong>Write Logs On Terminal Window</strong>: set it as true if you want the indicator to write logs on the Terminal&#8217;s Experts tab for signal swings;</li>
+<li><strong>Send Mobile Push Notifications</strong>: set it as true if you desire to receive Push Notification on the MetaTrader app on your mobile for signal swings;</li>
+<li><strong>Send E-Mail Alerts</strong>: set it as true if you desire to receive e-mail alerts at the e-mail address configured on the terminal for signal swings;<br />
+Good Trades!</li>
+</ul>
+<p>Donate part of your profit to good causes and humanitarian entities of your choice, &#8220;Money only comes if there&#8217;s a purpose for you to earn it&#8221; .</p>
+<p><p><a href="#description">more&#8230;</a>  </p>
+</li>
+</ul>
+<h3>Image of Gekko ADX Plus</h3>
+<p><img src="https://c.mql5.com/31/198/gekko-adx-plus-screen-1017.png" alt="Gekko ADX Plus" /></p>
+<p><img src="https://c.mql5.com/31/198/gekko-adx-plus-screen-3792.png" alt="Gekko ADX Plus" /></p>
+<p><img src="https://c.mql5.com/31/198/gekko-adx-plus-screen-3267.png" alt="Gekko ADX Plus" /></p>
+<p><img src="https://c.mql5.com/31/198/gekko-adx-plus-screen-6051.png" alt="Gekko ADX Plus" /></p>
+<p><img src="https://c.mql5.com/31/198/gekko-adx-plus-screen-8298.png" alt="Gekko ADX Plus" /></p>
+<p><img src="https://c.mql5.com/31/200/gekko-adx-plus-screen-7808.png" alt="Gekko ADX Plus" /></p>
+<h3>Download source code of  Gekko ADX Plus for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download Gekko ADX Plus" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/gekko-adx-plus-download.html">Gekko ADX Plus Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+	</channel>
+</rss>

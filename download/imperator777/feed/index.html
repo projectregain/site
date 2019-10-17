@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Imperator777 &#8211; Expert Advisor / Indicator</title>
+	<atom:link href="http://project-regain.io/download/imperator777/feed" rel="self" type="application/rss+xml" />
+	<link>http://project-regain.io/</link>
+	<description>Download source coder from any indicator / Expert Advisor file.</description>
+	<lastBuildDate>Tue, 13 Aug 2019 03:00:00 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.2.4</generator>
+	<item>
+		<title>Ultimate Trade Download</title>
+		<link>http://project-regain.io/ultimate-trade-download.html</link>
+				<pubDate>Tue, 13 Aug 2019 03:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Experts]]></category>
+		<category><![CDATA[Imperator777]]></category>
+		<category><![CDATA[Narek Avetisyan]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/ultimate-trade-download.html</guid>
+				<description><![CDATA[<p>Author : Narek Avetisyan Category : Experts Last Update : 9 May 2018 Rent Price : 200 USD Version : 3.0 Ultimate Trade is a <a class="mh-excerpt-more" href="http://project-regain.io/ultimate-trade-download.html" title="Ultimate Trade Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/ultimate-trade-download.html">Ultimate Trade Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Narek Avetisyan<br />
+Category : Experts<br />
+Last Update : 9 May 2018<br />
+Rent Price : 200 USD<br />
+Version : 3.0<br />
+</code></p>
+<p><strong>Ultimate Trade</strong> is a fully automated trading robot, which can trade any currency pairs on any timeframe. You can start with any initial deposit. The Expert Advisor operation is based on the market analysis using indicators. The EA opens only pending orders. Suitable for 4- and 5-digit quotes. The robot can be attached to multiple instruments at the same time. For this purpose, the required number of charts is opened in the terminal, and the EA is attached to each chart. In this case, the robot considers the total number of deals using the &#8220;level&#8221; parameter, which limits the total number of deals by the level of the account free margin. </p>
+<p><strong>Entry volume</strong> and risks are tightly controlled by algorithms. The number of trades is limited by free margin in percent, which by default is 1500% (the &#8216;level&#8217; parameter = 1500.00). Market entry volume depends on the amount of free margin or the account balance if there are no trades. The trade volume also depends on the risk level specified in input parameters (MaximumRisk is set to 0.005 by default, i.e. the volume is calculated so that if a trade becomes losing, the maximum loss on such a trade is limited to 0.5% of the account balance.</p>
+<p><strong>Trade volume</strong> also depends on the stop-loss level. The stop loss level is calculated automatically for each trade, depending on the support and resistance levels. All input parameters in the Expert Advisor are set for accounts with quotes having 4 decimal places, but these parameters also apply to accounts with 5 decimal places, i.e they are recalculated automatically. For example: TakeProfit = 150, .e. for accounts with 4-digit quotes the TP level is 150 points, and for accounts with 5-digit quotes the TP level is 1500 points.</p>
+<p>After triggering of a pending order, the stop loss level can also be deleted by changing Trailing2 = true in the input parameters (Trailing2 = false by default).</p>
+<p><strong>Trades are closed</strong> both by reaching the TakeProfit level and by various internal algorithms. When closing a deal by algorithms, half the volume is closed, while the remaining part is transferred to breakeven.</p>
+<p>### Input parameters</p>
+<ol>
+<li>Kperiod &#8211; Period (number of bars) to calculate the %K line of the Stochastic Oscillator
+<ol>
+<li>Dperiod &#8211; averaging period to calculate the %D line of the Stochastic Oscillator</li>
+<li>slowing &#8211; slowing value of the Stochastic Oscillator</li>
+<li>WPR_Period &#8211; WPR indicator period</li>
+<li>RSI_Period &#8211; RSI indicator period</li>
+<li>period_EMA &#8211; small MA period</li>
+<li>period_EMA1 &#8211; average MA period</li>
+<li>period_EMA2 &#8211; large MA period</li>
+<li>Indent &#8211; the distance in points used to determine the stop loss level for Magic and Magic2</li>
+<li>Indent1 &#8211; the distance in points used to determine the stop loss level for Magic1</li>
+<li>Indent50 &#8211; distance in points used for modifying stop loss in the Trailing1 function</li>
+<li>TakeProfit &#8211; take profit level for a trade with Magic</li>
+<li>TakeProfit1 &#8211; take profit level for trades with Magic and Magic2</li>
+<li>TakeProfit2 &#8211; take profit level for a trade with Magic1</li>
+<li>Magic &#8211; trade identifier</li>
+<li>Magic1 &#8211; trade identifier</li>
+<li>Magic2 &#8211; trade identifier</li>
+<li>Magic3 &#8211; trade identifier for manually opened positions (Magic3=0)</li>
+<li>TrailingStop &#8211; the distance in points from the open price in profit direction, after this distance a trailing stop function is activated</li>
+<li>TrailingStep &#8211; trailing step value</li>
+<li>Slippage &#8211; slippage in points</li>
+<li>level &#8211; the level of free margin in percent (level = 1500 by default)</li>
+<li>MaximumRisk &#8211; risk per trade (by default MaximumRisk=0.005, i.e. loss is limited to 0.5% of account balance)</li>
+<li>Trailing &#8211; the standard trailing stop function (simple)</li>
+<li>Trailing1 &#8211; a modified trailing stop, which is activated once profit is reached and follows the market based on support and resistance levels</li>
+<li>Trailing2 &#8211; modification of a position by deleting its stop loss level<br />
+<a href="#description">more&#8230;</a>  </li>
+</ol>
+</li>
+</ol>
+<h3>Image of Ultimate Trade</h3>
+<p><img src="https://c.mql5.com/31/244/ultimate-trade-screen-4217.png" alt="Ultimate Trade" /></p>
+<p><img src="https://c.mql5.com/31/244/ultimate-trade-screen-5627.png" alt="Ultimate Trade" /></p>
+<p><img src="https://c.mql5.com/31/244/ultimate-trade-screen-7476.png" alt="Ultimate Trade" /></p>
+<p><img src="https://c.mql5.com/31/244/ultimate-trade-screen-9855.png" alt="Ultimate Trade" /></p>
+<p><img src="https://c.mql5.com/31/244/ultimate-trade-screen-8453.png" alt="Ultimate Trade" /></p>
+<p><img src="https://c.mql5.com/31/244/ultimate-trade-screen-4865.PNG" alt="Ultimate Trade" /></p>
+<h3>Download source code of  Ultimate Trade for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download Ultimate Trade" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/ultimate-trade-download.html">Ultimate Trade Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+	</channel>
+</rss>

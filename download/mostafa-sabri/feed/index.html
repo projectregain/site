@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Mostafa.Sabri &#8211; Expert Advisor / Indicator</title>
+	<atom:link href="http://project-regain.io/download/mostafa-sabri/feed" rel="self" type="application/rss+xml" />
+	<link>http://project-regain.io/</link>
+	<description>Download source coder from any indicator / Expert Advisor file.</description>
+	<lastBuildDate>Sun, 04 Aug 2019 01:00:00 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.2.4</generator>
+	<item>
+		<title>InstantTrend Download</title>
+		<link>http://project-regain.io/instanttrend-download.html</link>
+				<pubDate>Sun, 04 Aug 2019 01:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Experts]]></category>
+		<category><![CDATA[Mostafa Mohamed Sabri]]></category>
+		<category><![CDATA[Mostafa.Sabri]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/instanttrend-download.html</guid>
+				<description><![CDATA[<p>Author : Mostafa Mohamed Sabri Category : Experts Last Update : 16 August 2018 Rent Price : Version : 4.0 The strategy of this EA <a class="mh-excerpt-more" href="http://project-regain.io/instanttrend-download.html" title="InstantTrend Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/instanttrend-download.html">InstantTrend Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Mostafa Mohamed Sabri<br />
+Category : Experts<br />
+Last Update : 16 August 2018<br />
+Rent Price :<br />
+Version : 4.0<br />
+</code></p>
+<p>The strategy of this <strong>EA</strong> is a <strong>scalping system</strong> that depends on discovering the instant trend by analyzing the price movement speed along with using <strong>ATR</strong>, <strong>Volumes</strong>, <strong>CCI</strong> and <strong>WPR</strong> indicators.</p>
+<p>This <strong>EA</strong> is intended for trading on <strong>EURUSD</strong>. However, it can be used on major currencies as well. It uses the <strong>M1</strong> timeframe.</p>
+<p><strong>Note</strong>: the initial parameters values are optimized for <strong>EUR/USD</strong>.</p>
+<p>### Parameters</p>
+<ul>
+<li>
+<p><strong>Risk in percent for a deal from a free margin</strong>: percentage value that should be between &#8216;<strong>1</strong>&#8216; and &#8216;<strong>100</strong>&#8216;. It defines the maximum allowed amount of money of your deposit that will be used by the EA to open trades.</p>
+<ul>
+<li><strong>Magic number</strong>: number that will distinguish the EA&#8217;s trades from other trades.</li>
+<li><strong>AlgorithmLevel must be between 0 and 3</strong>: It gives you the capability to switch between different calculation ways that are used in the core processing of the EA&#8217;s trading system algorithm. You should optimize this value according to the data quality &#8211; sensitivity, accuracy and speed &#8211; of your broker. The value increases as the lower data quality, so &#8216;<strong>0</strong>&#8216; value is for the most accurate broker&#8217;s data, &#8216;<strong>1</strong>&#8216; value is for the lower and so on. The value of &#8216;<strong>3</strong>&#8216; is the most related to the real ticks.</li>
+<li><strong>Threshold must be between 10 and 50</strong>: The low values will decrease the required threshold that should be reached for the EA&#8217;s trading system algorithm to open a new trade and so will increase the probability of opening trades, the lower values may increase the chance of the fake signals in case of the high volatile market.</li>
+<li><strong>TakeProfit Factor must be between 1.5 and 18</strong>: The value that defines the &#8216;<strong>TakeProfit</strong>&#8216; threshold, and also the &#8216;<strong>StopLoss</strong>&#8216; threshold is defined according to it. The &#8216;<strong>StopLoss</strong>&#8216; threshold is always set to the half value of the <strong>TakeProfit</strong>. The two of them define the actual values of <strong>TakeProfit</strong> and <strong>StopLoss</strong> as a multiplier of the current value of <strong>ATR</strong> indicator.</li>
+<li><strong>RangeDegree must be between 0 and 2</strong>: If the value is &#8216;<strong>0</strong>&#8216;, no <strong>CCI</strong> indicator is used at all. Value of &#8216;<strong>1</strong>&#8216; means that the value of <strong>CCI</strong> should be more than or equal to &#8216;<strong>100</strong>&#8216; or less than or equal to &#8216;<strong>-100</strong>&#8216; according to the type of the expected trade. The value of &#8216;<strong>2</strong>&#8216; means that any of the two conditions is satisfied and acceptable, so the <strong>CCI</strong> value can be more than or equal to &#8216;<strong>100</strong>&#8216; or less than or equal to &#8216;<strong>-100</strong>&#8216;, any of them.</li>
+<li><strong>DoubleCheck Factor must be &#8216;true&#8217; or &#8216;false&#8217;</strong>: If the value is set to <strong>True</strong>, then &#8216;<strong>WPR</strong>&#8216; will be used and its value should be more than or equal to &#8216;<strong>-20</strong>&#8216; or less than or equal to &#8216;<strong>-80</strong>&#8216; according to the type of the expected trade.</li>
+</ul>
+<p><strong>Note</strong>: I recommend to optimize your inputs continuously using <strong>MetaTrader 5 Strategy Tester</strong> on the option of &#8216;<strong>Every tick based on real ticks&#8217;</strong> to get the most optimized values according to the data quality &#8211; accuracy and speed &#8211; of your used broker, but please make sure that your history data for testing is fully downloaded.</p>
+<p><p><a href="#description">more&#8230;</a>  </p>
+</li>
+</ul>
+<h3>Image of InstantTrend</h3>
+<p><img src="https://c.mql5.com/31/240/instanttrend-screen-9042.png" alt="InstantTrend" /></p>
+<p><img src="https://c.mql5.com/31/240/instanttrend-screen-9129.png" alt="InstantTrend" /></p>
+<p><img src="https://c.mql5.com/31/240/instanttrend-screen-6311.png" alt="InstantTrend" /></p>
+<p><img src="https://c.mql5.com/31/240/instanttrend-screen-6942.png" alt="InstantTrend" /></p>
+<p><img src="https://c.mql5.com/31/240/instanttrend-screen-1386.png" alt="InstantTrend" /></p>
+<p><img src="https://c.mql5.com/31/240/instanttrend-screen-9134.png" alt="InstantTrend" /></p>
+<p><img src="https://c.mql5.com/31/262/instanttrend-screen-2926.png" alt="InstantTrend" /></p>
+<h3>Download source code of  InstantTrend for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download InstantTrend" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/instanttrend-download.html">InstantTrend Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+	</channel>
+</rss>

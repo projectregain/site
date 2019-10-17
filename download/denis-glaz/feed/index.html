@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Denis Glaz &#8211; Expert Advisor / Indicator</title>
+	<atom:link href="http://project-regain.io/download/denis-glaz/feed" rel="self" type="application/rss+xml" />
+	<link>http://project-regain.io/</link>
+	<description>Download source coder from any indicator / Expert Advisor file.</description>
+	<lastBuildDate>Thu, 01 Aug 2019 13:00:00 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.2.4</generator>
+	<item>
+		<title>EasyTrend Download</title>
+		<link>http://project-regain.io/easytrend-download.html</link>
+				<pubDate>Thu, 01 Aug 2019 13:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Indicators]]></category>
+		<category><![CDATA[Denis Glaz]]></category>
+		<category><![CDATA[Georgewilde]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/easytrend-download.html</guid>
+				<description><![CDATA[<p>Author : Denis Glaz Category : Indicators Last Update : 20 December 2016 Rent Price : 48 USD Version : 1.30 The EasyTrend is a <a class="mh-excerpt-more" href="http://project-regain.io/easytrend-download.html" title="EasyTrend Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/easytrend-download.html">EasyTrend Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Denis Glaz<br />
+Category : Indicators<br />
+Last Update : 20 December 2016<br />
+Rent Price : 48 USD<br />
+Version : 1.30<br />
+</code></p>
+<p>The <strong>EasyTrend</strong> is a seemingly simple but quite powerful trend indicator. Everyone has probably come across indicators or Expert Advisors that contain numerous input parameters that are difficult to understand. Here you will not see dozens of input parameters, the purpose of which is only clear to the developer. Instead, an artificial neural network handles the configuration of the parameters.</p>
+<p><strong>Professional verison:</strong> <a href="https://www.mql5.com/en/market/product/38453" title="https://www.mql5.com/en/market/product/38453">EasyTrend Pro</a></p>
+<p>### Input Parameters</p>
+<ul>
+<li>
+<p><strong>Alert</strong> — if set to <strong>true</strong>, enables sending audible and text notifications when the trend changes. If set to <em>*false *</em>— disabled.</p>
+<ul>
+<li><strong>E-mail alert</strong> — if set to <strong>true</strong>, enables sending notifications to the email. If set to <strong>false <em>*— disabled. To use this function, it is necessary to *</em>configure</strong> email parameters in the terminal settings.</li>
+</ul>
+<h3>Features</h3>
+</li>
+<li>
+<p>It does not get redrawn.</p>
+<p>md5-626823b02c323a3210a5ba18e87f971c</p>
+<h3>How It Works</h3>
+<p>It is based on the analysis of the current change in the price deviation from its average value over a certain period and the statistical average of the absolute value of this parameter. The analysis results are adjusted by the sensitivity coefficient and vertical shifts, which in turn depend on the current trading instrument, timeframe and inclination angle of the trend channel. All internally variable parameters, values and automatic adaptation is managed by a simple neural network.</p>
+<h3>How to Trade?</h3>
+<p>Demonstration of the trading strategy presented below and the essence of the indicator can be seen in the attached video. On any timeframe, except <strong>W1</strong> and <strong>MN1</strong>, the operation principle is the same:</p>
+</li>
+<li>
+<p>Choose the timeframe for trading, for example: <strong>M5</strong>. Wait for the indicator signal to buy or sell.</p>
+<ol>
+<li>After receiving the signal, <strong>make sure</strong> to check the trend on the higher timeframes. When trading on <strong>M5</strong>, check <strong>M15</strong> and <strong>H1</strong> — trends have to be distinct (not flat) and match your signal.</li>
+<li>Wait for the arrow to close above the indicator line when there is a sell signal, or below when there is a buy signal, and open a trade only after that. Set the <strong>Stop loss</strong> level at the same (or slightly greater) distance from the indicator line, by which the price has deviated after the signal appearance. The trade can also be closed based on an oscillator signal.</li>
+<li>Close order at your discretion: when the price crosses the indicator line, when the oscillator generates an opposite signal, when the order closes by trailing stop.<br />
+The trading is most efficient on the <strong>M1</strong>, <strong>M5</strong>, <strong>H1</strong>, <strong>H4</strong>, <strong>D1</strong> periods and on the <strong>EURUSD</strong>, <strong>GBPUSD</strong>, <strong>NZDUSD</strong>, <strong>AUDUSD</strong>, <strong>USDCHF</strong>, <strong>USDCAD</strong>, <strong>USDJPY</strong>, <strong>XAUUSD</strong>, <strong>XAGUSD</strong> currency pairs. The results on <strong>M15</strong> and <strong>M30</strong> are worse, but not too much. Using the <strong>W1</strong> and <strong>MN1</strong> timeframes is risky, as there is no way to confirm the trend.</li>
+</ol>
+<p>The timeframes for checking the trend:</p>
+</li>
+<li>
+<p><strong>M1</strong> — <strong>M5</strong> and <strong>M15</strong>.</p>
+<ul>
+<li><strong>M5</strong> — <strong>M15</strong> and <strong>H1</strong>.</li>
+<li><strong>M15</strong> — <strong>H1</strong> and <strong>H4</strong>.</li>
+<li><strong>M30</strong> — <strong>H4</strong> and <strong>D1</strong>.</li>
+<li><strong>H1</strong> — <strong>H4</strong> and <strong>D1</strong>.</li>
+<li><strong>H4</strong> — <strong>D1</strong> and <strong>W1</strong>.</li>
+<li><strong>D1</strong> — <strong>W1</strong> and <strong>MN1</strong>.<br />
+The timeframe for trading is on the left, and timeframes for checking the trend are on the right.   </li>
+</ul>
+<h3>Important</h3>
+<p><strong>Testing the indicator on a demo account:</strong> <a href="https://www.mql5.com/en/signals/230220" title="https://www.mql5.com/en/signals/230220">EasyTrend indicator Signal</a></p>
+<p><strong>Contact information for questions and help:</strong></p>
+<ul>
+<li><strong>Profile</strong>: <a href="https://www.mql5.com/en/users/georgewilde" title="https://www.mql5.com/en/users/georgewilde">Denis Glaz</a><br />
+At the <strong>first start</strong> on any pair of any timeframe, the indicator may be slightly slow. This happens because the neural network needs to process data and create a file. Good luck!</li>
+</ul>
+<p><p><a href="#description">more&#8230;</a>  </p>
+</li>
+</ul>
+<h3>Image of EasyTrend</h3>
+<p><img src="https://c.mql5.com/31/144/easytrend-screen-2093.jpg" alt="EasyTrend" /></p>
+<p><img src="https://c.mql5.com/31/144/easytrend-screen-1847.jpg" alt="EasyTrend" /></p>
+<p><img src="https://c.mql5.com/31/144/easytrend-screen-7906.jpg" alt="EasyTrend" /></p>
+<p><img src="https://c.mql5.com/31/144/easytrend-screen-5728.jpg" alt="EasyTrend" /></p>
+<p><img src="https://c.mql5.com/31/144/easytrend-screen-2133.jpg" alt="EasyTrend" /></p>
+<p><img src="https://c.mql5.com/31/144/easytrend-screen-3101.jpg" alt="EasyTrend" /></p>
+<p><img src="https://c.mql5.com/31/144/easytrend-screen-7155.jpg" alt="EasyTrend" /></p>
+<p><img src="https://c.mql5.com/31/144/easytrend-screen-2517.jpg" alt="EasyTrend" /></p>
+<p><img src="https://c.mql5.com/31/145/easytrend-screen-6790.jpg" alt="EasyTrend" /></p>
+<p><img src="https://c.mql5.com/31/145/easytrend-screen-4252.jpg" alt="EasyTrend" /></p>
+<h3>Download source code of  EasyTrend for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download EasyTrend" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/easytrend-download.html">EasyTrend Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+	</channel>
+</rss>

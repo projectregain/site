@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Boris Gitelson &#8211; Expert Advisor / Indicator</title>
+	<atom:link href="http://project-regain.io/download/boris-gitelson/feed" rel="self" type="application/rss+xml" />
+	<link>http://project-regain.io/</link>
+	<description>Download source coder from any indicator / Expert Advisor file.</description>
+	<lastBuildDate>Sun, 01 Sep 2019 01:30:00 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.2.4</generator>
+	<item>
+		<title>Bollinger UpDown Advanced Download</title>
+		<link>http://project-regain.io/bollinger-updown-advanced-download.html</link>
+				<pubDate>Sun, 01 Sep 2019 01:30:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Experts]]></category>
+		<category><![CDATA[Bigitel]]></category>
+		<category><![CDATA[Boris Gitelson]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/bollinger-updown-advanced-download.html</guid>
+				<description><![CDATA[<p>Author : Boris Gitelson Category : Experts Last Update : 26 January 2016 Rent Price : 100 USD Version : 3.0 The basic idea of <a class="mh-excerpt-more" href="http://project-regain.io/bollinger-updown-advanced-download.html" title="Bollinger UpDown Advanced Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/bollinger-updown-advanced-download.html">Bollinger UpDown Advanced Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Boris Gitelson<br />
+Category : Experts<br />
+Last Update : 26 January 2016<br />
+Rent Price : 100 USD<br />
+Version : 3.0<br />
+</code></p>
+<p>The basic idea of ​​the Expert Advisor is to use certain timeframes for the analysis of various signals. Bollinger Bands are used for trading. The EA is a further development of the &#8220;Bollinger UpDown Simple&#8221; project (<a href="https://www.mql5.com/en/market/product/12661">https://www.mql5.com/en/market/product/12661</a>). Now it supports an advanced multicurrency mode and additional entry signals.</p>
+<p>In addition to the main signal, the EA can detect strong movement based on the average size of the bar. Additional signals are used for opening and closure: ADX and a combination of ADX with price direction. Stochastic can be additionally used for closing orders. 4- and 5-digit quotes are determined automatically. The distances are given for 4-digit quotes (points)</p>
+<p>Recommended deposit: 100 USD per every 0.01 lot. For most pairs 50-60 USD per 0.01 lot is enough</p>
+<p>### Parameters</p>
+<p>Optimized for EURUSD, screenshot 1</p>
+<ul>
+<li>
+<p>DefaultLot = 0.01 &#8211; default lot;  </p>
+<ul>
+<li>DefaultProfit = 10.0 &#8211; minimum take profit distance;</li>
+<li>SignalTPMult = 2.0 &#8211; DefaultProfit multiplier. If the price moves further than DefaultProfit * SignalTPMult, the trade will be closed when the price moves back to DefaultProfit. To disable set to 100.0;</li>
+<li>SLDist = 100 &#8211; virtual stop-loss;</li>
+<li>MaxDrawdown = 20.0 &#8211; if the current loss of open trades of other pairs is above the specified percent of balance, the deal will not be opened;</li>
+<li>MaxMargin = 30.0; &#8211; if the margin of open trades of other pairs is above the specified percent of balance, the deal will not be opened;</li>
+<li>AllowManual = FALSE &#8211; if disabled, no deal will be opened if there is an open deal for this pair. If enabled, it only considers trades with MagicNumber;</li>
+<li>tfIndexOpen = 6 &#8211; the timeframe of an entry signal based on Bollinger (0-6);</li>
+<li>UseNoOpen = TRUE; &#8211; checking the price direction before opening a trade;</li>
+<li>UseNoOpenMA = TRUE &#8211; the deal will open if no opposite MA signal;</li>
+<li>tfIndexClose = 3 &#8211; the timeframe for a signal to close based on Bollinger (0-6);</li>
+<li>BollFlatDist = 25 &#8211; a distance between the extreme and middle lines of Bollinger in flat;</li>
+<li>tfAltIndexOpen = 1 &#8211; the timeframe of an additional entry signal based on Bollinger (0-6);</li>
+<li>UsePowerMove = TRUE &#8211; use strong movement analysis using Bollinger;</li>
+<li>tfPowIndexOpen = 4 &#8211; the timeframe of a string movement based on Bollinger (0-6);</li>
+<li>tfADXOpen = 0 &#8211; the timeframe for the analysis of opening based on ADX (0, 1-6);</li>
+<li>tfPriceOpen = 0 &#8211; the timeframe for the analysis of opening based on price direction together with ADX (0, 1-6);</li>
+<li>NumBarsOpen = 0 &#8211; the number of bars for price direction analysis;</li>
+<li>tfPowerPrice = 0 &#8211; the timeframe for the analysis of strong movement based on the average bar (0, 1-6);</li>
+<li>PowerPrice = 0.0 &#8211; the signal value of the bar size multiplier;</li>
+<li>NumBarsMed = 0 &#8211; the number of bars for the average calculation;</li>
+<li>tfStochClose = 0 &#8211; the timeframe for closing based on Stochastic (0, 1-6);</li>
+<li>StochPowerDist = 5 &#8211; the signal value of Stochastic line change;</li>
+<li>tfADXClose = 3 &#8211; the timeframe for the analysis of closing based on ADX (0, 1-6);</li>
+<li>tfPriceClose = 2 &#8211; the timeframe for the analysis of closing in the price direction together with ADX (tfADXClose is used);</li>
+<li>NumBarsClose = 10 &#8211; number of bars for price direction analysis;</li>
+<li>CloseLossOrder = FALSE &#8211; close a losing trade at a signal before stop loss; </li>
+<li>UseFilterTime = FALSE &#8211; use time filter;</li>
+<li>StartHourMonday = 7;</li>
+<li>EndHourFriday = 19;</li>
+<li>MagicNumber = 124.<br />
+<a href="#description">more&#8230;</a>  </li>
+</ul>
+</li>
+</ul>
+<h3>Image of Bollinger UpDown Advanced</h3>
+<p><img src="https://c.mql5.com/31/89/bollinger-updown-advanced-screen-6525.png" alt="Bollinger UpDown Advanced" /></p>
+<p><img src="https://c.mql5.com/31/89/bollinger-updown-advanced-screen-6118.png" alt="Bollinger UpDown Advanced" /></p>
+<p><img src="https://c.mql5.com/31/89/bollinger-updown-advanced-screen-1732.png" alt="Bollinger UpDown Advanced" /></p>
+<p><img src="https://c.mql5.com/31/89/bollinger-updown-advanced-screen-2830.png" alt="Bollinger UpDown Advanced" /></p>
+<p><img src="https://c.mql5.com/31/89/bollinger-updown-advanced-screen-1356.png" alt="Bollinger UpDown Advanced" /></p>
+<p><img src="https://c.mql5.com/31/89/bollinger-updown-advanced-screen-8567.png" alt="Bollinger UpDown Advanced" /></p>
+<p><img src="https://c.mql5.com/31/89/bollinger-updown-advanced-screen-4263.png" alt="Bollinger UpDown Advanced" /></p>
+<p><img src="https://c.mql5.com/31/89/bollinger-updown-advanced-screen-3165.png" alt="Bollinger UpDown Advanced" /></p>
+<h3>Download source code of  Bollinger UpDown Advanced for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download Bollinger UpDown Advanced" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/bollinger-updown-advanced-download.html">Bollinger UpDown Advanced Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>BollingerUpDownSimple Download</title>
+		<link>http://project-regain.io/bollingerupdownsimple-download.html</link>
+				<pubDate>Sun, 01 Sep 2019 01:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Experts]]></category>
+		<category><![CDATA[Bigitel]]></category>
+		<category><![CDATA[Boris Gitelson]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/bollingerupdownsimple-download.html</guid>
+				<description><![CDATA[<p>Author : Boris Gitelson Category : Experts Last Update : 6 January 2016 Rent Price : 60 USD Version : 2.30 Expert Advisor &#8220;Bollinger UpDown <a class="mh-excerpt-more" href="http://project-regain.io/bollingerupdownsimple-download.html" title="BollingerUpDownSimple Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/bollingerupdownsimple-download.html">BollingerUpDownSimple Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Boris Gitelson<br />
+Category : Experts<br />
+Last Update : 6 January 2016<br />
+Rent Price : 60 USD<br />
+Version : 2.30<br />
+</code></p>
+<p>Expert Advisor &#8220;Bollinger UpDown Simple&#8221; trades using Bollinger Bands. Also it detects a strong movement on the average size of the bar (in this case enters at he middle of the movement). Stochastic, ADX and the direction of the bars can be additionally used to close an order. 4/5 digits are determined automatically. Distances are specified for 4 digits (points)</p>
+<p>Recommended deposit: USD 100 per 0.01 lots.</p>
+<p>In fact, 50 USD can be enough, which is clear from testing (during testing on EURUSD for 2015 the lot 0.05 was used with the deposit 87 USD, deposit not lost despite the fact that there were some unpleasant moments for the pair)</p>
+<p>### Settings:</p>
+<ul>
+<li>
+<p>DefaultProfit = 10.0 &#8211; Minimum distance for taking profit</p>
+<ul>
+<li>DefaultLot = 0.01 &#8211; Fixed Lot</li>
+<li>BollFlatDist = 25 &#8211; Distance between the middle and top of the line in the flat</li>
+<li>BollPowerDist = 2 &#8211; Change of the extreme line during a strong movement</li>
+<li>tfIndexOpen = 4 &#8211; TF check for opening</li>
+<li>tfAltIndexOpen = 0 &#8211; TF alternative check for opening</li>
+<li>tfIndexClose = 4 &#8211; TF check to close</li>
+<li>CloseLossOrder = FALSE &#8211; Alternative closure of unprofitable trades</li>
+<li>tfStochClose = 4 &#8211; TF to check Stochastic for closing</li>
+<li>StochPowerDist = 5 &#8211; Significant changes in the main line of Stochastic</li>
+<li>tfADXClose = 5 &#8211; TF to check ADX for closing</li>
+<li>tfPriceClose = 3 &#8211; TF to check bars for closing</li>
+<li>NumBarsClose = 5 &#8211; Number of bars to check for closures</li>
+<li>tfPowerPrice = 4 &#8211; TF to check price changes in a strong movement</li>
+<li>PowerPrice = 6.5 &#8211; The indicator of price changes in a strong movement</li>
+<li>NumBarsMed = 6 &#8211; Number of bars to determine the average bar</li>
+<li>UseFilterTime = FALSE &#8211; time filter</li>
+<li>StartHourMonday = 7 &#8211; Start of trading on Monday</li>
+<li>EndHourFriday = 19 &#8211; End of trade on Friday</li>
+<li>MagicNumber = 124;</li>
+<li>SLDist = 90 &#8211; Stop Loss<br />
+For all TFs the serial number of the timeframe is set starting from 0: 0 &#8211; M1, 1 &#8211; M5, 2 &#8211; M15, 3 &#8211; M30, 4 &#8211; H1 etc. Required only tfIndexOpen and tfIndexClose. For the rest TF = 0 means no use. ADX is used for tfPriceClose, ie tfADXClose must be greater than 0. SLDist does not set stop-loss, but is used to determine the maximum loss. CloseLossOrder is a very useful option to prevent this, and quite strongly reduces the unprofitable deal, but slightly reduces the overall profit (closes deal which could return to profit)</li>
+</ul>
+<p><p><a href="#description">more&#8230;</a>  </p>
+</li>
+</ul>
+<h3>Image of BollingerUpDownSimple</h3>
+<p><img src="https://c.mql5.com/31/86/bollingerupdownsimple-screen-3263.png" alt="BollingerUpDownSimple" /></p>
+<h3>Download source code of  BollingerUpDownSimple for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download BollingerUpDownSimple" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/bollingerupdownsimple-download.html">BollingerUpDownSimple Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+	</channel>
+</rss>

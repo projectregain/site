@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Ringforex &#8211; Expert Advisor / Indicator</title>
+	<atom:link href="http://project-regain.io/download/ringforex/feed" rel="self" type="application/rss+xml" />
+	<link>http://project-regain.io/</link>
+	<description>Download source coder from any indicator / Expert Advisor file.</description>
+	<lastBuildDate>Sat, 17 Aug 2019 23:30:00 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.2.4</generator>
+	<item>
+		<title>Double Extremum Download</title>
+		<link>http://project-regain.io/double-extremum-download.html</link>
+				<pubDate>Sat, 17 Aug 2019 23:30:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Experts]]></category>
+		<category><![CDATA[Aleh Rynh]]></category>
+		<category><![CDATA[Ringforex]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/double-extremum-download.html</guid>
+				<description><![CDATA[<p>Author : Aleh Rynh Category : Experts Last Update : 13 April 2018 Rent Price : 375 USD Version : 2.8 This is a mid-term <a class="mh-excerpt-more" href="http://project-regain.io/double-extremum-download.html" title="Double Extremum Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/double-extremum-download.html">Double Extremum Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Aleh Rynh<br />
+Category : Experts<br />
+Last Update : 13 April 2018<br />
+Rent Price : 375 USD<br />
+Version : 2.8<br />
+</code></p>
+<p>This is a mid-term Expert Advisor based on defining two extreme points formed by indicators and comparing them to the price extreme values.</p>
+<p>### Parameters</p>
+<ul>
+<li>
+<p><strong>Start_lot</strong> – the initial lot size. If the dynamic lot is disabled (risk=0), the lot size of orders is constant.</p>
+<ul>
+<li><strong>risk</strong> – enable the dynamic lot with the specified risk level.</li>
+<li><strong>MaxOrders_InOneSet</strong> &#8211; the maximum number of orders in one set. 0 &#8211; no control. Allows you to flexibly limit the total number of orders, while allowing all sets to open orders (at least one at a time).</li>
+<li><strong>MaxOrders_InSymbol</strong> &#8211; the maximum number of orders for the current symbol (the sum of all sets). 0 &#8211; no control.</li>
+<li><strong>PartialCloseIfProfit_ATRs</strong> &#8211; partial closure. Close profitable orders if more than 3 orders within one set are open in the same direction and the price exceeded &gt; PartialCloseIfProfit_ATRs.</li>
+</ul>
+<p>These settings are sufficient for trading.</p>
+<h3>Expert Advisor Optimization</h3>
+<p>To improve trading, you can develop custom settings using optimization for a certain pair and write them to a plain text file:</p>
+<p>&#8220;MetaTrader&#8230;\tester\files\DoubleExt.txt&#8221; &#8211; for testing, then copy to &#8220;MetaTrader&#8230;\MQL4\Files\DoubleExt.txt&#8221; &#8211; for trading.</p>
+<p>The EA searches for the specified settings file and takes the basic ones from the code if none are found.</p>
+<p>The following parameters allow configuring the EA.</p>
+</li>
+<li>
+<p><em>*OptimizationMode *</em>– enable/disable optimization mode. If OptimizationMode is enabled, the ForPeriod, Indicator, Ind_per, i3, i4, SL_ATRs, TPSL_koef, BreakEven_ATRs, TrailDist_ATRs, CoefExpr parameters are optimized. The best test results are placed in the specified text file (by means of a copy-paste), and from there, when the OptimizationMode is off, the EA takes the parameters when trading.</p>
+<ul>
+<li><em>*ForPeriod *</em>– chart period (timeframe), for which the optimization is performed.</li>
+<li><strong>Set_number</strong> – default is 0 (all sets). It is used to analyze a specific set, one of those written to the file.</li>
+<li><em>*Indicator *</em>– analyzed indicator for defining extreme values: AO, RSI, CCI, Stochastic, MACD, RVI, WPR and Momentum.</li>
+<li><strong>Ind_per</strong> – analyzed indicator period (not relevant for AO).</li>
+<li><em>*i3 *</em>– method of defining a double decreasing top. It varies from 0 to 3 (see the image below).</li>
+<li><em>*i4 *</em>– method of defining a double increasing top. It varies from 0 to 3 (see the image below).</li>
+<li><strong>SL_ATRs</strong> – initial stop loss level in the number of averaged candles. Here and further below, the size of an average candle for the tested timeframe is defined by ATR(200) indicator.</li>
+<li><strong>TPSL_coef</strong> – take profit/stop loss ratio. Recommended values are from 1 to 10.</li>
+<li><strong>BreakEven_ATRs</strong> – breakeven level in ATRs. Recommended values are from 1 to 10.</li>
+<li><strong>TrailDist_ATRs</strong> – trailing distance in ATRs. Recommended values are from 1 to 10.<br />
+If BreakEven exceeds TrailDist, trailing does not start till the price breaks the BreakEven level. In other words, BreakEven restrains trailing.</li>
+</ul>
+<p>If BreakEven is less than TrailDist, an order is moved to breakeven when the price reaches the BreakEven level. This level remains unchanged till the price breaks the TrailDist level. After that, the trailing starts.</p>
+</li>
+<li>
+<p><strong>Coef_expr</strong> &#8211; expressiveness of the double extremum &#8211; the ratio of the lowest High to Low, to start the pattern validation. The smaller the coefficient, the more expressed the pattern and the less likely it is to be found. Recommended optimization range: from 0.55 to 0.95. Default is 0.95.</p>
+<ul>
+<li><strong>ShowProfitInfo</strong> – show/hide data on the EA&#8217;s current trading results.<br />
+After optimization and analysis, select the most suitable test results and copy paste them to the text file. Enter a currency pair name, at which a certain result has been achieved, at the start of each line in the file (for example, &#8220;eurusd&#8221;) and press TAB (mandatory). These will be the sets, each of them working according to its own parameters. After optimization, save the file.</li>
+</ul>
+<p>Set OptimizationMode=false, and the EA is ready to trade according to your settings. The video is attached below.</p>
+<p>Find the additional description <a href="https://www.mql5.com/ru/blogs/post/713232" title="https://www.mql5.com/ru/blogs/post/713232">here</a> (in Russian).</p>
+<p>Happy Trading!</p>
+<p><p><a href="#description">more&#8230;</a>  </p>
+</li>
+</ul>
+<h3>Image of Double Extremum</h3>
+<p><img src="https://c.mql5.com/31/239/double-extremum-screen-2047.png" alt="Double Extremum" /></p>
+<p><img src="https://c.mql5.com/31/214/double-extremum-screen-1854.JPG" alt="Double Extremum" /></p>
+<p><img src="https://c.mql5.com/31/217/double-extremum-screen-4737.gif" alt="Double Extremum" /></p>
+<p><img src="https://c.mql5.com/31/217/double-extremum-screen-6218.GIF" alt="Double Extremum" /></p>
+<h3>Download source code of  Double Extremum for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download Double Extremum" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/double-extremum-download.html">Double Extremum Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+	</channel>
+</rss>

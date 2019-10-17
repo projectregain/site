@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>C-4 &#8211; Expert Advisor / Indicator</title>
+	<atom:link href="http://project-regain.io/download/c-4/feed" rel="self" type="application/rss+xml" />
+	<link>http://project-regain.io/</link>
+	<description>Download source coder from any indicator / Expert Advisor file.</description>
+	<lastBuildDate>Sun, 25 Aug 2019 15:30:00 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.2.4</generator>
+	<item>
+		<title>MetaCOT 2 Netto Position COT MT4 Download</title>
+		<link>http://project-regain.io/metacot-2-netto-position-cot-mt4-download.html</link>
+				<pubDate>Sun, 25 Aug 2019 15:30:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Indicators]]></category>
+		<category><![CDATA[C-4]]></category>
+		<category><![CDATA[Vasiliy Sokolov]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/metacot-2-netto-position-cot-mt4-download.html</guid>
+				<description><![CDATA[<p>Author : Vasiliy Sokolov Category : Indicators Last Update : 11 September 2018 Rent Price : 30 USD Version : 2.53 MetaCOT 2 is a <a class="mh-excerpt-more" href="http://project-regain.io/metacot-2-netto-position-cot-mt4-download.html" title="MetaCOT 2 Netto Position COT MT4 Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/metacot-2-netto-position-cot-mt4-download.html">MetaCOT 2 Netto Position COT MT4 Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Vasiliy Sokolov<br />
+Category : Indicators<br />
+Last Update : 11 September 2018<br />
+Rent Price : 30 USD<br />
+Version : 2.53<br />
+</code></p>
+<p>MetaCOT 2 is a set of indicators and specialized utilities for the analysis of the U.S. Commodity Futures Trading Commission reports. Thanks to the reports issued by the Commission, it is possible to analyze the size and direction of the positions of the major market participants, which brings the long-term price prediction accuracy to a new higher-quality level, inaccessible to most traders.</p>
+<p>The indicator of the net positions of the market participants displays the difference between the long and short positions of one of the three trader groups, and also the gross open interest of the entire market and the number of positions that are covered by non-commercial traders. The COT (Commitments of Traders) report of the CFTC commission serves as the data source for this indicator. Below is a complete list of displayed groups:</p>
+<ul>
+<li>
+<p>Cumulative Open Interest of all market participants (Open Interest);</p>
+<ul>
+<li>Net position of non-commercial traders (Netto Non-Commercial);</li>
+<li>Position of non-commercial traders, that is covered (Non-Commercial Spread);</li>
+<li>Net position of operators or commercial traders (Netto Operators Long);</li>
+<li>Net position of non-reportable or small traders (Nonreportable Long);<br />
+Often the extreme values of the net position of one of the group members are the harbingers of the global market reversal. This indicator shows these values, indicating the potential reversals in the future. Find out more details on how to use this indicator in the book by Larry Williams: <a href="/go?link=https://www.amazon.com/Trade-Stocks-Commodities-Insiders-Secrets/dp/0471741256" title="http://www.amazon.com/Trade-Stocks-Commodities-Insiders-Secrets/dp/0471741256">&#8220;Trade Stocks and Commodities with the Insiders: Secrets of the COT Report&#8221;</a>, and also in the article <a href="https://www.mql5.com/en/articles/1573" title="https://www.mql5.com/en/articles/1573">Meta COT Project &#8211; New Horizons for CFTC Report Analysis in MetaTrader 4</a>.</li>
+</ul>
+<p>Below are the indicator parameters and their description:</p>
+</li>
+<li>
+<p><strong>Source of Report</strong> &#8211; COT report type. There are two types of report: &#8216;Futures Only&#8217; and &#8216;Futures And Options&#8217;;</p>
+<ul>
+<li><strong>Group of Traders</strong> &#8211; Group of COT report participants. Includes the groups listed above;</li>
+<li><strong>Release Day</strong> &#8211; set the day to refresh the indicator. At the default value, &#8216;Release by Friday&#8217;, the indicator updates its values on Friday (day of data release). At the value &#8216;Release by Thuesday&#8217; &#8211; on Tuesday (day of data receipt).</li>
+<li><strong>DataType</strong> &#8211; select data to plot the indicator. At the default value, &#8216;Contracts of Traders&#8217;, the indicator calculates its values based on the number of contracts, at the value &#8216;Number of Traders&#8217; &#8211; based on the number of traders.</li>
+<li><strong>Subgroup of Traders</strong> &#8211; Subgroup of the participants. Divided into All, Old and Other;</li>
+<li><strong>Auto Detect Report Name</strong> &#8211; If this parameter is set to &#8216;true&#8217;, the indicator automatically downloads the report, corresponding to the market symbol it is running on. If no report corresponding to the current symbol could be identified, then the default report is downloaded, that is specified in the Report Name parameter;</li>
+<li><strong>Report Name</strong> &#8211; The name of the report to download if the Auto Detect Report Name parameter is set to &#8216;false&#8217;. The name of one of the MetaCOT database files without its extension must be specified as the report name;</li>
+<li><strong>Mirror Mode</strong> &#8211; The mirror mode of the indicator, if true, the indicator maximums become minimums, and minimums become maximums.<br />
+This indicator can be combined with other indicators of the MetaCOT series, also to display several participant groups in one common subwindow of the indicator, and also to calculate the standard technical indicators based on the data of the indicator itself. It is important to understand that this indicator is best used in conjunction with other indicators of the MetaCOT series, thereby producing the most accurate and comprehensive analysis of the fundamental picture of the market.</li>
+</ul>
+<p>The indicator operation requires the CFTC reports to be downloaded and installed on your computer, which can be done with a special report installation utility &#8211; <a href="https://www.mql5.com/en/market/product/14485" title="https://www.mql5.com/en/market/product/14485">MetaCOT 2 Install CFTC Reports MT4</a>.</p>
+<p><p>More details on the description of the indicator settings can be found in the blog &#8220;<a href="https://www.mql5.com/ru/blogs/post/669354" title="https://www.mql5.com/ru/blogs/post/669354">MetaCOT 2: Settings and Possibility</a>&#8220;.    <a href="#description">more&#8230;</a>  </p>
+</li>
+</ul>
+<h3>Image of MetaCOT 2 Netto Position COT MT4</h3>
+<p><img src="https://c.mql5.com/31/102/metacot-2-netto-position-cot-mt4-screen-9986.png" alt="MetaCOT 2 Netto Position COT MT4" /></p>
+<p><img src="https://c.mql5.com/31/102/metacot-2-netto-position-cot-mt4-screen-4148.png" alt="MetaCOT 2 Netto Position COT MT4" /></p>
+<p><img src="https://c.mql5.com/31/102/metacot-2-netto-position-cot-mt4-screen-4740.png" alt="MetaCOT 2 Netto Position COT MT4" /></p>
+<p><img src="https://c.mql5.com/31/116/metacot-2-netto-position-cot-mt4-screen-7876.png" alt="MetaCOT 2 Netto Position COT MT4" /></p>
+<h3>Download source code of  MetaCOT 2 Netto Position COT MT4 for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download MetaCOT 2 Netto Position COT MT4" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/metacot-2-netto-position-cot-mt4-download.html">MetaCOT 2 Netto Position COT MT4 Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>HedgeTerminalApi Download</title>
+		<link>http://project-regain.io/hedgeterminalapi-download.html</link>
+				<pubDate>Sat, 17 Aug 2019 18:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Libraries]]></category>
+		<category><![CDATA[C-4]]></category>
+		<category><![CDATA[Vasiliy Sokolov]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/hedgeterminalapi-download.html</guid>
+				<description><![CDATA[<p>Author : Vasiliy Sokolov Category : Libraries Last Update : 27 June 2016 Rent Price : Version : 1.19 ### Trade in the opposite directions <a class="mh-excerpt-more" href="http://project-regain.io/hedgeterminalapi-download.html" title="HedgeTerminalApi Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/hedgeterminalapi-download.html">HedgeTerminalApi Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Vasiliy Sokolov<br />
+Category : Libraries<br />
+Last Update : 27 June 2016<br />
+Rent Price :<br />
+Version : 1.19<br />
+</code></p>
+<p>### Trade in the opposite directions with HedgeTerminalApi library!</p>
+<p>HedgeTerminalApi is a program interface allowing you to use HedgeTerminal virtualization technologies in your robots and scripts. With HedgeTerminalApi, you are able to trade in the opposite directions when two or more trading algorithms occupy opposite positions on a single symbol. The library allows robots to track their positions even if these positions overlap entirely or partially. Moreover, with this library, you are able to connect your robots to <a href="https://www.mql5.com/en/market/product/5011#full_description">HedgeTerminalUltimate</a> visual panel. The library displays the actions of your robots and their oppositely directed positions in real time rising your work to the new level.</p>
+<p>HedgeTerminalApi is not a loose collection of functions or a separate solution for a narrow range of tasks. HedgeTerminalApi is a convenient programmic access to powerful virtualization technologies implemented by all products of HedgeTerminal series. The library provides your business processes with the reliable virtualization and multidirectional trading technologies. It can be used for the development of complex trading systems consisting of the plenty of independent elements. </p>
+<p><strong>HedgeTerminalApi</strong> has many beneficial features:</p>
+<ul>
+<li>
+<p><strong>Reliability.</strong> This was the key feature when developing the software architecture. HedgeTerminal contains thousands of source code lines. The ultimate objective of the most of its codes is ensuring reliability. Since HedgeTerminal is a specialized infrastructure solution, its overall reliability level is crucial to its success. That is why HedgeTerminal compares favorably with custom solutions. In order to develop a solution of a similar level, a user would have to develop infrastructure algorithms exceeding the size of the trading code itself dozens of times. </p>
+<ul>
+<li><strong>The ability to connect to HedgeTerminalUltimate panel</strong>. If you have purchased HedgeTerminalUltimate visual panel, you can use it to track the status of your trading robots. Moreover, this panel allows you to do the following things on the fly without the need to re-launch your algorithms: place or change stop loss or take profit levels, forcefully close positions of your Expert Advisors, analyze results of your trading robots in real time and on history in the convenient and modern table of positions.</li>
+<li><strong>Using on remote VPS</strong> <strong>and simultaneous work on different computers</strong>. Major part of the data used for virtualization is derived from the information about an account, its trades and orders. This means that your library copies can see each other&#8217;s positions and manage only their parts of positions regardless of where and in what quantity they have been launched, provided that they are connected to a single account. For example, you can install the virtualization library with your robots on a remote VPS and monitor their activity from your home PC via HedgeTerminalUltimate that displays the status and positions of your algorithms in real time.</li>
+<li><strong>Simplicity and functionality.</strong> The library API resembles the syntax of MQL5 system functions. If you know this programming language, you can easily make sense of the library API. For example, the analog of HistoryDealSelect function in HedgeTerminalApi is HedgeDealSelect, while the analog of OrderSelect function is HedgeOrderSelect. Moreover, while MQL5 grants access to order and deal properties as if they were unrelated transactions, the program interface of HedgeTerminal arranges more high-level access to that data. For example, using its API, you can select the necessary position and find out what orders it includes and what trades that orders consist of. Besides, positions, orders and trades provide advanced properties that are not available in MQL5 directly. For example, you can find out the price the order/position was actually executed at, or receive the position slippage value.</li>
+<li><strong>Free use in the test mode</strong>. You can develop and test the robots using virtualization technologies for free. You do not have to purchase the license to use the library in test mode. Develop robots to order and test the technology for free.</li>
+<li><strong>Features.</strong> If you are an advanced trader having HedgeTerminalUltimate, its features may not be enough for you. If you want to automate your trading, create your own report system based on HedgeTerminal, use complex position tracking methods or apply some other things, HedgeTerminalApi can be extremely useful. It has well-developed API allowing you to access even the values and the properties not displayed in HedgeTerminalUltimate. Besides, API functions allow you to use complex position tracking that is limited or unavailable in the panel.<br />
+<strong>How <em>*</strong>to start using the library right now?</em>* Comments section contains detailed instructions for installing HedgeTerminalApi. The video on installing and using HedgeTerminalApi is to be provided soon.</li>
+</ul>
+<p><p><a href="#description">more&#8230;</a>  </p>
+</li>
+</ul>
+<h3>Image of HedgeTerminalApi</h3>
+<p><img src="https://c.mql5.com/31/44/hedgeterminalapi-screen-3965.png" alt="HedgeTerminalApi" /></p>
+<h3>Download source code of  HedgeTerminalApi for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download HedgeTerminalApi" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/hedgeterminalapi-download.html">HedgeTerminalApi Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>MetaCOT 2 Install CFTC Reports MT4 Download</title>
+		<link>http://project-regain.io/metacot-2-install-cftc-reports-mt4-download.html</link>
+				<pubDate>Thu, 15 Aug 2019 20:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Utilities]]></category>
+		<category><![CDATA[C-4]]></category>
+		<category><![CDATA[Vasiliy Sokolov]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/metacot-2-install-cftc-reports-mt4-download.html</guid>
+				<description><![CDATA[<p>Author : Vasiliy Sokolov Category : Utilities Last Update : 23 May 2019 Rent Price : Version : 2.60 MetaCOT 2 is a set of <a class="mh-excerpt-more" href="http://project-regain.io/metacot-2-install-cftc-reports-mt4-download.html" title="MetaCOT 2 Install CFTC Reports MT4 Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/metacot-2-install-cftc-reports-mt4-download.html">MetaCOT 2 Install CFTC Reports MT4 Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Vasiliy Sokolov<br />
+Category : Utilities<br />
+Last Update : 23 May 2019<br />
+Rent Price :<br />
+Version : 2.60<br />
+</code></p>
+<p><strong>MetaCOT 2</strong> is a set of indicators and specialized utilities for the analysis of the U.S. Commodity Futures Trading Commission reports. Thanks to the reports issued by the Commission, it is possible to analyze the size and direction of the positions of the major market participants, which brings the long-term price prediction accuracy to a new higher-quality level, inaccessible to most traders.</p>
+<p>These indicators, related to the fundamental analysis, can also be used as an effective long-term filter when entering a medium-term position. For this they should be combined with a classic price analysis. The MetaCOT series indicators are based on the book by Larry Williams <a href="https://www.mql5.com/go?link=http://www.ozon.ru/context/detail/id/3511930/" title="http://www.ozon.ru/context/detail/id/3511930/">&#8220;Trade Stocks and Commodities with the Insiders: Secrets of the COT Report&#8221;</a>. The operation of these indicators is further described in the article <a href="https://www.mql5.com/en/articles/1573">Meta COT Project &#8211; New Horizons for CFTC Report Analysis in MetaTrader 4</a>.</p>
+<p>This utility downloads and automatically updates the reports submitted by the Commission, saves them to a special database, which is used in the operation of the MetaCOT 2 series indicators. The entire download and installation process is automatic, which greatly simplifies the work with these data types in the MetaTrader terminals.</p>
+<p>For successful operation of the <strong>MetaCOT 2 Install CFTC Reports</strong> utility, the EAs should be granted access to the Commission&#8217;s site. Allow the WebRequest to the http://www.cftc.gov site in the Tools &#8211;> Options &#8211;> &#8220;Expert Advisors&#8221; tab.    <a href="#description">more&#8230;</a>  </p>
+<h3>Image of MetaCOT 2 Install CFTC Reports MT4</h3>
+<p><img src="https://c.mql5.com/31/255/metacot-2-install-cftc-reports-mt4-screen-4141.jpg" alt="MetaCOT 2 Install CFTC Reports MT4" /></p>
+<p><img src="https://c.mql5.com/31/255/metacot-2-install-cftc-reports-mt4-screen-1125.jpg" alt="MetaCOT 2 Install CFTC Reports MT4" /></p>
+<p><img src="https://c.mql5.com/31/255/metacot-2-install-cftc-reports-mt4-screen-1786.jpg" alt="MetaCOT 2 Install CFTC Reports MT4" /></p>
+<p><img src="https://c.mql5.com/31/255/metacot-2-install-cftc-reports-mt4-screen-3308.png" alt="MetaCOT 2 Install CFTC Reports MT4" /></p>
+<h3>Download source code of  MetaCOT 2 Install CFTC Reports MT4 for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download MetaCOT 2 Install CFTC Reports MT4" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/metacot-2-install-cftc-reports-mt4-download.html">MetaCOT 2 Install CFTC Reports MT4 Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>CME Daily Bulletin Open Interest MT4 Download</title>
+		<link>http://project-regain.io/cme-daily-bulletin-open-interest-mt4-download.html</link>
+				<pubDate>Thu, 15 Aug 2019 17:30:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Indicators]]></category>
+		<category><![CDATA[C-4]]></category>
+		<category><![CDATA[Vasiliy Sokolov]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/cme-daily-bulletin-open-interest-mt4-download.html</guid>
+				<description><![CDATA[<p>Author : Vasiliy Sokolov Category : Indicators Last Update : 24 May 2019 Rent Price : 50 USD Version : 1.13 CME Daily Bullettin Open <a class="mh-excerpt-more" href="http://project-regain.io/cme-daily-bulletin-open-interest-mt4-download.html" title="CME Daily Bulletin Open Interest MT4 Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/cme-daily-bulletin-open-interest-mt4-download.html">CME Daily Bulletin Open Interest MT4 Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Vasiliy Sokolov<br />
+Category : Indicators<br />
+Last Update : 24 May 2019<br />
+Rent Price : 50 USD<br />
+Version : 1.13<br />
+</code></p>
+<p>CME Daily Bullettin Open Interest provides the data on the open interest of futures contracts on the CME for your charts. Open interest is a special type of volume, that shows how many contracts are being held by the market participants at each moment of time. This type of information is available only in futures markets. But now, with this indicator, you can also analyze these data when trading the spot markets, such as FOREX. In addition, the indicator provides data on the open interest for the Call/Put options on the most common futures contracts. This makes the calculation of the non-trivial sentiment indicators possible, such as Call/Put Ratio, Sentiment Accumulator, B&amp;S Power Indicator and other indicators based on the real volume or open interest.</p>
+<p>Below are the parameters of the indicator and their values:</p>
+<ul>
+<li>
+<p><strong>Auto Detect Report Name</strong> &#8211; automatic detection of the symbol. If this parameter is enabled, the indicator automatically determines the name of the report that must be loaded for the current symbol;</p>
+<ul>
+<li><strong>Report Name</strong> &#8211; name of the report to load manually, in case the symbol autodetection is disabled (set to &#8216;false&#8217;);</li>
+<li><strong>Update Frequency Min</strong> &#8211; frequency of data update. If the value is zero, the data are not updated. The default value of the parameter is zero, which means updating 1 time per minute.<br />
+The data on the amount of open contracts are taken from one section of the &#8220;daily bulletin&#8221; &#8211; report of the CME, published weekly. This section is called &#8216;Daily Volume&#8217;, it is available as Excel files on the official ftp server of the exchange. To update the data on open interest, simply copy the corresponding reports to the indicator folder. Detailed instructions on performing the update can be found in the blog <a href="https://www.mql5.com/ru/blogs/post/704956">How to update CME reports on your PC</a>. The demonstration mode (during testing) does not require the data, the indicator loads them from its internal memory. However, updating the reports is not possible in the demo version, therefore, the open interest in this mode is displayed with some delay. The indicator works on any timeframe, but the data are available only for the daily timeframe; therefore, the suggested working chart period is D1. Nevertheless, the open interest for the current trading day is always available, which is updated several times during the trading session.</li>
+</ul>
+<p>The indicator provides access to open interest of more than 800 futures markets, including the FOREX market (EUR, GBP, CHF, JPY, CAD, AUD, NZD, RUB and some others), metals (gold, silver, platinum, etc.), energy (oil (several varieties), gas). Indices (S&amp;P 500, Dow Jones 30, Nasdaq-100, etc.). Financial instruments: 30-year bonds, 10,5,2 year treasury notes of the federal government. Commodities (wheat, feeder and live cattle, lean hog, lumber, etc.). However, some uncommon instruments may not be supported in the demo version. The full list of supported instruments is available in the blog: <a href="https://www.mql5.com/ru/blogs/post/704958">Full list of supported finance instruments of CME Daily Bulletin</a>.</p>
+<p><p><a href="#description">more&#8230;</a>  </p>
+</li>
+</ul>
+<h3>Image of CME Daily Bulletin Open Interest MT4</h3>
+<p><img src="https://c.mql5.com/31/225/cme-daily-bulletin-open-interest-mt4-screen-7619.png" alt="CME Daily Bulletin Open Interest MT4" /></p>
+<p><img src="https://c.mql5.com/31/225/cme-daily-bulletin-open-interest-mt4-screen-5387.png" alt="CME Daily Bulletin Open Interest MT4" /></p>
+<p><img src="https://c.mql5.com/31/225/cme-daily-bulletin-open-interest-mt4-screen-5202.png" alt="CME Daily Bulletin Open Interest MT4" /></p>
+<p><img src="https://c.mql5.com/31/225/cme-daily-bulletin-open-interest-mt4-screen-4700.png" alt="CME Daily Bulletin Open Interest MT4" /></p>
+<p><img src="https://c.mql5.com/31/225/cme-daily-bulletin-open-interest-mt4-screen-3811.png" alt="CME Daily Bulletin Open Interest MT4" /></p>
+<h3>Download source code of  CME Daily Bulletin Open Interest MT4 for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download CME Daily Bulletin Open Interest MT4" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/cme-daily-bulletin-open-interest-mt4-download.html">CME Daily Bulletin Open Interest MT4 Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>CME Daily Bulletin Real Volume MT4 Download</title>
+		<link>http://project-regain.io/cme-daily-bulletin-real-volume-mt4-download.html</link>
+				<pubDate>Thu, 15 Aug 2019 17:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Indicators]]></category>
+		<category><![CDATA[C-4]]></category>
+		<category><![CDATA[Vasiliy Sokolov]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/cme-daily-bulletin-real-volume-mt4-download.html</guid>
+				<description><![CDATA[<p>Author : Vasiliy Sokolov Category : Indicators Last Update : 24 May 2019 Rent Price : 40 USD Version : 1.13 CME Daily Bullettin Real <a class="mh-excerpt-more" href="http://project-regain.io/cme-daily-bulletin-real-volume-mt4-download.html" title="CME Daily Bulletin Real Volume MT4 Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/cme-daily-bulletin-real-volume-mt4-download.html">CME Daily Bulletin Real Volume MT4 Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Vasiliy Sokolov<br />
+Category : Indicators<br />
+Last Update : 24 May 2019<br />
+Rent Price : 40 USD<br />
+Version : 1.13<br />
+</code></p>
+<p>CME Daily Bullettin Real Volume displays the real daily volumes of futures contracts traded on the Chicago Mercantile Exchange (CME). Decentralized markets, such as FOREX, the real volumes are either not available, or local volumes of a broker/liquidity provider are broadcast. Tick volumes available in the terminal only outline the changes taking place on the market, and can not be used as a full-fledged tool for price analysis. In addition, the indicator is able to display the volumes of the Call/Put option markets, which provides additional information valuable for analysis.</p>
+<p>The indicator displays the following types of volumes:</p>
+<ul>
+<li>
+<p><strong>Globex</strong> &#8211; volume of the Globex Electronic Trading Platform;</p>
+<ul>
+<li><strong>Pit</strong> &#8211; volume traded in the CME trading pit;</li>
+<li><strong>ExPit</strong> &#8211; volume of ex-pit trades;</li>
+<li><strong>OTC</strong> &#8211; volume of over-the-counter trades, cleared through the exchange;</li>
+<li><strong>Total</strong> &#8211; total volume of all trades;</li>
+<li><strong>MTD ADV</strong> &#8211; Month To Date Average Daily Volume.<br />
+Below are the parameters of the indicator and their values:</li>
+</ul>
+</li>
+<li>
+<p><strong>Volume Type</strong> &#8211; one of the real volume types described above.</p>
+<ul>
+<li><strong>Auto Detect Report Name</strong> &#8211; automatic detection of the symbol. If this parameter is enabled, the indicator automatically determines the name of the report that must be loaded for the current symbol;</li>
+<li><strong>Report Name</strong> &#8211; name of the report to load manually, in case the symbol autodetection is disabled (set to &#8216;false&#8217;);</li>
+<li><strong>Update Frequency Min</strong> &#8211; frequency of data update. If the value is zero, the data are not updated. The default value of the parameter is zero, which means updating 1 time per minute.<br />
+The data on the real volumes are taken from one section of the &#8220;daily bulletin&#8221; &#8211; report of the CME, published weekly. This section is called &#8216;Daily Volume&#8217;, it is available as Excel files on the official ftp server of the exchange. To update the data, simply copy the corresponding reports to the indicator folder. Detailed instructions on performing the update can be found in the blog <a href="https://www.mql5.com/ru/blogs/post/704956">How to update CME reports on your PC</a>. The demonstration mode (during testing) does not require the data, the indicator loads them from its internal memory. However, updating the reports is not possible in the demo version, therefore, the volumes in this mode are displayed with some delay. The indicator works on any timeframe, but the data are available only for the daily timeframe; therefore, the suggested working chart period is D1. Nevertheless, the volumes of the current trading day are always available, which are updated several times during the trading session.</li>
+</ul>
+<p>The indicator provides access to volumes of more than 800 futures markets, including the FOREX market (EUR, GBP, CHF, JPY, CAD, AUD, NZD, RUB and some others), metals (gold, silver, platinum, etc.), energy (oil (several varieties), gas). Indices (S&amp;P 500, Dow Jones 30, Nasdaq-100, etc.). Financial instruments: 30-year bonds, 10,5,2 year treasury notes of the federal government. Commodities (wheat, feeder and live cattle, lean hog, lumber, etc.). However, some uncommon instruments may not be supported in the demo version. The full list of supported instruments is available in the blog: <a href="https://www.mql5.com/ru/blogs/post/704958">Full list of supported finance instruments of CME Daily Bulletin</a>.</p>
+<p><p><a href="#description">more&#8230;</a>  </p>
+</li>
+</ul>
+<h3>Image of CME Daily Bulletin Real Volume MT4</h3>
+<p><img src="https://c.mql5.com/31/196/cme-daily-bulletin-real-volume-mt4-screen-5853.png" alt="CME Daily Bulletin Real Volume MT4" /></p>
+<p><img src="https://c.mql5.com/31/196/cme-daily-bulletin-real-volume-mt4-screen-2357.png" alt="CME Daily Bulletin Real Volume MT4" /></p>
+<p><img src="https://c.mql5.com/31/196/cme-daily-bulletin-real-volume-mt4-screen-6036.png" alt="CME Daily Bulletin Real Volume MT4" /></p>
+<p><img src="https://c.mql5.com/31/196/cme-daily-bulletin-real-volume-mt4-screen-3238.png" alt="CME Daily Bulletin Real Volume MT4" /></p>
+<p><img src="https://c.mql5.com/31/196/cme-daily-bulletin-real-volume-mt4-screen-6390.png" alt="CME Daily Bulletin Real Volume MT4" /></p>
+<h3>Download source code of  CME Daily Bulletin Real Volume MT4 for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download CME Daily Bulletin Real Volume MT4" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/cme-daily-bulletin-real-volume-mt4-download.html">CME Daily Bulletin Real Volume MT4 Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>CME CallPut Option Ratio MT5 Download</title>
+		<link>http://project-regain.io/cme-callput-option-ratio-mt5-download.html</link>
+				<pubDate>Thu, 15 Aug 2019 16:30:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Indicators]]></category>
+		<category><![CDATA[C-4]]></category>
+		<category><![CDATA[Vasiliy Sokolov]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/cme-callput-option-ratio-mt5-download.html</guid>
+				<description><![CDATA[<p>Author : Vasiliy Sokolov Category : Indicators Last Update : 24 May 2019 Rent Price : 50 USD Version : 1.13 Call/Put Ratio is one <a class="mh-excerpt-more" href="http://project-regain.io/cme-callput-option-ratio-mt5-download.html" title="CME CallPut Option Ratio MT5 Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/cme-callput-option-ratio-mt5-download.html">CME CallPut Option Ratio MT5 Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Vasiliy Sokolov<br />
+Category : Indicators<br />
+Last Update : 24 May 2019<br />
+Rent Price : 50 USD<br />
+Version : 1.13<br />
+</code></p>
+<p>Call/Put Ratio is one of the most well-known indicators of the market sentiment. The indicator has been developed by Martin Zweig. It is based on real volumes of the CBOE option market. As we know, a Call option gives its owner the right to buy the underlying asset at a predetermined price. A Put option gives the right to sell it. Thus, increasing volumes for Call options indicate the increasing demand. The growth of Put option volumes shows that supply starts exceeding demand. If we divide the volume of Call options by the total trading volume, we get a ratio showing the share of purchases relative to the total market share. It varies from 0 to 1 and is a high-frequency oscillator. The indicator allows us to use not only the volumes of option markets, but also the levels of their open interest as a calculation base enabling us to analyze the markets more deeply.</p>
+<p>The indicator shows three zones:</p>
+<ul>
+<li>
+<p><strong>Supply and demand are approximately equal</strong> (gray area);</p>
+<ul>
+<li><strong>Demand significantly exceeds supply</strong> (green area);</li>
+<li><strong>Supply significantly exceeds demand</strong> (red area).<br />
+Any market is characterized by a frequent change of states: after a rapid growth, there is a period of active selling, and on the contrary, a strong selling may be followed by an inexplicable period of growth. Call Put Ratio identifies the change of these phases and shows you when you can open a long or short position. Buy when CallPut Ratio goes into the green zone, provided that it was in the red one a few bars ago. On the contrary, sell when the indicator has moved to the red zone from the green one. You can also follow the signal of the red signal line: buy when its fall is replaced by growth, and sell when its growth is replaced by fall.</li>
+</ul>
+<p>You can find more details about the indicator in the book <a href="https://www.mql5.com/go?link=https://www.amazon.com/Trading-Against-Crowd-Profiting-Futures/dp/0471471216" title="https://www.amazon.com/Trading-Against-Crowd-Profiting-Futures/dp/0471471216">&#8220;Trading Against the Crowd: Profiting from Fear and Greed in Stock, Futures and Options Markets&#8221;</a> by John Summa.</p>
+<p>The data on the option volumes ratio are taken from one section of the &#8220;daily bulletin&#8221; &#8211; report of the CME, published weekly. This section is called Daily Volume, it is available as Excel files on the official ftp server of the exchange. To update the data on CallPut Ratio, simply copy the corresponding reports to the indicator folder. Detailed instructions on performing the update can be found in the blog <a href="https://www.mql5.com/ru/blogs/post/704956">How to update CME reports on your PC</a>. The demonstration mode (during testing) does not require the data, the indicator loads them from its internal memory. However, updating the reports is not possible in the demo version, therefore, the CallPut Ratio is displayed with some delay in this mode. The indicator works on any timeframe, but the data are available only for the daily timeframe; therefore, the suggested working chart period is D1. Nevertheless, the volumes of the current trading day are always available. They are updated several times during the trading session.</p>
+<p>Inputs:</p>
+</li>
+<li>
+<p><strong>Color Theme</strong> &#8211; select one of the indicator&#8217;s three color schemes;</p>
+<ul>
+<li><strong>Type of CME Volume</strong> &#8211; one of the CME real volume types, including open interest;</li>
+<li><strong>Stundart Deviation</strong> &#8211; standard deviation ratio, beyond which the CallPut Ratio moves to the red or green area;</li>
+<li><strong>Period of Signal Line</strong> &#8211; averaging period of the moving average;</li>
+<li><strong>Auto Detect Report Name</strong> &#8211; true means the necessary reports are downloaded automatically. Otherwise, the reports specified in the following two parameters are downloaded instead;</li>
+<li><strong>Call Option Name</strong> &#8211; Call option name to be downloaded;</li>
+<li><strong>Put Option Name</strong> &#8211; Put option name to be downloaded.</li>
+<li><strong>Update Frequency Min</strong> &#8211; frequency of updating data from the file base. 0 &#8211; updates disabled, 1 &#8211; updates occur once a minute.<br />
+<a href="#description">more&#8230;</a>  </li>
+</ul>
+</li>
+</ul>
+<h3>Image of CME CallPut Option Ratio MT5</h3>
+<p><img src="https://c.mql5.com/31/207/cme-daily-bullettin-callput-option-ratio-mt4-screen-1148.png" alt="CME CallPut Option Ratio MT5" /></p>
+<p><img src="https://c.mql5.com/31/207/cme-daily-bullettin-callput-option-ratio-mt4-screen-3296.png" alt="CME CallPut Option Ratio MT5" /></p>
+<p><img src="https://c.mql5.com/31/207/cme-daily-bullettin-callput-option-ratio-mt4-screen-7550.png" alt="CME CallPut Option Ratio MT5" /></p>
+<p><img src="https://c.mql5.com/31/207/cme-daily-bullettin-callput-option-ratio-mt4-screen-8920.png" alt="CME CallPut Option Ratio MT5" /></p>
+<p><img src="https://c.mql5.com/31/207/cme-daily-bullettin-callput-option-ratio-mt4-screen-6535.png" alt="CME CallPut Option Ratio MT5" /></p>
+<p><img src="https://c.mql5.com/31/207/cme-daily-bullettin-callput-option-ratio-mt4-screen-4952.png" alt="CME CallPut Option Ratio MT5" /></p>
+<p><img src="https://c.mql5.com/31/207/cme-daily-bullettin-callput-option-ratio-mt4-screen-5988.png" alt="CME CallPut Option Ratio MT5" /></p>
+<p><img src="https://c.mql5.com/31/207/cme-daily-bullettin-callput-option-ratio-mt4-screen-4563.png" alt="CME CallPut Option Ratio MT5" /></p>
+<h3>Download source code of  CME CallPut Option Ratio MT5 for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download CME CallPut Option Ratio MT5" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/cme-callput-option-ratio-mt5-download.html">CME CallPut Option Ratio MT5 Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>MetaCOT 2 CFTC ToolBox MT5 Download</title>
+		<link>http://project-regain.io/metacot-2-cftc-toolbox-mt5-download.html</link>
+				<pubDate>Wed, 14 Aug 2019 16:30:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Libraries]]></category>
+		<category><![CDATA[C-4]]></category>
+		<category><![CDATA[Vasiliy Sokolov]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/metacot-2-cftc-toolbox-mt5-download.html</guid>
+				<description><![CDATA[<p>Author : Vasiliy Sokolov Category : Libraries Last Update : 11 September 2018 Rent Price : 95 USD Version : 2.53 MetaCOT 2 CFTC ToolBox <a class="mh-excerpt-more" href="http://project-regain.io/metacot-2-cftc-toolbox-mt5-download.html" title="MetaCOT 2 CFTC ToolBox MT5 Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/metacot-2-cftc-toolbox-mt5-download.html">MetaCOT 2 CFTC ToolBox MT5 Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Vasiliy Sokolov<br />
+Category : Libraries<br />
+Last Update : 11 September 2018<br />
+Rent Price : 95 USD<br />
+Version : 2.53<br />
+</code></p>
+<p>MetaCOT 2 CFTC ToolBox is a special library that provides access to CFTC (U.S. Commodity Futures Trading Commission) reports straight from the MetaTrader terminal. The library includes all indicators that are based on these reports. With this library you do not need to purchase each MetaCOT indicator separately. Instead, you can obtain a single set of all 34 indicators including additional indicators that are not available as separate versions. The library supports all types of reports, and provides data on major market participants.</p>
+<p>MetaCOT 2 CFTC ToolBox:</p>
+<ul>
+<li>
+<p>Provides access to all types of CFTC reports (Commitments of Traders (COT), Dissagregated COT (D-COT), Traders in Financel Futures (TFF), Commitments Index Traders (CIT));</p>
+<ul>
+<li>Allows developing custom indicators and Expert Advisors on the basis of CFTC reports;</li>
+<li>Allows to use MetaCOT indicators that are available as source code;</li>
+<li>Provides an increased number of activations, you can use these indicators for many years.<br />
+The library operation requires the CFTC reports to be downloaded and installed on your computer, which can be done with a special report installation utility <a href="https://www.mql5.com/en/market/product/14490">MetaCOT 2 Install CFTC Reports MT5</a>.</li>
+</ul>
+<p><p><a href="#description">more&#8230;</a>  </p>
+</li>
+</ul>
+<h3>Image of MetaCOT 2 CFTC ToolBox MT5</h3>
+<p><img src="https://c.mql5.com/31/140/metacot-2-cftc-toolbox-screen-9153.png" alt="MetaCOT 2 CFTC ToolBox MT5" /></p>
+<p><img src="https://c.mql5.com/31/141/metacot-2-cftc-toolbox-mt5-screen-4615.png" alt="MetaCOT 2 CFTC ToolBox MT5" /></p>
+<p><img src="https://c.mql5.com/31/140/metacot-2-cftc-toolbox-screen-1886.png" alt="MetaCOT 2 CFTC ToolBox MT5" /></p>
+<p><img src="https://c.mql5.com/31/140/metacot-2-cftc-toolbox-screen-6417.png" alt="MetaCOT 2 CFTC ToolBox MT5" /></p>
+<p><img src="https://c.mql5.com/31/140/metacot-2-cftc-toolbox-screen-4392.png" alt="MetaCOT 2 CFTC ToolBox MT5" /></p>
+<p><img src="https://c.mql5.com/31/140/metacot-2-cftc-toolbox-screen-4461.png" alt="MetaCOT 2 CFTC ToolBox MT5" /></p>
+<p><img src="https://c.mql5.com/31/140/metacot-2-cftc-toolbox-screen-5234.png" alt="MetaCOT 2 CFTC ToolBox MT5" /></p>
+<p><img src="https://c.mql5.com/31/140/metacot-2-cftc-toolbox-screen-9568.png" alt="MetaCOT 2 CFTC ToolBox MT5" /></p>
+<p><img src="https://c.mql5.com/31/140/metacot-2-cftc-toolbox-screen-4114.png" alt="MetaCOT 2 CFTC ToolBox MT5" /></p>
+<p><img src="https://c.mql5.com/31/141/metacot-2-cftc-toolbox-mt5-screen-4626.png" alt="MetaCOT 2 CFTC ToolBox MT5" /></p>
+<p><img src="https://c.mql5.com/31/140/metacot-2-cftc-toolbox-screen-1173.png" alt="MetaCOT 2 CFTC ToolBox MT5" /></p>
+<h3>Download source code of  MetaCOT 2 CFTC ToolBox MT5 for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download MetaCOT 2 CFTC ToolBox MT5" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/metacot-2-cftc-toolbox-mt5-download.html">MetaCOT 2 CFTC ToolBox MT5 Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+	</channel>
+</rss>

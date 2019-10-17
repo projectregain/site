@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Aleksej Poljakov &#8211; Expert Advisor / Indicator</title>
+	<atom:link href="http://project-regain.io/download/aleksej-poljakov/feed" rel="self" type="application/rss+xml" />
+	<link>http://project-regain.io/</link>
+	<description>Download source coder from any indicator / Expert Advisor file.</description>
+	<lastBuildDate>Thu, 15 Aug 2019 21:30:00 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.2.4</generator>
+	<item>
+		<title>AIS Money Management Download</title>
+		<link>http://project-regain.io/ais-money-management-download.html</link>
+				<pubDate>Thu, 15 Aug 2019 21:30:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Utilities]]></category>
+		<category><![CDATA[Aleksej Poljakov]]></category>
+		<category><![CDATA[Aleksej1966]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/ais-money-management-download.html</guid>
+				<description><![CDATA[<p>Author : Aleksej Poljakov Category : Utilities Last Update : 23 May 2019 Rent Price : Version : 2.0 The script is based on the <a class="mh-excerpt-more" href="http://project-regain.io/ais-money-management-download.html" title="AIS Money Management Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/ais-money-management-download.html">AIS Money Management Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Aleksej Poljakov<br />
+Category : Utilities<br />
+Last Update : 23 May 2019<br />
+Rent Price :<br />
+Version : 2.0<br />
+</code></p>
+<p>The script is based on the simulation of trade transactions using a random number generator. This allows you to get completely different results, even with the same input parameters. When you run the script, a dialog box opens in which you can set the desired values ​​for external variables.In the <em>Trading options</em> block, the basic parameters that are necessary for trading modeling are defined.* <strong><em>Start Balance</em></strong> &#8211; sets the initial size of the trade balance.<br />
+* <strong><em>Number Trade</em></strong> &#8211; sets the number of trade transactions that will be modeled when the script is running. In order to get more or less significant results, it is necessary that this parameter be greater than 30.<br />
+* <strong><em>Probability Winning</em></strong> &#8211; the probability of a winning trade. Indicated as a percentage, valid value from 1 to 99.<br />
+* <strong><em>Min. StopLoss</em></strong> &#8211; indicates the minimum StopLoss value in points, which will be used when modeling trading operations.<br />
+* <strong><em>Max. StopLoss</em></strong> &#8211; sets the maximum value of StopLoss in points.<br />
+* <strong><em>Positive Win.</em></strong> &#8211; this variable establishes the amendment, with the help of which a positive expectation is obtained in the simulated transaction.<br />
+The job of the script is to do the following. First, the expected probability of a winning trade is calculated &#8211; PW. After that, randomly set the value of StopLoss, which will be used in this transaction. Considering that the expected payoff should be positive, the TakeProfit size is calculated. Taking into account the pip value, the TakeProfit and StopLoss levels are converted to the values ​​of possible profit and loss &#8211; Profit and Loss. In conclusion, the result of the transaction is determined &#8211; the win (“1”) or loss (“-1”). All data is stored in the SpecificationsTrade.csv file in the last line of which indicates the total amount of winnings in this series of transactions.The resulting transaction values ​​are transferred to the <em>Money management systems</em> block, where you can select the money management systems of interest.* <strong><em>Fixed Lot</em></strong> &#8211; trade in a fixed lot. The results are stored in the file &#8220;FixedLot.csv&#8221;. The “Bal.” Column indicates the value of the trade balance before opening a trade, and the “Rez” column indicates its result.<br />
+* <strong><em>Fixed Percentage</em></strong> &#8211; fixed percentage trading. The simulation results are recorded in the file &#8220;FixedPercentage.csv&#8221;. In the “Bal.” Column, the balance value is stored, in the “Lot” column &#8211; the lot size during the transaction, and in the “Rez” column &#8211; its result.<br />
+* <strong><em>Moral Expectation</em></strong> &#8211; trade based on moral expectations is modeled. When modeling transactions, restrictions on the required number of transactions and the size of the trade balance are not taken into account. Due to this, it is possible to more accurately select the parameters of the trading system for trading with this money management system. The results are recorded in the file “MoralExpectation.csv”.<br />
+* <strong><em>Theory Perspective</em></strong> &#8211; trading with the use of money management according to the theory of prospects.<br />
+* <strong><em>Frac. Linear Growth</em></strong> &#8211; trade modeling using fractional linear growth.<br />
+* <strong><em>Linear Growth</em></strong> &#8211; trading using the linear growth model.<br />
+* <strong><em>Power Growth</em></strong> &#8211; modeling of power growth in trade.<br />
+* <strong><em>Exponential Growth</em></strong> &#8211; application of the model of exponential growth.<br />
+* <strong><em>Hyperbolic Growth</em></strong> &#8211; shows trading when using the hyperbolic growth model.<br />
+* <strong><em>Hyperbolic Exponential Growth</em></strong> &#8211; models the use of hyperbolic-exponential growth.<br />
+    <a href="#description">more&#8230;</a>  </p>
+<h3>Image of AIS Money Management</h3>
+<p><img src="https://c.mql5.com/31/326/ais-money-management-screen-8531.png" alt="AIS Money Management" /></p>
+<p><img src="https://c.mql5.com/31/326/ais-money-management-screen-9197.png" alt="AIS Money Management" /></p>
+<p><img src="https://c.mql5.com/31/326/ais-money-management-screen-3083.png" alt="AIS Money Management" /></p>
+<p><img src="https://c.mql5.com/31/326/ais-money-management-screen-3027.png" alt="AIS Money Management" /></p>
+<p><img src="https://c.mql5.com/31/326/ais-money-management-screen-1517.png" alt="AIS Money Management" /></p>
+<p><img src="https://c.mql5.com/31/326/ais-money-management-screen-8969.png" alt="AIS Money Management" /></p>
+<p><img src="https://c.mql5.com/31/326/ais-money-management-screen-2466.png" alt="AIS Money Management" /></p>
+<p><img src="https://c.mql5.com/31/326/ais-money-management-screen-5132.png" alt="AIS Money Management" /></p>
+<h3>Download source code of  AIS Money Management for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download AIS Money Management" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/ais-money-management-download.html">AIS Money Management Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>AIS Money Management MT5 Download</title>
+		<link>http://project-regain.io/ais-money-management-mt5-download.html</link>
+				<pubDate>Thu, 15 Aug 2019 19:30:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Utilities]]></category>
+		<category><![CDATA[Aleksej Poljakov]]></category>
+		<category><![CDATA[Aleksej1966]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/ais-money-management-mt5-download.html</guid>
+				<description><![CDATA[<p>Author : Aleksej Poljakov Category : Utilities Last Update : 23 May 2019 Rent Price : Version : 2.0 The script is based on the <a class="mh-excerpt-more" href="http://project-regain.io/ais-money-management-mt5-download.html" title="AIS Money Management MT5 Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/ais-money-management-mt5-download.html">AIS Money Management MT5 Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Aleksej Poljakov<br />
+Category : Utilities<br />
+Last Update : 23 May 2019<br />
+Rent Price :<br />
+Version : 2.0<br />
+</code></p>
+<p>The script is based on the simulation of trade transactions using a random number generator. This allows you to get completely different results, even with the same input parameters. When you run the script, a dialog box opens in which you can set the desired values ​​for external variables.In the <em>Trading options</em> block, the basic parameters that are necessary for trading modeling are defined.* <strong><em>Start Balance</em></strong> &#8211; sets the initial size of the trade balance.<br />
+* <strong><em>Number Trade</em></strong> &#8211; sets the number of trade transactions that will be modeled when the script is running. In order to get more or less significant results, it is necessary that this parameter be greater than 30.<br />
+* <strong><em>Probability Winning</em></strong> &#8211; the probability of a winning trade. Indicated as a percentage, valid value from 1 to 99.<br />
+* <strong><em>Min. StopLoss</em></strong> &#8211; indicates the minimum StopLoss value in points, which will be used when modeling trading operations.<br />
+* <strong><em>Max. StopLoss</em></strong> &#8211; sets the maximum value of StopLoss in points.<br />
+* <strong><em>Positive Win.</em></strong> &#8211; this variable establishes the amendment, with the help of which a positive expectation is obtained in the simulated transaction.<br />
+The job of the script is to do the following. First, the expected probability of a winning trade is calculated &#8211; PW. After that, randomly set the value of StopLoss, which will be used in this transaction. Considering that the expected payoff should be positive, the TakeProfit size is calculated. Taking into account the pip value, the TakeProfit and StopLoss levels are converted to the values ​​of possible profit and loss &#8211; Profit and Loss. In conclusion, the result of the transaction is determined &#8211; the win (“1”) or loss (“-1”). All data is stored in the SpecificationsTrade.csv file in the last line of which indicates the total amount of winnings in this series of transactions.The resulting transaction values ​​are transferred to the <em>Money management systems</em> block, where you can select the money management systems of interest.* <strong><em>Fixed Lot</em></strong> &#8211; trade in a fixed lot. The results are stored in the file &#8220;FixedLot.csv&#8221;. The “Bal.” Column indicates the value of the trade balance before opening a trade, and the “Rez” column indicates its result.<br />
+* <strong><em>Fixed Percentage</em></strong> &#8211; fixed percentage trading. The simulation results are recorded in the file &#8220;FixedPercentage.csv&#8221;. In the “Bal.” Column, the balance value is stored, in the “Lot” column &#8211; the lot size during the transaction, and in the “Rez” column &#8211; its result.<br />
+* <strong><em>Moral Expectation</em></strong> &#8211; trade based on moral expectations is modeled. When modeling transactions, restrictions on the required number of transactions and the size of the trade balance are not taken into account. Due to this, it is possible to more accurately select the parameters of the trading system for trading with this money management system. The results are recorded in the file “MoralExpectation.csv”.<br />
+* <strong><em>Theory Perspective</em></strong> &#8211; trading with the use of money management according to the theory of prospects.<br />
+* <strong><em>Frac. Linear Growth</em></strong> &#8211; trade modeling using fractional linear growth.<br />
+* <strong><em>Linear Growth</em></strong> &#8211; trading using the linear growth model.<br />
+* <strong><em>Power Growth</em></strong> &#8211; modeling of power growth in trade.<br />
+* <strong><em>Exponential Growth</em></strong> &#8211; application of the model of exponential growth.<br />
+* <strong><em>Hyperbolic Growth</em></strong> &#8211; shows trading when using the hyperbolic growth model.<br />
+* <strong><em>Hyperbolic Exponential Growth</em></strong> &#8211; models the use of hyperbolic-exponential growth.<br />
+    <a href="#description">more&#8230;</a>  </p>
+<h3>Image of AIS Money Management MT5</h3>
+<p><img src="https://c.mql5.com/31/326/ais-money-management-mt5-screen-4540.png" alt="AIS Money Management MT5" /></p>
+<p><img src="https://c.mql5.com/31/326/ais-money-management-mt5-screen-9062.png" alt="AIS Money Management MT5" /></p>
+<p><img src="https://c.mql5.com/31/326/ais-money-management-mt5-screen-4470.png" alt="AIS Money Management MT5" /></p>
+<p><img src="https://c.mql5.com/31/326/ais-money-management-mt5-screen-4432.png" alt="AIS Money Management MT5" /></p>
+<p><img src="https://c.mql5.com/31/326/ais-money-management-mt5-screen-8037.png" alt="AIS Money Management MT5" /></p>
+<p><img src="https://c.mql5.com/31/326/ais-money-management-mt5-screen-4414.png" alt="AIS Money Management MT5" /></p>
+<p><img src="https://c.mql5.com/31/326/ais-money-management-mt5-screen-7301.png" alt="AIS Money Management MT5" /></p>
+<p><img src="https://c.mql5.com/31/326/ais-money-management-mt5-screen-4339.png" alt="AIS Money Management MT5" /></p>
+<h3>Download source code of  AIS Money Management MT5 for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download AIS Money Management MT5" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/ais-money-management-mt5-download.html">AIS Money Management MT5 Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+	</channel>
+</rss>

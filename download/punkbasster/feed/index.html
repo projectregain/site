@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Punkbasster &#8211; Expert Advisor / Indicator</title>
+	<atom:link href="http://project-regain.io/download/punkbasster/feed" rel="self" type="application/rss+xml" />
+	<link>http://project-regain.io/</link>
+	<description>Download source coder from any indicator / Expert Advisor file.</description>
+	<lastBuildDate>Sun, 11 Aug 2019 12:00:00 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.2.4</generator>
+	<item>
+		<title>Inside Bar MTF Alerts Download</title>
+		<link>http://project-regain.io/inside-bar-mtf-alerts-download.html</link>
+				<pubDate>Sun, 11 Aug 2019 12:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Indicators]]></category>
+		<category><![CDATA[Andrey Shpilev]]></category>
+		<category><![CDATA[Punkbasster]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/inside-bar-mtf-alerts-download.html</guid>
+				<description><![CDATA[<p>Author : Andrey Shpilev Category : Indicators Last Update : 2 February 2016 Rent Price : 10 USD Version : 2.0 The indicator is designed <a class="mh-excerpt-more" href="http://project-regain.io/inside-bar-mtf-alerts-download.html" title="Inside Bar MTF Alerts Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/inside-bar-mtf-alerts-download.html">Inside Bar MTF Alerts Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Andrey Shpilev<br />
+Category : Indicators<br />
+Last Update : 2 February 2016<br />
+Rent Price : 10 USD<br />
+Version : 2.0<br />
+</code></p>
+<p>The indicator is designed to inform you about new Inside bars detected on any specified timeframes. Patterns found on the current chart are highlighted. The indicator can use alerts, email notifications and push messages to inform you. There is an extra option &#8211; a volume-based pattern selection criterion.</p>
+<p>This indicator automates the search of Inside bars and makes Price Action-based analysis of the markets much easier for you.</p>
+<p>### Input Parameters</p>
+<p>Visualization settings:</p>
+<ul>
+<li>
+<p><strong>Draw Mode</strong> &#8211; sets the way to draw patterns on the current chart (draw as bars or as candles).<br />
+Notification settings:</p>
+</li>
+<li>
+<p><strong>Pattern Name</strong> &#8211; defines pattern name in notifications.</p>
+<ul>
+<li><strong>Enable Alerts</strong> &#8211; turns on/off sound alerts of the indicator.</li>
+<li><strong>Enable Email Notifications</strong> &#8211; turns on/off notifications by email given in the settings of MetaTrader.</li>
+<li><strong>Enable Push Notifications</strong> &#8211; turns on/off notifications being sent to the mobile client with ID specified in MetaTrader settings.<br />
+Recognition parameters:</li>
+</ul>
+</li>
+<li>
+<p><strong>Lower Volume Bars before</strong> &#8211; specifies the required number of previous bars with lower volume comparing to the inside bar.</p>
+<ul>
+<li><strong>Min Bar Size on MN1</strong></li>
+<li><strong>Min Bar Size on W1</strong></li>
+<li><strong>Min Bar Size on D1</strong></li>
+<li><strong>Min Bar Size on H12</strong></li>
+<li><strong>Min Bar Size on H8</strong></li>
+<li><strong>Min Bar Size on H6</strong></li>
+<li><strong>Min Bar Size on H4</strong></li>
+<li><strong>Min Bar Size on H3</strong></li>
+<li><strong>Min Bar Size on H2</strong></li>
+<li><strong>Min Bar Size on H1</strong></li>
+<li><strong>Min Bar Size on M30</strong></li>
+<li><strong>Min Bar Size on M20</strong></li>
+<li><strong>Min Bar Size on M15</strong></li>
+<li><strong>Min Bar Size on M12</strong></li>
+<li><strong>Min Bar Size on M10</strong></li>
+<li><strong>Min Bar Size on M6</strong></li>
+<li><strong>Min Bar Size on M5</strong></li>
+<li><strong>Min Bar Size on M4</strong></li>
+<li><strong>Min Bar Size on M3</strong></li>
+<li><strong>Min Bar Size on M2</strong></li>
+<li><strong>Min Bar Size on M1</strong><br />
+The parameters from <strong>Min Bar Size on MN1 <em>*to</strong> Min Bar Size on M1</em>* set the minimum required bar&#8217;s range (distance between High and Low) for each timeframe. Bars with lower ranges are ignored. Negative value of the parameter disables pattern search and drawing of the indicator on the corresponding timeframe. The optimal values of the minimum required bar ranges are assigned and pattern search is disabled on timeframes lower than H1 by default.</li>
+</ul>
+<h3>Trading Recommendations</h3>
+<p>According to Price Action the trading signal of the Inside Bar pattern is the breakout of the borders of the inside bar itself or the previous bar. Stop Loss should be placed beyond the opposite border of the inside or the previous bar. To improve the accuracy of trading signals it is strongly recommended to trade only according to the trend direction. This approach reduces the number of signals but increases their reliability.</p>
+<p>Working on timeframes lower than D1, place the Stop Loss orders beyond the nearest extremum or the border of a trading range to avoid its premature triggering.</p>
+<h3>Additional Information</h3>
+<p>The indicator provides settings for two colors. The first color is to draw buy patterns and the second one is to draw sell patterns. An inside bar is considered to be &#8220;bullish&#8221; if its close price is higher or equal to the middle of previous bar&#8217;s range. Otherwise, the pattern is considered to be &#8220;bearish&#8221;. This division is mostly tentative, so the same color is set for both types of patterns by default. But you may find this feature useful.</p>
+<p><p><a href="#description">more&#8230;</a>  </p>
+</li>
+</ul>
+<h3>Image of Inside Bar MTF Alerts</h3>
+<p><img src="https://c.mql5.com/31/39/inside-bar-mtf-alerts-screen-4118.png" alt="Inside Bar MTF Alerts" /></p>
+<p><img src="https://c.mql5.com/31/39/inside-bar-mtf-alerts-screen-8563.png" alt="Inside Bar MTF Alerts" /></p>
+<p><img src="https://c.mql5.com/31/39/inside-bar-mtf-alerts-screen-5608.png" alt="Inside Bar MTF Alerts" /></p>
+<p><img src="https://c.mql5.com/31/39/inside-bar-mtf-alerts-screen-4160.png" alt="Inside Bar MTF Alerts" /></p>
+<p><img src="https://c.mql5.com/31/39/inside-bar-mtf-alerts-screen-7378.png" alt="Inside Bar MTF Alerts" /></p>
+<h3>Download source code of  Inside Bar MTF Alerts for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download Inside Bar MTF Alerts" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/inside-bar-mtf-alerts-download.html">Inside Bar MTF Alerts Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+	</channel>
+</rss>

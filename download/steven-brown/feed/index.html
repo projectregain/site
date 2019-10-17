@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Steven Brown &#8211; Expert Advisor / Indicator</title>
+	<atom:link href="http://project-regain.io/download/steven-brown/feed" rel="self" type="application/rss+xml" />
+	<link>http://project-regain.io/</link>
+	<description>Download source coder from any indicator / Expert Advisor file.</description>
+	<lastBuildDate>Sat, 24 Aug 2019 01:30:00 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.2.4</generator>
+	<item>
+		<title>Delta EMA for MT4 Download</title>
+		<link>http://project-regain.io/delta-ema-for-mt4-download.html</link>
+				<pubDate>Sat, 24 Aug 2019 01:30:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Indicators]]></category>
+		<category><![CDATA[Stevebrown]]></category>
+		<category><![CDATA[Steven Brown]]></category>
+
+		<guid isPermaLink="false">http://project-regain.io/delta-ema-for-mt4-download.html</guid>
+				<description><![CDATA[<p>Author : Steven Brown Category : Indicators Last Update : 18 November 2018 Rent Price : 30 USD Version : 1.4 Delta EMA is a <a class="mh-excerpt-more" href="http://project-regain.io/delta-ema-for-mt4-download.html" title="Delta EMA for MT4 Download">[...]</a></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/delta-ema-for-mt4-download.html">Delta EMA for MT4 Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></description>
+								<content:encoded><![CDATA[<p><code><br />
+Author : Steven Brown<br />
+Category : Indicators<br />
+Last Update : 18 November 2018<br />
+Rent Price : 30 USD<br />
+Version : 1.4<br />
+</code></p>
+<p>Delta EMA is a momentum indicator based on the changes of closing price from one bar to the next. It displays a histogram of the exponential moving average of those changes, showing magnitude and direction of trend. Positive delta values are displayed as green bars, and negative delta values are displayed as red bars. The transition from negative to positive delta, or from positive to negative delta, indicates trend reversal. Transition bars that exceed a user specified value are displayed in bright green or bright red, alerting the trader to potential buy and sell signals. The screenshot shows a transition bar displayed as a buy signal because it exceeds the default threshold value on the H1 chart of the EUR/USD currency pair. The transitions back to negative delta show good exit points for the trade. The indicator is expressed in terms of percent change, averaged over the number of bars specified by the user, so settings that work for one currency pair can be applied to other pairs.   </p>
+<p>###  Advantages</p>
+<ul>
+<li>Indicates strength of momentum</li>
+<li>Shows trend reversals</li>
+<li>
+<p>Provides buy and sell signals</p>
+<h3>Features</h3>
+</li>
+<li>
+<p>Audible alerts</p>
+</li>
+<li>E-mail alerts</li>
+<li>Prints data to terminal</li>
+<li>Adjustable parameters</li>
+<li>Updates in real time</li>
+<li>Accessible by external EA<br />
+<h3> </h3>
+</li>
+</ul>
+<h3>Input variables</h3>
+<p><strong>EMA periods</strong>: The number of bars in the exponential moving average of delta. This number determines the alpha or smoothing factor of the moving average. </p>
+<p><strong>Alpha of EMA</strong>: Here the user can specify the alpha of the EMA directly. If this value is zero, alpha is calculated from the &#8220;EMA periods&#8221; input variable. If it is greater than zero, it becomes the value of alpha and the value of &#8220;EMA periods&#8221; is ignored. The normal range of alpha is greater than zero, less than or equal to 1. When the value is 1, the calculation of EMA does not take the previous value of the EMA into account, and the EMA becomes the current delta. <strong>Signal threshold</strong>: A transition bar becomes a signal bar if it exceeds this value in the positive or negative direction. In that case, it is displayed as a bright green or bright red bar, and an audible alert can be sounded. <br />
+<strong>Sound alert</strong>: When set to true, indicator sounds an audible alert when a transition bar exceeds the value of input variable &#8220;Signal threshold,&#8221; becoming a signal bar. The alert is sounded the first time the current bar exceeds the threshold value, and it is sounded when the close of a bar exceeds the threshold value.</p>
+<p><strong>E-mail alert</strong>: When set to a value greater than zero, the indicator sends an e-mail, to the a address specified by the user in Metatrader settings (Tools\Options\E-mail), when a transition bar exceeds the value of input variable &#8220;Signal threshold.&#8221; Set this value to 2 to send an e-mail alert the first time the current bar exceeds the threshold value and when it closes above that value. Set this value to 1 to send an e-mail alert only when a bar closes above the threshold value. Set this value to 0 to disable e-mail alerts. </p>
+<p><strong>Print deltas</strong>: When set to true, the value of the EMA of delta at the close of every bar is printed to the terminal. <br />
+The default values of &#8220;EMA periods&#8221; and &#8220;Signal threshold&#8221; work well on the H1 chart. Smaller values of &#8220;Signal threshold&#8221; work better on shorter timeframes, where changes from one bar to the next are less, and larger values work better on longer timeframes. Optimal values can be found by using the output of Delta EMA as input to an Expert Advisor and running the EA in Strategy Tester. The EMA of delta for the current bar not yet completed is updated at every incoming tick and is displayed in the upper-left corner of the indicator&#8217;s window. This value, or the value at the close of any previous bar, can be accessed by an external Expert Advisor calling the <a href="https://docs.mql4.com/indicators/icustom" title="https://docs.mql4.com/indicators/icustom">iCustom()</a> function. The link to <a href="https://docs.mql4.com/indicators/icustom" title="https://docs.mql4.com/indicators/icustom">iCustom()</a> provides an example of how to do that. The number of the indicator buffer to access is 0 and should be passed to iCustom() as the &#8220;mode&#8221; parameter. That buffer uses reverse indexing order, so the index for the value of the EMA of delta for the current bar is 0, the index for the value at the close of the preceding bar is 1, the index for bar before that is 2, and so on. That index should be passed to iCustom() as the &#8220;shift&#8221; parameter.</p>
+<pre><code>[more...](#description)
+</code></pre>
+<h3>Image of Delta EMA for MT4</h3>
+<p><img src="https://c.mql5.com/31/268/delta-ema-for-mt4-screen-6089.PNG" alt="Delta EMA for MT4" /></p>
+<h3>Download source code of  Delta EMA for MT4 for only 97 usd</h3>
+<p><img src="https://project-regain.io/wp-content/uploads/2019/10/download.png" alt="Download Delta EMA for MT4" /></p>
+<p>The post <a rel="nofollow" href="http://project-regain.io/delta-ema-for-mt4-download.html">Delta EMA for MT4 Download</a> appeared first on <a rel="nofollow" href="http://project-regain.io/">Expert Advisor / Indicator</a>.</p>
+]]></content:encoded>
+										</item>
+	</channel>
+</rss>
